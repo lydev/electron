@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="launcher">
+      <UniqueIdentifier>{6D77ED44-2989-9A6C-D09D-A2CAB8604FD9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../base/test/launcher/test_launcher_nacl_nonsfi.cc">
+      <Filter>launcher</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_launcher_nacl_nonsfi.h">
+      <Filter>launcher</Filter>
+    </None>
+  </ItemGroup>
+</Project>

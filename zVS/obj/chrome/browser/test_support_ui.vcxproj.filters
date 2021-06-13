@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="signin">
+      <UniqueIdentifier>{E3BB9017-CE5D-1B3F-63E0-95ABC59E15C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\webui">
+      <UniqueIdentifier>{C937C39E-EEFD-DEAB-F4D7-45E75FCC8DAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{436B7311-8CF0-1C54-1E96-639A7854695B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/signin/token_revoker_test_utils.cc">
+      <Filter>signin</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/signin/token_revoker_test_utils.h">
+      <Filter>signin</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/webui/test_data_source.cc">
+      <Filter>ui\webui</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/webui/test_data_source.h">
+      <Filter>ui\webui</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/webui/web_ui_test_handler.cc">
+      <Filter>ui\webui</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/webui/web_ui_test_handler.h">
+      <Filter>ui\webui</Filter>
+    </None>
+  </ItemGroup>
+</Project>

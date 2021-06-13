@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/common/chrome_constants.cc" />
+    <None Include="../../../../../chrome/common/chrome_constants.h" />
+    <CustomBuild Include="../../../../../chrome/common/chrome_switches.cc" />
+    <None Include="../../../../../chrome/common/chrome_switches.h" />
+    <CustomBuild Include="../../../../../chrome/common/env_vars.cc" />
+    <None Include="../../../../../chrome/common/env_vars.h" />
+    <None Include="../../../../../chrome/common/chrome_icon_resources_win.h" />
+  </ItemGroup>
+</Project>

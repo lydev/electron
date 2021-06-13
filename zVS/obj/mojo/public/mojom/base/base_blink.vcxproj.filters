@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base">
+      <UniqueIdentifier>{75BDA762-7556-2AD8-6655-C229F7DAD7B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public\mojom">
+      <UniqueIdentifier>{D77754E5-6CE6-577F-F12B-AA2406A00E85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public">
+      <UniqueIdentifier>{57633762-397C-8E07-3664-01E0705C98B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo">
+      <UniqueIdentifier>{671FDBA5-B66A-6EFD-1725-C9F50205ED00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\mojo\public\cpp\base">
+      <UniqueIdentifier>{40AC7D99-87AF-B8D7-760C-B16E0039CE5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\mojo\public\cpp">
+      <UniqueIdentifier>{333DF101-5807-217E-5099-7E519FB3CA10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\mojo\public">
+      <UniqueIdentifier>{164694F8-00E0-FD47-C88C-FDBCD809513C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\mojo">
+      <UniqueIdentifier>{F0D6993D-BB8C-8A86-194F-62113580DFC7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-blink-forward.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-blink-import-headers.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-blink-test-utils.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-blink-test-utils.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-blink.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-blink.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../mojo/public/cpp/base/file_error_mojom_traits.h">
+      <Filter>..\..\..\..\mojo\public\cpp\base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome\common\apps\platform_apps\api">
+      <UniqueIdentifier>{9672A6CC-38B9-F534-D41E-B7AD463DC2EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome\common\apps\platform_apps">
+      <UniqueIdentifier>{A3188BC8-62E8-6E5D-97B4-4E605BFC4E34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome\common\apps">
+      <UniqueIdentifier>{DD55335C-9CC8-9D1C-D04C-98E35AB1EEF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome\common">
+      <UniqueIdentifier>{00EB7966-6D88-5EFC-ACBC-B99AA6F993C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{0631C16B-79A0-2B09-03B1-1194DA0D7239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{E6448AF1-8BF1-E4CF-7A3E-8D79A0FC4C94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{9D755C22-D77A-628E-C34D-94F7A9E924B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out">
+      <UniqueIdentifier>{7EDCFEBF-244F-7524-40D7-1473E1524D83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..">
+      <UniqueIdentifier>{1109D6BC-040F-9837-EA64-A8443901A8C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../out/x64-debug/gen/chrome/common/apps/platform_apps/api/generated_schemas.cc">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\common\apps\platform_apps\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/common/apps/platform_apps/api/generated_schemas.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\common\apps\platform_apps\api</Filter>
+    </None>
+  </ItemGroup>
+</Project>

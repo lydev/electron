@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C22731CD-E60E-11D1-5952-DCB8116E17EA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>quiche</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/net/third_party/quiche/quiche.stamp</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../..;../../../../../../out/x64-debug/gen;../../../../../../third_party/perfetto/include;../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/protoc_out;../../../../../../third_party/protobuf/src;../../../../../../third_party/abseil-cpp;../../../../../../third_party/boringssl/src/include;../../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../../net/third_party/quiche/overrides;../../../../../../net/third_party/quiche/src/common/platform/default;../../../../../../net/third_party/quiche/src;../../../../../../third_party/zlib;../../../../../../third_party/ced/src;../../../../../../third_party/icu/source/common;../../../../../../third_party/icu/source/i18n;../../../../../../third_party/brotli/include;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 -Wexit-time-destructors %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;NET_IMPLEMENTATION;ENABLE_BUILT_IN_DNS;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/overrides/quiche_platform_impl/quic_mutex_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_mutex_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_mutex_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/overrides/quiche_platform_impl/quic_mutex_impl.h" />
+    <None Include="../../../../../../net/third_party/quiche/overrides/quiche_platform_impl/quiche_export_impl.h" />
+    <None Include="../../../../../../net/third_party/quiche/overrides/quiche_platform_impl/quiche_logging_impl.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/overrides/quiche_platform_impl/quiche_time_utils_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quiche_time_utils_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quiche_time_utils_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/overrides/quiche_platform_impl/quiche_time_utils_impl.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/platform/api/quiche_export.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/platform/api/quiche_flag_utils.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/platform/api/quiche_flags.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/platform/api/quiche_logging.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/platform/api/quiche_prefetch.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/platform/api/quiche_time_utils.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/platform/default/quiche_platform_impl/quiche_prefetch_impl.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/quiche_circular_deque.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_data_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quiche_data_reader.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quiche_data_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/common/quiche_data_reader.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_data_writer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quiche_data_writer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quiche_data_writer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/common/quiche_data_writer.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/quiche_endian.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/common/quiche_linked_hash_map.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_text_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quiche_text_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quiche_text_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/common/quiche_text_utils.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/core/http2_priority_write_scheduler.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/core/priority_write_scheduler.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/core/write_scheduler.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/decode_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/decode_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_buffer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_http2_structures.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/decode_http2_structures.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/decode_http2_structures.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_http2_structures.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_status.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/decode_status.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/decode_status.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_status.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/frame_decoder_state.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/frame_decoder_state.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/frame_decoder_state.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/frame_decoder_state.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http2_frame_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http2_frame_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http2_frame_decoder_listener.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http2_frame_decoder_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder_listener.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_structure_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http2_structure_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http2_structure_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_structure_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/altsvc_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/altsvc_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/altsvc_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/altsvc_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/continuation_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/continuation_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/continuation_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/continuation_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/data_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/data_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/data_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/data_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/goaway_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/goaway_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/goaway_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/goaway_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/headers_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/headers_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/headers_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/headers_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/ping_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/ping_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/ping_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/ping_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/priority_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/priority_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/priority_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/priority_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/priority_update_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/priority_update_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/priority_update_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/priority_update_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/push_promise_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/push_promise_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/push_promise_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/push_promise_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/rst_stream_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/rst_stream_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/rst_stream_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/rst_stream_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/settings_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/settings_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/settings_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/settings_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/unknown_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/unknown_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/unknown_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/unknown_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/window_update_payload_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/window_update_payload_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/window_update_payload_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/window_update_payload_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_block_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_block_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_block_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_block_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_decoder_listener.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_decoder_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_listener.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_state.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_decoder_state.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_decoder_state.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_state.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_string_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_decoder_string_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_decoder_string_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_string_buffer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_tables.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_decoder_tables.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_decoder_tables.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_tables.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoding_error.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_decoding_error.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_decoding_error.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoding_error.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_entry_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_entry_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_decoder_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_entry_decoder_listener.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_entry_decoder_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_decoder_listener.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_type_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_entry_type_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_entry_type_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_type_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_string_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_string_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_decoder_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_string_decoder_listener.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_string_decoder_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_decoder_listener.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_whole_entry_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_whole_entry_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_whole_entry_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_whole_entry_buffer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_whole_entry_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_whole_entry_listener.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_whole_entry_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_whole_entry_listener.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/hpack_static_table_entries.inc" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/http2_hpack_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http2_hpack_constants.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http2_hpack_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/http2_hpack_constants.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_huffman_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_huffman_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_encoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_huffman_encoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_huffman_encoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_encoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/huffman_spec_tables.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/huffman_spec_tables.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/huffman_spec_tables.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/huffman_spec_tables.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_varint_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_varint_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_encoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_varint_encoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_varint_encoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_encoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http2_constants.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http2_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/http2_constants.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_structures.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http2_structures.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http2_structures.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/http2_structures.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_bug_tracker.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_containers.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_estimate_memory_usage.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_flag_utils.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_flags.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_logging.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_macros.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_string_utils.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bandwidth_sampler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/bandwidth_sampler.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/bandwidth_sampler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bandwidth_sampler.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_drain.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/bbr2_drain.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/bbr2_drain.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_drain.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_misc.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/bbr2_misc.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/bbr2_misc.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_misc.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_probe_bw.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/bbr2_probe_bw.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/bbr2_probe_bw.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_probe_bw.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_probe_rtt.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/bbr2_probe_rtt.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/bbr2_probe_rtt.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_probe_rtt.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_sender.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/bbr2_sender.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/bbr2_sender.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_sender.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_startup.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/bbr2_startup.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/bbr2_startup.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_startup.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr_sender.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/bbr_sender.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/bbr_sender.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr_sender.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/cubic_bytes.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/cubic_bytes.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/cubic_bytes.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/cubic_bytes.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/general_loss_algorithm.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/general_loss_algorithm.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/general_loss_algorithm.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/general_loss_algorithm.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/hybrid_slow_start.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hybrid_slow_start.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hybrid_slow_start.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/hybrid_slow_start.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/loss_detection_interface.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/pacing_sender.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/pacing_sender.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/pacing_sender.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/pacing_sender.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/prr_sender.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/prr_sender.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/prr_sender.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/prr_sender.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/rtt_stats.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/rtt_stats.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/rtt_stats.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/rtt_stats.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/send_algorithm_interface.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/send_algorithm_interface.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/send_algorithm_interface.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/send_algorithm_interface.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/tcp_cubic_sender_bytes.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/tcp_cubic_sender_bytes.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/tcp_cubic_sender_bytes.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/tcp_cubic_sender_bytes.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/uber_loss_algorithm.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/uber_loss_algorithm.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/uber_loss_algorithm.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/uber_loss_algorithm.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/windowed_filter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aead_base_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aead_base_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aead_base_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aead_base_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aead_base_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aead_base_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aead_base_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aead_base_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_12_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aes_128_gcm_12_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aes_128_gcm_12_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_12_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_12_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aes_128_gcm_12_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aes_128_gcm_12_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_12_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aes_128_gcm_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aes_128_gcm_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aes_128_gcm_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aes_128_gcm_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_256_gcm_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aes_256_gcm_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aes_256_gcm_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_256_gcm_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_256_gcm_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aes_256_gcm_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aes_256_gcm_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_256_gcm_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_base_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aes_base_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aes_base_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_base_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_base_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/aes_base_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/aes_base_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_base_encrypter.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/boring_utils.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/cert_compressor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/cert_compressor.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/cert_compressor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/cert_compressor.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/certificate_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/certificate_view.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/certificate_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/certificate_view.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/chacha20_poly1305_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/chacha20_poly1305_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/chacha20_poly1305_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/chacha20_poly1305_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_tls_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/chacha20_poly1305_tls_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/chacha20_poly1305_tls_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_tls_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_tls_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/chacha20_poly1305_tls_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/chacha20_poly1305_tls_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_tls_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha_base_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/chacha_base_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/chacha_base_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha_base_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha_base_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/chacha_base_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/chacha_base_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha_base_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/channel_id.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/channel_id.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/channel_id.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/channel_id.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/common_cert_set.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/common_cert_set.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/common_cert_set.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/common_cert_set.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_framer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/crypto_framer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/crypto_framer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_framer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_handshake.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/crypto_handshake.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/crypto_handshake.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_handshake.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_handshake_message.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/crypto_handshake_message.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/crypto_handshake_message.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_handshake_message.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_message_parser.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_protocol.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_secret_boxer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/crypto_secret_boxer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/crypto_secret_boxer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_secret_boxer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/crypto_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/crypto_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_utils.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/curve25519_key_exchange.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/curve25519_key_exchange.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/curve25519_key_exchange.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/curve25519_key_exchange.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/key_exchange.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/key_exchange.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/key_exchange.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/key_exchange.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/null_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/null_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/null_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/null_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/null_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/null_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/null_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/null_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/p256_key_exchange.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/p256_key_exchange.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/p256_key_exchange.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/p256_key_exchange.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/proof_source.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/proof_source.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/proof_source.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/proof_source.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/proof_verifier.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_compressed_certs_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_compressed_certs_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_compressed_certs_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_compressed_certs_cache.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_client_config.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_client_config.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_client_config.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_client_config.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_proof.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_proof.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_proof.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_proof.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_server_config.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_server_config.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_server_config.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_server_config.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_decrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_decrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_decrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_decrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_encrypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_encrypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_encrypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_encrypter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_hkdf.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_hkdf.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_hkdf.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_hkdf.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_random.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_random.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_random.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_random.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/server_proof_verifier.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/tls_client_connection.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/tls_client_connection.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/tls_client_connection.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/tls_client_connection.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/tls_connection.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/tls_connection.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/tls_connection.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/tls_connection.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/tls_server_connection.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/tls_server_connection.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/tls_server_connection.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/tls_server_connection.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/transport_parameters.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/transport_parameters.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/transport_parameters.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/transport_parameters.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_ack_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_ack_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_ack_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_ack_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_ack_frequency_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_ack_frequency_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_ack_frequency_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_ack_frequency_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_blocked_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_blocked_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_blocked_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_blocked_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_connection_close_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_connection_close_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_connection_close_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_connection_close_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_crypto_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_crypto_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_goaway_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_goaway_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_goaway_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_goaway_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_handshake_done_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_handshake_done_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_handshake_done_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_handshake_done_frame.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_inlined_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_max_streams_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_max_streams_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_max_streams_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_max_streams_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_message_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_message_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_message_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_message_frame.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_mtu_discovery_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_new_connection_id_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_new_connection_id_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_new_connection_id_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_new_connection_id_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_new_token_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_new_token_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_new_token_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_new_token_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_padding_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_padding_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_padding_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_padding_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_path_challenge_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_path_challenge_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_path_challenge_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_path_challenge_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_path_response_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_path_response_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_path_response_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_path_response_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_ping_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_ping_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_ping_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_ping_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_retire_connection_id_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_retire_connection_id_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_retire_connection_id_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_retire_connection_id_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_rst_stream_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_rst_stream_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_rst_stream_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_rst_stream_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_stop_sending_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_stop_sending_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_stop_sending_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_stop_sending_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_stop_waiting_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_stop_waiting_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_stop_waiting_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_stop_waiting_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_stream_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_stream_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_stream_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_stream_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_streams_blocked_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_streams_blocked_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_streams_blocked_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_streams_blocked_frame.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_window_update_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_window_update_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_window_update_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_window_update_frame.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/handshaker_delegate_interface.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http_constants.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_constants.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_encoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http_encoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http_encoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_encoder.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_frames.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_client_promised_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_client_promised_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_client_promised_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_client_promised_info.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_client_push_promise_index.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_client_push_promise_index.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_client_push_promise_index.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_client_push_promise_index.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_header_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_header_list.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_header_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_header_list.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_headers_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_headers_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_headers_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_headers_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_receive_control_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_receive_control_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_receive_control_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_receive_control_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_send_control_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_send_control_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_send_control_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_send_control_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_server_initiated_spdy_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_server_initiated_spdy_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_server_initiated_spdy_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_server_initiated_spdy_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_server_session_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_server_session_base.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_server_session_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_server_session_base.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_client_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_spdy_client_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_spdy_client_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_client_session.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_client_session_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_spdy_client_session_base.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_spdy_client_session_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_client_session_base.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_client_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_spdy_client_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_spdy_client_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_client_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_spdy_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_spdy_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_session.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_spdy_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_spdy_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_stream_body_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_spdy_stream_body_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_spdy_stream_body_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_stream_body_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/spdy_server_push_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_server_push_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_server_push_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/spdy_server_push_utils.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/spdy_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/spdy_utils.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/web_transport_http3.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/web_transport_http3.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/web_transport_http3.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/web_transport_http3.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/legacy_quic_stream_id_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/legacy_quic_stream_id_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/legacy_quic_stream_id_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/legacy_quic_stream_id_manager.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/packet_number_indexed_queue.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/proto/cached_network_parameters_proto.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/proto/crypto_server_config_proto.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/proto/source_address_token_proto.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_blocking_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_blocking_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_blocking_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_blocking_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoded_headers_accumulator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_decoded_headers_accumulator.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_decoded_headers_accumulator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoded_headers_accumulator.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_stream_receiver.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_decoder_stream_receiver.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_decoder_stream_receiver.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_stream_receiver.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_stream_sender.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_decoder_stream_sender.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_decoder_stream_sender.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_stream_sender.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_encoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_encoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_stream_receiver.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_encoder_stream_receiver.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_encoder_stream_receiver.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_stream_receiver.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_stream_sender.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_encoder_stream_sender.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_encoder_stream_sender.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_stream_sender.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_header_table.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_header_table.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_header_table.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_header_table.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_index_conversions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_index_conversions.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_index_conversions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_index_conversions.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instruction_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_instruction_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_instruction_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instruction_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instruction_encoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_instruction_encoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_instruction_encoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instruction_encoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instructions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_instructions.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_instructions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instructions.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_progressive_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_progressive_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_progressive_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_progressive_decoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_receive_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_receive_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_receive_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_receive_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_required_insert_count.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_required_insert_count.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_required_insert_count.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_required_insert_count.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_send_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_send_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_send_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_send_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_static_table.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/qpack_static_table.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/qpack_static_table.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_static_table.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_stream_receiver.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_stream_sender_delegate.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/value_splitting_header_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/value_splitting_header_list.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/value_splitting_header_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/value_splitting_header_list.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_ack_listener_interface.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_ack_listener_interface.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_ack_listener_interface.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_ack_listener_interface.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_alarm.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_alarm.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_alarm.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_alarm.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_alarm_factory.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_arena_scoped_ptr.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_bandwidth.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_bandwidth.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_bandwidth.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_bandwidth.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_blocked_writer_interface.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_buffer_allocator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_buffer_allocator.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_buffer_allocator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_buffer_allocator.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_chaos_protector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_chaos_protector.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_chaos_protector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_chaos_protector.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_clock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_clock.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_clock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_clock.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_coalesced_packet.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_coalesced_packet.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_coalesced_packet.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_coalesced_packet.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_config.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_config.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_config.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_config.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_connection.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_connection.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_id.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_connection_id.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_connection_id.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_id.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_id_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_connection_id_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_connection_id_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_id_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_stats.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_connection_stats.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_connection_stats.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_stats.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_constants.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_constants.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_control_frame_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_control_frame_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_control_frame_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_control_frame_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_client_handshaker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_client_handshaker.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_client_handshaker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_client_handshaker.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_client_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_client_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_client_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_client_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_handshaker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_handshaker.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_handshaker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_handshaker.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_server_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_server_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_server_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_server_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_server_stream_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_server_stream_base.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_server_stream_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_server_stream_base.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_crypto_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_crypto_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_data_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_data_reader.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_data_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_data_reader.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_data_writer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_data_writer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_data_writer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_data_writer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_datagram_queue.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_datagram_queue.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_datagram_queue.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_datagram_queue.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_error_codes.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_error_codes.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_error_codes.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_error_codes.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_flow_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_flow_controller.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_flow_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_flow_controller.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_framer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_framer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_framer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_framer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_idle_network_detector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_idle_network_detector.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_idle_network_detector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_idle_network_detector.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval_deque.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval_set.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_legacy_version_encapsulator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_legacy_version_encapsulator.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_legacy_version_encapsulator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_legacy_version_encapsulator.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_lru_cache.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_mtu_discovery.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_mtu_discovery.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_mtu_discovery.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_mtu_discovery.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_network_blackhole_detector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_network_blackhole_detector.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_network_blackhole_detector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_network_blackhole_detector.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_one_block_arena.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_creator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_packet_creator.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_packet_creator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_creator.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_number.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_packet_number.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_packet_number.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_number.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_writer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packets.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_packets.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_packets.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packets.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_path_validator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_path_validator.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_path_validator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_path_validator.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_protocol_flags_list.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_received_packet_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_received_packet_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_received_packet_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_received_packet_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_sent_packet_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_sent_packet_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_sent_packet_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_sent_packet_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_server_id.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_server_id.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_server_id.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_server_id.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_session.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_simple_buffer_allocator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_simple_buffer_allocator.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_simple_buffer_allocator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_simple_buffer_allocator.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_socket_address_coder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_socket_address_coder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_socket_address_coder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_socket_address_coder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_frame_data_producer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_id_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_stream_id_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_stream_id_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_id_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_send_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_stream_send_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_stream_send_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_send_buffer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_sequencer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_stream_sequencer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_stream_sequencer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_sequencer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_sequencer_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_stream_sequencer_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_stream_sequencer_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_sequencer_buffer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_sustained_bandwidth_recorder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_sustained_bandwidth_recorder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_sustained_bandwidth_recorder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_sustained_bandwidth_recorder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_tag.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_tag.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_tag.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_tag.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_time.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_time.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_accumulator.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_transmission_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_transmission_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_transmission_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_transmission_info.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_types.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_types.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_types.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_types.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_unacked_packet_map.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_unacked_packet_map.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_unacked_packet_map.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_unacked_packet_map.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_utils.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_version_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_version_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_version_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_version_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_versions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_versions.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_versions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_versions.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_write_blocked_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_write_blocked_list.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_write_blocked_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_write_blocked_list.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/session_notifier_interface.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/stream_delegate_interface.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/tls_client_handshaker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/tls_client_handshaker.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/tls_client_handshaker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/tls_client_handshaker.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/tls_handshaker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/tls_handshaker.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/tls_handshaker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/tls_handshaker.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/tls_server_handshaker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/tls_server_handshaker.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/tls_server_handshaker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/tls_server_handshaker.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/uber_quic_stream_id_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/uber_quic_stream_id_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/uber_quic_stream_id_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/uber_quic_stream_id_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/uber_received_packet_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/uber_received_packet_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/uber_received_packet_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/uber_received_packet_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/web_transport_stream_adapter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/web_transport_stream_adapter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/web_transport_stream_adapter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/web_transport_stream_adapter.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_bug_tracker.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_client_stats.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_containers.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_error_code_wrappers.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_estimate_memory_usage.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_export.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_exported_stats.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_file_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_file_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_file_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_file_utils.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_flag_utils.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_flags.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_hostname_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_hostname_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_hostname_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_hostname_utils.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_iovec.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_ip_address.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_ip_address.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_ip_address.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_ip_address.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_ip_address_family.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_logging.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_map_util.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice_span.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice_storage.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mutex.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_mutex.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_mutex.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mutex.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_reference_counted.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_server_stats.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_sleep.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_socket_address.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_socket_address.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_socket_address.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_socket_address.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_stack_trace.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_thread.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_client_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_transport_client_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_transport_client_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_client_session.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_protocol.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_server_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_transport_server_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_transport_server_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_server_session.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_session_interface.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/quic_transport_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/quic_transport_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/web_transport_fingerprint_proof_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/web_transport_fingerprint_proof_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/web_transport_fingerprint_proof_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/web_transport_fingerprint_proof_verifier.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_constants.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_constants.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_decoder_adapter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_decoder_adapter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_decoder_adapter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_decoder_adapter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_encoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_encoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_encoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_encoder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_entry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_entry.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_entry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_entry.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_header_table.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_header_table.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_header_table.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_header_table.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_output_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_output_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_output_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_output_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_static_table.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/hpack_static_table.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/hpack_static_table.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_static_table.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/http2_frame_decoder_adapter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/http2_frame_decoder_adapter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/http2_frame_decoder_adapter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/http2_frame_decoder_adapter.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/recording_headers_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/recording_headers_handler.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/recording_headers_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/recording_headers_handler.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_alt_svc_wire_format.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_alt_svc_wire_format.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_alt_svc_wire_format.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_alt_svc_wire_format.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_bitmasks.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_frame_builder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_frame_builder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_frame_builder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_frame_builder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_frame_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_frame_reader.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_frame_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_frame_reader.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_framer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_framer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_framer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_framer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_header_block.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_header_block.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_header_block.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_header_block.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_header_storage.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_header_storage.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_header_storage.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_header_storage.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_headers_handler_interface.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_intrusive_list.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_no_op_visitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_no_op_visitor.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_no_op_visitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_no_op_visitor.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_pinnable_buffer_piece.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_pinnable_buffer_piece.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_pinnable_buffer_piece.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_pinnable_buffer_piece.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_prefixed_buffer_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_prefixed_buffer_reader.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_prefixed_buffer_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_prefixed_buffer_reader.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_protocol.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_protocol.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_protocol.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_protocol.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_simple_arena.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche/spdy_simple_arena.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche/spdy_simple_arena.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_simple_arena.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/zero_copy_output_buffer.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/platform/api/spdy_containers.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/platform/api/spdy_estimate_memory_usage.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche.stamp" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/net/third_party/quiche/quiche.stamp" />
+  </Target>
+</Project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/browser/video_tutorials/internal/config_unittest.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/video_tutorials/internal/proto_conversions_unittest.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/video_tutorials/internal/tutorial_fetcher_unittest.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/video_tutorials/internal/tutorial_group_unittest.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/video_tutorials/internal/tutorial_manager_impl_unittest.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/video_tutorials/internal/tutorial_store_unittest.cc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE80B5E1-99AE-BE96-F958-AB27839629DD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>unit_tests</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/chrome/browser/web_applications/extensions/unit_tests.stamp</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../../..;../../../../../../../out/x64-debug/gen;../../../../../../../third_party/perfetto/include;../../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../../third_party/libyuv/include;../../../../../../../third_party/jsoncpp/source/include;../../../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../../../third_party/dawn/src/include;../../../../../../../third_party/libwebp/src;../../../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../../../third_party/khronos;../../../../../../../gpu;../../../../../../../third_party/wtl/include;../../../../../../../third_party/abseil-cpp;../../../../../../../third_party/boringssl/src/include;../../../../../../../third_party/protobuf/src;../../../../../../../out/x64-debug/gen/protoc_out;../../../../../../../third_party/ced/src;../../../../../../../third_party/icu/source/common;../../../../../../../third_party/icu/source/i18n;../../../../../../../third_party/skia;../../../../../../../third_party/libgifcodec;../../../../../../../third_party/vulkan/include;../../../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../../../third_party/protobuf/src;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../../../net/third_party/quiche/overrides;../../../../../../../net/third_party/quiche/src/common/platform/default;../../../../../../../net/third_party/quiche/src;../../../../../../../third_party/webrtc_overrides;../../../../../../../third_party/webrtc;../../../../../../../out/x64-debug/gen/third_party/webrtc;../../../../../../../third_party/mesa_headers;../../../../../../../third_party/libwebm/source;../../../../../../../third_party/leveldatabase;../../../../../../../third_party/leveldatabase/src;../../../../../../../third_party/leveldatabase/src/include;../../../../../../../v8/include;../../../../../../../out/x64-debug/gen/v8/include;../../../../../../../out/x64-debug/gen/third_party/metrics_proto;../../../../../../../third_party/zlib;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen/components/policy/proto;../../../../../../../out/x64-debug/gen/third_party/private_membership/src;../../../../../../../out/x64-debug/gen/third_party/shell-encryption/src;../../../../../../../out/x64-debug/gen/components/policy/proto;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../third_party/re2/src;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../third_party/libaddressinput/src/cpp/include;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../third_party/googletest/custom;../../../../../../../third_party/googletest/src/googlemock/include;../../../../../../../third_party/googletest/custom;../../../../../../../third_party/googletest/src/googletest/include;../../../../../../../third_party/abseil-cpp;../../../../../../../third_party/flatbuffers/src/include;../../../../../../../third_party/libjpeg_turbo;../../../../../../../third_party/iccjpeg;../../../../../../../third_party/libpng;../../../../../../../third_party/ots/src/include;../../../../../../../v8/include;../../../../../../../out/x64-debug/gen/v8/include;../../../../../../../out/x64-debug/gen/v8/include;../../../../../../../v8/include;../../../../../../../v8/include;../../../../../../../out/x64-debug/gen/v8/include;../../../../../../../out/x64-debug/gen;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-deprecated-declarations -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 -Wno-inconsistent-missing-override -Xclang -add-plugin -Xclang blink-gc-plugin %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;4800;4305;4324;4714;4800;4996;4344;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;WEBP_EXTERN=extern;USE_EGL;VK_USE_PLATFORM_WIN32_KHR;_WTL_NO_AUTOMATIC_NAMESPACE;TOOLKIT_VIEWS=1;ON_FOCUS_PING_ENABLED;EXPAT_RELATIVE_PATH;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;SK_UNTIL_CRBUG_1187654_IS_FIXED;SK_CODEC_DECODES_PNG;SK_CODEC_DECODES_WEBP;SK_ENCODE_PNG;SK_ENCODE_WEBP;SK_USER_CONFIG_HEADER=&quot;../../skia/config/SkUserConfig.h&quot;;SK_GL;SK_CODEC_DECODES_JPEG;SK_ENCODE_JPEG;SK_USE_LIBGIFCODEC;SK_VULKAN_HEADER=&quot;../../skia/config/SkVulkanConfig.h&quot;;SK_VULKAN=1;SK_DAWN;SK_SUPPORT_GPU=1;SK_GPU_WORKAROUNDS_HEADER=&quot;gpu/config/gpu_driver_bug_workaround_autogen.h&quot;;GR_GL_FUNCTION_TYPE=__stdcall;VK_USE_PLATFORM_WIN32_KHR;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;V8_USE_EXTERNAL_STARTUP_DATA;WEBRTC_ENABLE_AVX2;RTC_ENABLE_WIN_WGC;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0;WEBRTC_CHROMIUM_BUILD;WEBRTC_WIN;ABSL_ALLOCATOR_NOTHROW=1;WEBRTC_USE_BUILTIN_ISAC_FIX=0;WEBRTC_USE_BUILTIN_ISAC_FLOAT=1;WEBRTC_HAVE_SCTP;NO_MAIN_THREAD_WRAPPING;LEVELDB_PLATFORM_CHROMIUM=1;LEVELDB_PLATFORM_CHROMIUM=1;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;I18N_ADDRESS_VALIDATION_DATA_URL=&quot;https://chromium-i18n.appspot.com/ssl-aggregate-address/&quot;;GTEST_API_=;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;GTEST_HAS_ABSL=1;UNIT_TEST;FLATBUFFERS_LOCALE_INDEPENDENT=0;WTF_USE_WEBAUDIO_PFFFT=1;USE_BLINK_V8_BINDING_NEW_IDL_INTERFACE;USE_BLINK_V8_BINDING_NEW_IDL_UNION;USE_LIBJPEG_TURBO=1;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/extensions/bookmark_app_util_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/web_applications/extensions/unit_tests/bookmark_app_util_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/web_applications/extensions/unit_tests/bookmark_app_util_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/extensions/externally_installed_web_app_prefs_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/web_applications/extensions/unit_tests/externally_installed_web_app_prefs_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/web_applications/extensions/unit_tests/externally_installed_web_app_prefs_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/extensions/externally_managed_app_install_task_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/web_applications/extensions/unit_tests/externally_managed_app_install_task_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/web_applications/extensions/unit_tests/externally_managed_app_install_task_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/extensions/web_app_policy_manager_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/web_applications/extensions/unit_tests/web_app_policy_manager_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/web_applications/extensions/unit_tests/web_app_policy_manager_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/extensions/web_app_provider_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/web_applications/extensions/unit_tests/web_app_provider_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/web_applications/extensions/unit_tests/web_app_provider_unittest.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/chrome/browser/web_applications/extensions/unit_tests.stamp" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/chrome/browser/web_applications/extensions/unit_tests.stamp" />
+  </Target>
+</Project>

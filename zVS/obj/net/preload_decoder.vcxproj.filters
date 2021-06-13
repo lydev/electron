@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="extras\preload_data">
+      <UniqueIdentifier>{1FA0DE70-1114-922A-8F7F-D8C36E972B84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{92E74AEE-E4AB-2B45-93D9-CA3E6F89B473}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../net/extras/preload_data/decoder.cc">
+      <Filter>extras\preload_data</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/extras/preload_data/decoder.h">
+      <Filter>extras\preload_data</Filter>
+    </None>
+  </ItemGroup>
+</Project>

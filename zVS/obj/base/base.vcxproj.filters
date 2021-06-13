@@ -1,0 +1,2915 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="allocator">
+      <UniqueIdentifier>{F6FC946D-3B2D-9618-0B30-FEAB07B51D76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="containers">
+      <UniqueIdentifier>{981FB61E-6ECD-EADB-6D3F-DC0477F4C901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug">
+      <UniqueIdentifier>{3F8F9B0B-F903-E29B-02CE-05938CC64EFA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="files">
+      <UniqueIdentifier>{EE404D88-493A-F36B-74F2-696B39E000DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="functional">
+      <UniqueIdentifier>{13ECA9D2-1694-E581-BD54-AFE258B7A882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hash">
+      <UniqueIdentifier>{9D9000FE-EC46-EAF5-4CAE-8DBBA800A5BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{3ABC24E1-E24F-92FD-EDDA-AD65E2885BBF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{2E8AE086-4445-5B38-6B86-16E87BC0AEAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="message_loop">
+      <UniqueIdentifier>{DBE7EBFE-C85B-B2EA-9863-8B8384B780B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metrics">
+      <UniqueIdentifier>{B7F0558C-A60D-F318-E3B9-BCB57736BE6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="power_monitor">
+      <UniqueIdentifier>{D2999FDB-5E55-4A1D-36FA-756782FA9065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="process">
+      <UniqueIdentifier>{A0DE3536-E059-3A2B-D166-450E79DC1A1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler">
+      <UniqueIdentifier>{CA897154-9997-F7FF-8398-AF55EF0003DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ranges">
+      <UniqueIdentifier>{9AE9301F-5151-26F9-3C42-EFB377FEB53D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sampling_heap_profiler">
+      <UniqueIdentifier>{CC1946C7-AB5C-16AA-D9B8-1633978410E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="strings">
+      <UniqueIdentifier>{310108BE-C61D-7813-342F-0219284C393D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="synchronization">
+      <UniqueIdentifier>{F23F2B02-5350-FAA4-793A-F2C5D6F1B8EA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{1AC9B144-F32A-24C3-82F4-B6F34BE534C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task">
+      <UniqueIdentifier>{F09E9A42-3428-9562-E121-687D003C59C8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task\common">
+      <UniqueIdentifier>{18D0BBBC-6085-3A09-A6E3-F6175BD38272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task\sequence_manager">
+      <UniqueIdentifier>{2C32C266-64B2-4351-87D3-2FEBAF7A8DB2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="task\thread_pool">
+      <UniqueIdentifier>{487579F8-3B9B-0FAD-F956-A6AB75274456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\cityhash">
+      <UniqueIdentifier>{F745DD6D-1414-6F89-D156-1B304521C7A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{363093B2-8BE6-B8D4-ADFC-148BB4039B6A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\cityhash_v103\src">
+      <UniqueIdentifier>{B3A02DA5-A154-246D-FDC5-803B6DA38D03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\cityhash_v103">
+      <UniqueIdentifier>{BD759B97-7606-3674-6728-D944BFFD571A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\icu">
+      <UniqueIdentifier>{FA11813F-5F30-07C2-778D-0C346F0B9359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\nspr">
+      <UniqueIdentifier>{F1B65B9D-3D94-6C92-D14A-F78244D90B10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\superfasthash">
+      <UniqueIdentifier>{7064B8E3-1265-7A7A-F05D-F726C4EAEA05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="threading">
+      <UniqueIdentifier>{E95A24FB-4052-D0F3-64F7-90C482EEEBEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="time">
+      <UniqueIdentifier>{DB7994F3-8891-DD16-63C7-6716DFD64234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{BB8C35B5-50AA-CC86-3E37-81FE32C668DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trace_event">
+      <UniqueIdentifier>{1E282F96-88FC-74F4-64AD-F58E5AC4908B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trace_event\common">
+      <UniqueIdentifier>{55E0FE89-BCEF-06FC-3AAC-B741F0D25278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="types">
+      <UniqueIdentifier>{86763ED7-229C-1C63-7398-5D0EFF3278AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{A2FD7ED2-524A-B7B7-B76C-D928BB55947B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\embedded_i18n">
+      <UniqueIdentifier>{01C7C48F-66B9-FCB0-67B7-057B2BC14365}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="allocator\partition_allocator">
+      <UniqueIdentifier>{6B012A8B-64A2-D4F7-075C-ECEE9BE8AD78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="allocator\partition_allocator\starscan">
+      <UniqueIdentifier>{930DBD4E-70E7-31AE-6167-F2528C4E03BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="allocator\partition_allocator\starscan\stack">
+      <UniqueIdentifier>{C8A1F2B9-64D0-C9EB-2DEB-6333B454B76C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="allocator\partition_allocator\starscan\stack\asm\x64">
+      <UniqueIdentifier>{6394F87B-7331-5C03-18FE-A08B0399C0CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="allocator\partition_allocator\starscan\stack\asm">
+      <UniqueIdentifier>{A07C3FFE-C142-4684-B60A-D2C9A746BE5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tracing">
+      <UniqueIdentifier>{7F24B768-E806-4B99-DBE4-B475A259CB6E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../base/allocator/allocator_check.cc">
+      <Filter>allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/allocator_check.h">
+      <Filter>allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/allocator_extension.cc">
+      <Filter>allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/allocator_extension.h">
+      <Filter>allocator</Filter>
+    </None>
+    <None Include="../../../../base/as_const.h" />
+    <CustomBuild Include="../../../../base/at_exit.cc" />
+    <None Include="../../../../base/at_exit.h" />
+    <None Include="../../../../base/atomic_ref_count.h" />
+    <None Include="../../../../base/atomic_sequence_num.h" />
+    <None Include="../../../../base/atomicops.h" />
+    <None Include="../../../../base/atomicops_internals_atomicword_compat.h" />
+    <None Include="../../../../base/atomicops_internals_portable.h" />
+    <None Include="../../../../base/auto_reset.h" />
+    <CustomBuild Include="../../../../base/barrier_closure.cc" />
+    <None Include="../../../../base/barrier_closure.h" />
+    <CustomBuild Include="../../../../base/base64.cc" />
+    <None Include="../../../../base/base64.h" />
+    <CustomBuild Include="../../../../base/base64url.cc" />
+    <None Include="../../../../base/base64url.h" />
+    <None Include="../../../../base/base_export.h" />
+    <None Include="../../../../base/base_switches.h" />
+    <CustomBuild Include="../../../../base/big_endian.cc" />
+    <None Include="../../../../base/big_endian.h" />
+    <None Include="../../../../base/bind.h" />
+    <None Include="../../../../base/bind_internal.h" />
+    <None Include="../../../../base/bind_post_task.h" />
+    <None Include="../../../../base/bind_post_task_internal.h" />
+    <None Include="../../../../base/bit_cast.h" />
+    <None Include="../../../../base/bits.h" />
+    <CustomBuild Include="../../../../base/build_time.cc" />
+    <None Include="../../../../base/build_time.h" />
+    <None Include="../../../../base/callback.h" />
+    <None Include="../../../../base/callback_forward.h" />
+    <CustomBuild Include="../../../../base/callback_helpers.cc" />
+    <None Include="../../../../base/callback_helpers.h" />
+    <CustomBuild Include="../../../../base/callback_internal.cc" />
+    <None Include="../../../../base/callback_internal.h" />
+    <CustomBuild Include="../../../../base/callback_list.cc" />
+    <None Include="../../../../base/callback_list.h" />
+    <None Include="../../../../base/cancelable_callback.h" />
+    <CustomBuild Include="../../../../base/check.cc" />
+    <None Include="../../../../base/check.h" />
+    <CustomBuild Include="../../../../base/check_op.cc" />
+    <None Include="../../../../base/check_op.h" />
+    <CustomBuild Include="../../../../base/command_line.cc" />
+    <None Include="../../../../base/command_line.h" />
+    <None Include="../../../../base/compiler_specific.h" />
+    <None Include="../../../../base/component_export.h" />
+    <None Include="../../../../base/containers/adapters.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/buffer_iterator.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/checked_iterators.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/checked_range.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/circular_deque.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/contains.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/contiguous_iterator.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/fixed_flat_map.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/fixed_flat_set.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/flat_map.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/flat_set.h">
+      <Filter>containers</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/containers/flat_tree.cc">
+      <Filter>containers</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/containers/flat_tree.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/id_map.h">
+      <Filter>containers</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/containers/intrusive_heap.cc">
+      <Filter>containers</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/containers/intrusive_heap.h">
+      <Filter>containers</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/containers/linked_list.cc">
+      <Filter>containers</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/containers/linked_list.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/mru_cache.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/small_map.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/span.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/stack.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/stack_container.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/unique_ptr_adapters.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/util.h">
+      <Filter>containers</Filter>
+    </None>
+    <None Include="../../../../base/containers/vector_buffer.h">
+      <Filter>containers</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/cpu.cc" />
+    <None Include="../../../../base/cpu.h" />
+    <None Include="../../../../base/critical_closure.h" />
+    <None Include="../../../../base/cxx17_backports.h" />
+    <None Include="../../../../base/dcheck_is_on.h" />
+    <CustomBuild Include="../../../../base/debug/activity_analyzer.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/activity_analyzer.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/activity_tracker.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/activity_tracker.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/alias.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/alias.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/asan_invalid_access.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/asan_invalid_access.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/crash_logging.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/crash_logging.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/debugger.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/debugger.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/dump_without_crashing.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/dump_without_crashing.h">
+      <Filter>debug</Filter>
+    </None>
+    <None Include="../../../../base/debug/leak_annotations.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/profiler.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/profiler.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/stack_trace.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/stack_trace.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/task_trace.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/task_trace.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/deferred_sequenced_task_runner.cc" />
+    <None Include="../../../../base/deferred_sequenced_task_runner.h" />
+    <None Include="../../../../base/enterprise_util.h" />
+    <CustomBuild Include="../../../../base/environment.cc" />
+    <None Include="../../../../base/environment.h" />
+    <None Include="../../../../base/export_template.h" />
+    <CustomBuild Include="../../../../base/feature_list.cc" />
+    <None Include="../../../../base/feature_list.h" />
+    <None Include="../../../../base/file_version_info.h" />
+    <None Include="../../../../base/files/dir_reader_fallback.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/file.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/file.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/file_enumerator.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_enumerator.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/file_path.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_path.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/file_path_constants.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/file_path_watcher.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_path_watcher.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/file_proxy.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_proxy.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/file_tracing.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_tracing.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/file_util.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_util.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/important_file_writer.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/important_file_writer.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/important_file_writer_cleaner.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/important_file_writer_cleaner.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/memory_mapped_file.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/memory_mapped_file.h">
+      <Filter>files</Filter>
+    </None>
+    <None Include="../../../../base/files/platform_file.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/scoped_file.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/scoped_file.h">
+      <Filter>files</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/files/scoped_temp_dir.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/files/scoped_temp_dir.h">
+      <Filter>files</Filter>
+    </None>
+    <None Include="../../../../base/format_macros.h" />
+    <None Include="../../../../base/functional/identity.h">
+      <Filter>functional</Filter>
+    </None>
+    <None Include="../../../../base/functional/invoke.h">
+      <Filter>functional</Filter>
+    </None>
+    <None Include="../../../../base/functional/not_fn.h">
+      <Filter>functional</Filter>
+    </None>
+    <None Include="../../../../base/gtest_prod_util.h" />
+    <CustomBuild Include="../../../../base/guid.cc" />
+    <None Include="../../../../base/guid.h" />
+    <CustomBuild Include="../../../../base/hash/hash.cc">
+      <Filter>hash</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/hash/hash.h">
+      <Filter>hash</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/hash/legacy_hash.cc">
+      <Filter>hash</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/hash/legacy_hash.h">
+      <Filter>hash</Filter>
+    </None>
+    <None Include="../../../../base/immediate_crash.h" />
+    <None Include="../../../../base/json/json_common.h">
+      <Filter>json</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/json/json_file_value_serializer.cc">
+      <Filter>json</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_file_value_serializer.h">
+      <Filter>json</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/json/json_parser.cc">
+      <Filter>json</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_parser.h">
+      <Filter>json</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/json/json_reader.cc">
+      <Filter>json</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_reader.h">
+      <Filter>json</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/json/json_string_value_serializer.cc">
+      <Filter>json</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_string_value_serializer.h">
+      <Filter>json</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/json/json_value_converter.cc">
+      <Filter>json</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_value_converter.h">
+      <Filter>json</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/json/json_writer.cc">
+      <Filter>json</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_writer.h">
+      <Filter>json</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/json/string_escape.cc">
+      <Filter>json</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/json/string_escape.h">
+      <Filter>json</Filter>
+    </None>
+    <None Include="../../../../base/lazy_instance.h" />
+    <CustomBuild Include="../../../../base/lazy_instance_helpers.cc" />
+    <None Include="../../../../base/lazy_instance_helpers.h" />
+    <CustomBuild Include="../../../../base/location.cc" />
+    <None Include="../../../../base/location.h" />
+    <CustomBuild Include="../../../../base/logging.cc" />
+    <None Include="../../../../base/logging.h" />
+    <None Include="../../../../base/macros.h" />
+    <CustomBuild Include="../../../../base/memory/aligned_memory.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/aligned_memory.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/checked_ptr.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/checked_ptr.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/discardable_memory.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/discardable_memory.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/discardable_memory_allocator.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/discardable_memory_allocator.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/discardable_memory_internal.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/discardable_shared_memory.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/discardable_shared_memory.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/free_deleter.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/memory_pressure_listener.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/memory_pressure_listener.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/memory_pressure_monitor.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/memory_pressure_monitor.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/nonscannable_memory.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/nonscannable_memory.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/page_size.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/platform_shared_memory_region.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/platform_shared_memory_region.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/ptr_util.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/raw_scoped_refptr_mismatch_checker.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/read_only_shared_memory_region.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/read_only_shared_memory_region.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/ref_counted.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/ref_counted.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/ref_counted_delete_on_sequence.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/ref_counted_memory.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/ref_counted_memory.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/scoped_policy.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/scoped_refptr.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/shared_memory_hooks.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/shared_memory_mapping.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/shared_memory_mapping.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/shared_memory_security_policy.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/shared_memory_security_policy.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/shared_memory_tracker.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/shared_memory_tracker.h">
+      <Filter>memory</Filter>
+    </None>
+    <None Include="../../../../base/memory/singleton.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/tagging.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/tagging.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/unsafe_shared_memory_pool.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/unsafe_shared_memory_pool.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/unsafe_shared_memory_region.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/unsafe_shared_memory_region.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/weak_ptr.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/weak_ptr.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/memory/writable_shared_memory_region.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/memory/writable_shared_memory_region.h">
+      <Filter>memory</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/message_loop/message_pump.cc">
+      <Filter>message_loop</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/message_pump.h">
+      <Filter>message_loop</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/message_loop/message_pump_default.cc">
+      <Filter>message_loop</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/message_pump_default.h">
+      <Filter>message_loop</Filter>
+    </None>
+    <None Include="../../../../base/message_loop/message_pump_for_io.h">
+      <Filter>message_loop</Filter>
+    </None>
+    <None Include="../../../../base/message_loop/message_pump_for_ui.h">
+      <Filter>message_loop</Filter>
+    </None>
+    <None Include="../../../../base/message_loop/message_pump_type.h">
+      <Filter>message_loop</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/message_loop/timer_slack.cc">
+      <Filter>message_loop</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/timer_slack.h">
+      <Filter>message_loop</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/message_loop/work_id_provider.cc">
+      <Filter>message_loop</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/work_id_provider.h">
+      <Filter>message_loop</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/bucket_ranges.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/bucket_ranges.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/crc32.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/crc32.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/dummy_histogram.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/dummy_histogram.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/field_trial.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/field_trial.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/field_trial_param_associator.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/field_trial_param_associator.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/field_trial_params.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/field_trial_params.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/histogram.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/histogram_base.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_base.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/histogram_delta_serialization.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_delta_serialization.h">
+      <Filter>metrics</Filter>
+    </None>
+    <None Include="../../../../base/metrics/histogram_flattener.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/histogram_functions.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_functions.h">
+      <Filter>metrics</Filter>
+    </None>
+    <None Include="../../../../base/metrics/histogram_macros.h">
+      <Filter>metrics</Filter>
+    </None>
+    <None Include="../../../../base/metrics/histogram_macros_internal.h">
+      <Filter>metrics</Filter>
+    </None>
+    <None Include="../../../../base/metrics/histogram_macros_local.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/histogram_samples.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_samples.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/histogram_snapshot_manager.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_snapshot_manager.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/metrics_hashes.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/metrics_hashes.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/persistent_histogram_allocator.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/persistent_histogram_allocator.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/persistent_memory_allocator.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/persistent_memory_allocator.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/persistent_sample_map.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/persistent_sample_map.h">
+      <Filter>metrics</Filter>
+    </None>
+    <None Include="../../../../base/metrics/record_histogram_checker.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/sample_map.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/sample_map.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/sample_vector.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/sample_vector.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/single_sample_metrics.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/single_sample_metrics.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/sparse_histogram.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/sparse_histogram.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/statistics_recorder.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/statistics_recorder.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/metrics/user_metrics.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/user_metrics.h">
+      <Filter>metrics</Filter>
+    </None>
+    <None Include="../../../../base/metrics/user_metrics_action.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/native_library.cc" />
+    <None Include="../../../../base/native_library.h" />
+    <None Include="../../../../base/no_destructor.h" />
+    <CustomBuild Include="../../../../base/notreached.cc" />
+    <None Include="../../../../base/notreached.h" />
+    <None Include="../../../../base/observer_list.h" />
+    <CustomBuild Include="../../../../base/observer_list_internal.cc" />
+    <None Include="../../../../base/observer_list_internal.h" />
+    <CustomBuild Include="../../../../base/observer_list_threadsafe.cc" />
+    <None Include="../../../../base/observer_list_threadsafe.h" />
+    <CustomBuild Include="../../../../base/observer_list_types.cc" />
+    <None Include="../../../../base/observer_list_types.h" />
+    <CustomBuild Include="../../../../base/one_shot_event.cc" />
+    <None Include="../../../../base/one_shot_event.h" />
+    <None Include="../../../../base/parameter_pack.h" />
+    <CustomBuild Include="../../../../base/path_service.cc" />
+    <None Include="../../../../base/path_service.h" />
+    <CustomBuild Include="../../../../base/pending_task.cc" />
+    <None Include="../../../../base/pending_task.h" />
+    <CustomBuild Include="../../../../base/pickle.cc" />
+    <None Include="../../../../base/pickle.h" />
+    <None Include="../../../../base/post_task_and_reply_with_result_internal.h" />
+    <CustomBuild Include="../../../../base/power_monitor/power_monitor.cc">
+      <Filter>power_monitor</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/power_monitor/power_monitor.h">
+      <Filter>power_monitor</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/power_monitor/power_monitor_device_source.cc">
+      <Filter>power_monitor</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/power_monitor/power_monitor_device_source.h">
+      <Filter>power_monitor</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/power_monitor/power_monitor_source.cc">
+      <Filter>power_monitor</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/power_monitor/power_monitor_source.h">
+      <Filter>power_monitor</Filter>
+    </None>
+    <None Include="../../../../base/power_monitor/power_observer.h">
+      <Filter>power_monitor</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/process/environment_internal.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/process/environment_internal.h">
+      <Filter>process</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/process/kill.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/process/kill.h">
+      <Filter>process</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/process/launch.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/process/launch.h">
+      <Filter>process</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/process/memory.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/process/memory.h">
+      <Filter>process</Filter>
+    </None>
+    <None Include="../../../../base/process/process.h">
+      <Filter>process</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/process/process_handle.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/process/process_handle.h">
+      <Filter>process</Filter>
+    </None>
+    <None Include="../../../../base/process/process_info.h">
+      <Filter>process</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/process/process_iterator.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/process/process_iterator.h">
+      <Filter>process</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/process/process_metrics.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/process/process_metrics.h">
+      <Filter>process</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/arm_cfi_table.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/arm_cfi_table.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/frame.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/frame.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/metadata_recorder.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/metadata_recorder.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/module_cache.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/module_cache.h">
+      <Filter>profiler</Filter>
+    </None>
+    <None Include="../../../../base/profiler/native_unwinder.h">
+      <Filter>profiler</Filter>
+    </None>
+    <None Include="../../../../base/profiler/profile_builder.h">
+      <Filter>profiler</Filter>
+    </None>
+    <None Include="../../../../base/profiler/register_context.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/sample_metadata.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/sample_metadata.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/sampling_profiler_thread_token.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/sampling_profiler_thread_token.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/stack_buffer.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_buffer.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/stack_copier.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_copier.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/stack_copier_suspend.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_copier_suspend.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/stack_sampler.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_sampler.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/stack_sampler_impl.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_sampler_impl.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/stack_sampling_profiler.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_sampling_profiler.h">
+      <Filter>profiler</Filter>
+    </None>
+    <None Include="../../../../base/profiler/suspendable_thread_delegate.h">
+      <Filter>profiler</Filter>
+    </None>
+    <None Include="../../../../base/profiler/thread_delegate.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/unwinder.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/unwinder.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/rand_util.cc" />
+    <None Include="../../../../base/rand_util.h" />
+    <None Include="../../../../base/ranges/algorithm.h">
+      <Filter>ranges</Filter>
+    </None>
+    <None Include="../../../../base/ranges/functional.h">
+      <Filter>ranges</Filter>
+    </None>
+    <None Include="../../../../base/ranges/ranges.h">
+      <Filter>ranges</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/run_loop.cc" />
+    <None Include="../../../../base/run_loop.h" />
+    <CustomBuild Include="../../../../base/sampling_heap_profiler/lock_free_address_hash_set.cc">
+      <Filter>sampling_heap_profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/sampling_heap_profiler/lock_free_address_hash_set.h">
+      <Filter>sampling_heap_profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/sampling_heap_profiler/poisson_allocation_sampler.cc">
+      <Filter>sampling_heap_profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/sampling_heap_profiler/poisson_allocation_sampler.h">
+      <Filter>sampling_heap_profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/sampling_heap_profiler/sampling_heap_profiler.cc">
+      <Filter>sampling_heap_profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/sampling_heap_profiler/sampling_heap_profiler.h">
+      <Filter>sampling_heap_profiler</Filter>
+    </None>
+    <None Include="../../../../base/scoped_clear_last_error.h" />
+    <None Include="../../../../base/scoped_generic.h" />
+    <None Include="../../../../base/scoped_multi_source_observation.h" />
+    <CustomBuild Include="../../../../base/scoped_native_library.cc" />
+    <None Include="../../../../base/scoped_native_library.h" />
+    <None Include="../../../../base/scoped_observation.h" />
+    <None Include="../../../../base/scoped_observer.h" />
+    <None Include="../../../../base/sequence_checker.h" />
+    <CustomBuild Include="../../../../base/sequence_checker_impl.cc" />
+    <None Include="../../../../base/sequence_checker_impl.h" />
+    <CustomBuild Include="../../../../base/sequence_token.cc" />
+    <None Include="../../../../base/sequence_token.h" />
+    <CustomBuild Include="../../../../base/sequenced_task_runner.cc" />
+    <None Include="../../../../base/sequenced_task_runner.h" />
+    <None Include="../../../../base/sequenced_task_runner_helpers.h" />
+    <None Include="../../../../base/single_thread_task_runner.h" />
+    <None Include="../../../../base/stl_util.h" />
+    <CustomBuild Include="../../../../base/strings/abseil_string_conversions.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/abseil_string_conversions.h">
+      <Filter>strings</Filter>
+    </None>
+    <None Include="../../../../base/strings/char_traits.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/escape.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/escape.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/latin1_string_conversions.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/latin1_string_conversions.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/pattern.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/pattern.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/safe_sprintf.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/safe_sprintf.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/strcat.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/strcat.h">
+      <Filter>strings</Filter>
+    </None>
+    <None Include="../../../../base/strings/strcat_internal.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/string_number_conversions.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_number_conversions.h">
+      <Filter>strings</Filter>
+    </None>
+    <None Include="../../../../base/strings/string_number_conversions_internal.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/string_piece.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_piece.h">
+      <Filter>strings</Filter>
+    </None>
+    <None Include="../../../../base/strings/string_piece_forward.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/string_split.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_split.h">
+      <Filter>strings</Filter>
+    </None>
+    <None Include="../../../../base/strings/string_split_internal.h">
+      <Filter>strings</Filter>
+    </None>
+    <None Include="../../../../base/strings/string_tokenizer.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/string_util.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_util.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/string_util_constants.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_util_internal.h">
+      <Filter>strings</Filter>
+    </None>
+    <None Include="../../../../base/strings/stringize_macros.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/stringprintf.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/stringprintf.h">
+      <Filter>strings</Filter>
+    </None>
+    <None Include="../../../../base/strings/sys_string_conversions.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/utf_offset_string_conversions.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/utf_offset_string_conversions.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/utf_string_conversion_utils.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/utf_string_conversion_utils.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/utf_string_conversions.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/utf_string_conversions.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/supports_user_data.cc" />
+    <None Include="../../../../base/supports_user_data.h" />
+    <CustomBuild Include="../../../../base/sync_socket.cc" />
+    <None Include="../../../../base/sync_socket.h" />
+    <CustomBuild Include="../../../../base/synchronization/atomic_flag.cc">
+      <Filter>synchronization</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/synchronization/atomic_flag.h">
+      <Filter>synchronization</Filter>
+    </None>
+    <None Include="../../../../base/synchronization/condition_variable.h">
+      <Filter>synchronization</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/synchronization/lock.cc">
+      <Filter>synchronization</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/synchronization/lock.h">
+      <Filter>synchronization</Filter>
+    </None>
+    <None Include="../../../../base/synchronization/lock_impl.h">
+      <Filter>synchronization</Filter>
+    </None>
+    <None Include="../../../../base/synchronization/waitable_event.h">
+      <Filter>synchronization</Filter>
+    </None>
+    <None Include="../../../../base/synchronization/waitable_event_watcher.h">
+      <Filter>synchronization</Filter>
+    </None>
+    <None Include="../../../../base/sys_byteorder.h" />
+    <CustomBuild Include="../../../../base/syslog_logging.cc" />
+    <None Include="../../../../base/syslog_logging.h" />
+    <CustomBuild Include="../../../../base/system/sys_info.cc">
+      <Filter>system</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/system/sys_info.h">
+      <Filter>system</Filter>
+    </None>
+    <None Include="../../../../base/system/sys_info_internal.h">
+      <Filter>system</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/system/system_monitor.cc">
+      <Filter>system</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/system/system_monitor.h">
+      <Filter>system</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/cancelable_task_tracker.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/cancelable_task_tracker.h">
+      <Filter>task</Filter>
+    </None>
+    <None Include="../../../../base/task/common/checked_lock.h">
+      <Filter>task\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/common/checked_lock_impl.cc">
+      <Filter>task\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/common/checked_lock_impl.h">
+      <Filter>task\common</Filter>
+    </None>
+    <None Include="../../../../base/task/common/intrusive_heap.h">
+      <Filter>task\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/common/operations_controller.cc">
+      <Filter>task\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/common/operations_controller.h">
+      <Filter>task\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/common/scoped_defer_task_posting.cc">
+      <Filter>task\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/common/scoped_defer_task_posting.h">
+      <Filter>task\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/common/task_annotator.cc">
+      <Filter>task\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/common/task_annotator.h">
+      <Filter>task\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/current_thread.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/current_thread.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/lazy_thread_pool_task_runner.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/lazy_thread_pool_task_runner.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/post_job.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/post_job.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/post_task.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/post_task.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/scoped_set_task_priority_for_current_thread.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/scoped_set_task_priority_for_current_thread.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/associated_thread_id.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/associated_thread_id.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/atomic_flag_set.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/atomic_flag_set.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <None Include="../../../../base/task/sequence_manager/enqueue_order.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/enqueue_order_generator.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/enqueue_order_generator.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <None Include="../../../../base/task/sequence_manager/lazily_deallocated_deque.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/lazy_now.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/lazy_now.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/real_time_domain.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/real_time_domain.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/sequence_manager.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/sequence_manager.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/sequence_manager_impl.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/sequence_manager_impl.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <None Include="../../../../base/task/sequence_manager/sequenced_task_source.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/task_queue.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/task_queue.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/task_queue_impl.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/task_queue_impl.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/task_queue_selector.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/task_queue_selector.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <None Include="../../../../base/task/sequence_manager/task_queue_selector_logic.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <None Include="../../../../base/task/sequence_manager/task_time_observer.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/tasks.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/tasks.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/thread_controller.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/thread_controller.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/thread_controller_impl.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/thread_controller_impl.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/thread_controller_power_monitor.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/thread_controller_power_monitor.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/thread_controller_with_message_pump_impl.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/thread_controller_with_message_pump_impl.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/time_domain.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/time_domain.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/work_deduplicator.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/work_deduplicator.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/work_queue.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/work_queue.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/sequence_manager/work_queue_sets.cc">
+      <Filter>task\sequence_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/work_queue_sets.h">
+      <Filter>task\sequence_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/simple_task_executor.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/simple_task_executor.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/single_thread_task_executor.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/single_thread_task_executor.h">
+      <Filter>task</Filter>
+    </None>
+    <None Include="../../../../base/task/single_thread_task_runner_thread_mode.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/task_executor.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/task_executor.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/task_features.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/task_features.h">
+      <Filter>task</Filter>
+    </None>
+    <None Include="../../../../base/task/task_observer.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/task_traits.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/task_traits.h">
+      <Filter>task</Filter>
+    </None>
+    <None Include="../../../../base/task/task_traits_extension.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool.cc">
+      <Filter>task</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool.h">
+      <Filter>task</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/delayed_task_manager.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/delayed_task_manager.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/environment_config.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/environment_config.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/initialization_util.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/initialization_util.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/job_task_source.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/job_task_source.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/pooled_parallel_task_runner.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/pooled_parallel_task_runner.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/pooled_sequenced_task_runner.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/pooled_sequenced_task_runner.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/pooled_single_thread_task_runner_manager.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/pooled_single_thread_task_runner_manager.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/pooled_task_runner_delegate.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/pooled_task_runner_delegate.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/priority_queue.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/priority_queue.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/sequence.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/sequence.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/service_thread.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/service_thread.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/task.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/task.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/task_source.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/task_source.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/task_source_sort_key.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/task_source_sort_key.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/task_tracker.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/task_tracker.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_group.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_group.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_group_impl.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_group_impl.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_group_native.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_group_native.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_pool_impl.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_pool_impl.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_pool_instance.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_pool_instance.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <None Include="../../../../base/task/thread_pool/tracked_ref.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/worker_thread.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/worker_thread.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <None Include="../../../../base/task/thread_pool/worker_thread_observer.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task/thread_pool/worker_thread_stack.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/worker_thread_stack.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/task_runner.cc" />
+    <None Include="../../../../base/task_runner.h" />
+    <None Include="../../../../base/task_runner_util.h" />
+    <None Include="../../../../base/template_util.h" />
+    <None Include="../../../../base/test/malloc_wrapper.h">
+      <Filter>test</Filter>
+    </None>
+    <None Include="../../../../base/test/scoped_logging_settings.h">
+      <Filter>test</Filter>
+    </None>
+    <None Include="../../../../base/test/spin_wait.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/third_party/cityhash/city.cc">
+      <Filter>third_party\cityhash</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/third_party/cityhash/city.h">
+      <Filter>third_party\cityhash</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/third_party/cityhash_v103/src/city_v103.cc">
+      <Filter>third_party\cityhash_v103\src</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/third_party/cityhash_v103/src/city_v103.h">
+      <Filter>third_party\cityhash_v103\src</Filter>
+    </None>
+    <None Include="../../../../base/third_party/icu/icu_utf.h">
+      <Filter>third_party\icu</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/third_party/nspr/prtime.cc">
+      <Filter>third_party\nspr</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/third_party/nspr/prtime.h">
+      <Filter>third_party\nspr</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/third_party/superfasthash/superfasthash.c">
+      <Filter>third_party\superfasthash</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/thread_annotations.h" />
+    <CustomBuild Include="../../../../base/threading/hang_watcher.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/hang_watcher.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/platform_thread.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/platform_thread.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/post_task_and_reply_impl.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/post_task_and_reply_impl.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/scoped_blocking_call.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/scoped_blocking_call.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/scoped_blocking_call_internal.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/scoped_blocking_call_internal.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/scoped_thread_priority.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/scoped_thread_priority.h">
+      <Filter>threading</Filter>
+    </None>
+    <None Include="../../../../base/threading/sequence_bound.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/sequence_local_storage_map.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/sequence_local_storage_map.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/sequence_local_storage_slot.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/sequence_local_storage_slot.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/sequenced_task_runner_handle.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/sequenced_task_runner_handle.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/simple_thread.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/simple_thread.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/thread.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread.h">
+      <Filter>threading</Filter>
+    </None>
+    <None Include="../../../../base/threading/thread_checker.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/thread_checker_impl.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_checker_impl.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/thread_collision_warner.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_collision_warner.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/thread_id_name_manager.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_id_name_manager.h">
+      <Filter>threading</Filter>
+    </None>
+    <None Include="../../../../base/threading/thread_local.h">
+      <Filter>threading</Filter>
+    </None>
+    <None Include="../../../../base/threading/thread_local_internal.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/thread_local_storage.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_local_storage.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/thread_restrictions.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_restrictions.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/thread_task_runner_handle.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_task_runner_handle.h">
+      <Filter>threading</Filter>
+    </None>
+    <None Include="../../../../base/threading/threading_features.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/watchdog.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/watchdog.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/time/clock.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/time/clock.h">
+      <Filter>time</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/time/default_clock.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/time/default_clock.h">
+      <Filter>time</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/time/default_tick_clock.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/time/default_tick_clock.h">
+      <Filter>time</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/time/tick_clock.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/time/tick_clock.h">
+      <Filter>time</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/time/time.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/time/time.h">
+      <Filter>time</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/time/time_delta_from_string.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/time/time_delta_from_string.h">
+      <Filter>time</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/time/time_override.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/time/time_override.h">
+      <Filter>time</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/time/time_to_iso8601.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/time/time_to_iso8601.h">
+      <Filter>time</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/timer/elapsed_timer.cc">
+      <Filter>timer</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/timer/elapsed_timer.h">
+      <Filter>timer</Filter>
+    </None>
+    <None Include="../../../../base/timer/hi_res_timer_manager.h">
+      <Filter>timer</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/timer/lap_timer.cc">
+      <Filter>timer</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/timer/lap_timer.h">
+      <Filter>timer</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/timer/timer.cc">
+      <Filter>timer</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/timer/timer.h">
+      <Filter>timer</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/token.cc" />
+    <None Include="../../../../base/token.h" />
+    <None Include="../../../../base/trace_event/base_tracing.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/base_tracing_forward.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/common/trace_event_common.h">
+      <Filter>trace_event\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/heap_profiler_allocation_context.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/heap_profiler_allocation_context.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/heap_profiler_allocation_context_tracker.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/heap_profiler_allocation_context_tracker.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_allocator_dump_guid.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_allocator_dump_guid.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_id_helper.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_id_helper.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/traits_bag.h" />
+    <None Include="../../../../base/tuple.h" />
+    <None Include="../../../../base/types/pass_key.h">
+      <Filter>types</Filter>
+    </None>
+    <None Include="../../../../base/types/strong_alias.h">
+      <Filter>types</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/unguessable_token.cc" />
+    <None Include="../../../../base/unguessable_token.h" />
+    <None Include="../../../../base/updateable_sequenced_task_runner.h" />
+    <CustomBuild Include="../../../../base/value_iterators.cc" />
+    <None Include="../../../../base/value_iterators.h" />
+    <CustomBuild Include="../../../../base/values.cc" />
+    <None Include="../../../../base/values.h" />
+    <CustomBuild Include="../../../../base/version.cc" />
+    <None Include="../../../../base/version.h" />
+    <CustomBuild Include="../../../../base/vlog.cc" />
+    <None Include="../../../../base/vlog.h" />
+    <CustomBuild Include="../../../../base/debug/close_handle_hook_win.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/close_handle_hook_win.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/debugger_win.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/debug/gdi_debug_util_win.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/gdi_debug_util_win.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/invalid_access_win.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/debug/invalid_access_win.h">
+      <Filter>debug</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/debug/stack_trace_win.cc">
+      <Filter>debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/enterprise_util_win.cc" />
+    <CustomBuild Include="../../../../base/file_version_info_win.cc" />
+    <None Include="../../../../base/file_version_info_win.h" />
+    <CustomBuild Include="../../../../base/files/file_path_watcher_win.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/file_util_win.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/file_win.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/memory_mapped_file_win.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/logging_win.cc" />
+    <None Include="../../../../base/logging_win.h" />
+    <CustomBuild Include="../../../../base/memory/page_size_win.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/message_loop/message_pump_win.cc">
+      <Filter>message_loop</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/message_pump_win.h">
+      <Filter>message_loop</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/native_library_win.cc" />
+    <CustomBuild Include="../../../../base/process/kill_win.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/launch_win.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/memory_win.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_handle_win.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_info_win.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_iterator_win.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_metrics_win.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_win.cc">
+      <Filter>process</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/profiler/module_cache_win.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/profiler/native_unwinder_win.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/native_unwinder_win.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/profiler/stack_sampler_win.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/profiler/suspendable_thread_delegate_win.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/suspendable_thread_delegate_win.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/scoped_clear_last_error_win.cc" />
+    <CustomBuild Include="../../../../base/strings/strcat_win.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/strcat_win.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/string_number_conversions_win.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_number_conversions_win.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/string_split_win.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_split_win.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/string_util_win.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_util_win.h">
+      <Filter>strings</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/strings/sys_string_conversions_win.cc">
+      <Filter>strings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/sync_socket_win.cc" />
+    <CustomBuild Include="../../../../base/synchronization/condition_variable_win.cc">
+      <Filter>synchronization</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/synchronization/lock_impl_win.cc">
+      <Filter>synchronization</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/synchronization/waitable_event_watcher_win.cc">
+      <Filter>synchronization</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/synchronization/waitable_event_win.cc">
+      <Filter>synchronization</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_group_native_win.cc">
+      <Filter>task\thread_pool</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_group_native_win.h">
+      <Filter>task\thread_pool</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/platform_thread_win.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/threading/platform_thread_win.h">
+      <Filter>threading</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/threading/thread_local_storage_win.cc">
+      <Filter>threading</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/timer/hi_res_timer_manager_win.cc">
+      <Filter>timer</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/async_operation.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/atl.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/atl_throw.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/atl_throw.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/com_init_balancer.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/com_init_balancer.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/com_init_check_hook.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/com_init_check_hook.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/com_init_util.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/com_init_util.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/core_winrt_util.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/core_winrt_util.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/current_module.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/embedded_i18n/language_selector.cc">
+      <Filter>win\embedded_i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/embedded_i18n/language_selector.h">
+      <Filter>win\embedded_i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/enum_variant.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/enum_variant.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/event_trace_consumer.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/event_trace_controller.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/event_trace_controller.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/event_trace_provider.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/event_trace_provider.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/hstring_compare.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/hstring_compare.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/hstring_reference.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/hstring_reference.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/i18n.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/i18n.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/iat_patch_function.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/iat_patch_function.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/map.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/message_window.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/message_window.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/object_watcher.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/object_watcher.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/patch_util.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/patch_util.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/pe_image_reader.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/pe_image_reader.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/post_async_results.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/process_startup_helper.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/process_startup_helper.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/propvarutil.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/reference.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/registry.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/registry.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/resource_util.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/resource_util.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/scoped_bstr.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_bstr.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_co_mem.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/scoped_com_initializer.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_com_initializer.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_gdi_object.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/scoped_handle.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_handle.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/scoped_handle_verifier.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_handle_verifier.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_hdc.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_hglobal.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/scoped_hstring.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_hstring.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_localalloc.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/scoped_process_information.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_process_information.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_propvariant.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_safearray.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_select_object.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/scoped_variant.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_variant.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/scoped_windows_thread_environment.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/scoped_winrt_initializer.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_winrt_initializer.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/security_util.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/security_util.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/shlwapi.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/shortcut.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/shortcut.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/sid.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/sid.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/sphelper.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/startup_information.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/startup_information.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/variant_util.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/variant_vector.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/variant_vector.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/vector.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/vector.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/win_util.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/win_util.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/wincrypt_shim.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/windows_defines.inc">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/windows_types.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/windows_undefines.inc">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/windows_version.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/windows_version.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/windowsx_shim.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../base/win/winrt_foundation_helpers.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/winrt_storage_util.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/winrt_storage_util.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/wmi.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/wmi.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/win/wrapped_window_proc.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/win/wrapped_window_proc.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/base_paths.cc" />
+    <None Include="../../../../base/base_paths.h" />
+    <CustomBuild Include="../../../../base/metrics/persistent_histogram_storage.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/persistent_histogram_storage.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/base_paths_win.cc" />
+    <None Include="../../../../base/base_paths_win.h" />
+    <CustomBuild Include="../../../../base/allocator/allocator_shim.cc">
+      <Filter>allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/allocator_shim.h">
+      <Filter>allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/allocator_shim_default_dispatch_to_partition_alloc.cc">
+      <Filter>allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/allocator_shim_default_dispatch_to_partition_alloc.h">
+      <Filter>allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/allocator_shim_internals.h">
+      <Filter>allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/allocator_shim_override_ucrt_symbols_win.h">
+      <Filter>allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/winheap_stubs_win.cc">
+      <Filter>allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/winheap_stubs_win.h">
+      <Filter>allocator</Filter>
+    </None>
+    <None Include="../../../../base/hash/md5.h">
+      <Filter>hash</Filter>
+    </None>
+    <None Include="../../../../base/hash/md5_constexpr.h">
+      <Filter>hash</Filter>
+    </None>
+    <None Include="../../../../base/hash/md5_constexpr_internal.h">
+      <Filter>hash</Filter>
+    </None>
+    <None Include="../../../../base/hash/sha1.h">
+      <Filter>hash</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/hash/md5_boringssl.cc">
+      <Filter>hash</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/hash/md5_boringssl.h">
+      <Filter>hash</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/hash/sha1_boringssl.cc">
+      <Filter>hash</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/hash/sha1_boringssl.h">
+      <Filter>hash</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/address_pool_manager.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/address_pool_manager.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/address_pool_manager_bitmap.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/address_pool_manager_bitmap.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/address_pool_manager_types.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/address_space_randomization.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/address_space_randomization.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/extended_api.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/extended_api.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/memory_reclaimer.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/memory_reclaimer.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/oom.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/oom_callback.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/oom_callback.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/page_allocator.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/page_allocator.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/page_allocator_internal.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_address_space.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_address_space.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc-inl.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_alloc.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_check.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_config.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_constants.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_alloc_features.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_features.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_forward.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_alloc_hooks.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_hooks.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_bucket.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_bucket.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_cookie.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_direct_map_extent.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_freelist_entry.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_lock.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_lock.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_oom.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_oom.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_page.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_page.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_ref_count.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_root.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_root.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_stats.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_stats.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/partition_tls.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/random.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/random.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/spinning_mutex.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/spinning_mutex.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/metadata_allocator.cc">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/metadata_allocator.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/object_bitmap.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/pcscan.cc">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/pcscan.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/pcscan_internal.cc">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/pcscan_internal.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/pcscan_scheduling.cc">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/pcscan_scheduling.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/raceful_worklist.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/scan_loop.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/stack/stack.cc">
+      <Filter>allocator\partition_allocator\starscan\stack</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/stack/stack.h">
+      <Filter>allocator\partition_allocator\starscan\stack</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/starscan_fwd.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/stats_collector.cc">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/stats_collector.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/write_protector.cc">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/write_protector.h">
+      <Filter>allocator\partition_allocator\starscan</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/thread_cache.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/thread_cache.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/yield_processor.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <None Include="../../../../base/allocator/partition_allocator/page_allocator_internals_win.h">
+      <Filter>allocator\partition_allocator</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_tls_win.cc">
+      <Filter>allocator\partition_allocator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/stack/asm/x64/push_registers_asm.cc">
+      <Filter>allocator\partition_allocator\starscan\stack\asm\x64</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/file_enumerator_win.cc">
+      <Filter>files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/memory/platform_shared_memory_region_win.cc">
+      <Filter>memory</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/power_monitor/power_monitor_device_source_win.cc">
+      <Filter>power_monitor</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/profiler/win32_stack_frame_unwinder.cc">
+      <Filter>profiler</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/win32_stack_frame_unwinder.h">
+      <Filter>profiler</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/rand_util_win.cc" />
+    <CustomBuild Include="../../../../base/system/sys_info_win.cc">
+      <Filter>system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/time/time_win.cc">
+      <Filter>time</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/auto_open_close_event.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/blame_context.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/blame_context.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/builtin_categories.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/builtin_categories.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/category_registry.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/category_registry.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/event_name_filter.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/event_name_filter.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/heap_profiler.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/heap_profiler_event_filter.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/heap_profiler_event_filter.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/interned_args_helper.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/interned_args_helper.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/log_message.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/log_message.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/malloc_dump_provider.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/malloc_dump_provider.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_allocator_dump.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_allocator_dump.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_dump_manager.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_dump_manager.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/memory_dump_manager_test_utils.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/memory_dump_provider.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_dump_provider_info.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_dump_provider_info.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_dump_request_args.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_dump_request_args.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_dump_scheduler.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_dump_scheduler.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_infra_background_allowlist.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_infra_background_allowlist.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_pressure_level_proto.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_pressure_level_proto.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/memory_usage_estimator.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_usage_estimator.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/optional_trace_event.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/process_memory_dump.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/process_memory_dump.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/task_execution_macros.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/thread_instruction_count.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/thread_instruction_count.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_arguments.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_arguments.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_buffer.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_buffer.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/trace_category.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_config.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_config.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_config_category_filter.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_config_category_filter.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/trace_conversion_helper.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/trace_event.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_event_filter.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_event_filter.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_event_impl.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_event_impl.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_event_memory_overhead.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_event_memory_overhead.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_log.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_log.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_log_constants.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/trace_event/traced_value.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/traced_value.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/traced_value_support.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/tracing_agent.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/tracing_agent.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/typed_macros.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <None Include="../../../../base/trace_event/typed_macros_embedder_support.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/typed_macros_internal.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/typed_macros_internal.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/tracing/perfetto_platform.cc">
+      <Filter>tracing</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/tracing/perfetto_platform.h">
+      <Filter>tracing</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/tracing/perfetto_task_runner.cc">
+      <Filter>tracing</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/tracing/perfetto_task_runner.h">
+      <Filter>tracing</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/tracing/trace_time.cc">
+      <Filter>tracing</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/tracing/trace_time.h">
+      <Filter>tracing</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/tracing/tracing_tls.cc">
+      <Filter>tracing</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/tracing/tracing_tls.h">
+      <Filter>tracing</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_event_etw_export_win.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_event_etw_export_win.h">
+      <Filter>trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/trace_event/trace_logging_minimal_win.cc">
+      <Filter>trace_event</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_logging_minimal_win.h">
+      <Filter>trace_event</Filter>
+    </None>
+  </ItemGroup>
+</Project>

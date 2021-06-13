@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/complete_wnd.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/complete_wnd.h" />
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/constants.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/constants.h" />
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/owner_draw_controls.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/owner_draw_controls.h" />
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/progress_wnd.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/progress_wnd.h" />
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/splash_screen.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/splash_screen.h" />
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/ui.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/ui.h" />
+    <None Include="../../../../../../../chrome/updater/win/ui/ui_ctls.h" />
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/ui_displayed_event.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/ui_displayed_event.h" />
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/util.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/util.h" />
+    <CustomBuild Include="../../../../../../../chrome/updater/win/ui/yes_no_dialog.cc" />
+    <None Include="../../../../../../../chrome/updater/win/ui/yes_no_dialog.h" />
+  </ItemGroup>
+</Project>

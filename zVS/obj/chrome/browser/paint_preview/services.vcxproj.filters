@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="services">
+      <UniqueIdentifier>{10E9DA55-6D19-6B6D-0741-FCD36C85853C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/paint_preview/services/paint_preview_tab_service.cc">
+      <Filter>services</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/paint_preview/services/paint_preview_tab_service.h">
+      <Filter>services</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/paint_preview/services/paint_preview_tab_service_factory.cc">
+      <Filter>services</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/paint_preview/services/paint_preview_tab_service_factory.h">
+      <Filter>services</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/paint_preview/services/paint_preview_tab_service_file_mixin.cc">
+      <Filter>services</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/paint_preview/services/paint_preview_tab_service_file_mixin.h">
+      <Filter>services</Filter>
+    </None>
+  </ItemGroup>
+</Project>

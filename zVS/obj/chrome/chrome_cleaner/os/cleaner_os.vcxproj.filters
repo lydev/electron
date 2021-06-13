@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/file_removal_status_updater.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/file_removal_status_updater.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/file_remover.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/file_remover.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/rebooter.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/rebooter.h" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/rebooter_api.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/system_util_cleaner.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/system_util_cleaner.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tools\dump_cache">
+      <UniqueIdentifier>{05C814CF-8A29-38E8-5CC3-7504D6062DA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{0E9715BA-57B3-F23F-1EED-56699DC72D4B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../net/tools/dump_cache/dump_cache.cc">
+      <Filter>tools\dump_cache</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/tools/dump_cache/dump_files.cc">
+      <Filter>tools\dump_cache</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/dump_cache/dump_files.h">
+      <Filter>tools\dump_cache</Filter>
+    </None>
+  </ItemGroup>
+</Project>

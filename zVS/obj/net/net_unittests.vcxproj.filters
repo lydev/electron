@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{530671C4-A49E-2227-1185-B142528140EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\registry_controlled_domains">
+      <UniqueIdentifier>{0935B4A6-5DF2-970A-F02C-3A1C59F3BD38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cert">
+      <UniqueIdentifier>{128BBFA8-A761-783A-8000-22EA1AE044BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cert\internal">
+      <UniqueIdentifier>{92C1C8E2-DAB5-EA66-48DE-EC75F674144C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cert_net">
+      <UniqueIdentifier>{449524DA-2CFF-1099-2974-2F83B4E234F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cookies">
+      <UniqueIdentifier>{7006C930-118C-1DF7-416B-E6000CD80D4F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="der">
+      <UniqueIdentifier>{F9B24C54-FBB6-C446-DFB1-B75C32C3A7E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disk_cache">
+      <UniqueIdentifier>{0E02E725-0B88-0DE2-EF73-E5C9A28DD664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disk_cache\blockfile">
+      <UniqueIdentifier>{9D78BE90-1B6A-2321-A30C-629D0C2E8204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disk_cache\simple">
+      <UniqueIdentifier>{84EA0453-722E-FE2D-61E6-12DDE0997921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras\sqlite">
+      <UniqueIdentifier>{FB7E8DA0-A37F-E1EF-485A-CC27D016A111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{92E74AEE-E4AB-2B45-93D9-CA3E6F89B473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filter">
+      <UniqueIdentifier>{610876E0-2CEE-64E2-9FE4-376FFEB6B9B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{2A6457FD-8445-F485-B14F-09BB3C91EA95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http2\platform\impl">
+      <UniqueIdentifier>{581BABBD-17D8-8FE9-6BA7-FFAE2B794F5E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http2\platform">
+      <UniqueIdentifier>{6BB13801-94B7-D219-F2D7-E97F774627D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http2">
+      <UniqueIdentifier>{04A877DC-C29B-AEF2-ACF7-C1BA5D8E9B2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{560C82B6-B156-D6D3-5E51-CC6E8A513FC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nqe">
+      <UniqueIdentifier>{E674FA4A-2AD7-5372-F896-168302C71516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy_resolution">
+      <UniqueIdentifier>{3DB801E8-19F7-0FAE-A26E-C4CCF98F3609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic">
+      <UniqueIdentifier>{F6643CD4-47DE-7201-1E49-DF440379ECD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic\crypto">
+      <UniqueIdentifier>{78063F5B-EC23-8F2C-55CD-3BF11E151C8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic\platform\impl">
+      <UniqueIdentifier>{1A90F128-BB03-86ED-246A-00348316ED20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic\platform">
+      <UniqueIdentifier>{548D38A1-B1B4-052B-AAC0-5E4AC05E5188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{73FFBDEA-29C2-4F50-E6C0-5FE466B20A7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spdy">
+      <UniqueIdentifier>{B7007C7E-7418-AD4E-4832-E099ECE5DD37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spdy\fuzzing">
+      <UniqueIdentifier>{8D19DC6D-A9F2-0220-F7A0-DBA51E50A732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ssl">
+      <UniqueIdentifier>{8DE9147C-8908-6530-5D16-179130CA5EA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\embedded_test_server">
+      <UniqueIdentifier>{AE0DC416-4113-DA2D-58EB-206796DFBBC5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\nist-pkits">
+      <UniqueIdentifier>{A524BCAD-9492-BFC6-719B-4F51ACC6D917}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{363093B2-8BE6-B8D4-ADFC-148BB4039B6A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\uri_template">
+      <UniqueIdentifier>{D084EF08-6BF4-7644-71DF-831DE90EF79A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\content_decoder_tool">
+      <UniqueIdentifier>{E25426D2-A803-465A-572D-EB3968F70484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{0E9715BA-57B3-F23F-1EED-56699DC72D4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{C1892512-D456-89F5-F793-9219E89721A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\tld_cleanup">
+      <UniqueIdentifier>{E06EEBF1-B9BD-E9A9-926E-B55872652822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="url_request">
+      <UniqueIdentifier>{30874AF5-9E1A-E818-4268-C74283DD1CE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy_resolution\win">
+      <UniqueIdentifier>{D3CE6010-37EC-0B95-1B3A-46130102F323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network_error_logging">
+      <UniqueIdentifier>{71D1DA50-40BF-94CF-FA46-996BB719085C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="reporting">
+      <UniqueIdentifier>{BF30706A-86FE-40E0-6147-BFC06271BAB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="websockets">
+      <UniqueIdentifier>{CAB45EC4-AB0D-EF85-94DD-E12E8C14B8B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\url_request">
+      <UniqueIdentifier>{74DDAA0B-6BBB-CD57-2326-775C96DF95F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ftp">
+      <UniqueIdentifier>{AB939831-A499-8314-8616-6C349E4FF340}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../net/base/address_family_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/address_list_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/backoff_entry_serializer_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/backoff_entry_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/chunked_upload_data_stream_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/data_url_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/datagram_buffer_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/elements_upload_data_stream_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/escape_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/expiring_cache_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/file_stream_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/filename_util_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/host_mapping_rules_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/host_port_pair_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/interval_test.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/ip_address_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/ip_endpoint_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/isolation_info_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/lookup_string_in_fixed_set_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/mime_sniffer_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/mime_util_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/net_errors_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/net_string_util_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/network_activity_monitor_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/network_change_notifier_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/network_interfaces_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/network_isolation_key_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/parse_number_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/port_util_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/prioritized_dispatcher_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/prioritized_task_runner_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/priority_queue_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/proxy_server_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/registry_controlled_domains/registry_controlled_domain_unittest.cc">
+      <Filter>base\registry_controlled_domains</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/scheme_host_port_matcher_rule_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/scheme_host_port_matcher_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/schemeful_site_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/test_completion_callback_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/test_proxy_delegate.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/base/test_proxy_delegate.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/base/upload_bytes_element_reader_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/upload_file_element_reader_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/url_util_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/caching_cert_verifier_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/cert_and_ct_verifier_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/cert_verifier_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/cert_verify_proc_builtin_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/cert_verify_proc_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/coalescing_cert_verifier_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/crl_set_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/ct_log_response_parser_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/ct_log_verifier_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/ct_objects_extractor_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/ct_serialization_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/ev_root_ca_metadata_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/cert_issuer_source_aia_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/cert_issuer_source_static_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/cert_issuer_source_sync_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/cert_issuer_source_sync_unittest.h">
+      <Filter>cert\internal</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cert/internal/certificate_policies_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/crl_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/extended_key_usage_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/general_names_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/name_constraints_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/nist_pkits_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/nist_pkits_unittest.h">
+      <Filter>cert\internal</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cert/internal/ocsp_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/parse_certificate_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/parse_name_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/parsed_certificate_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/path_builder_pkits_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/path_builder_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/path_builder_verify_certificate_chain_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/revocation_checker_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/revocation_util_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/signature_algorithm_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/simple_path_builder_delegate_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/test_helpers.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/test_helpers.h">
+      <Filter>cert\internal</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cert/internal/trust_store_collection_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/verify_certificate_chain_pkits_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/verify_certificate_chain_typed_unittest.h">
+      <Filter>cert\internal</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cert/internal/verify_certificate_chain_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/verify_name_match_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/internal/verify_signed_data_unittest.cc">
+      <Filter>cert\internal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/known_roots_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/merkle_audit_proof_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/merkle_tree_leaf_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/multi_log_ct_verifier_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/multi_threaded_cert_verifier_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/pem_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/signed_certificate_timestamp_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/symantec_certs_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/test_root_certs_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/x509_cert_types_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/x509_certificate_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/x509_util_unittest.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert_net/cert_net_fetcher_url_request_unittest.cc">
+      <Filter>cert_net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/canonical_cookie_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/cookie_constants_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/cookie_deletion_info_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/cookie_inclusion_status_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/cookie_monster_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/cookie_options_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/cookie_util_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/parsed_cookie_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/site_for_cookies_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/static_cookie_policy_unittest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/der/encode_values_unittest.cc">
+      <Filter>der</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/der/input_unittest.cc">
+      <Filter>der</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/der/parse_values_unittest.cc">
+      <Filter>der</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/der/parser_unittest.cc">
+      <Filter>der</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/backend_cleanup_tracker_unittest.cc">
+      <Filter>disk_cache</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/backend_unittest.cc">
+      <Filter>disk_cache</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/addr_unittest.cc">
+      <Filter>disk_cache\blockfile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/bitmap_unittest.cc">
+      <Filter>disk_cache\blockfile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/block_files_unittest.cc">
+      <Filter>disk_cache\blockfile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/mapped_file_unittest.cc">
+      <Filter>disk_cache\blockfile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/stats_unittest.cc">
+      <Filter>disk_cache\blockfile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/storage_block_unittest.cc">
+      <Filter>disk_cache\blockfile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/cache_util_unittest.cc">
+      <Filter>disk_cache</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/entry_unittest.cc">
+      <Filter>disk_cache</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_file_tracker_unittest.cc">
+      <Filter>disk_cache\simple</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_index_file_unittest.cc">
+      <Filter>disk_cache\simple</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_index_unittest.cc">
+      <Filter>disk_cache\simple</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_test_util.cc">
+      <Filter>disk_cache\simple</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_test_util.h">
+      <Filter>disk_cache\simple</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_util_unittest.cc">
+      <Filter>disk_cache\simple</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_version_upgrade_unittest.cc">
+      <Filter>disk_cache\simple</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/extras/sqlite/sqlite_persistent_cookie_store_unittest.cc">
+      <Filter>extras\sqlite</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/filter/filter_source_stream_unittest.cc">
+      <Filter>filter</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/filter/gzip_source_stream_unittest.cc">
+      <Filter>filter</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/alternative_service_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/bidirectional_stream_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/broken_alternative_services_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_cache_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_challenge_tokenizer_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_controller_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_filter_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_handler_basic_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_handler_digest_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_handler_factory_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_handler_mock.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_handler_mock.h">
+      <Filter>http</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/http/http_auth_handler_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_multi_round_parse_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_preferences_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_basic_state_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_byte_range_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_cache_lookup_manager_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_cache_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_cache_writers_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_chunked_decoder_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_content_disposition_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_log_util_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_network_layer_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_network_transaction_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_proxy_client_socket_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_proxy_connect_job_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_request_headers_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_response_body_drainer_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_response_headers_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_response_info_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_security_headers_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_server_properties_manager_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_server_properties_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_status_code_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_stream_factory_job_controller_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_stream_factory_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_stream_parser_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_stream_request_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_util_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_vary_data_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/mock_allow_http_auth_preferences.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http/mock_allow_http_auth_preferences.h">
+      <Filter>http</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/http/structured_headers_generated_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/structured_headers_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/test_upload_data_stream_not_allow_http1.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http/test_upload_data_stream_not_allow_http1.h">
+      <Filter>http</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/http/transport_security_persister_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/transport_security_state_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/url_security_manager_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/webfonts_histogram_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http2/platform/impl/http2_test_helpers_impl.cc">
+      <Filter>http2\platform\impl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http2/platform/impl/http2_test_helpers_impl.h">
+      <Filter>http2\platform\impl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/log/file_net_log_observer_unittest.cc">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/log/net_log_capture_mode_unittest.cc">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/log/net_log_unittest.cc">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/log/net_log_util_unittest.cc">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/log/net_log_values_unittest.cc">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/log/trace_net_log_observer_unittest.cc">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/connectivity_monitor_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/effective_connection_type_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/event_creator_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/network_id_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/network_qualities_prefs_manager_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/network_quality_estimator_params_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/network_quality_estimator_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/network_quality_estimator_util_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/network_quality_store_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/observation_buffer_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/socket_watcher_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/nqe/throughput_analyzer_unittest.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/configured_proxy_resolution_service_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/multi_threaded_proxy_resolver_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/network_delegate_error_observer_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/pac_file_decider_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/pac_file_fetcher_impl_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_bypass_rules_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_config_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_info_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_list_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/bidirectional_stream_quic_impl_unittest.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/crypto/proof_test_chromium.cc">
+      <Filter>quic\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/crypto/proof_verifier_chromium_test.cc">
+      <Filter>quic\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/mock_quic_data.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/mock_quic_data.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/network_connection_unittest.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_chromium_clock_test.cc">
+      <Filter>quic\platform\impl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/properties_based_quic_server_info_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_address_mismatch_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_chromium_alarm_factory_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_chromium_client_session_peer.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_chromium_client_session_peer.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/quic_chromium_client_session_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_chromium_client_stream_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_chromium_connection_helper_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_client_session_cache_unittests.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_clock_skew_detector_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_connectivity_probing_manager_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_end_to_end_unittest.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_http_stream_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_http_utils_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_network_transaction_unittest.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_proxy_client_socket_unittest.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_stream_factory_peer.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_stream_factory_peer.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/quic_stream_factory_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/quic_test_packet_maker.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_test_packet_maker.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/quic_transport_end_to_end_test.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/test_quic_crypto_client_config_handle.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/test_quic_crypto_client_config_handle.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/socket/client_socket_pool_base_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/client_socket_pool_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/connect_job_test_util.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/socket/connect_job_test_util.h">
+      <Filter>socket</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/socket/connect_job_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/mock_client_socket_pool_manager.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/socket/mock_client_socket_pool_manager.h">
+      <Filter>socket</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/socket/sequenced_socket_data_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/socket_bio_adapter_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/socket_tag_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/socks5_client_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/socks_client_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/socks_connect_job_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/ssl_client_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/ssl_connect_job_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/ssl_server_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/tcp_client_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/tcp_server_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/tcp_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/transport_client_socket_pool_test_util.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/socket/transport_client_socket_pool_test_util.h">
+      <Filter>socket</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/socket/transport_client_socket_pool_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/transport_client_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/transport_connect_job_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/udp_socket_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/websocket_endpoint_lock_manager_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/websocket_transport_client_socket_pool_unittest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/alps_decoder_test.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/bidirectional_stream_spdy_impl_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/buffered_spdy_framer_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/fuzzing/hpack_fuzz_util_test.cc">
+      <Filter>spdy\fuzzing</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/header_coalescer_test.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/http2_priority_dependencies_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/http2_push_promise_index_test.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_buffer_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_http_stream_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_http_utils_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_log_util_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_network_transaction_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_proxy_client_socket_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_read_queue_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_session_pool_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_session_test_util.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_session_test_util.h">
+      <Filter>spdy</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/spdy/spdy_session_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_stream_test_util.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_stream_test_util.h">
+      <Filter>spdy</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/spdy/spdy_stream_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/spdy/spdy_write_queue_unittest.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/client_cert_identity_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/client_cert_store_unittest-inl.h">
+      <Filter>ssl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/ssl/ssl_cipher_suite_names_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/ssl_client_auth_cache_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/ssl_client_session_cache_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/ssl_config_service_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/ssl_config_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/ssl_connection_status_flags_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/ssl_platform_key_util_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/embedded_test_server_unittest.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/http_request_unittest.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/http_response_unittest.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/test/run_all_unittests.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/third_party/nist-pkits/pkits_testcases-inl.h">
+      <Filter>third_party\nist-pkits</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/third_party/uri_template/uri_template_test.cc">
+      <Filter>third_party\uri_template</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/tools/content_decoder_tool/content_decoder_tool.cc">
+      <Filter>tools\content_decoder_tool</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/content_decoder_tool/content_decoder_tool.h">
+      <Filter>tools\content_decoder_tool</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/content_decoder_tool/content_decoder_tool_unittest.cc">
+      <Filter>tools\content_decoder_tool</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/tools/quic/quic_simple_client_test.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/tools/tld_cleanup/tld_cleanup_util_unittest.cc">
+      <Filter>tools\tld_cleanup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/redirect_info_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/redirect_util_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/report_sender_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_fetcher_impl_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_fetcher_response_writer_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_context_builder_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_context_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_filter_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_http_job_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_job_factory_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_job_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_quic_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_throttler_simulation_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_throttler_test_support.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_throttler_test_support.h">
+      <Filter>url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/url_request/url_request_throttler_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/view_cache_helper_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/network_change_notifier_win_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/network_interfaces_win_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_sspi_win_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/mock_sspi_library_win.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http/mock_sspi_library_win.h">
+      <Filter>http</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/proxy_resolution/win/dhcp_pac_file_adapter_fetcher_win_unittest.cc">
+      <Filter>proxy_resolution\win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/win/dhcp_pac_file_fetcher_win_unittest.cc">
+      <Filter>proxy_resolution\win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/win/proxy_config_service_win_unittest.cc">
+      <Filter>proxy_resolution\win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/win/windows_system_proxy_resolution_service_unittest.cc">
+      <Filter>proxy_resolution\win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/win/windows_system_proxy_resolver_unittest.cc">
+      <Filter>proxy_resolution\win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/client_cert_store_win_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ssl/ssl_platform_key_win_unittest.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/extras/sqlite/sqlite_persistent_reporting_and_nel_store_unittest.cc">
+      <Filter>extras\sqlite</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/network_error_logging/mock_persistent_nel_store_unittest.cc">
+      <Filter>network_error_logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/network_error_logging/network_error_logging_service_unittest.cc">
+      <Filter>network_error_logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/mock_persistent_reporting_store_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_browsing_data_remover_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_cache_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_delivery_agent_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_endpoint_manager_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_garbage_collector_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_header_parser_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_network_change_observer_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_service_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/reporting/reporting_uploader_unittest.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/test/python_utils_unittest.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_handler_negotiate_unittest.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_basic_handshake_stream_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_basic_stream_adapters_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_basic_stream_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_channel_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_deflate_parameters_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_deflate_predictor_impl_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_deflate_stream_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_deflater_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_end_to_end_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_errors_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_extension_parser_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_extension_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_frame_parser_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_frame_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_handshake_challenge_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_handshake_stream_create_helper_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_inflater_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_stream_cookie_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_stream_create_test_base.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_stream_create_test_base.h">
+      <Filter>websockets</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/websockets/websocket_stream_test.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_test_util.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_test_util.h">
+      <Filter>websockets</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/base/directory_lister_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/directory_listing_unittest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/test/url_request/url_request_test_job_backed_by_file_unittest.cc">
+      <Filter>test\url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ftp/ftp_auth_cache_unittest.cc">
+      <Filter>ftp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ftp/ftp_ctrl_response_buffer_unittest.cc">
+      <Filter>ftp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ftp/ftp_directory_listing_parser_ls_unittest.cc">
+      <Filter>ftp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ftp/ftp_directory_listing_parser_unittest.cc">
+      <Filter>ftp</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_directory_listing_parser_unittest.h">
+      <Filter>ftp</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/ftp/ftp_directory_listing_parser_vms_unittest.cc">
+      <Filter>ftp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ftp/ftp_directory_listing_parser_windows_unittest.cc">
+      <Filter>ftp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ftp/ftp_network_transaction_unittest.cc">
+      <Filter>ftp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/ftp/ftp_util_unittest.cc">
+      <Filter>ftp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_ftp_job_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/http_with_dns_over_https_unittest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/filter/brotli_source_stream_unittest.cc">
+      <Filter>filter</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

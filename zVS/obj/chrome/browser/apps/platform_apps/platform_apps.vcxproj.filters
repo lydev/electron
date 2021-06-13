@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/app_load_service.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/app_load_service.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/app_load_service_factory.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/app_load_service_factory.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/app_termination_observer.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/app_termination_observer.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/app_window_registry_util.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/app_window_registry_util.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/audio_focus_web_contents_observer.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/audio_focus_web_contents_observer.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/browser_context_keyed_service_factories.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/browser_context_keyed_service_factories.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/chrome_apps_browser_api_provider.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/chrome_apps_browser_api_provider.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/install_chrome_app.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/install_chrome_app.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/platform_app_launch.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/platform_app_launch.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/platform_app_navigation_redirector.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/platform_app_navigation_redirector.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/shortcut_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/shortcut_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/apps/platform_apps/shortcut_manager_factory.cc" />
+    <None Include="../../../../../../../chrome/browser/apps/platform_apps/shortcut_manager_factory.h" />
+  </ItemGroup>
+</Project>

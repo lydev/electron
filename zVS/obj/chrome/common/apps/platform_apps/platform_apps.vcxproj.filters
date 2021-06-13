@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/common/apps/platform_apps/chrome_apps_api_permissions.cc" />
+    <None Include="../../../../../../../chrome/common/apps/platform_apps/chrome_apps_api_permissions.h" />
+    <CustomBuild Include="../../../../../../../chrome/common/apps/platform_apps/chrome_apps_api_provider.cc" />
+    <None Include="../../../../../../../chrome/common/apps/platform_apps/chrome_apps_api_provider.h" />
+    <CustomBuild Include="../../../../../../../chrome/common/apps/platform_apps/chrome_apps_message_generator.cc" />
+    <None Include="../../../../../../../chrome/common/apps/platform_apps/chrome_apps_message_generator.h" />
+    <None Include="../../../../../../../chrome/common/apps/platform_apps/chrome_apps_messages.h" />
+    <CustomBuild Include="../../../../../../../chrome/common/apps/platform_apps/media_galleries_permission.cc" />
+    <None Include="../../../../../../../chrome/common/apps/platform_apps/media_galleries_permission.h" />
+    <CustomBuild Include="../../../../../../../chrome/common/apps/platform_apps/media_galleries_permission_data.cc" />
+    <None Include="../../../../../../../chrome/common/apps/platform_apps/media_galleries_permission_data.h" />
+  </ItemGroup>
+</Project>

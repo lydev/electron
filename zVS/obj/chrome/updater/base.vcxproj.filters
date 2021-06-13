@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{B26D2D58-FFA3-D057-BCAA-1FE8AD111DC6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="policy">
+      <UniqueIdentifier>{5FDF65AA-D1FC-FDD3-6B79-AF63CD3E77B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\server\win">
+      <UniqueIdentifier>{7416FC50-9F6B-57BE-CE57-24912A09745A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app\server">
+      <UniqueIdentifier>{E042D753-A134-FA11-49C1-C98A1F1D4E7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="policy\win">
+      <UniqueIdentifier>{262C9B5B-E1A0-E6ED-657E-3AF2A2394326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{A2FD7ED2-524A-B7B7-B76C-D928BB55947B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\net">
+      <UniqueIdentifier>{807AB12A-9D7D-8365-AFF8-ABED921C71E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\setup">
+      <UniqueIdentifier>{63905890-A63F-724D-6F09-4D624C0035DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../chrome/updater/action_handler.h" />
+    <CustomBuild Include="../../../../../chrome/updater/activity.cc" />
+    <None Include="../../../../../chrome/updater/activity.h" />
+    <None Include="../../../../../chrome/updater/activity_impl.h" />
+    <CustomBuild Include="../../../../../chrome/updater/app/app.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/app.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/app_install.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/app_install.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/app_server.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/app_server.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/app_uninstall.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/app_uninstall.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/app_update.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/app_update.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/app_utils.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/app_utils.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/app_wake.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/app_wake.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/check_for_updates_task.cc" />
+    <None Include="../../../../../chrome/updater/check_for_updates_task.h" />
+    <CustomBuild Include="../../../../../chrome/updater/configurator.cc" />
+    <None Include="../../../../../chrome/updater/configurator.h" />
+    <CustomBuild Include="../../../../../chrome/updater/constants.cc" />
+    <None Include="../../../../../chrome/updater/constants.h" />
+    <CustomBuild Include="../../../../../chrome/updater/crash_client.cc" />
+    <None Include="../../../../../chrome/updater/crash_client.h" />
+    <CustomBuild Include="../../../../../chrome/updater/crash_reporter.cc" />
+    <None Include="../../../../../chrome/updater/crash_reporter.h" />
+    <None Include="../../../../../chrome/updater/crx_downloader_factory.h" />
+    <None Include="../../../../../chrome/updater/enum_traits.h" />
+    <CustomBuild Include="../../../../../chrome/updater/external_constants.cc" />
+    <None Include="../../../../../chrome/updater/external_constants.h" />
+    <CustomBuild Include="../../../../../chrome/updater/external_constants_builder.cc" />
+    <None Include="../../../../../chrome/updater/external_constants_builder.h" />
+    <CustomBuild Include="../../../../../chrome/updater/external_constants_override.cc" />
+    <None Include="../../../../../chrome/updater/external_constants_override.h" />
+    <CustomBuild Include="../../../../../chrome/updater/installer.cc" />
+    <None Include="../../../../../chrome/updater/installer.h" />
+    <None Include="../../../../../chrome/updater/lib_util.h" />
+    <CustomBuild Include="../../../../../chrome/updater/persisted_data.cc" />
+    <None Include="../../../../../chrome/updater/persisted_data.h" />
+    <CustomBuild Include="../../../../../chrome/updater/policy/dm_policy_manager.cc">
+      <Filter>policy</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/policy/dm_policy_manager.h">
+      <Filter>policy</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/policy/manager.cc">
+      <Filter>policy</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/policy/manager.h">
+      <Filter>policy</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/policy/service.cc">
+      <Filter>policy</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/policy/service.h">
+      <Filter>policy</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/prefs.cc" />
+    <None Include="../../../../../chrome/updater/prefs.h" />
+    <None Include="../../../../../chrome/updater/prefs_impl.h" />
+    <CustomBuild Include="../../../../../chrome/updater/registration_data.cc" />
+    <None Include="../../../../../chrome/updater/registration_data.h" />
+    <None Include="../../../../../chrome/updater/setup.h" />
+    <None Include="../../../../../chrome/updater/splash_screen.h" />
+    <CustomBuild Include="../../../../../chrome/updater/tag.cc" />
+    <None Include="../../../../../chrome/updater/tag.h" />
+    <CustomBuild Include="../../../../../chrome/updater/update_service.cc" />
+    <None Include="../../../../../chrome/updater/update_service.h" />
+    <CustomBuild Include="../../../../../chrome/updater/update_service_impl.cc" />
+    <None Include="../../../../../chrome/updater/update_service_impl.h" />
+    <CustomBuild Include="../../../../../chrome/updater/update_service_impl_inactive.cc" />
+    <None Include="../../../../../chrome/updater/update_service_impl_inactive.h" />
+    <None Include="../../../../../chrome/updater/update_service_internal.h" />
+    <CustomBuild Include="../../../../../chrome/updater/update_service_internal_impl.cc" />
+    <None Include="../../../../../chrome/updater/update_service_internal_impl.h" />
+    <CustomBuild Include="../../../../../chrome/updater/update_service_internal_impl_inactive.cc" />
+    <None Include="../../../../../chrome/updater/update_service_internal_impl_inactive.h" />
+    <CustomBuild Include="../../../../../chrome/updater/updater.cc" />
+    <None Include="../../../../../chrome/updater/updater.h" />
+    <CustomBuild Include="../../../../../chrome/updater/updater_scope.cc" />
+    <None Include="../../../../../chrome/updater/updater_scope.h" />
+    <CustomBuild Include="../../../../../chrome/updater/util.cc" />
+    <None Include="../../../../../chrome/updater/util.h" />
+    <CustomBuild Include="../../../../../chrome/updater/activity_impl_win.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/app/app_install_win.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/app/server/win/com_classes.cc">
+      <Filter>app\server\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/server/win/com_classes.h">
+      <Filter>app\server\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/server/win/com_classes_legacy.cc">
+      <Filter>app\server\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/server/win/com_classes_legacy.h">
+      <Filter>app\server\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/server/win/server.cc">
+      <Filter>app\server\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/server/win/server.h">
+      <Filter>app\server\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/app/server/win/service_main.cc">
+      <Filter>app\server\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/app/server/win/service_main.h">
+      <Filter>app\server\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/lib_util_win.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/policy/win/group_policy_manager.cc">
+      <Filter>policy\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/policy/win/group_policy_manager.h">
+      <Filter>policy\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/prefs_win.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/service_factory_win.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/setup_win.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/win/action_handler.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/install_progress_observer.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/install_progress_observer.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/installer_api.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/installer_api.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/net/net_util.cc">
+      <Filter>win\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/net/net_util.h">
+      <Filter>win\net</Filter>
+    </None>
+    <None Include="../../../../../chrome/updater/win/net/network.h">
+      <Filter>win\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/net/network_fetcher.cc">
+      <Filter>win\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/net/network_fetcher.h">
+      <Filter>win\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/net/network_winhttp.cc">
+      <Filter>win\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/net/network_winhttp.h">
+      <Filter>win\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/net/proxy_configuration.cc">
+      <Filter>win\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/net/proxy_configuration.h">
+      <Filter>win\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/net/proxy_info.cc">
+      <Filter>win\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/net/proxy_info.h">
+      <Filter>win\net</Filter>
+    </None>
+    <None Include="../../../../../chrome/updater/win/net/scoped_hinternet.h">
+      <Filter>win\net</Filter>
+    </None>
+    <None Include="../../../../../chrome/updater/win/net/scoped_winttp_proxy_info.h">
+      <Filter>win\net</Filter>
+    </None>
+    <None Include="../../../../../chrome/updater/win/scoped_handle.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/scoped_impersonation.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/scoped_impersonation.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/setup/setup.cc">
+      <Filter>win\setup</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/setup/setup.h">
+      <Filter>win\setup</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/setup/setup_util.cc">
+      <Filter>win\setup</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/setup/setup_util.h">
+      <Filter>win\setup</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/setup/uninstall.cc">
+      <Filter>win\setup</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/setup/uninstall.h">
+      <Filter>win\setup</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/task_scheduler.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/task_scheduler.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/update_service_internal_proxy.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/update_service_internal_proxy.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/update_service_proxy.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/update_service_proxy.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/user_info.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/user_info.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/win_constants.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/win_constants.h">
+      <Filter>win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/win/win_util.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/win/win_util.h">
+      <Filter>win</Filter>
+    </None>
+    <None Include="../../../../../chrome/updater/win/wrl_module.h">
+      <Filter>win</Filter>
+    </None>
+  </ItemGroup>
+</Project>

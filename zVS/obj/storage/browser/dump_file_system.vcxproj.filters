@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="file_system">
+      <UniqueIdentifier>{6EE23EE1-E91B-066A-17B0-C64CC487E37C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../storage/browser/file_system/dump_file_system.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

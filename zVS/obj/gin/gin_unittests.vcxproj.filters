@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{30FF0113-2473-626B-9634-EA7C672D69FA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../gin/arguments_unittest.cc" />
+    <CustomBuild Include="../../../../gin/array_buffer_unittest.cc" />
+    <CustomBuild Include="../../../../gin/converter_unittest.cc" />
+    <CustomBuild Include="../../../../gin/data_object_builder_unittest.cc" />
+    <CustomBuild Include="../../../../gin/interceptor_unittest.cc" />
+    <CustomBuild Include="../../../../gin/per_context_data_unittest.cc" />
+    <CustomBuild Include="../../../../gin/shell_runner_unittest.cc" />
+    <CustomBuild Include="../../../../gin/test/run_all_unittests.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../gin/v8_isolate_memory_dump_provider_unittest.cc" />
+    <CustomBuild Include="../../../../gin/v8_platform_unittest.cc" />
+    <CustomBuild Include="../../../../gin/v8_shared_memory_dump_provider_unittest.cc" />
+    <CustomBuild Include="../../../../gin/wrappable_unittest.cc" />
+    <CustomBuild Include="../../../../gin/shell/gin_shell_unittest.cc">
+      <Filter>shell</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F1F2EEF1-1D8F-C954-4707-4EC0DEF760DE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>devtools</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/chrome/browser/devtools/devtools.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../..;../../../../../../out/x64-debug/gen;../../../../../../third_party/perfetto/include;../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../third_party/libyuv/include;../../../../../../third_party/jsoncpp/source/include;../../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../../third_party/dawn/src/include;../../../../../../third_party/libwebp/src;../../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../../third_party/khronos;../../../../../../gpu;../../../../../../third_party/wtl/include;../../../../../../third_party/abseil-cpp;../../../../../../third_party/boringssl/src/include;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/protoc_out;../../../../../../out/x64-debug/gen;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../../net/third_party/quiche/overrides;../../../../../../net/third_party/quiche/src/common/platform/default;../../../../../../net/third_party/quiche/src;../../../../../../third_party/ced/src;../../../../../../third_party/icu/source/common;../../../../../../third_party/icu/source/i18n;../../../../../../third_party/webrtc_overrides;../../../../../../third_party/webrtc;../../../../../../out/x64-debug/gen/third_party/webrtc;../../../../../../third_party/skia;../../../../../../third_party/libgifcodec;../../../../../../third_party/vulkan/include;../../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../../third_party/mesa_headers;../../../../../../third_party/libwebm/source;../../../../../../third_party/leveldatabase;../../../../../../third_party/leveldatabase/src;../../../../../../third_party/leveldatabase/src/include;../../../../../../v8/include;../../../../../../out/x64-debug/gen/v8/include;../../../../../../out/x64-debug/gen;../../../../../../out/x64-debug/gen/third_party/metrics_proto;../../../../../../third_party/zlib;../../../../../../out/x64-debug/gen;../../../../../../out/x64-debug/gen/components/policy/proto;../../../../../../out/x64-debug/gen/third_party/private_membership/src;../../../../../../out/x64-debug/gen/third_party/shell-encryption/src;../../../../../../out/x64-debug/gen/components/policy/proto;../../../../../../out/x64-debug/gen;../../../../../../out/x64-debug/gen;../../../../../../third_party/re2/src;../../../../../../out/x64-debug/gen;../../../../../../out/x64-debug/gen;../../../../../../out/x64-debug/gen;../../../../../../out/x64-debug/gen;../../../../../../third_party/flatbuffers/src/include;../../../../../../out/x64-debug/gen;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-shorten-64-to-32 -Wexit-time-destructors -Wno-deprecated-declarations -DPROTOBUF_ALLOW_DEPRECATED=1 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;WEBP_EXTERN=extern;USE_EGL;VK_USE_PLATFORM_WIN32_KHR;_WTL_NO_AUTOMATIC_NAMESPACE;TOOLKIT_VIEWS=1;ON_FOCUS_PING_ENABLED;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;WEBRTC_ENABLE_AVX2;RTC_ENABLE_WIN_WGC;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0;WEBRTC_CHROMIUM_BUILD;WEBRTC_WIN;ABSL_ALLOCATOR_NOTHROW=1;WEBRTC_USE_BUILTIN_ISAC_FIX=0;WEBRTC_USE_BUILTIN_ISAC_FLOAT=1;WEBRTC_HAVE_SCTP;NO_MAIN_THREAD_WRAPPING;SK_UNTIL_CRBUG_1187654_IS_FIXED;SK_CODEC_DECODES_PNG;SK_CODEC_DECODES_WEBP;SK_ENCODE_PNG;SK_ENCODE_WEBP;SK_USER_CONFIG_HEADER=&quot;../../skia/config/SkUserConfig.h&quot;;SK_GL;SK_CODEC_DECODES_JPEG;SK_ENCODE_JPEG;SK_USE_LIBGIFCODEC;SK_VULKAN_HEADER=&quot;../../skia/config/SkVulkanConfig.h&quot;;SK_VULKAN=1;SK_DAWN;SK_SUPPORT_GPU=1;SK_GPU_WORKAROUNDS_HEADER=&quot;gpu/config/gpu_driver_bug_workaround_autogen.h&quot;;GR_GL_FUNCTION_TYPE=__stdcall;VK_USE_PLATFORM_WIN32_KHR;LEVELDB_PLATFORM_CHROMIUM=1;LEVELDB_PLATFORM_CHROMIUM=1;V8_USE_EXTERNAL_STARTUP_DATA;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;FLATBUFFERS_LOCALE_INDEPENDENT=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/chrome_devtools_manager_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/chrome_devtools_manager_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/chrome_devtools_manager_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/chrome_devtools_manager_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/chrome_devtools_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/chrome_devtools_session.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/chrome_devtools_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/chrome_devtools_session.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/adb/adb_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/adb_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/adb_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/adb/adb_client_socket.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/adb/adb_device_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/adb_device_provider.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/adb_device_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/adb/adb_device_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/android_device_info_query.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/android_device_info_query.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/android_device_info_query.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/android_device_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/android_device_manager.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/android_device_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/android_device_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/android_web_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/android_web_socket.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/android_web_socket.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/devtools_android_bridge.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_android_bridge.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_android_bridge.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/devtools_android_bridge.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/devtools_device_discovery.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_device_discovery.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_device_discovery.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/devtools_device_discovery.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/port_forwarding_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/port_forwarding_controller.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/port_forwarding_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/port_forwarding_controller.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/tcp_device_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/tcp_device_provider.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/tcp_device_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/tcp_device_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/usb/android_rsa.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/android_rsa.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/android_rsa.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/usb/android_rsa.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/usb/android_usb_device.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/android_usb_device.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/android_usb_device.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/usb/android_usb_device.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/usb/android_usb_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/android_usb_socket.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/android_usb_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/usb/android_usb_socket.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/usb/usb_device_manager_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/usb_device_manager_helper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/usb_device_manager_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/usb/usb_device_manager_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/usb/usb_device_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/usb_device_provider.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/usb_device_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/usb/usb_device_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_auto_opener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_auto_opener.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_auto_opener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_auto_opener.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_browser_context_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_browser_context_manager.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_browser_context_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_browser_context_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_contents_resizing_strategy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_contents_resizing_strategy.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_contents_resizing_strategy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_contents_resizing_strategy.h" />
+    <None Include="../../../../../../chrome/browser/devtools/devtools_dock_tile.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_embedder_message_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_embedder_message_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_embedder_message_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_embedder_message_dispatcher.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_eye_dropper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_eye_dropper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_eye_dropper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_eye_dropper.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_file_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_file_helper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_file_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_file_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_file_system_indexer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_file_system_indexer.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_file_system_indexer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_file_system_indexer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_file_watcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_file_watcher.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_file_watcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_file_watcher.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_infobar_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_infobar_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_infobar_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_infobar_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_targets_ui.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_targets_ui.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_targets_ui.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_targets_ui.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_toggle_action.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_toggle_action.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_toggle_action.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_toggle_action.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_ui_bindings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_ui_bindings.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_ui_bindings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_ui_bindings.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_window.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_window.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_window.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/devtools_window.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/global_confirm_info_bar.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/global_confirm_info_bar.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/global_confirm_info_bar.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/global_confirm_info_bar.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/remote_debugging_server.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/remote_debugging_server.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/remote_debugging_server.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/remote_debugging_server.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/serialize_host_descriptions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/serialize_host_descriptions.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/serialize_host_descriptions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/serialize_host_descriptions.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/url_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/url_constants.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/url_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/url_constants.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/device/cast_device_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/cast_device_provider.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/cast_device_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/device/cast_device_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/devtools_dock_tile.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/devtools_dock_tile.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/devtools_dock_tile.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/protocol/browser_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/browser_handler.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/browser_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/protocol/browser_handler.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/protocol/cast_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/cast_handler.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/cast_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/protocol/cast_handler.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/protocol/page_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/page_handler.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/page_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/protocol/page_handler.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/protocol/security_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/security_handler.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/security_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/protocol/security_handler.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/devtools/protocol/target_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/target_handler.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/target_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/devtools/protocol/target_handler.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/base_string_adapter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/base_string_adapter.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/base_string_adapter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/base_string_adapter.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/browser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/browser.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/browser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/browser.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/cast.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/cast.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/cast.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/cast.h" />
+    <None Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/forward.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/page.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/page.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/page.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/page.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/protocol.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/protocol.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/protocol.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/protocol.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/security.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/security.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/security.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/security.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/target.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools/target.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/browser/devtools/devtools/target.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/browser/devtools/protocol/target.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/chrome/browser/devtools/devtools.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/chrome/browser/devtools/devtools.lib" />
+  </Target>
+</Project>

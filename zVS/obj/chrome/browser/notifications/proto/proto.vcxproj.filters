@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto">
+      <UniqueIdentifier>{9DD8261C-E1C4-E124-80A9-E6894189725F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser\notifications">
+      <UniqueIdentifier>{25C84EF2-07D4-3BC5-313D-8A3E6A7E6212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser">
+      <UniqueIdentifier>{4EC8206D-441C-CA85-3222-62AAC4FA6AFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{6020ED40-B7B9-6AC5-7C58-D39617BE58E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/client_state.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/client_state.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/icon.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/icon.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/impression.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/impression.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/notification_data.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/notification_data.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/notification_entry.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/notifications/proto/notification_entry.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\notifications\proto</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\app">
+      <UniqueIdentifier>{939568C5-7D16-D249-3832-C52371FD0B57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\common">
+      <UniqueIdentifier>{BB05FCC2-6424-E5A9-CDCF-992EDEAA1E63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../chrome/app/chrome_dll_resource.h">
+      <Filter>..\..\chrome\app</Filter>
+    </None>
+    <None Include="../../../../../chrome/common/chrome_icon_resources_win.h">
+      <Filter>..\..\chrome\common</Filter>
+    </None>
+    <None Include="../../../../../chrome/install_static/install_constants.h" />
+    <CustomBuild Include="../../../../../chrome/install_static/install_details.cc" />
+    <None Include="../../../../../chrome/install_static/install_details.h" />
+    <CustomBuild Include="../../../../../chrome/install_static/install_modes.cc" />
+    <None Include="../../../../../chrome/install_static/install_modes.h" />
+    <CustomBuild Include="../../../../../chrome/install_static/install_util.cc" />
+    <None Include="../../../../../chrome/install_static/install_util.h" />
+    <CustomBuild Include="../../../../../chrome/install_static/policy_path_parser.cc" />
+    <None Include="../../../../../chrome/install_static/policy_path_parser.h" />
+    <CustomBuild Include="../../../../../chrome/install_static/product_install_details.cc" />
+    <None Include="../../../../../chrome/install_static/product_install_details.h" />
+    <CustomBuild Include="../../../../../chrome/install_static/user_data_dir.cc" />
+    <None Include="../../../../../chrome/install_static/user_data_dir.h" />
+    <CustomBuild Include="../../../../../chrome/install_static/chromium_install_modes.cc" />
+    <None Include="../../../../../chrome/install_static/chromium_install_modes.h" />
+  </ItemGroup>
+</Project>

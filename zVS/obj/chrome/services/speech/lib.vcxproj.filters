@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/services/speech/audio_source_fetcher_impl.cc" />
+    <None Include="../../../../../../chrome/services/speech/audio_source_fetcher_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/services/speech/cloud_speech_recognition_client.cc" />
+    <None Include="../../../../../../chrome/services/speech/cloud_speech_recognition_client.h" />
+    <CustomBuild Include="../../../../../../chrome/services/speech/speech_recognition_recognizer_impl.cc" />
+    <None Include="../../../../../../chrome/services/speech/speech_recognition_recognizer_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/services/speech/speech_recognition_service_impl.cc" />
+    <None Include="../../../../../../chrome/services/speech/speech_recognition_service_impl.h" />
+  </ItemGroup>
+</Project>

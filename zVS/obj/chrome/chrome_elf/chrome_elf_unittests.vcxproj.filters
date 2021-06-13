@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hook_util\test">
+      <UniqueIdentifier>{84689C5E-CA4A-EDCA-2ED3-FE01832AA538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hook_util">
+      <UniqueIdentifier>{72879F83-B988-5AB4-ADF0-A7F5698B0E0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nt_registry">
+      <UniqueIdentifier>{90F39F7D-4A8F-505A-EAFA-0638AD88242D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pe_image_safe">
+      <UniqueIdentifier>{D7F6552D-C686-5F64-F855-BE1F000D5A5F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sha1">
+      <UniqueIdentifier>{A81DFFCB-5250-AA41-3369-6503B8CCF6FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party_dlls">
+      <UniqueIdentifier>{DC774630-6B2A-772E-484B-AC94ED00C46D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/chrome_elf_util_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/chrome_elf/hook_util/test/hook_util_test.cc">
+      <Filter>hook_util\test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/nt_registry/nt_registry_unittest.cc">
+      <Filter>nt_registry</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/pe_image_safe/pe_image_safe_unittest.cc">
+      <Filter>pe_image_safe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/run_all_unittests.cc" />
+    <CustomBuild Include="../../../../../chrome/chrome_elf/sha1/sha1_unittest.cc">
+      <Filter>sha1</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/third_party_dlls/beacon_unittest.cc">
+      <Filter>third_party_dlls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/third_party_dlls/logs_unittest.cc">
+      <Filter>third_party_dlls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/third_party_dlls/main_unittest.cc">
+      <Filter>third_party_dlls</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/chrome_elf/third_party_dlls/main_unittest_exe.h">
+      <Filter>third_party_dlls</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/third_party_dlls/packed_list_file_unittest.cc">
+      <Filter>third_party_dlls</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

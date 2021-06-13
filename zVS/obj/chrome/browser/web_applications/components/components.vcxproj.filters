@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\chrome\browser\web_applications\system_web_apps">
+      <UniqueIdentifier>{3DC73BF7-10F8-7615-B16C-6A8D7652B85B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\chrome\browser\web_applications">
+      <UniqueIdentifier>{B3B44334-FB31-7D1F-EBD6-9C078BA3F6E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\chrome\browser">
+      <UniqueIdentifier>{045CFE64-3BA9-1E55-5722-CEBB29217C48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\chrome">
+      <UniqueIdentifier>{81020E39-58F6-E150-846E-69C2527C3CB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="policy">
+      <UniqueIdentifier>{5FDF65AA-D1FC-FDD3-6B79-AF63CD3E77B0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../chrome/browser/web_applications/system_web_apps/system_web_app_types.h">
+      <Filter>..\..\..\..\chrome\browser\web_applications\system_web_apps</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/app_icon_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/app_icon_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/app_registrar.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/app_registrar.h" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/app_registrar_observer.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/app_registry_controller.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/app_registry_controller.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/app_shortcut_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/app_shortcut_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/external_install_options.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/external_install_options.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/externally_installed_web_app_prefs.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/externally_installed_web_app_prefs.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/externally_managed_app_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/externally_managed_app_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/file_handler_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/file_handler_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/file_handling_permission_context.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/file_handling_permission_context.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/file_handling_permission_request_impl.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/file_handling_permission_request_impl.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/install_bounce_metric.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/install_bounce_metric.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/install_finalizer.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/install_finalizer.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/install_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/install_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/os_integration_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/os_integration_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/policy/web_app_policy_constants.cc">
+      <Filter>policy</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/web_applications/components/policy/web_app_policy_constants.h">
+      <Filter>policy</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/preinstalled_app_install_features.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/preinstalled_app_install_features.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/protocol_handler_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/protocol_handler_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/url_handler_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/url_handler_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_audio_focus_id_map.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_audio_focus_id_map.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_chromeos_data.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_chromeos_data.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_constants.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_constants.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_data_retriever.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_data_retriever.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_file_handler_registration.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_file_handler_registration.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_helpers.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_helpers.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_icon_generator.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_icon_generator.h" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_id.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_id_constants.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_id_constants.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_install_utils.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_install_utils.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_origin_association_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_origin_association_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_origin_association_task.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_origin_association_task.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_prefs_utils.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_prefs_utils.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_protocol_handler_registration.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_protocol_handler_registration.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_provider_base.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_provider_base.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_provider_base_factory.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_provider_base_factory.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_run_on_os_login.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_run_on_os_login.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_shortcut.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_shortcut.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_shortcuts_menu.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_shortcuts_menu.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_system_web_app_data.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_system_web_app_data.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_tab_helper_base.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_tab_helper_base.h" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_ui_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_uninstallation_via_os_settings_registration.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_uninstallation_via_os_settings_registration.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_url_loader.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_url_loader.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_utils.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_utils.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_application_info.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_application_info.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_icon_downloader.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_icon_downloader.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_file_handler_registration_win.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_handler_registration_utils_win.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_handler_registration_utils_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_protocol_handler_registration_win.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_run_on_os_login_win.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_shortcut_win.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_shortcut_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_shortcuts_menu_win.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/web_app_shortcuts_menu_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/web_app_uninstallation_via_os_settings_registration_win.cc" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/url_handler_launch_params.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/url_handler_launch_params.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/url_handler_manager_impl.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/url_handler_manager_impl.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/web_applications/components/url_handler_prefs.cc" />
+    <None Include="../../../../../../../chrome/browser/web_applications/components/url_handler_prefs.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser\sync\test\integration\performance">
+      <UniqueIdentifier>{8A4AC270-3390-7466-281E-379565D287A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\sync\test\integration">
+      <UniqueIdentifier>{243D5983-B5BD-39DF-CFCB-58B3D7766C0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\sync\test">
+      <UniqueIdentifier>{8AF89DF5-03EB-B7EE-7A8C-B1531D4B6ECC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\sync">
+      <UniqueIdentifier>{12F4D6F8-32CE-3704-63F8-14D179C51861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{530671C4-A49E-2227-1185-B142528140EB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/performance/autofill_sync_perf_test.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/performance/bookmarks_sync_perf_test.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/performance/dictionary_sync_perf_test.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/performance/extensions_sync_perf_test.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/performance/passwords_sync_perf_test.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/performance/sessions_sync_perf_test.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/performance/sync_timing_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/performance/sync_timing_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/performance/typed_urls_sync_perf_test.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration\performance</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/browser_perf_tests_main.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/installer/test/alternate_version_generator.cc" />
+    <None Include="../../../../../../chrome/installer/test/alternate_version_generator.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/test/pe_image_resources.cc" />
+    <None Include="../../../../../../chrome/installer/test/pe_image_resources.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/test/resource_loader.cc" />
+    <None Include="../../../../../../chrome/installer/test/resource_loader.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/test/resource_updater.cc" />
+    <None Include="../../../../../../chrome/installer/test/resource_updater.h" />
+  </ItemGroup>
+</Project>

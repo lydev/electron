@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/target/cleaner_engine_requests_proxy_unittest.cc" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/target/engine_file_requests_proxy_unittest.cc" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/target/engine_requests_proxy_unittest.cc" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/target/libraries_unittest.cc" />
+  </ItemGroup>
+</Project>

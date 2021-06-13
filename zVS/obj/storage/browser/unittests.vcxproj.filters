@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="blob">
+      <UniqueIdentifier>{5D228D9A-C1A5-25F1-993E-C2E2D93E8B60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{B0D1894D-D63D-4B6C-13AA-F5056C64815C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file_system">
+      <UniqueIdentifier>{6EE23EE1-E91B-066A-17B0-C64CC487E37C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file_system\quota">
+      <UniqueIdentifier>{1C2B1420-9BF7-E99F-6F69-17584ED7C666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quota">
+      <UniqueIdentifier>{99A10B2F-75AB-049A-0ADA-0F05A33C2424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_builder_from_stream_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_data_builder_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_flattener_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_impl_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_memory_controller_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_reader_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_registry_impl_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_slice_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_storage_context_mojo_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_storage_context_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_storage_registry_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_transport_strategy_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_url_registry_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_url_store_impl_unittest.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/database/database_connections_unittest.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/database/database_quota_client_unittest.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/database/database_tracker_unittest.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/database/database_util_unittest.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/database/databases_table_unittest.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/copy_or_move_file_validator_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/copy_or_move_operation_delegate_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/dragged_file_util_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/external_mount_points_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_stream_reader_test.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_stream_reader_test.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_stream_test_utils.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_stream_test_utils.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_stream_writer_test.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_stream_writer_test.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_context_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_operation_impl_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_operation_impl_write_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_quota_client_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_url_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_usage_cache_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_writer_delegate_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/filesystem_proxy_file_stream_reader_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/isolated_context_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/local_file_stream_reader_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/local_file_stream_writer_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/local_file_util_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/memory_file_stream_reader_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/memory_file_stream_writer_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/native_file_util_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/obfuscated_file_util_memory_delegate_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/obfuscated_file_util_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/plugin_private_file_system_backend_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/quota/quota_backend_impl_unittest.cc">
+      <Filter>file_system\quota</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/quota/quota_reservation_manager_unittest.cc">
+      <Filter>file_system\quota</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/recursive_operation_delegate_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_directory_database_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_file_stream_reader_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_file_stream_writer_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_file_system_backend_delegate_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_file_system_backend_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_origin_database_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/file_system/transient_file_util_unittest.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_database_migrations_unittest.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_database_unittest.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_manager_unittest.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_settings_unittest.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_temporary_storage_evictor_unittest.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/quota/usage_tracker_unittest.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../storage/browser/test/mock_quota_manager_unittest.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

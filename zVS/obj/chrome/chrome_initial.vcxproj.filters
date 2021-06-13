@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{B26D2D58-FFA3-D057-BCAA-1FE8AD111DC6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{07AEAFC7-2F39-B64B-2877-3FB44E06BFBE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../chrome/app/chrome_exe_resource.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../chrome/app/chrome_exe.rc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../chrome/app/chrome_exe_main_win.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../chrome/app/main_dll_loader_win.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../chrome/app/main_dll_loader_win.h">
+      <Filter>app</Filter>
+    </None>
+    <CustomBuild Include="../../../../chrome/common/crash_keys.cc">
+      <Filter>common</Filter>
+    </CustomBuild>
+    <None Include="../../../../chrome/common/crash_keys.h">
+      <Filter>common</Filter>
+    </None>
+  </ItemGroup>
+</Project>

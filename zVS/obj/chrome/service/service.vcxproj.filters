@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cloud_print">
+      <UniqueIdentifier>{F232BC29-1DCF-EDAD-B34B-9FFF9D7605B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{6EE990AB-8D5A-EDB4-F3F6-510B9F50DC3A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_auth.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_auth.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_connector.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_connector.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_message_handler.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_message_handler.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_proxy.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_proxy.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_proxy_backend.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_proxy_backend.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_service_helpers.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_service_helpers.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_token_store.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_token_store.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_url_fetcher.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_url_fetcher.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cloud_print_wipeout.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cloud_print_wipeout.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/connector_settings.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/connector_settings.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/job_status_updater.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/job_status_updater.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/print_system.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/print_system.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/printer_job_handler.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/printer_job_handler.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/printer_job_queue_handler.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/printer_job_queue_handler.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/net/in_process_network_connection_tracker.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/net/in_process_network_connection_tracker.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/net/service_url_request_context_getter.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/net/service_url_request_context_getter.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/service_ipc_server.cc" />
+    <None Include="../../../../../chrome/service/service_ipc_server.h" />
+    <CustomBuild Include="../../../../../chrome/service/service_main.cc" />
+    <CustomBuild Include="../../../../../chrome/service/service_process.cc" />
+    <None Include="../../../../../chrome/service/service_process.h" />
+    <CustomBuild Include="../../../../../chrome/service/service_process_prefs.cc" />
+    <None Include="../../../../../chrome/service/service_process_prefs.h" />
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/cdd_conversion_win.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/service/cloud_print/cdd_conversion_win.h">
+      <Filter>cloud_print</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/service/cloud_print/print_system_win.cc">
+      <Filter>cloud_print</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/service/service_utility_process_host.cc" />
+    <None Include="../../../../../chrome/service/service_utility_process_host.h" />
+    <CustomBuild Include="../../../../../chrome/service/service_utility_process_host_receiver_bindings.cc" />
+  </ItemGroup>
+</Project>

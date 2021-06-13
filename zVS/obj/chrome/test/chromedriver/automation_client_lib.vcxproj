@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{46CC1DEE-1D31-E4BE-6E5E-127EF1C6972A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>automation_client_lib</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/chrome/test/chromedriver/automation_client_lib.stamp</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../..;../../../../../../out/x64-debug/gen;../../../../../../third_party/perfetto/include;../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../third_party/libyuv/include;../../../../../../third_party/jsoncpp/source/include;../../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../../third_party/dawn/src/include;../../../../../../third_party/libwebp/src;../../../../../../third_party/abseil-cpp;../../../../../../third_party/boringssl/src/include;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/protoc_out;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../../net/third_party/quiche/overrides;../../../../../../net/third_party/quiche/src/common/platform/default;../../../../../../net/third_party/quiche/src;../../../../../../third_party/ced/src;../../../../../../third_party/icu/source/common;../../../../../../third_party/icu/source/i18n;../../../../../../third_party/webrtc_overrides;../../../../../../third_party/webrtc;../../../../../../out/x64-debug/gen/third_party/webrtc;../../../../../../third_party/zlib;../../../../../../third_party/skia;../../../../../../third_party/libgifcodec;../../../../../../third_party/vulkan/include;../../../../../../third_party/vulkan-deps/vulkan-headers/src/include;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-deprecated-declarations -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;WEBP_EXTERN=extern;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;WEBRTC_ENABLE_AVX2;RTC_ENABLE_WIN_WGC;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0;WEBRTC_CHROMIUM_BUILD;WEBRTC_WIN;ABSL_ALLOCATOR_NOTHROW=1;WEBRTC_USE_BUILTIN_ISAC_FIX=0;WEBRTC_USE_BUILTIN_ISAC_FLOAT=1;WEBRTC_HAVE_SCTP;NO_MAIN_THREAD_WRAPPING;SK_UNTIL_CRBUG_1187654_IS_FIXED;SK_CODEC_DECODES_PNG;SK_CODEC_DECODES_WEBP;SK_ENCODE_PNG;SK_ENCODE_WEBP;SK_USER_CONFIG_HEADER=&quot;../../skia/config/SkUserConfig.h&quot;;SK_GL;SK_CODEC_DECODES_JPEG;SK_ENCODE_JPEG;SK_USE_LIBGIFCODEC;SK_VULKAN_HEADER=&quot;../../skia/config/SkVulkanConfig.h&quot;;SK_VULKAN=1;SK_DAWN;SK_SUPPORT_GPU=1;SK_GPU_WORKAROUNDS_HEADER=&quot;gpu/config/gpu_driver_bug_workaround_autogen.h&quot;;GR_GL_FUNCTION_TYPE=__stdcall;VK_USE_PLATFORM_WIN32_KHR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/adb.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/adb_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/adb_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/adb_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/adb_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/browser_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/browser_info.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/browser_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/browser_info.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/cast_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/cast_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/cast_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/cast_tracker.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_android_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/chrome_android_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/chrome_android_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_android_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_desktop_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/chrome_desktop_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/chrome_desktop_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_desktop_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_finder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/chrome_finder.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/chrome_finder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_finder.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/chrome_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/chrome_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_remote_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/chrome_remote_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/chrome_remote_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_remote_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/console_logger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/console_logger.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/console_logger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/console_logger.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/device_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/device_manager.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/device_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/device_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/device_metrics.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/device_metrics.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/device_metrics.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/device_metrics.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/devtools_client.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/devtools_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/devtools_client_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/devtools_client_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_endpoint.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/devtools_endpoint.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/devtools_endpoint.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_endpoint.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_event_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/devtools_event_listener.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/devtools_event_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_event_listener.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_http_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/devtools_http_client.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/devtools_http_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_http_client.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/dom_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/dom_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/dom_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/dom_tracker.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/download_directory_override_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/download_directory_override_manager.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/download_directory_override_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/download_directory_override_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/frame_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/frame_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/frame_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/frame_tracker.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/geolocation_override_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/geolocation_override_manager.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/geolocation_override_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/geolocation_override_manager.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/geoposition.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/heap_snapshot_taker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/heap_snapshot_taker.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/heap_snapshot_taker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/heap_snapshot_taker.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/javascript_dialog_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/javascript_dialog_manager.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/javascript_dialog_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/javascript_dialog_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/log.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/log.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/log.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/log.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/mobile_device.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/mobile_device.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/mobile_device.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/mobile_device.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/mobile_device_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/mobile_device_list.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/mobile_device_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/mobile_device_list.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/mobile_emulation_override_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/mobile_emulation_override_manager.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/mobile_emulation_override_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/mobile_emulation_override_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/navigation_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/navigation_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/navigation_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/navigation_tracker.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/network_conditions.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/network_conditions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions_override_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/network_conditions_override_manager.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/network_conditions_override_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions_override_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/network_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/network_list.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/network_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/network_list.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/non_blocking_navigation_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/non_blocking_navigation_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/non_blocking_navigation_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/non_blocking_navigation_tracker.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/page_load_strategy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/page_load_strategy.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/page_load_strategy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/page_load_strategy.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/scoped_temp_dir_with_retry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/scoped_temp_dir_with_retry.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/scoped_temp_dir_with_retry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/scoped_temp_dir_with_retry.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/status.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/status.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/status.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/status.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/ui_events.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/ui_events.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/ui_events.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/ui_events.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/util.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/web_view.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/web_view_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/web_view_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/web_view_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/web_view_impl.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/constants/version.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/chrome_replay_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/chrome_replay_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/chrome_replay_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/log_replay/chrome_replay_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/devtools_log_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/devtools_log_reader.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/devtools_log_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/log_replay/devtools_log_reader.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/log_replay_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/log_replay_socket.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/log_replay_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/log_replay/log_replay_socket.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/replay_http_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/replay_http_client.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/replay_http_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/log_replay/replay_http_client.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/adb_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/adb_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/adb_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/adb_client_socket.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/command_id.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/command_id.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/command_id.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/command_id.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/net_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/net_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/net_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/net_util.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/pipe_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/pipe_handler.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/pipe_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/pipe_handler.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/net/sync_websocket.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/sync_websocket_factory.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/sync_websocket_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/sync_websocket_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/sync_websocket_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/timeout.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/timeout.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/timeout.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/timeout.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/url_request_context_getter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/url_request_context_getter.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/url_request_context_getter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/url_request_context_getter.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/websocket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/websocket.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/websocket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/websocket.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/test/chromedriver/chrome/js.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/js.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/js.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/test/chromedriver/chrome/js.h" />
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/test/chromedriver/chrome/user_data_dir.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib/user_data_dir.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/chromedriver/automation_client_lib/user_data_dir.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/test/chromedriver/chrome/user_data_dir.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/chrome/test/chromedriver/automation_client_lib.stamp" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/chrome/test/chromedriver/automation_client_lib.stamp" />
+  </Target>
+</Project>

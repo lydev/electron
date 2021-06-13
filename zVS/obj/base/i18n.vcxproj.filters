@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="i18n">
+      <UniqueIdentifier>{0525A39C-60D7-A143-3EE3-C93C8846F8EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../base/i18n/base_i18n_export.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/base_i18n_switches.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/base_i18n_switches.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/break_iterator.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/break_iterator.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/case_conversion.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/case_conversion.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/char_iterator.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/char_iterator.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/character_encoding.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/character_encoding.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/encoding_detection.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/encoding_detection.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/file_util_icu.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/file_util_icu.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/i18n_constants.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/i18n_constants.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/icu_string_conversions.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/icu_string_conversions.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/icu_util.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/icu_util.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/message_formatter.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/message_formatter.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/number_formatting.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/number_formatting.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/rtl.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/rtl.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/streaming_utf8_validator.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/streaming_utf8_validator.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/string_compare.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/string_compare.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/string_search.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/string_search.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/time_formatting.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/time_formatting.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/timezone.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/timezone.h">
+      <Filter>i18n</Filter>
+    </None>
+    <None Include="../../../../base/i18n/unicodestring.h">
+      <Filter>i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../base/i18n/utf8_validator_tables.cc">
+      <Filter>i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../base/i18n/utf8_validator_tables.h">
+      <Filter>i18n</Filter>
+    </None>
+  </ItemGroup>
+</Project>

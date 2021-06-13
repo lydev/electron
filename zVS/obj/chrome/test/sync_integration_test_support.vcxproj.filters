@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser\sync\test\integration">
+      <UniqueIdentifier>{243D5983-B5BD-39DF-CFCB-58B3D7766C0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\sync\test">
+      <UniqueIdentifier>{8AF89DF5-03EB-B7EE-7A8C-B1531D4B6ECC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\sync">
+      <UniqueIdentifier>{12F4D6F8-32CE-3704-63F8-14D179C51861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/autofill_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/autofill_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/bookmarks_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/bookmarks_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/committed_all_nudged_changes_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/committed_all_nudged_changes_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/configuration_refresher.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/configuration_refresher.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/device_info_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/device_info_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/encryption_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/encryption_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/fake_server_invalidation_sender.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/fake_server_invalidation_sender.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/fake_server_sync_invalidation_sender.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/fake_server_sync_invalidation_sender.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/multi_client_status_change_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/multi_client_status_change_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/offer_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/offer_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/passwords_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/passwords_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/profile_sync_service_harness.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/profile_sync_service_harness.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/quiesce_status_change_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/quiesce_status_change_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/retry_verifier.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/retry_verifier.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/secondary_account_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/secondary_account_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/single_client_status_change_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/single_client_status_change_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/status_change_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/status_change_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_datatype_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_datatype_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_disabled_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_disabled_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_signin_delegate.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_signin_delegate.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_test.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_test.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/typed_urls_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/typed_urls_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/updated_progress_marker_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/updated_progress_marker_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/wallet_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/wallet_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/apps_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/apps_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/await_match_status_change_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/await_match_status_change_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/cookie_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/cookie_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/dictionary_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/dictionary_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/dictionary_load_observer.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/dictionary_load_observer.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/extension_settings_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/extension_settings_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/extensions_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/extensions_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/fake_server_match_status_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/fake_server_match_status_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/feature_toggler.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/feature_toggler.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/migration_waiter.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/migration_waiter.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/migration_watcher.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/migration_watcher.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/preferences_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/preferences_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/search_engines_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/search_engines_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/send_tab_to_self_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/send_tab_to_self_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/session_hierarchy_match_checker.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/session_hierarchy_match_checker.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sessions_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sessions_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_app_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_app_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_extension_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_extension_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_extension_installer.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_extension_installer.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_integration_test_util.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_integration_test_util.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/sync_signin_delegate_desktop.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/sync_signin_delegate_desktop.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/themes_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/themes_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/sync/test/integration/user_events_helper.cc">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/sync/test/integration/user_events_helper.h">
+      <Filter>..\..\chrome\browser\sync\test\integration</Filter>
+    </None>
+  </ItemGroup>
+</Project>

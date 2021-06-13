@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="quic">
+      <UniqueIdentifier>{F6643CD4-47DE-7201-1E49-DF440379ECD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic\platform\impl">
+      <UniqueIdentifier>{1A90F128-BB03-86ED-246A-00348316ED20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic\platform">
+      <UniqueIdentifier>{548D38A1-B1B4-052B-AAC0-5E4AC05E5188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\quiche\src\quic\test_tools">
+      <UniqueIdentifier>{3BE0E9E9-5EFE-CE71-F8E5-6E6F6C126EEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\quiche\src\quic">
+      <UniqueIdentifier>{C78A34FE-FE2E-8964-B758-FFBA47DD407B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\quiche\src">
+      <UniqueIdentifier>{C6318112-1070-4745-E23E-8CD2CAA91C3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\quiche">
+      <UniqueIdentifier>{CC49B4A8-98FB-06F3-EEA7-40F8C9939B1C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party">
+      <UniqueIdentifier>{363093B2-8BE6-B8D4-ADFC-148BB4039B6A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../net/quic/crypto_test_utils_chromium.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/quic/mock_crypto_client_stream.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/mock_crypto_client_stream.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/mock_crypto_client_stream_factory.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/mock_crypto_client_stream_factory.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/mock_decrypter.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/mock_decrypter.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/mock_encrypter.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/mock_encrypter.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/mock_quic_context.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/mock_quic_context.h">
+      <Filter>quic</Filter>
+    </None>
+    <None Include="../../../../net/quic/platform/impl/quic_epoll_test_tools_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <None Include="../../../../net/quic/platform/impl/quic_expect_bug_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <None Include="../../../../net/quic/platform/impl/quic_mock_log_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_test_impl.cc">
+      <Filter>quic\platform\impl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_test_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_test_loopback_impl.cc">
+      <Filter>quic\platform\impl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_test_loopback_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_test_mem_slice_vector_impl.cc">
+      <Filter>quic\platform\impl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_test_mem_slice_vector_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_test_output_impl.cc">
+      <Filter>quic\platform\impl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_test_output_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/test_task_runner.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/test_task_runner.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/third_party/quiche/src/quic/test_tools/test_ticket_crypter.cc">
+      <Filter>third_party\quiche\src\quic\test_tools</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="dial">
+      <UniqueIdentifier>{87BE7449-83B8-8B14-9F68-A4CEF0AB4E4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mdns">
+      <UniqueIdentifier>{FF96BA90-FA63-17FC-DBF1-B4AAD334C24C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/device_description_fetcher.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/device_description_fetcher.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/device_description_service.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/device_description_service.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_app_discovery_service.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_app_discovery_service.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_device_data.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_device_data.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_media_sink_service.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_media_sink_service.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_media_sink_service_impl.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_media_sink_service_impl.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_registry.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_registry.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_service.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_service.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_url_fetcher.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/dial_url_fetcher.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/parsed_dial_app_info.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/parsed_dial_app_info.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/parsed_dial_device_description.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/parsed_dial_device_description.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/safe_dial_app_info_parser.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/safe_dial_app_info_parser.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/dial/safe_dial_device_description_parser.cc">
+      <Filter>dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/dial/safe_dial_device_description_parser.h">
+      <Filter>dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/discovery_network_info.cc" />
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/discovery_network_info.h" />
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/discovery_network_list.h" />
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/discovery_network_list_wifi.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/discovery_network_monitor.cc" />
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/discovery_network_monitor.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/cast_media_sink_service.cc">
+      <Filter>mdns</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/cast_media_sink_service.h">
+      <Filter>mdns</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/cast_media_sink_service_impl.cc">
+      <Filter>mdns</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/cast_media_sink_service_impl.h">
+      <Filter>mdns</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/dns_sd_delegate.cc">
+      <Filter>mdns</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/dns_sd_delegate.h">
+      <Filter>mdns</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/dns_sd_device_lister.cc">
+      <Filter>mdns</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/dns_sd_device_lister.h">
+      <Filter>mdns</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/dns_sd_registry.cc">
+      <Filter>mdns</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/dns_sd_registry.h">
+      <Filter>mdns</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/media_sink_util.cc">
+      <Filter>mdns</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/mdns/media_sink_util.h">
+      <Filter>mdns</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/media_sink_discovery_metrics.cc" />
+    <None Include="../../../../../../../../chrome/browser/media/router/discovery/media_sink_discovery_metrics.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/media/router/discovery/discovery_network_list_win.cc" />
+  </ItemGroup>
+</Project>

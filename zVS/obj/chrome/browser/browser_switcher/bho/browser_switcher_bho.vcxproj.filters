@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="../../../../../../../chrome/browser/browser_switcher/bho/atl.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/browser_switcher/bho/bho.cc" />
+    <None Include="../../../../../../../chrome/browser/browser_switcher/bho/bho.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/browser_switcher/bho/browser_switcher_core.cc" />
+    <None Include="../../../../../../../chrome/browser/browser_switcher/bho/browser_switcher_core.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/browser_switcher/bho/ie_bho.cc" />
+    <None Include="../../../../../../../chrome/browser/browser_switcher/bho/ie_bho.def" />
+    <CustomBuild Include="../../../../../../../chrome/browser/browser_switcher/bho/logging.cc" />
+    <None Include="../../../../../../../chrome/browser/browser_switcher/bho/logging.h" />
+    <None Include="../../../../../../../chrome/browser/browser_switcher/bho/resource.h" />
+  </ItemGroup>
+</Project>

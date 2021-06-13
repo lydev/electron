@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\sandbox\win\src">
+      <UniqueIdentifier>{C8EBA2E5-834D-D85A-F17E-3F8C244CB2E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\sandbox\win">
+      <UniqueIdentifier>{34B5EB78-F81A-7899-B657-75CA58967289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\sandbox">
+      <UniqueIdentifier>{FEA3D6EE-637E-5E82-8C2A-4ECFF492A10C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nt_registry">
+      <UniqueIdentifier>{90F39F7D-4A8F-505A-EAFA-0638AD88242D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../sandbox/win/src/nt_internals.h">
+      <Filter>..\..\sandbox\win\src</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/chrome_elf/nt_registry/nt_registry.cc">
+      <Filter>nt_registry</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/chrome_elf/nt_registry/nt_registry.h">
+      <Filter>nt_registry</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lite_video">
+      <UniqueIdentifier>{BE459623-C928-0CA9-8901-FEDAEA3E90F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media">
+      <UniqueIdentifier>{806EFB25-DB33-2A2A-C88C-86CD04532CEB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{6EE990AB-8D5A-EDB4-F3F6-510B9F50DC3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins">
+      <UniqueIdentifier>{4B0D940D-4678-1054-2AEC-F664F97176E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="previews">
+      <UniqueIdentifier>{D2CC063A-7A2D-3AFB-57F9-EBE21DF8D48D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="subresource_redirect">
+      <UniqueIdentifier>{E95F91A4-6F82-FF88-483D-30C5D9032277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pepper">
+      <UniqueIdentifier>{5F114544-303E-DA07-A58C-695C4DD23066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extensions">
+      <UniqueIdentifier>{2EC5F4E1-6C71-BB4B-AD41-49D0D436F6EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="printing">
+      <UniqueIdentifier>{4DCE26E0-1E7F-FD86-7930-8D2418E1CF86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cart">
+      <UniqueIdentifier>{3C4864A2-BA59-C899-03B4-EE9F6472817C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="searchbox">
+      <UniqueIdentifier>{98B1F4C3-D422-1066-B3ED-5438CDA8626B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/renderer/benchmarking_extension.cc" />
+    <None Include="../../../../../chrome/renderer/benchmarking_extension.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/browser_exposed_renderer_interfaces.cc" />
+    <None Include="../../../../../chrome/renderer/browser_exposed_renderer_interfaces.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/chrome_content_renderer_client.cc" />
+    <None Include="../../../../../chrome/renderer/chrome_content_renderer_client.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/chrome_content_settings_agent_delegate.cc" />
+    <None Include="../../../../../chrome/renderer/chrome_content_settings_agent_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/chrome_render_frame_observer.cc" />
+    <None Include="../../../../../chrome/renderer/chrome_render_frame_observer.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/chrome_render_thread_observer.cc" />
+    <None Include="../../../../../chrome/renderer/chrome_render_thread_observer.h" />
+    <None Include="../../../../../chrome/renderer/custom_menu_commands.h" />
+    <None Include="../../../../../chrome/renderer/instant_restricted_id_cache.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/lite_video/lite_video_hint_agent.cc">
+      <Filter>lite_video</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/lite_video/lite_video_hint_agent.h">
+      <Filter>lite_video</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/lite_video/lite_video_url_loader_throttle.cc">
+      <Filter>lite_video</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/lite_video/lite_video_url_loader_throttle.h">
+      <Filter>lite_video</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/lite_video/lite_video_util.cc">
+      <Filter>lite_video</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/lite_video/lite_video_util.h">
+      <Filter>lite_video</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/loadtimes_extension_bindings.cc" />
+    <None Include="../../../../../chrome/renderer/loadtimes_extension_bindings.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/media/chrome_key_systems.cc">
+      <Filter>media</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/chrome_key_systems.h">
+      <Filter>media</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/media/chrome_key_systems_provider.cc">
+      <Filter>media</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/chrome_key_systems_provider.h">
+      <Filter>media</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/media/flash_embed_rewrite.cc">
+      <Filter>media</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/flash_embed_rewrite.h">
+      <Filter>media</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/media/media_feeds.cc">
+      <Filter>media</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/media_feeds.h">
+      <Filter>media</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/media/webrtc_logging_agent_impl.cc">
+      <Filter>media</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/webrtc_logging_agent_impl.h">
+      <Filter>media</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/net/net_error_helper.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/net/net_error_helper.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/net/net_error_helper_core.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/net/net_error_helper_core.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/net/net_error_page_controller.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/net/net_error_page_controller.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/net_benchmarking_extension.cc" />
+    <None Include="../../../../../chrome/renderer/net_benchmarking_extension.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/plugins/non_loadable_plugin_placeholder.cc">
+      <Filter>plugins</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/plugins/non_loadable_plugin_placeholder.h">
+      <Filter>plugins</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/plugins/pdf_plugin_placeholder.cc">
+      <Filter>plugins</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/plugins/pdf_plugin_placeholder.h">
+      <Filter>plugins</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/plugins/plugin_uma.cc">
+      <Filter>plugins</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/plugins/plugin_uma.h">
+      <Filter>plugins</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/previews/resource_loading_hints_agent.cc">
+      <Filter>previews</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/previews/resource_loading_hints_agent.h">
+      <Filter>previews</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/login_robots_compression_metrics.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/login_robots_compression_metrics.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/login_robots_decider_agent.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/login_robots_decider_agent.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/public_image_hints_decider_agent.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/public_image_hints_decider_agent.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/public_resource_decider.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/public_resource_decider_agent.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/public_resource_decider_agent.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/robots_rules_parser.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/robots_rules_parser.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/robots_rules_parser_cache.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/robots_rules_parser_cache.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/src_video_redirect_url_loader_throttle.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/src_video_redirect_url_loader_throttle.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_params.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_params.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_url_loader_throttle.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_url_loader_throttle.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_util.cc">
+      <Filter>subresource_redirect</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_util.h">
+      <Filter>subresource_redirect</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/sync_encryption_keys_extension.cc" />
+    <None Include="../../../../../chrome/renderer/sync_encryption_keys_extension.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/url_loader_throttle_provider_impl.cc" />
+    <None Include="../../../../../chrome/renderer/url_loader_throttle_provider_impl.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/v8_unwinder.cc" />
+    <None Include="../../../../../chrome/renderer/v8_unwinder.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/websocket_handshake_throttle_provider_impl.cc" />
+    <None Include="../../../../../chrome/renderer/websocket_handshake_throttle_provider_impl.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/worker_content_settings_client.cc" />
+    <None Include="../../../../../chrome/renderer/worker_content_settings_client.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/chrome_renderer_pepper_host_factory.cc">
+      <Filter>pepper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/chrome_renderer_pepper_host_factory.h">
+      <Filter>pepper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_flash_font_file_host.cc">
+      <Filter>pepper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_flash_font_file_host.h">
+      <Filter>pepper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_flash_fullscreen_host.cc">
+      <Filter>pepper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_flash_fullscreen_host.h">
+      <Filter>pepper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_helper.cc">
+      <Filter>pepper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_helper.h">
+      <Filter>pepper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_shared_memory_message_filter.cc">
+      <Filter>pepper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_shared_memory_message_filter.h">
+      <Filter>pepper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_uma_host.cc">
+      <Filter>pepper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_uma_host.h">
+      <Filter>pepper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/plugins/chrome_plugin_placeholder.cc">
+      <Filter>plugins</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/plugins/chrome_plugin_placeholder.h">
+      <Filter>plugins</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/accessibility_private_hooks_delegate.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/accessibility_private_hooks_delegate.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/app_hooks_delegate.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/app_hooks_delegate.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/chrome_extensions_dispatcher_delegate.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/chrome_extensions_dispatcher_delegate.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/chrome_extensions_renderer_client.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/chrome_extensions_renderer_client.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/extension_hooks_delegate.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/extension_hooks_delegate.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/extension_localization_peer.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/extension_localization_peer.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/extension_process_policy.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/extension_process_policy.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/media_galleries_custom_bindings.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/media_galleries_custom_bindings.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/notifications_native_handler.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/notifications_native_handler.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/page_capture_custom_bindings.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/page_capture_custom_bindings.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/renderer_permissions_policy_delegate.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/renderer_permissions_policy_delegate.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/resource_request_policy.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/resource_request_policy.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/sync_file_system_custom_bindings.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/sync_file_system_custom_bindings.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/tabs_hooks_delegate.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/tabs_hooks_delegate.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/printing/chrome_print_render_frame_helper_delegate.cc">
+      <Filter>printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/printing/chrome_print_render_frame_helper_delegate.h">
+      <Filter>printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/chrome_pdf_print_client.cc">
+      <Filter>pepper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/chrome_pdf_print_client.h">
+      <Filter>pepper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/cart/commerce_hint_agent.cc">
+      <Filter>cart</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/cart/commerce_hint_agent.h">
+      <Filter>cart</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/media/chrome_speech_recognition_client.cc">
+      <Filter>media</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/chrome_speech_recognition_client.h">
+      <Filter>media</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/searchbox/searchbox.cc">
+      <Filter>searchbox</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/searchbox/searchbox.h">
+      <Filter>searchbox</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/searchbox/searchbox_extension.cc">
+      <Filter>searchbox</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/searchbox/searchbox_extension.h">
+      <Filter>searchbox</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C4567C22-7831-5031-AB25-E725DC888E71}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>renderer</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/chrome/renderer/renderer.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../..;../../../../../out/x64-debug/gen;../../../../../third_party/perfetto/include;../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../third_party/dawn/src/include;../../../../../third_party/libwebp/src;../../../../../third_party/libyuv/include;../../../../../third_party/jsoncpp/source/include;../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../third_party/khronos;../../../../../gpu;../../../../../third_party/wtl/include;../../../../../third_party/abseil-cpp;../../../../../third_party/boringssl/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/protoc_out;../../../../../third_party/ced/src;../../../../../third_party/icu/source/common;../../../../../third_party/icu/source/i18n;../../../../../third_party/protobuf/src;../../../../../third_party/skia;../../../../../third_party/libgifcodec;../../../../../third_party/vulkan/include;../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../net/third_party/quiche/overrides;../../../../../net/third_party/quiche/src/common/platform/default;../../../../../net/third_party/quiche/src;../../../../../third_party/webrtc_overrides;../../../../../third_party/webrtc;../../../../../out/x64-debug/gen/third_party/webrtc;../../../../../third_party/mesa_headers;../../../../../third_party/libwebm/source;../../../../../third_party/leveldatabase;../../../../../third_party/leveldatabase/src;../../../../../third_party/leveldatabase/src/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../out/x64-debug/gen/third_party/metrics_proto;../../../../../third_party/zlib;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen/components/policy/proto;../../../../../out/x64-debug/gen/third_party/private_membership/src;../../../../../out/x64-debug/gen/third_party/shell-encryption/src;../../../../../out/x64-debug/gen/components/policy/proto;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/re2/src;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/flatbuffers/src/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../v8/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wexit-time-destructors -Wno-deprecated-declarations -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;WEBP_EXTERN=extern;USE_EGL;VK_USE_PLATFORM_WIN32_KHR;_WTL_NO_AUTOMATIC_NAMESPACE;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;SK_UNTIL_CRBUG_1187654_IS_FIXED;SK_CODEC_DECODES_PNG;SK_CODEC_DECODES_WEBP;SK_ENCODE_PNG;SK_ENCODE_WEBP;SK_USER_CONFIG_HEADER=&quot;../../skia/config/SkUserConfig.h&quot;;SK_GL;SK_CODEC_DECODES_JPEG;SK_ENCODE_JPEG;SK_USE_LIBGIFCODEC;SK_VULKAN_HEADER=&quot;../../skia/config/SkVulkanConfig.h&quot;;SK_VULKAN=1;SK_DAWN;SK_SUPPORT_GPU=1;SK_GPU_WORKAROUNDS_HEADER=&quot;gpu/config/gpu_driver_bug_workaround_autogen.h&quot;;GR_GL_FUNCTION_TYPE=__stdcall;VK_USE_PLATFORM_WIN32_KHR;V8_USE_EXTERNAL_STARTUP_DATA;WEBRTC_ENABLE_AVX2;RTC_ENABLE_WIN_WGC;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0;WEBRTC_CHROMIUM_BUILD;WEBRTC_WIN;ABSL_ALLOCATOR_NOTHROW=1;WEBRTC_USE_BUILTIN_ISAC_FIX=0;WEBRTC_USE_BUILTIN_ISAC_FLOAT=1;WEBRTC_HAVE_SCTP;NO_MAIN_THREAD_WRAPPING;LEVELDB_PLATFORM_CHROMIUM=1;LEVELDB_PLATFORM_CHROMIUM=1;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;FLATBUFFERS_LOCALE_INDEPENDENT=0;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/renderer/benchmarking_extension.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/benchmarking_extension.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/benchmarking_extension.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/benchmarking_extension.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/browser_exposed_renderer_interfaces.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/browser_exposed_renderer_interfaces.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/browser_exposed_renderer_interfaces.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/browser_exposed_renderer_interfaces.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/chrome_content_renderer_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_content_renderer_client.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_content_renderer_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/chrome_content_renderer_client.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/chrome_content_settings_agent_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_content_settings_agent_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_content_settings_agent_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/chrome_content_settings_agent_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/chrome_render_frame_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_render_frame_observer.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_render_frame_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/chrome_render_frame_observer.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/chrome_render_thread_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_render_thread_observer.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_render_thread_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/chrome_render_thread_observer.h" />
+    <None Include="../../../../../chrome/renderer/custom_menu_commands.h" />
+    <None Include="../../../../../chrome/renderer/instant_restricted_id_cache.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/lite_video/lite_video_hint_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/lite_video_hint_agent.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/lite_video_hint_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/lite_video/lite_video_hint_agent.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/lite_video/lite_video_url_loader_throttle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/lite_video_url_loader_throttle.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/lite_video_url_loader_throttle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/lite_video/lite_video_url_loader_throttle.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/lite_video/lite_video_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/lite_video_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/lite_video_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/lite_video/lite_video_util.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/loadtimes_extension_bindings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/loadtimes_extension_bindings.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/loadtimes_extension_bindings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/loadtimes_extension_bindings.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/media/chrome_key_systems.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_key_systems.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_key_systems.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/chrome_key_systems.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/media/chrome_key_systems_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_key_systems_provider.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_key_systems_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/chrome_key_systems_provider.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/media/flash_embed_rewrite.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/flash_embed_rewrite.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/flash_embed_rewrite.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/flash_embed_rewrite.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/media/media_feeds.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/media_feeds.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/media_feeds.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/media_feeds.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/media/webrtc_logging_agent_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/webrtc_logging_agent_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/webrtc_logging_agent_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/webrtc_logging_agent_impl.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/net/net_error_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/net_error_helper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/net_error_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/net/net_error_helper.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/net/net_error_helper_core.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/net_error_helper_core.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/net_error_helper_core.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/net/net_error_helper_core.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/net/net_error_page_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/net_error_page_controller.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/net_error_page_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/net/net_error_page_controller.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/net_benchmarking_extension.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/net_benchmarking_extension.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/net_benchmarking_extension.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/net_benchmarking_extension.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/plugins/non_loadable_plugin_placeholder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/non_loadable_plugin_placeholder.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/non_loadable_plugin_placeholder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/plugins/non_loadable_plugin_placeholder.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/plugins/pdf_plugin_placeholder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/pdf_plugin_placeholder.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/pdf_plugin_placeholder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/plugins/pdf_plugin_placeholder.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/plugins/plugin_uma.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/plugin_uma.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/plugin_uma.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/plugins/plugin_uma.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/previews/resource_loading_hints_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/resource_loading_hints_agent.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/resource_loading_hints_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/previews/resource_loading_hints_agent.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/login_robots_compression_metrics.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/login_robots_compression_metrics.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/login_robots_compression_metrics.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/login_robots_compression_metrics.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/login_robots_decider_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/login_robots_decider_agent.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/login_robots_decider_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/login_robots_decider_agent.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/public_image_hints_decider_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/public_image_hints_decider_agent.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/public_image_hints_decider_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/public_image_hints_decider_agent.h" />
+    <None Include="../../../../../chrome/renderer/subresource_redirect/public_resource_decider.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/public_resource_decider_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/public_resource_decider_agent.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/public_resource_decider_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/public_resource_decider_agent.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/robots_rules_parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/robots_rules_parser.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/robots_rules_parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/robots_rules_parser.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/robots_rules_parser_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/robots_rules_parser_cache.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/robots_rules_parser_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/robots_rules_parser_cache.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/src_video_redirect_url_loader_throttle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/src_video_redirect_url_loader_throttle.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/src_video_redirect_url_loader_throttle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/src_video_redirect_url_loader_throttle.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_params.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/subresource_redirect_params.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/subresource_redirect_params.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_params.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_url_loader_throttle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/subresource_redirect_url_loader_throttle.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/subresource_redirect_url_loader_throttle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_url_loader_throttle.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/subresource_redirect_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/subresource_redirect_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/subresource_redirect/subresource_redirect_util.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/sync_encryption_keys_extension.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/sync_encryption_keys_extension.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/sync_encryption_keys_extension.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/sync_encryption_keys_extension.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/url_loader_throttle_provider_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/url_loader_throttle_provider_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/url_loader_throttle_provider_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/url_loader_throttle_provider_impl.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/v8_unwinder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/v8_unwinder.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/v8_unwinder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/v8_unwinder.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/websocket_handshake_throttle_provider_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/websocket_handshake_throttle_provider_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/websocket_handshake_throttle_provider_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/websocket_handshake_throttle_provider_impl.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/worker_content_settings_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/worker_content_settings_client.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/worker_content_settings_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/worker_content_settings_client.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/chrome_renderer_pepper_host_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_renderer_pepper_host_factory.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_renderer_pepper_host_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/chrome_renderer_pepper_host_factory.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_flash_font_file_host.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/pepper_flash_font_file_host.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/pepper_flash_font_file_host.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_flash_font_file_host.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_flash_fullscreen_host.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/pepper_flash_fullscreen_host.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/pepper_flash_fullscreen_host.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_flash_fullscreen_host.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/pepper_helper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/pepper_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_helper.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_shared_memory_message_filter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/pepper_shared_memory_message_filter.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/pepper_shared_memory_message_filter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_shared_memory_message_filter.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/pepper_uma_host.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/pepper_uma_host.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/pepper_uma_host.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/pepper_uma_host.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/plugins/chrome_plugin_placeholder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_plugin_placeholder.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_plugin_placeholder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/plugins/chrome_plugin_placeholder.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/accessibility_private_hooks_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/accessibility_private_hooks_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/accessibility_private_hooks_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/accessibility_private_hooks_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/app_hooks_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/app_hooks_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/app_hooks_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/app_hooks_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/chrome_extensions_dispatcher_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_extensions_dispatcher_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_extensions_dispatcher_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/chrome_extensions_dispatcher_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/chrome_extensions_renderer_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_extensions_renderer_client.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_extensions_renderer_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/chrome_extensions_renderer_client.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/extension_hooks_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/extension_hooks_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/extension_hooks_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/extension_hooks_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/extension_localization_peer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/extension_localization_peer.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/extension_localization_peer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/extension_localization_peer.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/extension_process_policy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/extension_process_policy.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/extension_process_policy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/extension_process_policy.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/media_galleries_custom_bindings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/media_galleries_custom_bindings.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/media_galleries_custom_bindings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/media_galleries_custom_bindings.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/notifications_native_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/notifications_native_handler.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/notifications_native_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/notifications_native_handler.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/page_capture_custom_bindings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/page_capture_custom_bindings.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/page_capture_custom_bindings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/page_capture_custom_bindings.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/renderer_permissions_policy_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/renderer_permissions_policy_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/renderer_permissions_policy_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/renderer_permissions_policy_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/resource_request_policy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/resource_request_policy.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/resource_request_policy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/resource_request_policy.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/sync_file_system_custom_bindings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/sync_file_system_custom_bindings.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/sync_file_system_custom_bindings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/sync_file_system_custom_bindings.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/tabs_hooks_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/tabs_hooks_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/tabs_hooks_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/tabs_hooks_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/printing/chrome_print_render_frame_helper_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_print_render_frame_helper_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_print_render_frame_helper_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/printing/chrome_print_render_frame_helper_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/chrome_pdf_print_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_pdf_print_client.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_pdf_print_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/chrome_pdf_print_client.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/cart/commerce_hint_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/commerce_hint_agent.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/commerce_hint_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/cart/commerce_hint_agent.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/media/chrome_speech_recognition_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/chrome_speech_recognition_client.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/chrome_speech_recognition_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/media/chrome_speech_recognition_client.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/searchbox/searchbox.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/searchbox.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/searchbox.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/searchbox/searchbox.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/searchbox/searchbox_extension.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer/searchbox_extension.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/renderer/renderer/searchbox_extension.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/searchbox/searchbox_extension.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/chrome/renderer/renderer.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/chrome/renderer/renderer.lib" />
+  </Target>
+</Project>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="settings_reset_prompt">
+      <UniqueIdentifier>{B9FEF471-E36B-CCE4-0396-0D5FDA0B4B66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="telemetry">
+      <UniqueIdentifier>{E9A96876-E277-DACE-7B4D-00614678AF0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\chrome\browser\download">
+      <UniqueIdentifier>{31905151-68BF-2B3A-A4E2-B6A7DB9D04B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\chrome\browser">
+      <UniqueIdentifier>{E0D3A137-4740-98F3-CEDA-5BED7D39E3CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\chrome">
+      <UniqueIdentifier>{0B63EBD7-5A1A-B88C-9F18-86224ECCC5DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cloud_content_scanning">
+      <UniqueIdentifier>{8A132B0D-CFC1-6F5C-F083-065BD8D70F6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="download_protection">
+      <UniqueIdentifier>{5C7FCC4E-0896-EA23-C62D-0E43E0F951A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="incident_reporting">
+      <UniqueIdentifier>{4EDE5C84-299B-FB9A-FA60-B4DF09C15C41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/chrome_controller_client.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/chrome_controller_client.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_tab_observer.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_tab_observer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/url_checker_delegate_impl.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/url_checker_delegate_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/default_settings_fetcher.cc">
+      <Filter>settings_reset_prompt</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/default_settings_fetcher.h">
+      <Filter>settings_reset_prompt</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_config.cc">
+      <Filter>settings_reset_prompt</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_config.h">
+      <Filter>settings_reset_prompt</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_controller.cc">
+      <Filter>settings_reset_prompt</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_controller.h">
+      <Filter>settings_reset_prompt</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_model.cc">
+      <Filter>settings_reset_prompt</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_model.h">
+      <Filter>settings_reset_prompt</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_prefs_manager.cc">
+      <Filter>settings_reset_prompt</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_prefs_manager.h">
+      <Filter>settings_reset_prompt</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_util_win.cc">
+      <Filter>settings_reset_prompt</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/settings_reset_prompt/settings_reset_prompt_util_win.h">
+      <Filter>settings_reset_prompt</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/certificate_reporting_metrics_provider.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/certificate_reporting_metrics_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/certificate_reporting_service.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/certificate_reporting_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/certificate_reporting_service_factory.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/certificate_reporting_service_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/chrome_password_protection_service.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/chrome_password_protection_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/chrome_password_protection_service_factory.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/chrome_password_protection_service_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/client_side_detection_host_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/client_side_detection_host_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/client_side_detection_service_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/client_side_detection_service_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/client_side_detection_service_factory.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/client_side_detection_service_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/delayed_warning_navigation_throttle.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/delayed_warning_navigation_throttle.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_blocking_page.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_blocking_page.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_navigation_observer.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_navigation_observer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_navigation_observer_manager.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_navigation_observer_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_navigation_throttle.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_navigation_throttle.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_service.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_subresource_tab_helper.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/safe_browsing_subresource_tab_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/services_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/services_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/telemetry/telemetry_service.cc">
+      <Filter>telemetry</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/telemetry/telemetry_service.h">
+      <Filter>telemetry</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/test_safe_browsing_blocking_page_quiet.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/test_safe_browsing_blocking_page_quiet.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/trigger_creator.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/trigger_creator.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/ui_manager.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/ui_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/url_lookup_service_factory.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/url_lookup_service_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/user_interaction_observer.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/user_interaction_observer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/user_population.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/user_population.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/download/download_completion_blocker.cc">
+      <Filter>..\..\..\chrome\browser\download</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/download/download_completion_blocker.h">
+      <Filter>..\..\..\chrome\browser\download</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/chrome_enterprise_url_lookup_service.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/chrome_enterprise_url_lookup_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/chrome_enterprise_url_lookup_service_factory.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/chrome_enterprise_url_lookup_service_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/binary_fcm_service.cc">
+      <Filter>cloud_content_scanning</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/binary_fcm_service.h">
+      <Filter>cloud_content_scanning</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/binary_upload_service.cc">
+      <Filter>cloud_content_scanning</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/binary_upload_service.h">
+      <Filter>cloud_content_scanning</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/binary_upload_service_factory.cc">
+      <Filter>cloud_content_scanning</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/binary_upload_service_factory.h">
+      <Filter>cloud_content_scanning</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/deep_scanning_utils.cc">
+      <Filter>cloud_content_scanning</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/deep_scanning_utils.h">
+      <Filter>cloud_content_scanning</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/file_analysis_request.cc">
+      <Filter>cloud_content_scanning</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/file_analysis_request.h">
+      <Filter>cloud_content_scanning</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/multipart_data_pipe_getter.cc">
+      <Filter>cloud_content_scanning</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/multipart_data_pipe_getter.h">
+      <Filter>cloud_content_scanning</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/multipart_uploader.cc">
+      <Filter>cloud_content_scanning</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/cloud_content_scanning/multipart_uploader.h">
+      <Filter>cloud_content_scanning</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/check_client_download_request.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/check_client_download_request.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/check_client_download_request_base.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/check_client_download_request_base.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/check_file_system_access_write_request.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/check_file_system_access_write_request.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/deep_scanning_request.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/deep_scanning_request.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_feedback.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_feedback.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_feedback_service.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_feedback_service.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_protection_service.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_protection_service.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_protection_util.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_protection_util.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_reporter.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_reporter.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_request_maker.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_request_maker.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_url_sb_client.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/download_url_sb_client.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/file_analyzer.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/file_analyzer.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/path_sanitizer.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/path_sanitizer.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/ppapi_download_request.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/ppapi_download_request.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/download_protection/two_phase_uploader.cc">
+      <Filter>download_protection</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/download_protection/two_phase_uploader.h">
+      <Filter>download_protection</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/binary_integrity_analyzer.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/binary_integrity_analyzer.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/binary_integrity_incident.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/binary_integrity_incident.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/delayed_analysis_callback.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/delayed_callback_runner.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/delayed_callback_runner.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/download_metadata_manager.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/download_metadata_manager.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/environment_data_collection.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/environment_data_collection.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/extension_data_collection.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/extension_data_collection.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_handler_util.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_handler_util.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_receiver.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_report_uploader.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_report_uploader.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_report_uploader_impl.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_report_uploader_impl.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_reporting_service.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/incident_reporting_service.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/last_download_finder.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/last_download_finder.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/platform_state_store.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/platform_state_store.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/preference_validation_delegate.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/preference_validation_delegate.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/resource_request_incident.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/resource_request_incident.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/state_store.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/state_store.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/tracked_preference_incident.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/tracked_preference_incident.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/services_delegate_desktop.cc" />
+    <None Include="../../../../../../chrome/browser/safe_browsing/services_delegate_desktop.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/binary_integrity_analyzer_win.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/binary_integrity_analyzer_win.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/environment_data_collection_win.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/environment_data_collection_win.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/module_integrity_verifier_win.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/module_integrity_verifier_win.h">
+      <Filter>incident_reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/safe_browsing/incident_reporting/platform_state_store_win.cc">
+      <Filter>incident_reporting</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

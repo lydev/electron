@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser\accessibility">
+      <UniqueIdentifier>{C785BF4A-0937-6FA6-A8D0-DC5D2EAA14A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\devtools">
+      <UniqueIdentifier>{33EEC02D-B8D3-410C-358F-5F6D783E4914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\extensions">
+      <UniqueIdentifier>{6067944E-65D0-26B2-1EE2-E433EFEBF109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\net">
+      <UniqueIdentifier>{5628F857-220C-7A33-6B27-6C5518EC5DB0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\predictors">
+      <UniqueIdentifier>{EACFC4F7-5B58-1857-75DC-1680B15820DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\autofill">
+      <UniqueIdentifier>{C1BD45F6-FB0D-E36D-D910-B5EAD3F6A7F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views">
+      <UniqueIdentifier>{483726F9-C93B-8F3E-9401-0B412CBE13D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui">
+      <UniqueIdentifier>{07FEDA6E-25E1-9E6C-F6A2-84E1B5CC5098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\extensions\browser\app_window">
+      <UniqueIdentifier>{9E6C9AB2-E94D-80D3-6C01-535601C15337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\extensions\browser">
+      <UniqueIdentifier>{CCBC92E1-C44F-173B-A4D1-8DEECFD4D111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\extensions">
+      <UniqueIdentifier>{74659D75-5306-CC45-6A6E-8F6A015482E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\win">
+      <UniqueIdentifier>{A565F42D-BCE2-548C-2E44-BD4AE0E7017E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\child">
+      <UniqueIdentifier>{8862996A-7538-25B4-87AA-1F828040B663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\media\webrtc">
+      <UniqueIdentifier>{3AE77082-FF10-1F81-6367-D82F70B99EE9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\media">
+      <UniqueIdentifier>{F2BD215D-2B87-F5E5-6107-1D730F9246CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\eye_dropper">
+      <UniqueIdentifier>{13337F66-DF50-E542-62D2-AC9C3C2BE89F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\printing">
+      <UniqueIdentifier>{D4A79DDB-FABA-B221-14F1-DA86D66745EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\utility">
+      <UniqueIdentifier>{9B42CD84-574F-646E-E698-BE543A9F8D3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\picture_in_picture">
+      <UniqueIdentifier>{3DF4E063-D0EC-3494-EA3C-16756F2BF411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\overlay">
+      <UniqueIdentifier>{A567FB43-939E-3F2A-6AF2-9D8B7CD29E83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\plugins">
+      <UniqueIdentifier>{82CAB624-266B-355D-5469-8BDACB664923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\renderer\extensions">
+      <UniqueIdentifier>{FF53C9AA-6260-DB0A-6DB4-84DD20C3D19D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\renderer">
+      <UniqueIdentifier>{DF376D86-4986-4F9E-F809-D4C508538C17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\pdf">
+      <UniqueIdentifier>{581488D5-D611-BE1A-C095-AB6E3E6D3191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\renderer\pepper">
+      <UniqueIdentifier>{68AAE6E9-1F49-450E-3533-97755A8B569C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\hang_monitor">
+      <UniqueIdentifier>{403FF742-F0BE-C165-5696-1D47B4D64E9D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/accessibility/accessibility_ui.cc">
+      <Filter>..\..\chrome\browser\accessibility</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/accessibility/accessibility_ui.h">
+      <Filter>..\..\chrome\browser\accessibility</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/browser_process.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/browser_process.h">
+      <Filter>..\..\chrome\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/devtools/devtools_contents_resizing_strategy.cc">
+      <Filter>..\..\chrome\browser\devtools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/devtools/devtools_contents_resizing_strategy.h">
+      <Filter>..\..\chrome\browser\devtools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/devtools/devtools_embedder_message_dispatcher.cc">
+      <Filter>..\..\chrome\browser\devtools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/devtools/devtools_embedder_message_dispatcher.h">
+      <Filter>..\..\chrome\browser\devtools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/devtools/devtools_file_system_indexer.cc">
+      <Filter>..\..\chrome\browser\devtools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/devtools/devtools_file_system_indexer.h">
+      <Filter>..\..\chrome\browser\devtools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/global_shortcut_listener.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/global_shortcut_listener.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/icon_loader.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/icon_loader.h">
+      <Filter>..\..\chrome\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/icon_manager.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/icon_manager.h">
+      <Filter>..\..\chrome\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/net/chrome_mojo_proxy_resolver_factory.cc">
+      <Filter>..\..\chrome\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/net/chrome_mojo_proxy_resolver_factory.h">
+      <Filter>..\..\chrome\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/net/proxy_config_monitor.cc">
+      <Filter>..\..\chrome\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/net/proxy_config_monitor.h">
+      <Filter>..\..\chrome\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/net/proxy_service_factory.cc">
+      <Filter>..\..\chrome\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/net/proxy_service_factory.h">
+      <Filter>..\..\chrome\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/predictors/preconnect_manager.cc">
+      <Filter>..\..\chrome\browser\predictors</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/predictors/preconnect_manager.h">
+      <Filter>..\..\chrome\browser\predictors</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/predictors/predictors_features.cc">
+      <Filter>..\..\chrome\browser\predictors</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/predictors/predictors_features.h">
+      <Filter>..\..\chrome\browser\predictors</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/predictors/proxy_lookup_client_impl.cc">
+      <Filter>..\..\chrome\browser\predictors</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/predictors/proxy_lookup_client_impl.h">
+      <Filter>..\..\chrome\browser\predictors</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/predictors/resolve_host_client_impl.cc">
+      <Filter>..\..\chrome\browser\predictors</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/predictors/resolve_host_client_impl.h">
+      <Filter>..\..\chrome\browser\predictors</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/autofill_popup_view_utils.cc">
+      <Filter>..\..\chrome\browser\ui\views\autofill</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/autofill/autofill_popup_view_utils.h">
+      <Filter>..\..\chrome\browser\ui\views\autofill</Filter>
+    </None>
+    <CustomBuild Include="../../../../../extensions/browser/app_window/size_constraints.cc">
+      <Filter>..\..\extensions\browser\app_window</Filter>
+    </CustomBuild>
+    <None Include="../../../../../extensions/browser/app_window/size_constraints.h">
+      <Filter>..\..\extensions\browser\app_window</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/global_shortcut_listener_win.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/global_shortcut_listener_win.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/icon_loader_win.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/win/chrome_process_finder.cc">
+      <Filter>..\..\chrome\browser\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/win/chrome_process_finder.h">
+      <Filter>..\..\chrome\browser\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/child/v8_crashpad_support_win.cc">
+      <Filter>..\..\chrome\child</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/child/v8_crashpad_support_win.h">
+      <Filter>..\..\chrome\child</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/win/icon_reader_service.cc">
+      <Filter>..\..\chrome\browser\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/win/icon_reader_service.h">
+      <Filter>..\..\chrome\browser\win</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/media/webrtc/desktop_media_list.h">
+      <Filter>..\..\chrome\browser\media\webrtc</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/media/webrtc/desktop_media_list_base.cc">
+      <Filter>..\..\chrome\browser\media\webrtc</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/media/webrtc/desktop_media_list_base.h">
+      <Filter>..\..\chrome\browser\media\webrtc</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/media/webrtc/desktop_media_list_observer.h">
+      <Filter>..\..\chrome\browser\media\webrtc</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/media/webrtc/native_desktop_media_list.cc">
+      <Filter>..\..\chrome\browser\media\webrtc</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/media/webrtc/native_desktop_media_list.h">
+      <Filter>..\..\chrome\browser\media\webrtc</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/media/webrtc/window_icon_util.h">
+      <Filter>..\..\chrome\browser\media\webrtc</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/platform_util.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/platform_util.h">
+      <Filter>..\..\chrome\browser</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/ui/browser_dialogs.h">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/ui/color_chooser.h">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper.cc">
+      <Filter>..\..\chrome\browser\ui\views\eye_dropper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper.h">
+      <Filter>..\..\chrome\browser\ui\views\eye_dropper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper_view.cc">
+      <Filter>..\..\chrome\browser\ui\views\eye_dropper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper_view.h">
+      <Filter>..\..\chrome\browser\ui\views\eye_dropper</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/platform_util_aura.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper_view_aura.cc">
+      <Filter>..\..\chrome\browser\ui\views\eye_dropper</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/media/webrtc/window_icon_util_win.cc">
+      <Filter>..\..\chrome\browser\media\webrtc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/color_chooser_dialog.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/color_chooser_dialog.h">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/color_chooser_win.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/printing/print_job.cc">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/print_job.h">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/printing/print_job_manager.cc">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/print_job_manager.h">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/printing/print_job_worker.cc">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/print_job_worker.h">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/printing/print_view_manager_base.cc">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/print_view_manager_base.h">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/printing/printer_query.cc">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/printer_query.h">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/printing/printing_service.cc">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/printing_service.h">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/printing/pdf_to_emf_converter.cc">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/pdf_to_emf_converter.h">
+      <Filter>..\..\chrome\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/printing_handler.cc">
+      <Filter>..\..\chrome\utility</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/printing_handler.h">
+      <Filter>..\..\chrome\utility</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/picture_in_picture/picture_in_picture_window_manager.cc">
+      <Filter>..\..\chrome\browser\picture_in_picture</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/picture_in_picture/picture_in_picture_window_manager.h">
+      <Filter>..\..\chrome\browser\picture_in_picture</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/back_to_tab_image_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/back_to_tab_image_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/back_to_tab_label_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/close_image_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/close_image_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/constants.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/hang_up_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/hang_up_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/overlay_window_views.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/overlay_window_views.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/playback_image_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/playback_image_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/resize_handle_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/resize_handle_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/skip_ad_label_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/skip_ad_label_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/toggle_camera_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/toggle_camera_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/toggle_microphone_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/toggle_microphone_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/track_image_button.cc">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/track_image_button.h">
+      <Filter>..\..\chrome\browser\ui\views\overlay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/chrome_url_request_util.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/chrome_url_request_util.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/plugins/plugin_response_interceptor_url_loader_throttle.cc">
+      <Filter>..\..\chrome\browser\plugins</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/plugins/plugin_response_interceptor_url_loader_throttle.h">
+      <Filter>..\..\chrome\browser\plugins</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/extension_hooks_delegate.cc">
+      <Filter>..\..\chrome\renderer\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/extension_hooks_delegate.h">
+      <Filter>..\..\chrome\renderer\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/tabs_hooks_delegate.cc">
+      <Filter>..\..\chrome\renderer\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/tabs_hooks_delegate.h">
+      <Filter>..\..\chrome\renderer\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/pdf/pdf_extension_util.cc">
+      <Filter>..\..\chrome\browser\pdf</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/pdf/pdf_extension_util.h">
+      <Filter>..\..\chrome\browser\pdf</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/chrome_pdf_print_client.cc">
+      <Filter>..\..\chrome\renderer\pepper</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/chrome_pdf_print_client.h">
+      <Filter>..\..\chrome\renderer\pepper</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/hang_monitor/hang_crash_dump.h">
+      <Filter>..\..\chrome\browser\hang_monitor</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/hang_monitor/hang_crash_dump_win.cc">
+      <Filter>..\..\chrome\browser\hang_monitor</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

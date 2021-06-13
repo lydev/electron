@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{800AC79F-4E0D-43C0-4438-C5A8849529BA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>bindings</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/mojo/public/cpp/bindings/bindings.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../../..;../../../../../../../out/x64-debug/gen;../../../../../../../third_party/perfetto/include;../../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../../third_party/abseil-cpp;../../../../../../../third_party/boringssl/src/include;../../../../../../../third_party/protobuf/src;../../../../../../../out/x64-debug/gen/protoc_out;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -DPROTOBUF_ALLOW_DEPRECATED=1 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>IS_MOJO_CPP_BINDINGS_IMPL;DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_interface_ptr_info.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_interface_request.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_receiver_set.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_remote.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/async_flusher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/async_flusher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/async_flusher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/async_flusher.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/binder_map.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/callback_helpers.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/connection_error_callback.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/connector.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/generic_pending_associated_receiver.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/generic_pending_associated_receiver.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/generic_pending_associated_receiver.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/generic_pending_associated_receiver.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/generic_pending_receiver.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/generic_pending_receiver.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/generic_pending_receiver.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/generic_pending_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_endpoint_client.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_endpoint_controller.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_ptr.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_ptr_info.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_request.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/associated_interface_ptr_state.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/associated_interface_ptr_state.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/associated_interface_ptr_state.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/associated_interface_ptr_state.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/associated_receiver.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/associated_receiver.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/associated_receiver.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/binder_map_internal.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/binding_state.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/binding_state.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/binding_state.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/binding_state.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/connector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/connector.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/connector.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/control_message_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/control_message_handler.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/control_message_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/control_message_handler.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/control_message_proxy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/control_message_proxy.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/control_message_proxy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/control_message_proxy.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/generated_code_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/generated_code_util.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/generated_code_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/generated_code_util.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/interface_endpoint_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/interface_endpoint_client.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/interface_endpoint_client.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/interface_ptr_state.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/interface_ptr_state.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/interface_ptr_state.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/interface_ptr_state.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/interface_serialization.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/message_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/message_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/message_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/message_quota_checker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/message_quota_checker.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/message_quota_checker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/message_quota_checker.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/multiplex_router.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/multiplex_router.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/multiplex_router.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/multiplex_router.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/native_enum_data.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/native_enum_serialization.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/native_struct_serialization.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/native_struct_serialization.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/native_struct_serialization.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/native_struct_serialization.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/pipe_control_message_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/pipe_control_message_handler.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/pipe_control_message_handler.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/pipe_control_message_proxy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/pipe_control_message_proxy.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/pipe_control_message_proxy.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sequence_local_sync_event_watcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/sequence_local_sync_event_watcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/sequence_local_sync_event_watcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sync_call_restrictions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/sync_call_restrictions.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/sync_call_restrictions.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sync_event_watcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/sync_event_watcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/sync_event_watcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sync_handle_registry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/sync_handle_registry.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/sync_handle_registry.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sync_handle_watcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/sync_handle_watcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/sync_handle_watcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/task_runner_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/task_runner_helper.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/task_runner_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/task_runner_helper.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/thread_safe_forwarder_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/thread_safe_forwarder_base.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/thread_safe_forwarder_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/thread_safe_forwarder_base.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/message_dispatcher.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/native_enum.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_associated_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_associated_remote.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/pending_flush.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/pending_flush.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/pending_flush.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_flush.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_remote.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pipe_control_message_handler.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pipe_control_message_handler_delegate.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pipe_control_message_proxy.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/raw_ptr_impl_ref_traits.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/receiver.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/receiver_set.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/receiver_set.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/receiver_set.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/receiver_set.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/remote.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/remote_set.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/self_owned_associated_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/self_owned_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sequence_local_sync_event_watcher.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/service_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/service_factory.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/service_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/service_factory.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/shared_associated_remote.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/shared_remote.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sync_call_restrictions.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sync_event_watcher.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sync_handle_registry.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sync_handle_watcher.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/thread_safe_proxy.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/unique_associated_receiver_set.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/unique_ptr_impl_ref_traits.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/unique_receiver_set.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/message_dumper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings/message_dumper.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/public/cpp/bindings/bindings/message_dumper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/message_dumper.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/mojo/public/cpp/bindings/bindings.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/mojo/public/cpp/bindings/bindings.lib" />
+  </Target>
+</Project>

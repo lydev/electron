@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser\autofill">
+      <UniqueIdentifier>{4762ACA4-131E-0C80-F643-AB1B187D8E48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\password_manager">
+      <UniqueIdentifier>{ACDC18FD-6A6C-FB27-1935-D6D952B91198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{530671C4-A49E-2227-1185-B142528140EB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/autofill/autofill_captured_sites_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/autofill/autofill_uitest.cc">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/autofill/autofill_uitest.h">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/autofill/captured_sites_test_utils.cc">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/autofill/captured_sites_test_utils.h">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_captured_sites_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_test_base.cc">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/password_manager/password_manager_test_base.h">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/interactive_test_utils.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_views.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_ui_tests_main.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_aura.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/interactive_test_utils_aura.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/always_on_top_window_killer_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/always_on_top_window_killer_win.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/save_desktop_snapshot_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/save_desktop_snapshot_win.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/window_contents_as_string_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/window_contents_as_string_win.h">
+      <Filter>base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

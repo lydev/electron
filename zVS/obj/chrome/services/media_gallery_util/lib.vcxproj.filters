@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/services/media_gallery_util/ipc_data_source.cc" />
+    <None Include="../../../../../../chrome/services/media_gallery_util/ipc_data_source.h" />
+    <CustomBuild Include="../../../../../../chrome/services/media_gallery_util/media_metadata_parser.cc" />
+    <None Include="../../../../../../chrome/services/media_gallery_util/media_metadata_parser.h" />
+    <CustomBuild Include="../../../../../../chrome/services/media_gallery_util/media_parser.cc" />
+    <None Include="../../../../../../chrome/services/media_gallery_util/media_parser.h" />
+    <CustomBuild Include="../../../../../../chrome/services/media_gallery_util/media_parser_factory.cc" />
+    <None Include="../../../../../../chrome/services/media_gallery_util/media_parser_factory.h" />
+  </ItemGroup>
+</Project>

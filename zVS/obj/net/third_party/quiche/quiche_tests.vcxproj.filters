@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src\common\platform\api">
+      <UniqueIdentifier>{13955A76-222A-DB93-A42A-3581C2DA5FE1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\platform">
+      <UniqueIdentifier>{AFA235CC-67AC-4536-9949-FCF8F859111E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{5C3F1AB9-1290-10AE-B933-CF80561941FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{C5D85D62-2D1F-BBD0-3190-3BB2E70B1772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\core">
+      <UniqueIdentifier>{4FA19A11-A297-3D68-A56A-304212F9ADE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2">
+      <UniqueIdentifier>{EC490038-F5F5-83A2-08AA-629A8D7C380A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\decoder">
+      <UniqueIdentifier>{6EDE9761-443C-E855-500E-7443F3EAE8CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\decoder\payload_decoders">
+      <UniqueIdentifier>{AEFF1AE6-D235-C883-971B-6E0345E326E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\hpack\decoder">
+      <UniqueIdentifier>{5D5BBBF4-8797-0152-757C-543DBE2543B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\hpack">
+      <UniqueIdentifier>{04804510-2321-88D1-1911-A15D6209255A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\hpack\huffman">
+      <UniqueIdentifier>{CE801F9E-1F3E-06A3-A7B6-7F7CE2FD3C4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\hpack\tools">
+      <UniqueIdentifier>{7C20BFCA-7386-E6BD-D048-2563424A5DEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\hpack\varint">
+      <UniqueIdentifier>{0CB44790-3885-41CD-5EC8-110B03458AF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\platform\api">
+      <UniqueIdentifier>{BFED631E-007F-91CE-00F8-8196AFB4D561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\platform">
+      <UniqueIdentifier>{BE7DF399-BCE3-7380-9A19-138CACB4C18E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\test_tools">
+      <UniqueIdentifier>{F97BFF23-7CDF-0522-9283-7721BF7FF33A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\http2\tools">
+      <UniqueIdentifier>{664C3883-E73F-49B2-418E-D50D42324BCD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\core\congestion_control">
+      <UniqueIdentifier>{A4C9C953-1EFA-B3C7-4F71-C5A0C81131BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\core">
+      <UniqueIdentifier>{E90CBC26-FDD2-19A1-AB8E-77B3CF85D092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic">
+      <UniqueIdentifier>{565CA7AD-1F78-D2D2-8E3F-4DBEEDB0439A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\core\crypto">
+      <UniqueIdentifier>{8047A0E8-EB5F-2462-4CBC-9A4890751577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\core\frames">
+      <UniqueIdentifier>{0EB27998-A090-83DD-BAEA-1050679CF580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\core\http">
+      <UniqueIdentifier>{340106ED-75F8-7E4E-99FD-E9F14FEF1F28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\core\qpack">
+      <UniqueIdentifier>{3A8AFAF6-ADC9-59E2-95D3-EC13BF24E8D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\platform\api">
+      <UniqueIdentifier>{0FCA08DF-2348-2E34-051A-216F93886995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\platform">
+      <UniqueIdentifier>{A27343ED-B0F2-1453-4395-A276CEB59C36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\quic_transport">
+      <UniqueIdentifier>{DA160FF8-C5A1-F2D1-3731-9ADC00E4E0AA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\test_tools">
+      <UniqueIdentifier>{F8B13671-1014-B5F1-211A-15BAB3E21F99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\test_tools\simulator">
+      <UniqueIdentifier>{C52A6EDE-9675-9EEA-40B8-ADAFB2A5D6F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic\tools">
+      <UniqueIdentifier>{6FB26E81-15F9-3C4E-F878-B17A7677B2BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\spdy\core">
+      <UniqueIdentifier>{994E83DE-28EC-A206-FCFC-657D69B110DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\spdy">
+      <UniqueIdentifier>{DA7815E8-F636-EC79-2D5F-DDE690E1D13F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\spdy\core\hpack">
+      <UniqueIdentifier>{E01CDC8E-3874-785F-C870-AB4A45A19746}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/platform/api/quiche_time_utils_test.cc">
+      <Filter>src\common\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_circular_deque_test.cc">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_data_writer_test.cc">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_endian_test.cc">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_linked_hash_map_test.cc">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_text_utils_test.cc">
+      <Filter>src\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/core/http2_priority_write_scheduler_test.cc">
+      <Filter>src\http2\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/core/priority_write_scheduler_test.cc">
+      <Filter>src\http2\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_buffer_test.cc">
+      <Filter>src\http2\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_http2_structures_test.cc">
+      <Filter>src\http2\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/frame_decoder_state_test_util.cc">
+      <Filter>src\http2\decoder</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/frame_decoder_state_test_util.h">
+      <Filter>src\http2\decoder</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder_listener_test_util.cc">
+      <Filter>src\http2\decoder</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder_listener_test_util.h">
+      <Filter>src\http2\decoder</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder_test.cc">
+      <Filter>src\http2\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_structure_decoder_test.cc">
+      <Filter>src\http2\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_structure_decoder_test_util.cc">
+      <Filter>src\http2\decoder</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_structure_decoder_test_util.h">
+      <Filter>src\http2\decoder</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/altsvc_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/continuation_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/data_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/goaway_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/headers_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/payload_decoder_base_test_util.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/payload_decoder_base_test_util.h">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/ping_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/priority_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/priority_update_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/push_promise_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/rst_stream_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/settings_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/unknown_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/window_update_payload_decoder_test.cc">
+      <Filter>src\http2\decoder\payload_decoders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_block_collector.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_block_collector.h">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_block_decoder_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_state_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_string_buffer_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_tables_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_collector.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_collector.h">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_decoder_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_type_decoder_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_collector.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_collector.h">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_decoder_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_whole_entry_buffer_test.cc">
+      <Filter>src\http2\hpack\decoder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/http2_hpack_constants_test.cc">
+      <Filter>src\http2\hpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_decoder_test.cc">
+      <Filter>src\http2\hpack\huffman</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_encoder_test.cc">
+      <Filter>src\http2\hpack\huffman</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_transcoder_test.cc">
+      <Filter>src\http2\hpack\huffman</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_block_builder.cc">
+      <Filter>src\http2\hpack\tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_block_builder.h">
+      <Filter>src\http2\hpack\tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_block_builder_test.cc">
+      <Filter>src\http2\hpack\tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_example.cc">
+      <Filter>src\http2\hpack\tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_example.h">
+      <Filter>src\http2\hpack\tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_decoder_test.cc">
+      <Filter>src\http2\hpack\varint</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_encoder_test.cc">
+      <Filter>src\http2\hpack\varint</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_round_trip_test.cc">
+      <Filter>src\http2\hpack\varint</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_constants_test.cc">
+      <Filter>src\http2</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_constants_test_util.cc">
+      <Filter>src\http2</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/http2_constants_test_util.h">
+      <Filter>src\http2</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_structures_test.cc">
+      <Filter>src\http2</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_structures_test_util.cc">
+      <Filter>src\http2</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/http2_structures_test_util.h">
+      <Filter>src\http2</Filter>
+    </None>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_test_helpers.h">
+      <Filter>src\http2\platform\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts.cc">
+      <Filter>src\http2\test_tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts.h">
+      <Filter>src\http2\test_tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts_collector.cc">
+      <Filter>src\http2\test_tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts_collector.h">
+      <Filter>src\http2\test_tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts_collector_listener.cc">
+      <Filter>src\http2\test_tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts_collector_listener.h">
+      <Filter>src\http2\test_tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/http2_random.cc">
+      <Filter>src\http2\test_tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/test_tools/http2_random.h">
+      <Filter>src\http2\test_tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/http2_random_test.cc">
+      <Filter>src\http2\test_tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/tools/http2_frame_builder.cc">
+      <Filter>src\http2\tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/tools/http2_frame_builder.h">
+      <Filter>src\http2\tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/tools/random_decoder_test.cc">
+      <Filter>src\http2\tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/tools/random_decoder_test.h">
+      <Filter>src\http2\tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/tools/random_util.cc">
+      <Filter>src\http2\tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/tools/random_util.h">
+      <Filter>src\http2\tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bandwidth_sampler_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_simulator_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr_sender_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/cubic_bytes_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/general_loss_algorithm_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/hybrid_slow_start_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/pacing_sender_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/prr_sender_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/rtt_stats_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/send_algorithm_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/tcp_cubic_sender_bytes_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/uber_loss_algorithm_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/windowed_filter_test.cc">
+      <Filter>src\quic\core\congestion_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_12_decrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_12_encrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_decrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_encrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_256_gcm_decrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_256_gcm_encrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/cert_compressor_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/certificate_view_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_decrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_encrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_tls_decrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_tls_encrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/channel_id_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/common_cert_set_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_framer_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_handshake_message_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_secret_boxer_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_server_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_utils_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/curve25519_key_exchange_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/null_decrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/null_encrypter_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/p256_key_exchange_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_compressed_certs_cache_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_client_config_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_server_config_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_hkdf_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_random_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/transport_parameters_test.cc">
+      <Filter>src\quic\core\crypto</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_frames_test.cc">
+      <Filter>src\quic\core\frames</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_decoder_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_encoder_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_client_promised_info_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_client_push_promise_index_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_header_list_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_headers_stream_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_receive_control_stream_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_send_control_stream_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_server_session_base_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_session_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_stream_body_manager_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_stream_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/spdy_server_push_utils_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/spdy_utils_test.cc">
+      <Filter>src\quic\core\http</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/legacy_quic_stream_id_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/packet_number_indexed_queue_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_blocking_manager_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoded_headers_accumulator_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_stream_receiver_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_stream_sender_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_stream_receiver_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_stream_sender_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_header_table_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_index_conversions_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instruction_decoder_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instruction_encoder_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_receive_stream_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_required_insert_count_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_round_trip_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_send_stream_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_static_table_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/value_splitting_header_list_test.cc">
+      <Filter>src\quic\core\qpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_alarm_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_arena_scoped_ptr_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_bandwidth_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_buffered_packet_store_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_chaos_protector_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_coalesced_packet_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_config_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_id_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_id_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_control_frame_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_client_handshaker_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_client_stream_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_server_stream_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_stream_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_data_writer_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_datagram_queue_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_dispatcher_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_error_codes_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_flow_controller_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_framer_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_idle_network_detector_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval_deque_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval_set_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_legacy_version_encapsulator_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_lru_cache_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_network_blackhole_detector_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_one_block_arena_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_creator_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_number_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packets_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_path_validator_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_received_packet_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_sent_packet_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_server_id_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_session_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_simple_buffer_allocator_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_socket_address_coder_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_id_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_send_buffer_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_sequencer_buffer_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_sequencer_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_sustained_bandwidth_recorder_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_tag_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_accumulator_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_wait_list_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_trace_visitor_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_unacked_packet_map_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_utils_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_version_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_versions_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_write_blocked_list_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/tls_chlo_extractor_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/uber_quic_stream_id_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/uber_received_packet_manager_test.cc">
+      <Filter>src\quic\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_containers_test.cc">
+      <Filter>src\quic\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_hostname_utils_test.cc">
+      <Filter>src\quic\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_ip_address_test.cc">
+      <Filter>src\quic\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice_span_test.cc">
+      <Filter>src\quic\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice_storage_test.cc">
+      <Filter>src\quic\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice_test.cc">
+      <Filter>src\quic\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_reference_counted_test.cc">
+      <Filter>src\quic\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_socket_address_test.cc">
+      <Filter>src\quic\platform\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_client_session_test.cc">
+      <Filter>src\quic\quic_transport</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_integration_test.cc">
+      <Filter>src\quic\quic_transport</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_server_session_test.cc">
+      <Filter>src\quic\quic_transport</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_stream_test.cc">
+      <Filter>src\quic\quic_transport</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/web_transport_fingerprint_proof_verifier_test.cc">
+      <Filter>src\quic\quic_transport</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/crypto_test_utils_test.cc">
+      <Filter>src\quic\test_tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/mock_quic_time_wait_list_manager.cc">
+      <Filter>src\quic\test_tools</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/test_tools/mock_quic_time_wait_list_manager.h">
+      <Filter>src\quic\test_tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/quic_test_utils_test.cc">
+      <Filter>src\quic\test_tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/simple_session_notifier_test.cc">
+      <Filter>src\quic\test_tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/simulator/quic_endpoint_test.cc">
+      <Filter>src\quic\test_tools\simulator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/simulator/simulator_test.cc">
+      <Filter>src\quic\test_tools\simulator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_memory_cache_backend_test.cc">
+      <Filter>src\quic\tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_tcp_like_trace_converter_test.cc">
+      <Filter>src\quic\tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/simple_ticket_crypter_test.cc">
+      <Filter>src\quic\tools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/array_output_buffer.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/array_output_buffer.h">
+      <Filter>src\spdy\core</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/array_output_buffer_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_decoder_adapter_test.cc">
+      <Filter>src\spdy\core\hpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_encoder_test.cc">
+      <Filter>src\spdy\core\hpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_entry_test.cc">
+      <Filter>src\spdy\core\hpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_header_table_test.cc">
+      <Filter>src\spdy\core\hpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_output_stream_test.cc">
+      <Filter>src\spdy\core\hpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_round_trip_test.cc">
+      <Filter>src\spdy\core\hpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_static_table_test.cc">
+      <Filter>src\spdy\core\hpack</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/mock_spdy_framer_visitor.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/mock_spdy_framer_visitor.h">
+      <Filter>src\spdy\core</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_alt_svc_wire_format_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_frame_builder_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_frame_reader_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_framer_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_header_block_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_header_storage_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_intrusive_list_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_pinnable_buffer_piece_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_prefixed_buffer_reader_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_protocol_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_protocol_test_utils.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_protocol_test_utils.h">
+      <Filter>src\spdy\core</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_simple_arena_test.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_test_utils.cc">
+      <Filter>src\spdy\core</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_test_utils.h">
+      <Filter>src\spdy\core</Filter>
+    </None>
+  </ItemGroup>
+</Project>

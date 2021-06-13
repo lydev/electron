@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_controller_impl_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_controller_impl_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_dialog_controller_impl_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_dialog_controller_impl_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_fetcher_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_fetcher_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_navigation_util_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_navigation_util_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_reboot_dialog_controller_impl_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_reboot_dialog_controller_impl_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_runner_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_cleaner_runner_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_prompt_actions_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_prompt_actions_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_prompt_channel_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/chrome_prompt_channel_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/reporter_runner_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/reporter_runner_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/settings_resetter_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/settings_resetter_win.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/srt_client_info_win.cc" />
+    <None Include="../../../../../../../chrome/browser/safe_browsing/chrome_cleaner/srt_client_info_win.h" />
+  </ItemGroup>
+</Project>

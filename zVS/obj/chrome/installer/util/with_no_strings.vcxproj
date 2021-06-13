@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7559F76B-3D66-28C4-0FDB-33DFFDDEED1B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>with_no_strings</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/chrome/installer/util/with_no_strings.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../..;../../../../../../out/x64-debug/gen;../../../../../../third_party/perfetto/include;../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../../third_party/dawn/src/include;../../../../../../third_party/libwebp/src;../../../../../../third_party/abseil-cpp;../../../../../../third_party/boringssl/src/include;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/protoc_out;../../../../../../third_party/protobuf/src;../../../../../../third_party/ced/src;../../../../../../third_party/icu/source/common;../../../../../../third_party/icu/source/i18n;../../../../../../out/x64-debug/gen/third_party/metrics_proto;../../../../../../third_party/zlib;../../../../../../third_party/lzma_sdk;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-shorten-64-to-32 -DPROTOBUF_ALLOW_DEPRECATED=1 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;WEBP_EXTERN=extern;ENABLE_IPC_FUZZER;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_after_reboot_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/delete_after_reboot_helper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/delete_after_reboot_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/delete_after_reboot_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/experiment.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/experiment.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/experiment.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_labels.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/experiment_labels.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/experiment_labels.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/experiment_labels.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_metrics.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/experiment_metrics.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/experiment_metrics.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/experiment_metrics.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_storage.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/experiment_storage.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/experiment_storage.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/experiment_storage.h" />
+    <None Include="../../../../../../chrome/installer/util/html_dialog.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/html_dialog_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/html_dialog_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/html_dialog_impl.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/initial_preferences.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/initial_preferences.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/initial_preferences.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/initial_preferences.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/logging_installer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/logging_installer.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/logging_installer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/logging_installer.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/lzma_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/lzma_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/lzma_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/lzma_util.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/registry_entry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/registry_entry.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/registry_entry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/registry_entry.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/scoped_token_privilege.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/scoped_token_privilege.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/scoped_token_privilege.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/scoped_token_privilege.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/scoped_user_protocol_entry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/scoped_user_protocol_entry.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/scoped_user_protocol_entry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/scoped_user_protocol_entry.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/self_cleaning_temp_dir.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/self_cleaning_temp_dir.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/self_cleaning_temp_dir.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/self_cleaning_temp_dir.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/shell_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/shell_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/shell_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/shell_util.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/advanced_firewall_manager_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/advanced_firewall_manager_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/advanced_firewall_manager_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/advanced_firewall_manager_win.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/app_command.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/app_command.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/app_command.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/app_command.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/app_commands.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/app_commands.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/app_commands.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/app_commands.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/auto_launch_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/auto_launch_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/auto_launch_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/auto_launch_util.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/beacons.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/beacons.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/beacons.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/beacons.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/callback_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/callback_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/callback_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/callback_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/channel_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/channel_info.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/channel_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/channel_info.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/conditional_work_item_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/conditional_work_item_list.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/conditional_work_item_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/conditional_work_item_list.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/copy_tree_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/copy_tree_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/copy_tree_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/copy_tree_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/create_dir_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/create_dir_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/create_dir_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/create_dir_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/create_reg_key_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/create_reg_key_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/create_reg_key_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/create_reg_key_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_old_versions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/delete_old_versions.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/delete_old_versions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/delete_old_versions.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_reg_key_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/delete_reg_key_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/delete_reg_key_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/delete_reg_key_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_reg_value_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/delete_reg_value_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/delete_reg_value_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/delete_reg_value_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_tree_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/delete_tree_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/delete_tree_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/delete_tree_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/duplicate_tree_detector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/duplicate_tree_detector.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/duplicate_tree_detector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/duplicate_tree_detector.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/firewall_manager_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/firewall_manager_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/firewall_manager_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/firewall_manager_win.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/google_update_settings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/google_update_settings.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/google_update_settings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/google_update_settings.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/google_update_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/google_update_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/google_update_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/google_update_util.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/helper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/helper.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/install_service_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/install_service_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/install_service_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/install_service_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/install_service_work_item_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/install_service_work_item_impl.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/install_service_work_item_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/install_service_work_item_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/install_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/install_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/install_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/install_util.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/installation_state.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/installation_state.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/installation_state.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/installation_state.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/l10n_string_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/l10n_string_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/l10n_string_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/l10n_string_util.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/move_tree_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/move_tree_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/move_tree_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/move_tree_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/registry_key_backup.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/registry_key_backup.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/registry_key_backup.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/registry_key_backup.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/set_reg_value_work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/set_reg_value_work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/set_reg_value_work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/set_reg_value_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/work_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/work_item.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/work_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/work_item_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings/work_item_list.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/with_no_strings/work_item_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/work_item_list.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/chrome/installer/util/with_no_strings.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/chrome/installer/util/with_no_strings.lib" />
+  </Target>
+</Project>

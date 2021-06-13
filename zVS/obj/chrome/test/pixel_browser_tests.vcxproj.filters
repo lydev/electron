@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pixel\demo">
+      <UniqueIdentifier>{721FC79A-9735-C286-53AC-A5D2C0EA869C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pixel">
+      <UniqueIdentifier>{4961A9FD-1043-B696-ED75-BA91918B11A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/test/pixel/demo/skia_gold_demo_pixeltest.cc">
+      <Filter>pixel\demo</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

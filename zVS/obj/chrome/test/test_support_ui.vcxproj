@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6756AEC7-6395-4D14-E2D0-0D00CD25D519}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>test_support_ui</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/chrome/test/test_support_ui.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../..;../../../../../out/x64-debug/gen;../../../../../third_party/perfetto/include;../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../third_party/dawn/src/include;../../../../../third_party/libwebp/src;../../../../../third_party/libyuv/include;../../../../../third_party/jsoncpp/source/include;../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../third_party/khronos;../../../../../gpu;../../../../../third_party/wtl/include;../../../../../third_party/abseil-cpp;../../../../../third_party/boringssl/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/protoc_out;../../../../../third_party/ced/src;../../../../../third_party/icu/source/common;../../../../../third_party/icu/source/i18n;../../../../../third_party/googletest/custom;../../../../../third_party/googletest/src/googlemock/include;../../../../../third_party/googletest/custom;../../../../../third_party/googletest/src/googletest/include;../../../../../third_party/abseil-cpp;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../net/third_party/quiche/overrides;../../../../../net/third_party/quiche/src/common/platform/default;../../../../../net/third_party/quiche/src;../../../../../third_party/webrtc_overrides;../../../../../third_party/webrtc;../../../../../out/x64-debug/gen/third_party/webrtc;../../../../../third_party/skia;../../../../../third_party/libgifcodec;../../../../../third_party/vulkan/include;../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../third_party/mesa_headers;../../../../../third_party/libwebm/source;../../../../../third_party/leveldatabase;../../../../../third_party/leveldatabase/src;../../../../../third_party/leveldatabase/src/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../third_party/libjpeg_turbo;../../../../../third_party/iccjpeg;../../../../../third_party/libpng;../../../../../third_party/zlib;../../../../../third_party/ots/src/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../v8/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen/third_party/metrics_proto;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen/components/policy/proto;../../../../../out/x64-debug/gen/third_party/private_membership/src;../../../../../out/x64-debug/gen/third_party/shell-encryption/src;../../../../../out/x64-debug/gen/components/policy/proto;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/re2/src;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/libaddressinput/src/cpp/include;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/flatbuffers/src/include;../../../../../out/x64-debug/gen;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-deprecated-declarations -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-inconsistent-missing-override -Wno-shorten-64-to-32 -Xclang -add-plugin -Xclang blink-gc-plugin %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;4800;4305;4324;4714;4800;4996;4344;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;WEBP_EXTERN=extern;USE_EGL;VK_USE_PLATFORM_WIN32_KHR;_WTL_NO_AUTOMATIC_NAMESPACE;TOOLKIT_VIEWS=1;ON_FOCUS_PING_ENABLED;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;GTEST_API_=;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;GTEST_HAS_ABSL=1;UNIT_TEST;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;WEBRTC_ENABLE_AVX2;RTC_ENABLE_WIN_WGC;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0;WEBRTC_CHROMIUM_BUILD;WEBRTC_WIN;ABSL_ALLOCATOR_NOTHROW=1;WEBRTC_USE_BUILTIN_ISAC_FIX=0;WEBRTC_USE_BUILTIN_ISAC_FLOAT=1;WEBRTC_HAVE_SCTP;NO_MAIN_THREAD_WRAPPING;SK_UNTIL_CRBUG_1187654_IS_FIXED;SK_CODEC_DECODES_PNG;SK_CODEC_DECODES_WEBP;SK_ENCODE_PNG;SK_ENCODE_WEBP;SK_USER_CONFIG_HEADER=&quot;../../skia/config/SkUserConfig.h&quot;;SK_GL;SK_CODEC_DECODES_JPEG;SK_ENCODE_JPEG;SK_USE_LIBGIFCODEC;SK_VULKAN_HEADER=&quot;../../skia/config/SkVulkanConfig.h&quot;;SK_VULKAN=1;SK_DAWN;SK_SUPPORT_GPU=1;SK_GPU_WORKAROUNDS_HEADER=&quot;gpu/config/gpu_driver_bug_workaround_autogen.h&quot;;GR_GL_FUNCTION_TYPE=__stdcall;VK_USE_PLATFORM_WIN32_KHR;LEVELDB_PLATFORM_CHROMIUM=1;LEVELDB_PLATFORM_CHROMIUM=1;V8_USE_EXTERNAL_STARTUP_DATA;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;WTF_USE_WEBAUDIO_PFFFT=1;USE_BLINK_V8_BINDING_NEW_IDL_INTERFACE;USE_BLINK_V8_BINDING_NEW_IDL_UNION;USE_LIBJPEG_TURBO=1;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;I18N_ADDRESS_VALIDATION_DATA_URL=&quot;https://chromium-i18n.appspot.com/ssl-aggregate-address/&quot;;FLATBUFFERS_LOCALE_INDEPENDENT=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/interstitials/security_interstitial_idn_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/security_interstitial_idn_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/security_interstitial_idn_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/interstitials/security_interstitial_idn_test.h" />
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_test_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/password_manager_test_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/password_manager_test_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/password_manager/password_manager_test_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ssl/cert_verifier_browser_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/cert_verifier_browser_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/cert_verifier_browser_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ssl/cert_verifier_browser_test.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ssl/cert_verifier_platform_browser_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/cert_verifier_platform_browser_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/cert_verifier_platform_browser_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ssl/cert_verifier_platform_browser_test.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/search/ntp_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/ntp_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/ntp_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/search/ntp_test_utils.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/payments/offer_notification_bubble_views_test_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/offer_notification_bubble_views_test_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/offer_notification_bubble_views_test_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/autofill/payments/offer_notification_bubble_views_test_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/web_apps/web_app_integration_browsertest_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/web_app_integration_browsertest_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/web_app_integration_browsertest_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/web_apps/web_app_integration_browsertest_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/webui/signin/login_ui_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/login_ui_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/login_ui_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/webui/signin/login_ui_test_utils.h" />
+    <CustomBuild Include="../../../../../chrome/browser/web_applications/test/profile_test_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/profile_test_helper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/profile_test_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/web_applications/test/profile_test_helper.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/devtools_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/devtools_listener.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/devtools_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/devtools_listener.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/in_process_browser_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/in_process_browser_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/in_process_browser_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/in_process_browser_test.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/javascript_browser_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/javascript_browser_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/javascript_browser_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/javascript_browser_test.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/mixin_based_in_process_browser_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/mixin_based_in_process_browser_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/mixin_based_in_process_browser_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/mixin_based_in_process_browser_test.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/mojo_web_ui_browser_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/mojo_web_ui_browser_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/mojo_web_ui_browser_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/mojo_web_ui_browser_test.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/perf/performance_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/performance_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/performance_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/perf/performance_test.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/test_chrome_web_ui_controller_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/test_chrome_web_ui_controller_factory.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/test_chrome_web_ui_controller_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/test_chrome_web_ui_controller_factory.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/ui_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/ui_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/ui_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/ui_test_utils.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/web_ui_browser_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/web_ui_browser_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/web_ui_browser_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/web_ui_browser_test.h" />
+    <CustomBuild Include="../../../../../chrome/test/permissions/permission_request_manager_test_api.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/permission_request_manager_test_api.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/permission_request_manager_test_api.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/permissions/permission_request_manager_test_api.h" />
+    <CustomBuild Include="../../../../../chrome/test/ppapi/ppapi_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/ppapi_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/ppapi_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/ppapi/ppapi_test.h" />
+    <CustomBuild Include="../../../../../chrome/test/ppapi/ppapi_test_select_file_dialog_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/ppapi_test_select_file_dialog_factory.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/ppapi_test_select_file_dialog_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/ppapi/ppapi_test_select_file_dialog_factory.h" />
+    <CustomBuild Include="../../../../../chrome/browser/first_run/scoped_relaunch_chrome_browser_override.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/scoped_relaunch_chrome_browser_override.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/scoped_relaunch_chrome_browser_override.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/first_run/scoped_relaunch_chrome_browser_override.h" />
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_signin_intercept_test_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/password_manager_signin_intercept_test_helper.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/password_manager_signin_intercept_test_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/password_manager/password_manager_signin_intercept_test_helper.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/profiles/profile_picker_test_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui/profile_picker_test_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/test_support_ui/profile_picker_test_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/profiles/profile_picker_test_base.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/chrome/test/test_support_ui.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/chrome/test/test_support_ui.lib" />
+  </Target>
+</Project>

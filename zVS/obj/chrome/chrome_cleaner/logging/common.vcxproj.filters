@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/detailed_info_sampler.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/logging/detailed_info_sampler.h" />
+    <None Include="../../../../../../chrome/chrome_cleaner/logging/info_sampler.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/logging_service_api.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/logging/logging_service_api.h" />
+    <None Include="../../../../../../chrome/chrome_cleaner/logging/network_checker.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/registry_logger.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/logging/registry_logger.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/safe_browsing_reporter.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/logging/safe_browsing_reporter.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/scoped_logging.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/logging/scoped_logging.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/utils.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/logging/utils.h" />
+  </ItemGroup>
+</Project>

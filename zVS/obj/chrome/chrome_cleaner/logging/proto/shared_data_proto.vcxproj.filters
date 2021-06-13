@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\chrome_cleaner\logging\proto">
+      <UniqueIdentifier>{7BBBDF1A-E807-DB6F-18EB-9ED7B27556DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\chrome_cleaner\logging">
+      <UniqueIdentifier>{590FA963-17C6-9F3C-D8CF-4DD6A3B2F7C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\chrome_cleaner">
+      <UniqueIdentifier>{C82943EB-53B8-B9E9-1A5A-D5C9527F38F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{6020ED40-B7B9-6AC5-7C58-D39617BE58E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/chrome_cleaner/logging/proto/shared_data.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\chrome_cleaner\logging\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/chrome_cleaner/logging/proto/shared_data.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\chrome_cleaner\logging\proto</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

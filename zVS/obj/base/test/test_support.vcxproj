@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1F309E1C-6376-7B75-2A72-18DED1E76B76}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>test_support</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/base/test/test_support.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../..;../../../../../out/x64-debug/gen;../../../../../third_party/perfetto/include;../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../third_party/abseil-cpp;../../../../../third_party/boringssl/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/protoc_out;../../../../../third_party/ced/src;../../../../../third_party/icu/source/common;../../../../../third_party/icu/source/i18n;../../../../../third_party/googletest/custom;../../../../../third_party/googletest/src/googlemock/include;../../../../../third_party/googletest/custom;../../../../../third_party/googletest/src/googletest/include;../../../../../third_party/abseil-cpp;../../../../../third_party/libxml/src/include;../../../../../third_party/libxml/win32/include;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-inconsistent-missing-override -DLIBXML_STATIC= %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;GTEST_API_=;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;GTEST_HAS_ABSL=1;UNIT_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/fake_task.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/fake_task.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/fake_task.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/fake_task.h" />
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/mock_time_domain.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/mock_time_domain.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/mock_time_domain.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/mock_time_domain.h" />
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/mock_time_message_pump.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/mock_time_message_pump.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/mock_time_message_pump.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/mock_time_message_pump.h" />
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/sequence_manager_for_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/sequence_manager_for_test.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/sequence_manager_for_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/sequence_manager_for_test.h" />
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/test_task_queue.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_task_queue.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_task_queue.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/test_task_queue.h" />
+    <None Include="../../../../../base/task/sequence_manager/test/test_task_time_observer.h" />
+    <CustomBuild Include="../../../../../base/timer/mock_timer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/mock_timer.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/mock_timer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/timer/mock_timer.h" />
+    <CustomBuild Include="../../../../../base/test/bind.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/bind.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/bind.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/bind.h" />
+    <CustomBuild Include="../../../../../base/test/copy_only_int.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/copy_only_int.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/copy_only_int.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/copy_only_int.h" />
+    <None Include="../../../../../base/test/gmock_callback_support.h" />
+    <None Include="../../../../../base/test/gmock_move_support.h" />
+    <CustomBuild Include="../../../../../base/test/gtest_links.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/gtest_links.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/gtest_links.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/gtest_links.h" />
+    <CustomBuild Include="../../../../../base/test/gtest_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/gtest_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/gtest_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/gtest_util.h" />
+    <CustomBuild Include="../../../../../base/test/gtest_xml_unittest_result_printer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/gtest_xml_unittest_result_printer.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/gtest_xml_unittest_result_printer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/gtest_xml_unittest_result_printer.h" />
+    <CustomBuild Include="../../../../../base/test/gtest_xml_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/gtest_xml_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/gtest_xml_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/gtest_xml_util.h" />
+    <CustomBuild Include="../../../../../base/test/icu_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/icu_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/icu_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/icu_test_util.h" />
+    <CustomBuild Include="../../../../../base/test/launcher/test_result.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_result.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_result.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_result.h" />
+    <None Include="../../../../../base/test/launcher/test_results_tracker.h" />
+    <None Include="../../../../../base/test/launcher/unit_test_launcher.h" />
+    <CustomBuild Include="../../../../../base/test/metrics/histogram_enum_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/histogram_enum_reader.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/histogram_enum_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/metrics/histogram_enum_reader.h" />
+    <CustomBuild Include="../../../../../base/test/metrics/histogram_tester.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/histogram_tester.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/histogram_tester.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/metrics/histogram_tester.h" />
+    <CustomBuild Include="../../../../../base/test/metrics/user_action_tester.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/user_action_tester.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/user_action_tester.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/metrics/user_action_tester.h" />
+    <None Include="../../../../../base/test/mock_callback.h" />
+    <CustomBuild Include="../../../../../base/test/mock_devices_changed_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/mock_devices_changed_observer.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/mock_devices_changed_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/mock_devices_changed_observer.h" />
+    <CustomBuild Include="../../../../../base/test/mock_entropy_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/mock_entropy_provider.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/mock_entropy_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/mock_entropy_provider.h" />
+    <CustomBuild Include="../../../../../base/test/mock_log.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/mock_log.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/mock_log.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/mock_log.h" />
+    <None Include="../../../../../base/test/move_only_int.h" />
+    <None Include="../../../../../base/test/multiprocess_test.h" />
+    <CustomBuild Include="../../../../../base/test/null_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/null_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/null_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/null_task_runner.h" />
+    <CustomBuild Include="../../../../../base/test/perf_log.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/perf_log.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/perf_log.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/perf_log.h" />
+    <CustomBuild Include="../../../../../base/test/perf_test_suite.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/perf_test_suite.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/perf_test_suite.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/perf_test_suite.h" />
+    <CustomBuild Include="../../../../../base/test/perf_time_logger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/perf_time_logger.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/perf_time_logger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/perf_time_logger.h" />
+    <CustomBuild Include="../../../../../base/test/power_monitor_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/power_monitor_test.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/power_monitor_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/power_monitor_test.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_command_line.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_command_line.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_command_line.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_command_line.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_environment_variable_override.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_environment_variable_override.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_environment_variable_override.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_environment_variable_override.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_feature_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_feature_list.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_feature_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_feature_list.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_field_trial_list_resetter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_field_trial_list_resetter.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_field_trial_list_resetter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_field_trial_list_resetter.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_mock_clock_override.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_mock_clock_override.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_mock_clock_override.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_mock_clock_override.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_mock_time_message_loop_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_mock_time_message_loop_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_mock_time_message_loop_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_mock_time_message_loop_task_runner.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_path_override.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_path_override.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_path_override.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_path_override.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_run_loop_timeout.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_run_loop_timeout.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_run_loop_timeout.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_run_loop_timeout.h" />
+    <CustomBuild Include="../../../../../base/test/sequenced_task_runner_test_template.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/sequenced_task_runner_test_template.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/sequenced_task_runner_test_template.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/sequenced_task_runner_test_template.h" />
+    <CustomBuild Include="../../../../../base/test/simple_test_clock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/simple_test_clock.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/simple_test_clock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/simple_test_clock.h" />
+    <CustomBuild Include="../../../../../base/test/simple_test_tick_clock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/simple_test_tick_clock.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/simple_test_tick_clock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/simple_test_tick_clock.h" />
+    <CustomBuild Include="../../../../../base/test/task_environment.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/task_environment.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/task_environment.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/task_environment.h" />
+    <CustomBuild Include="../../../../../base/test/task_runner_test_template.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/task_runner_test_template.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/task_runner_test_template.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/task_runner_test_template.h" />
+    <CustomBuild Include="../../../../../base/test/test_discardable_memory_allocator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_discardable_memory_allocator.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_discardable_memory_allocator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_discardable_memory_allocator.h" />
+    <CustomBuild Include="../../../../../base/test/test_file_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_file_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_file_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_file_util.h" />
+    <CustomBuild Include="../../../../../base/test/test_io_thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_io_thread.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_io_thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_io_thread.h" />
+    <CustomBuild Include="../../../../../base/test/test_message_loop.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_message_loop.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_message_loop.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_message_loop.h" />
+    <CustomBuild Include="../../../../../base/test/test_mock_time_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_mock_time_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_mock_time_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_mock_time_task_runner.h" />
+    <CustomBuild Include="../../../../../base/test/test_pending_task.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_pending_task.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_pending_task.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_pending_task.h" />
+    <CustomBuild Include="../../../../../base/test/test_shared_memory_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_shared_memory_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_shared_memory_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_shared_memory_util.h" />
+    <CustomBuild Include="../../../../../base/test/test_simple_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_simple_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_simple_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_simple_task_runner.h" />
+    <CustomBuild Include="../../../../../base/test/test_suite.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_suite.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_suite.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_suite.h" />
+    <CustomBuild Include="../../../../../base/test/test_waitable_event.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_waitable_event.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_waitable_event.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_waitable_event.h" />
+    <CustomBuild Include="../../../../../base/test/thread_test_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/thread_test_helper.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/thread_test_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/thread_test_helper.h" />
+    <CustomBuild Include="../../../../../base/test/values_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/values_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/values_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/values_test_util.h" />
+    <CustomBuild Include="../../../../../base/test/with_feature_override.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/with_feature_override.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/with_feature_override.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/with_feature_override.h" />
+    <None Include="../../../../../base/test/async_results_test_values_win.h" />
+    <None Include="../../../../../base/test/fake_iasync_operation_win.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_os_info_override_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/scoped_os_info_override_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/scoped_os_info_override_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/scoped_os_info_override_win.h" />
+    <CustomBuild Include="../../../../../base/test/test_file_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_file_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_file_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../base/test/test_reg_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_reg_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_reg_util_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_reg_util_win.h" />
+    <CustomBuild Include="../../../../../base/test/test_shortcut_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_shortcut_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_shortcut_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/test_shortcut_win.h" />
+    <CustomBuild Include="../../../../../base/test/launcher/test_launcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_launcher.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_launcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_launcher.h" />
+    <CustomBuild Include="../../../../../base/test/launcher/test_launcher_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_launcher_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_launcher_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_launcher_test_utils.h" />
+    <CustomBuild Include="../../../../../base/test/launcher/test_launcher_tracer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_launcher_tracer.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_launcher_tracer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_launcher_tracer.h" />
+    <CustomBuild Include="../../../../../base/test/launcher/test_results_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/test_results_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/test_results_tracker.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../base/test/launcher/unit_test_launcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/unit_test_launcher.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/unit_test_launcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../base/test/multiprocess_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/multiprocess_test.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/multiprocess_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/trace_event/trace_config_memory_test_util.h" />
+    <CustomBuild Include="../../../../../base/test/trace_event_analyzer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/trace_event_analyzer.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/trace_event_analyzer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/trace_event_analyzer.h" />
+    <CustomBuild Include="../../../../../base/test/trace_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/trace_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/trace_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/trace_test_utils.h" />
+    <CustomBuild Include="../../../../../base/test/trace_to_file.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/test/test_support/trace_to_file.obj</Command>
+      <Outputs>$(OutDir)obj/base/test/test_support/trace_to_file.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../base/test/trace_to_file.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/base/test/test_support.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/base/test/test_support.lib" />
+  </Target>
+</Project>

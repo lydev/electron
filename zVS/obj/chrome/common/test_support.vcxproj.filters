@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="search">
+      <UniqueIdentifier>{DA5065F7-65F3-9EF9-4682-869BFC29188E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extensions">
+      <UniqueIdentifier>{2EC5F4E1-6C71-BB4B-AD41-49D0D436F6EF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/common/search/mock_embedded_search_client.cc">
+      <Filter>search</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/common/search/mock_embedded_search_client.h">
+      <Filter>search</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/common/extensions/extension_test_util.cc">
+      <Filter>extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/common/extensions/extension_test_util.h">
+      <Filter>extensions</Filter>
+    </None>
+  </ItemGroup>
+</Project>

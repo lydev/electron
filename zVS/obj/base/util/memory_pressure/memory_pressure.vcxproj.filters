@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../base/util/memory_pressure/memory_pressure_level_reporter.cc" />
+    <None Include="../../../../../../base/util/memory_pressure/memory_pressure_level_reporter.h" />
+    <CustomBuild Include="../../../../../../base/util/memory_pressure/memory_pressure_voter.cc" />
+    <None Include="../../../../../../base/util/memory_pressure/memory_pressure_voter.h" />
+    <CustomBuild Include="../../../../../../base/util/memory_pressure/multi_source_memory_pressure_monitor.cc" />
+    <None Include="../../../../../../base/util/memory_pressure/multi_source_memory_pressure_monitor.h" />
+    <CustomBuild Include="../../../../../../base/util/memory_pressure/system_memory_pressure_evaluator.cc" />
+    <None Include="../../../../../../base/util/memory_pressure/system_memory_pressure_evaluator.h" />
+    <CustomBuild Include="../../../../../../base/util/memory_pressure/system_memory_pressure_evaluator_win.cc" />
+    <None Include="../../../../../../base/util/memory_pressure/system_memory_pressure_evaluator_win.h" />
+  </ItemGroup>
+</Project>

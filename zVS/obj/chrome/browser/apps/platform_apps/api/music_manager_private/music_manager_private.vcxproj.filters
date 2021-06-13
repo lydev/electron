@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../../chrome/browser/apps/platform_apps/api/music_manager_private/device_id.cc" />
+    <None Include="../../../../../../../../../chrome/browser/apps/platform_apps/api/music_manager_private/device_id.h" />
+    <CustomBuild Include="../../../../../../../../../chrome/browser/apps/platform_apps/api/music_manager_private/music_manager_private_api.cc" />
+    <None Include="../../../../../../../../../chrome/browser/apps/platform_apps/api/music_manager_private/music_manager_private_api.h" />
+    <CustomBuild Include="../../../../../../../../../chrome/browser/apps/platform_apps/api/music_manager_private/device_id_win.cc" />
+  </ItemGroup>
+</Project>

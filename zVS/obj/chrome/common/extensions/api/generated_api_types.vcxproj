@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{672E94E9-A230-6EFD-3491-57B3B946501B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>generated_api_types</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/chrome/common/extensions/api/generated_api_types.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../../..;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;../../../../../../../third_party/perfetto/include;../../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../../third_party/abseil-cpp;../../../../../../../third_party/boringssl/src/include;../../../../../../../third_party/protobuf/src;../../../../../../../out/x64-debug/gen/protoc_out;../../../../../../../out/x64-debug/gen;../../../../../../../out/x64-debug/gen;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-shorten-64-to-32 -DPROTOBUF_ALLOW_DEPRECATED=1 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/accessibility_features.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/accessibility_features.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/accessibility_features.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/accessibility_features.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/accessibility_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/accessibility_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/accessibility_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/accessibility_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/activity_log_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/activity_log_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/activity_log_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/activity_log_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/autofill_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/autofill_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/autofill_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/autofill_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/autotest_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/autotest_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/autotest_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/autotest_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/bookmark_manager_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/bookmark_manager_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/bookmark_manager_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/bookmark_manager_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/bookmarks.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/bookmarks.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/bookmarks.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/bookmarks.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/braille_display_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/braille_display_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/braille_display_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/braille_display_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/chrome_web_view_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/chrome_web_view_internal.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/chrome_web_view_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/chrome_web_view_internal.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/command_line_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/command_line_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/command_line_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/command_line_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/content_settings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/content_settings.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/content_settings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/content_settings.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/context_menus.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/context_menus.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/context_menus.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/context_menus.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/cookies.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/cookies.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/cookies.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/cookies.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/cryptotoken_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/cryptotoken_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/cryptotoken_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/cryptotoken_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/dashboard_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/dashboard_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/dashboard_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/dashboard_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/debugger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/debugger.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/debugger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/debugger.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/desktop_capture.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/desktop_capture.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/desktop_capture.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/desktop_capture.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/developer_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/developer_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/developer_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/developer_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/crash_report_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/crash_report_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/crash_report_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/crash_report_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/downloads.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/downloads.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/downloads.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/downloads.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/downloads_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/downloads_internal.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/downloads_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/downloads_internal.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/enterprise_hardware_platform.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/enterprise_hardware_platform.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/enterprise_hardware_platform.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/enterprise_hardware_platform.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/enterprise_reporting_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/enterprise_reporting_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/enterprise_reporting_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/enterprise_reporting_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/font_settings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/font_settings.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/font_settings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/font_settings.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/gcm.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/gcm.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/gcm.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/gcm.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/history.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/history.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/history.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/history.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/i18n.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/i18n.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/i18n.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/i18n.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/identity.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/identity.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/identity.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/identity.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/identity_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/identity_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/identity_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/identity_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/image_writer_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/image_writer_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/image_writer_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/image_writer_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/instance_id.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/instance_id.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/instance_id.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/instance_id.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/language_settings_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/language_settings_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/language_settings_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/language_settings_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/notifications.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/notifications.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/notifications.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/notifications.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/omnibox.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/omnibox.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/omnibox.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/omnibox.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/page_capture.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/page_capture.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/page_capture.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/page_capture.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/passwords_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/passwords_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/passwords_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/passwords_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/permissions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/permissions.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/permissions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/permissions.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/resources_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/resources_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/resources_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/resources_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/safe_browsing_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/safe_browsing_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/safe_browsing_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/safe_browsing_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/scripting.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/scripting.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/scripting.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/scripting.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/search.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/search.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/search.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/search.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/sessions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/sessions.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/sessions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/sessions.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/settings_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/settings_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/settings_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/settings_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/signed_in_devices.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/signed_in_devices.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/signed_in_devices.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/signed_in_devices.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/system_indicator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/system_indicator.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/system_indicator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/system_indicator.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/system_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/system_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/system_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/system_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tab_capture.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/tab_capture.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/tab_capture.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tab_capture.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tab_groups.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/tab_groups.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/tab_groups.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tab_groups.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tabs.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/tabs.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/tabs.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tabs.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/types.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/types.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/types.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/types.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/web_navigation.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/web_navigation.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/web_navigation.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/web_navigation.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_audio_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/webrtc_audio_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/webrtc_audio_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_audio_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_desktop_capture_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/webrtc_desktop_capture_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/webrtc_desktop_capture_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_desktop_capture_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_logging_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/webrtc_logging_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/webrtc_logging_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_logging_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webstore_private.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/webstore_private.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/webstore_private.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webstore_private.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/windows.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/windows.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/windows.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/windows.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/processes.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/processes.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/processes.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/processes.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/input_ime.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/input_ime.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/input_ime.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/input_ime.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/mdns.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/mdns.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/mdns.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/mdns.h" />
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/manifest_types.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types/manifest_types.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/common/extensions/api/generated_api_types/manifest_types.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/manifest_types.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/chrome/common/extensions/api/generated_api_types.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/chrome/common/extensions/api/generated_api_types.lib" />
+  </Target>
+</Project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/services/printing/pdf_nup_converter.cc" />
+    <None Include="../../../../../../chrome/services/printing/pdf_nup_converter.h" />
+    <CustomBuild Include="../../../../../../chrome/services/printing/pdf_to_pwg_raster_converter.cc" />
+    <None Include="../../../../../../chrome/services/printing/pdf_to_pwg_raster_converter.h" />
+    <CustomBuild Include="../../../../../../chrome/services/printing/printing_service.cc" />
+    <None Include="../../../../../../chrome/services/printing/printing_service.h" />
+    <CustomBuild Include="../../../../../../chrome/services/printing/pdf_to_emf_converter.cc" />
+    <None Include="../../../../../../chrome/services/printing/pdf_to_emf_converter.h" />
+    <CustomBuild Include="../../../../../../chrome/services/printing/pdf_to_emf_converter_factory.cc" />
+    <None Include="../../../../../../chrome/services/printing/pdf_to_emf_converter_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/services/printing/print_backend_service_impl.cc" />
+    <None Include="../../../../../../chrome/services/printing/print_backend_service_impl.h" />
+  </ItemGroup>
+</Project>

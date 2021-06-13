@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="recover_module">
+      <UniqueIdentifier>{0E490C6D-A240-F9BA-AE78-5E3E202F5682}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../sql/database.cc" />
+    <None Include="../../../../sql/database.h" />
+    <CustomBuild Include="../../../../sql/database_memory_dump_provider.cc" />
+    <None Include="../../../../sql/database_memory_dump_provider.h" />
+    <CustomBuild Include="../../../../sql/error_delegate_util.cc" />
+    <None Include="../../../../sql/error_delegate_util.h" />
+    <None Include="../../../../sql/init_status.h" />
+    <CustomBuild Include="../../../../sql/initialization.cc" />
+    <None Include="../../../../sql/initialization.h" />
+    <None Include="../../../../sql/internal_api_token.h" />
+    <CustomBuild Include="../../../../sql/meta_table.cc" />
+    <None Include="../../../../sql/meta_table.h" />
+    <CustomBuild Include="../../../../sql/recover_module/btree.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/btree.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recover_module/cursor.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/cursor.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recover_module/integers.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/integers.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recover_module/module.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/module.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recover_module/pager.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/pager.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recover_module/parsing.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/parsing.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recover_module/payload.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/payload.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recover_module/record.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/record.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recover_module/table.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/recover_module/table.h">
+      <Filter>recover_module</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/recovery.cc" />
+    <None Include="../../../../sql/recovery.h" />
+    <CustomBuild Include="../../../../sql/sandboxed_vfs.cc" />
+    <None Include="../../../../sql/sandboxed_vfs.h" />
+    <CustomBuild Include="../../../../sql/sandboxed_vfs_file.cc" />
+    <None Include="../../../../sql/sandboxed_vfs_file.h" />
+    <CustomBuild Include="../../../../sql/sql_features.cc" />
+    <None Include="../../../../sql/sql_features.h" />
+    <CustomBuild Include="../../../../sql/sql_memory_dump_provider.cc" />
+    <None Include="../../../../sql/sql_memory_dump_provider.h" />
+    <CustomBuild Include="../../../../sql/statement.cc" />
+    <None Include="../../../../sql/statement.h" />
+    <CustomBuild Include="../../../../sql/statement_id.cc" />
+    <None Include="../../../../sql/statement_id.h" />
+    <CustomBuild Include="../../../../sql/transaction.cc" />
+    <None Include="../../../../sql/transaction.h" />
+    <CustomBuild Include="../../../../sql/vfs_wrapper.cc" />
+    <None Include="../../../../sql/vfs_wrapper.h" />
+  </ItemGroup>
+</Project>

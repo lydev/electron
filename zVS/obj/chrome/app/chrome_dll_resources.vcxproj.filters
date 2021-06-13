@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="etw_events">
+      <UniqueIdentifier>{1D3D7305-AE5E-28E0-C363-4A567C3C44C5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../chrome/app/chrome_dll_resource.h" />
+    <CustomBuild Include="../../../../../chrome/app/chrome_dll.rc" />
+    <CustomBuild Include="../../../../../chrome/app/etw_events/chrome_events_win.rc">
+      <Filter>etw_events</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

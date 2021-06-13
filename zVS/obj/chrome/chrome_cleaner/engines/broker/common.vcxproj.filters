@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/cleaner_engine_requests_impl.h" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/cleaner_sandbox_interface.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_cleanup_results_impl.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_cleanup_results_impl.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_client.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_client.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_file_requests_impl.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_file_requests_impl.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_requests_impl.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_requests_impl.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_scan_results_impl.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/engine_scan_results_impl.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/broker/logging_conversion.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/logging_conversion.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/broker/sandbox_setup.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/sandbox_setup.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/broker/scanner_sandbox_interface.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/broker/scanner_sandbox_interface.h" />
+  </ItemGroup>
+</Project>

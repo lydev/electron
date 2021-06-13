@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/child_process_logger.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/child_process_logger.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/file_remover_test_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/file_remover_test_util.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/reboot_deletion_helper.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/reboot_deletion_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/scoped_process_protector.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/scoped_process_protector.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/test_file_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/test_file_util.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/test_layered_service_provider.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/test_layered_service_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/test_native_reg_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/test_native_reg_util.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/test_registry_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/test_registry_util.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/test_settings_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/test_settings_util.h" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/test_signature_matcher.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/test_task_scheduler.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/test_task_scheduler.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/test/test_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/test/test_util.h" />
+  </ItemGroup>
+</Project>

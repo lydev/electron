@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser\interstitials">
+      <UniqueIdentifier>{02B06764-06E3-F35E-26E9-30F3CA847070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\password_manager">
+      <UniqueIdentifier>{ACDC18FD-6A6C-FB27-1935-D6D952B91198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ssl">
+      <UniqueIdentifier>{5C36DAF6-7012-EB12-80B1-1FE4699B548B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\search">
+      <UniqueIdentifier>{6BA802A5-F335-1ACE-3EBC-DE8C3AC4925E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui">
+      <UniqueIdentifier>{07FEDA6E-25E1-9E6C-F6A2-84E1B5CC5098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\autofill\payments">
+      <UniqueIdentifier>{EC71B934-3372-976B-2CD7-2D69FE0A6DC4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\autofill">
+      <UniqueIdentifier>{C1BD45F6-FB0D-E36D-D910-B5EAD3F6A7F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views">
+      <UniqueIdentifier>{483726F9-C93B-8F3E-9401-0B412CBE13D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\web_apps">
+      <UniqueIdentifier>{E23EE0FB-6BE2-9B92-DC55-6F7F8D793A87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\webui\signin">
+      <UniqueIdentifier>{CF9BF856-76DC-5844-E4D9-81C5FCB1FE6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\webui">
+      <UniqueIdentifier>{9E732DEB-36EA-7326-FDAE-656A348F9F42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\web_applications\test">
+      <UniqueIdentifier>{365E0125-7A72-8CA6-BC36-557FDB5D7077}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\web_applications">
+      <UniqueIdentifier>{EDEA4E9C-1518-B4F1-73F5-B0E1D86CDC5F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{530671C4-A49E-2227-1185-B142528140EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base\perf">
+      <UniqueIdentifier>{ED265A14-C2EB-8D33-E4BE-9671C203A822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="permissions">
+      <UniqueIdentifier>{D7859914-513C-6566-5498-E70D0B59208C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ppapi">
+      <UniqueIdentifier>{CD54E9FE-ED99-2DEC-5397-A1E963FC39F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\first_run">
+      <UniqueIdentifier>{F1C5C102-E2A2-C076-282E-5D91417F292C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\profiles">
+      <UniqueIdentifier>{41F3DA25-4D7A-8A5B-012C-B38B7B3FF431}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/interstitials/security_interstitial_idn_test.cc">
+      <Filter>..\..\chrome\browser\interstitials</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/interstitials/security_interstitial_idn_test.h">
+      <Filter>..\..\chrome\browser\interstitials</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_test_base.cc">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/password_manager/password_manager_test_base.h">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ssl/cert_verifier_browser_test.cc">
+      <Filter>..\..\chrome\browser\ssl</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ssl/cert_verifier_browser_test.h">
+      <Filter>..\..\chrome\browser\ssl</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ssl/cert_verifier_platform_browser_test.cc">
+      <Filter>..\..\chrome\browser\ssl</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ssl/cert_verifier_platform_browser_test.h">
+      <Filter>..\..\chrome\browser\ssl</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/search/ntp_test_utils.cc">
+      <Filter>..\..\chrome\browser\ui\search</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/search/ntp_test_utils.h">
+      <Filter>..\..\chrome\browser\ui\search</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/payments/offer_notification_bubble_views_test_base.cc">
+      <Filter>..\..\chrome\browser\ui\views\autofill\payments</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/autofill/payments/offer_notification_bubble_views_test_base.h">
+      <Filter>..\..\chrome\browser\ui\views\autofill\payments</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/web_apps/web_app_integration_browsertest_base.cc">
+      <Filter>..\..\chrome\browser\ui\views\web_apps</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/web_apps/web_app_integration_browsertest_base.h">
+      <Filter>..\..\chrome\browser\ui\views\web_apps</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/webui/signin/login_ui_test_utils.cc">
+      <Filter>..\..\chrome\browser\ui\webui\signin</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/webui/signin/login_ui_test_utils.h">
+      <Filter>..\..\chrome\browser\ui\webui\signin</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/web_applications/test/profile_test_helper.cc">
+      <Filter>..\..\chrome\browser\web_applications\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/web_applications/test/profile_test_helper.h">
+      <Filter>..\..\chrome\browser\web_applications\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/devtools_listener.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/devtools_listener.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/in_process_browser_test.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/in_process_browser_test.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/javascript_browser_test.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/javascript_browser_test.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/mixin_based_in_process_browser_test.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/mixin_based_in_process_browser_test.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/mojo_web_ui_browser_test.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/mojo_web_ui_browser_test.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/perf/performance_test.cc">
+      <Filter>base\perf</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/perf/performance_test.h">
+      <Filter>base\perf</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/test_chrome_web_ui_controller_factory.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/test_chrome_web_ui_controller_factory.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/ui_test_utils.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/ui_test_utils.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/web_ui_browser_test.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/web_ui_browser_test.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/permissions/permission_request_manager_test_api.cc">
+      <Filter>permissions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/permissions/permission_request_manager_test_api.h">
+      <Filter>permissions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/ppapi/ppapi_test.cc">
+      <Filter>ppapi</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/ppapi/ppapi_test.h">
+      <Filter>ppapi</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/ppapi/ppapi_test_select_file_dialog_factory.cc">
+      <Filter>ppapi</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/ppapi/ppapi_test_select_file_dialog_factory.h">
+      <Filter>ppapi</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/first_run/scoped_relaunch_chrome_browser_override.cc">
+      <Filter>..\..\chrome\browser\first_run</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/first_run/scoped_relaunch_chrome_browser_override.h">
+      <Filter>..\..\chrome\browser\first_run</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_signin_intercept_test_helper.cc">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/password_manager/password_manager_signin_intercept_test_helper.h">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/profiles/profile_picker_test_base.cc">
+      <Filter>..\..\chrome\browser\ui\views\profiles</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/profiles/profile_picker_test_base.h">
+      <Filter>..\..\chrome\browser\ui\views\profiles</Filter>
+    </None>
+  </ItemGroup>
+</Project>

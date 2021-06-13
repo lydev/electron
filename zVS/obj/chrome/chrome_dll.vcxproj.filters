@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\base\win">
+      <UniqueIdentifier>{827C4C3E-2468-F0DB-B896-7F88321438E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\base">
+      <UniqueIdentifier>{75A87448-82D5-A482-73D7-30FC73F47474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{B26D2D58-FFA3-D057-BCAA-1FE8AD111DC6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../base/win/dllmain.cc">
+      <Filter>..\base\win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../chrome/app/chrome_main.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../chrome/app/chrome_main_delegate.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <None Include="../../../../chrome/app/chrome_main_delegate.h">
+      <Filter>app</Filter>
+    </None>
+  </ItemGroup>
+</Project>

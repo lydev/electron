@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A94D4AF2-4788-07A3-6C54-CA3EB4F5BBCC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>installer_util_unittests</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\installer_util_unittests.exe</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../..;../../../../../../out/x64-debug/gen;../../../../../../third_party/perfetto/include;../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../../third_party/dawn/src/include;../../../../../../third_party/libwebp/src;../../../../../../third_party/abseil-cpp;../../../../../../third_party/boringssl/src/include;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/protoc_out;../../../../../../third_party/ced/src;../../../../../../third_party/icu/source/common;../../../../../../third_party/icu/source/i18n;../../../../../../third_party/googletest/custom;../../../../../../third_party/googletest/src/googlemock/include;../../../../../../third_party/googletest/custom;../../../../../../third_party/googletest/src/googletest/include;../../../../../../third_party/abseil-cpp;../../../../../../third_party/protobuf/src;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-inconsistent-missing-override -Wno-shorten-64-to-32 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;WEBP_EXTERN=extern;ENABLE_IPC_FUZZER;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;GTEST_API_=;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;GTEST_HAS_ABSL=1;UNIT_TEST;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>CONSOLE</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/installer/util/advanced_firewall_manager_win_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/advanced_firewall_manager_win_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/advanced_firewall_manager_win_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/beacons_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/beacons_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/beacons_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/callback_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/callback_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/callback_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/channel_info_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/channel_info_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/channel_info_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/conditional_work_item_list_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/conditional_work_item_list_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/conditional_work_item_list_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/copy_tree_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/copy_tree_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/copy_tree_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/create_dir_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/create_dir_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/create_dir_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/create_reg_key_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/create_reg_key_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/create_reg_key_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_after_reboot_helper_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/delete_after_reboot_helper_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/delete_after_reboot_helper_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_old_versions_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/delete_old_versions_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/delete_old_versions_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_reg_key_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/delete_reg_key_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/delete_reg_key_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_reg_value_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/delete_reg_value_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/delete_reg_value_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_tree_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/delete_tree_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/delete_tree_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/duplicate_tree_detector_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/duplicate_tree_detector_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/duplicate_tree_detector_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_labels_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/experiment_labels_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/experiment_labels_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_storage_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/experiment_storage_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/experiment_storage_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/experiment_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/experiment_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/google_update_settings_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/google_update_settings_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/google_update_settings_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/helper_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/helper_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/helper_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/initial_preferences_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/initial_preferences_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/initial_preferences_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/install_util_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/install_util_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/install_util_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/l10n_string_util_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/l10n_string_util_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/l10n_string_util_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/logging_installer_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/logging_installer_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/logging_installer_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/lzma_util_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/lzma_util_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/lzma_util_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/move_tree_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/move_tree_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/move_tree_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/product_state_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/product_state_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/product_state_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/product_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/product_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/product_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/registry_key_backup_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/registry_key_backup_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/registry_key_backup_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/registry_test_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/registry_test_data.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/registry_test_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/registry_test_data.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/run_all_unittests.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/run_all_unittests.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/run_all_unittests.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/scoped_token_privilege_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/scoped_token_privilege_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/scoped_token_privilege_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/scoped_user_protocol_entry_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/scoped_user_protocol_entry_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/scoped_user_protocol_entry_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/self_cleaning_temp_dir_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/self_cleaning_temp_dir_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/self_cleaning_temp_dir_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/set_reg_value_work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/set_reg_value_work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/set_reg_value_work_item_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/shell_util_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/shell_util_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/shell_util_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/work_item_list_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/work_item_list_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/work_item_list_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/installer/util/work_item_mocks.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/work_item_mocks.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/work_item_mocks.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/installer/util/work_item_mocks.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/work_item_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/installer/util/installer_util_unittests/work_item_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/installer/util/installer_util_unittests/work_item_unittest.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  installer_util_unittests.exe" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean installer_util_unittests.exe" />
+  </Target>
+</Project>

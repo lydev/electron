@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tabs">
+      <UniqueIdentifier>{EABE868A-C8DB-1E90-7E72-D49C1DEC3CBB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/browser/ui/views/accelerator_table.cc" />
+    <None Include="../../../../../../../chrome/browser/ui/views/accelerator_table.h" />
+    <None Include="../../../../../../../chrome/browser/ui/views/chrome_views_export.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/ui/views/event_utils.cc" />
+    <None Include="../../../../../../../chrome/browser/ui/views/event_utils.h" />
+    <None Include="../../../../../../../chrome/browser/ui/views/tab_icon_view_model.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/ui/views/tabs/tab_strip_observer.cc">
+      <Filter>tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/ui/views/tabs/tab_strip_observer.h">
+      <Filter>tabs</Filter>
+    </None>
+    <None Include="../../../../../../../chrome/browser/ui/views/tabs/tab_strip_types.h">
+      <Filter>tabs</Filter>
+    </None>
+  </ItemGroup>
+</Project>

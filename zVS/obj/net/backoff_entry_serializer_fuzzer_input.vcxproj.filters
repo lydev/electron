@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\out\x64-debug\gen\net\base">
+      <UniqueIdentifier>{BEBD55FE-EBE5-C7F4-7CF3-EB86924B65AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\out\x64-debug\gen\net">
+      <UniqueIdentifier>{EE491308-C8E4-5806-5E01-41E3BC9CE513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\out\x64-debug\gen">
+      <UniqueIdentifier>{FB7B6038-CACC-C9C1-D2B9-9215EB2B7EBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\out\x64-debug">
+      <UniqueIdentifier>{27883513-87D4-456D-412B-294A3C7498F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\out">
+      <UniqueIdentifier>{FBD62108-6F7E-E78E-9895-92E1AA2F5AC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../out/x64-debug/gen/net/base/backoff_entry_serializer_fuzzer_input.pb.h">
+      <Filter>..\out\x64-debug\gen\net\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../out/x64-debug/gen/net/base/backoff_entry_serializer_fuzzer_input.pb.cc">
+      <Filter>..\out\x64-debug\gen\net\base</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

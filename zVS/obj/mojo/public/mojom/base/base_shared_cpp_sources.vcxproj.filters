@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base">
+      <UniqueIdentifier>{75BDA762-7556-2AD8-6655-C229F7DAD7B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public\mojom">
+      <UniqueIdentifier>{D77754E5-6CE6-577F-F12B-AA2406A00E85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public">
+      <UniqueIdentifier>{57633762-397C-8E07-3664-01E0705C98B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo">
+      <UniqueIdentifier>{671FDBA5-B66A-6EFD-1725-C9F50205ED00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/application_state.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_buffer.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/big_string.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/binder.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/byte_string.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_error.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_info.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/file_path.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_associated_receiver.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/generic_pending_receiver.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_allocator_dump_cross_process_uid.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/memory_pressure_level.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/message_pump_type.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/process_id.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_buffer.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/read_only_file.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/ref_counted_memory.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/shared_memory.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/string16.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/text_direction.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/thread_priority.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/time.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/token.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/unguessable_token.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/values.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/mojom/base/logfont_win.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\mojom\base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

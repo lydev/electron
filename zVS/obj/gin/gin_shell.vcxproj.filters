@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shell">
+      <UniqueIdentifier>{30FF0113-2473-626B-9634-EA7C672D69FA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../gin/shell/gin_main.cc">
+      <Filter>shell</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

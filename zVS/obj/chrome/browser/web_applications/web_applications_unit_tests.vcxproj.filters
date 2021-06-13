@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="system_web_apps\test">
+      <UniqueIdentifier>{D8F270E7-B5CA-0232-D584-87893C1E20C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_web_apps">
+      <UniqueIdentifier>{7EFABF43-B17F-DAC4-AECB-0C7E08F19CBB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/daily_metrics_helper_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/externally_managed_app_manager_impl_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/isolation_prefs_utils_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/manifest_update_task_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/preinstalled_web_app_manager_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/preinstalled_web_app_utils_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/system_web_app_manager_unittest.cc">
+      <Filter>system_web_apps\test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_database_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_icon_manager_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_install_manager_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_install_task_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_installation_utils_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_mover_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_proto_utils_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_registrar_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_sync_bridge_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/web_app_unittest.cc" />
+  </ItemGroup>
+</Project>

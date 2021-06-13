@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/cleaner_logging_service_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/detailed_info_sampler_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/message_builder_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/pending_logs_service_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/registry_logger_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/reporter_logging_service_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/safe_browsing_reporter_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/scoped_logging_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/scoped_timed_task_logger_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/logging/utils_unittest.cc" />
+  </ItemGroup>
+</Project>

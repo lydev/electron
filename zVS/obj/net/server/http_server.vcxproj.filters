@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../net/server/http_connection.cc" />
+    <None Include="../../../../../net/server/http_connection.h" />
+    <CustomBuild Include="../../../../../net/server/http_server.cc" />
+    <None Include="../../../../../net/server/http_server.h" />
+    <CustomBuild Include="../../../../../net/server/http_server_request_info.cc" />
+    <None Include="../../../../../net/server/http_server_request_info.h" />
+    <CustomBuild Include="../../../../../net/server/http_server_response_info.cc" />
+    <None Include="../../../../../net/server/http_server_response_info.h" />
+    <CustomBuild Include="../../../../../net/server/web_socket.cc" />
+    <None Include="../../../../../net/server/web_socket.h" />
+    <CustomBuild Include="../../../../../net/server/web_socket_encoder.cc" />
+    <None Include="../../../../../net/server/web_socket_encoder.h" />
+  </ItemGroup>
+</Project>

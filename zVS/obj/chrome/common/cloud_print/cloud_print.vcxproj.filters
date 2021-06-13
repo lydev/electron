@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/common/cloud_print/cloud_print_constants.cc" />
+    <None Include="../../../../../../chrome/common/cloud_print/cloud_print_constants.h" />
+    <CustomBuild Include="../../../../../../chrome/common/cloud_print/cloud_print_helpers.cc" />
+    <None Include="../../../../../../chrome/common/cloud_print/cloud_print_helpers.h" />
+    <CustomBuild Include="../../../../../../chrome/common/cloud_print/cloud_print_proxy_info.cc" />
+    <None Include="../../../../../../chrome/common/cloud_print/cloud_print_proxy_info.h" />
+  </ItemGroup>
+</Project>

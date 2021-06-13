@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui">
+      <UniqueIdentifier>{A90A6D36-DE3A-B220-4369-054216E2B1C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser\ui">
+      <UniqueIdentifier>{AD009EEC-B548-16F3-A321-4C191A2BC368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser">
+      <UniqueIdentifier>{4EC8206D-441C-CA85-3222-62AAC4FA6AFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{6020ED40-B7B9-6AC5-7C58-D39617BE58E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\sync_internals">
+      <UniqueIdentifier>{AA0E3DA0-5170-8A88-A76D-89EF46F8817B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui">
+      <UniqueIdentifier>{61B2DD11-C91D-B9B4-009F-C11F035B4515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data">
+      <UniqueIdentifier>{62A5768D-34A9-41FA-A806-D6B2598B5F31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test">
+      <UniqueIdentifier>{D8783CE9-1F6B-DCAD-F003-69574543E277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\bookmarks">
+      <UniqueIdentifier>{16B58AA1-477E-CBE0-9907-AC1C433C1669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\cr_components">
+      <UniqueIdentifier>{ACCB780A-9D3E-227F-8495-E4D6E3835A6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\cr_elements">
+      <UniqueIdentifier>{1F7D013F-EC63-59A5-B31F-C886F8FB0DA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\download_shelf">
+      <UniqueIdentifier>{EFDD6D2A-CEF0-B904-6CAA-60C27394C965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\histograms">
+      <UniqueIdentifier>{5B69D7A5-7B3E-0133-F274-DB5B66690D17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\history">
+      <UniqueIdentifier>{7423AED0-BD6B-5A5F-E1C7-0131F942178E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\invalidations">
+      <UniqueIdentifier>{098C0EF5-3F0A-8F3F-046A-2D29D807AB71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\js">
+      <UniqueIdentifier>{87E34D9C-7DC6-7064-0831-24CA33A084BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\management\a11y">
+      <UniqueIdentifier>{A1C713BE-98DA-C3DA-59C8-BEE61AEF92CC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\management">
+      <UniqueIdentifier>{8E2A46D4-671C-DC5A-1362-0A104955574D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\media_internals">
+      <UniqueIdentifier>{3C29C841-CCA5-F490-D1C8-5E2CA6FAE6CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\net_internals">
+      <UniqueIdentifier>{65D72075-397D-4674-D476-F61012E70B99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\resources">
+      <UniqueIdentifier>{CFC42105-CDFB-BAE0-BA6D-A620C019A7E5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\settings\a11y">
+      <UniqueIdentifier>{A91A7ADF-8EFF-2418-D490-EA5D0748F3F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\settings">
+      <UniqueIdentifier>{E2CC5E4C-9D44-6664-71C2-CC8182293F44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\tab_search">
+      <UniqueIdentifier>{6BF4552D-4C45-02FC-7378-59E4813C3A8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\inline_login">
+      <UniqueIdentifier>{1A2BB1C1-8CFF-55D6-B2D7-0162A7CB41D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\signin">
+      <UniqueIdentifier>{DCADFCE3-9666-D308-AABD-CCD8A2969B60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\welcome">
+      <UniqueIdentifier>{5941AC4D-4042-23E5-88DF-8AD7F092FA88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\extensions\a11y">
+      <UniqueIdentifier>{D6868E3A-43DB-1FAC-5B39-4AD4BD48D0C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\extensions">
+      <UniqueIdentifier>{F9F41FB9-1188-FE78-BCC3-E910B288060E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\print_preview">
+      <UniqueIdentifier>{4792596E-C2A3-0FA2-3663-25439DACDCC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\tab_strip">
+      <UniqueIdentifier>{DE3FCF3E-E0BD-DF3F-692A-541A495994F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\commander">
+      <UniqueIdentifier>{B863DA76-A45A-C138-4272-70E70DFA24DC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/ui/webui/identity_internals_ui_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/ui/webui/sync_internals/sync_internals_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\sync_internals</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/assertions-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/async_gen-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/bookmarks/bookmarks_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\bookmarks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/cr_components/cr_components_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\cr_components</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/cr_elements/cr_elements_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\cr_elements</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/download_shelf/download_shelf_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\download_shelf</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/histograms/histograms_internals_ui_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\histograms</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/history/history_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\history</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/invalidations/about_invalidations_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\invalidations</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/js/i18n_process_test-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\js</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/js/webui_resource_module_async_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\js</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/js2gtest_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/load_time_data_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/management/a11y/management_a11y_test-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\management\a11y</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/media_internals/media_internals_ui_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\media_internals</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/net_internals/net_internals_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\net_internals</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/ntp4-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/resources/webui_resources_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\resources</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/sandboxstatus_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/settings/a11y/a11y_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\settings\a11y</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/settings/cr_settings_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/settings/privacy_sandbox_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/settings/settings_idle_load_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/tab_search/tab_search_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\tab_search</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/text_defaults_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/webui_resource_async_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/inline_login/inline_login_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\inline_login</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/signin/signin_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\signin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/welcome/a11y_tests-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\welcome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/welcome/welcome_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\welcome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/extensions/a11y/extensions_a11y_test-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\extensions\a11y</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/extensions/cr_extensions_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/print_preview/print_preview_ui_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\print_preview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/tab_strip/tab_strip_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\tab_strip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/commander/commander_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\commander</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

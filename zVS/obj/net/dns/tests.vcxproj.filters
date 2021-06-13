@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../net/dns/address_info_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/context_host_resolver_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_alias_utility_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_config_service_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_hosts_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_query_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_response_result_extractor_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_response_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_socket_allocator_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_transaction_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_udp_tracker_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_util_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/host_cache_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/host_resolver_manager_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/https_record_rdata_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/httpssvc_metrics_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/mapped_host_resolver_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/nsswitch_reader_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/record_parsed_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/record_rdata_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/resolve_context_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/serial_worker_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/system_dns_config_change_notifier_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_config_service_win_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/address_sorter_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/dns_client_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/mdns_cache_unittest.cc" />
+    <CustomBuild Include="../../../../../net/dns/mdns_client_unittest.cc" />
+  </ItemGroup>
+</Project>

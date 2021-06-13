@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\out\x64-debug\gen\chrome\credential_provider\gaiacp\grit">
+      <UniqueIdentifier>{A0E0BECD-8C0A-A824-98FD-13F690869B3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\chrome\credential_provider\gaiacp">
+      <UniqueIdentifier>{B438DB5F-51E1-B1D6-95E0-9FEB6D0A4C95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\chrome\credential_provider">
+      <UniqueIdentifier>{1357D96A-5AAF-723A-F47B-6E51924D6712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{8EECFB24-03C3-30BE-6D4D-07CA53C1F9B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{96638BD7-4C41-4F0D-A035-4B0D220C45C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug">
+      <UniqueIdentifier>{8E0664AF-844A-8DAE-2839-49242DA467FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out">
+      <UniqueIdentifier>{50BC2BDD-CE9C-16A8-60AF-198B16301065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/credential_provider/gaiacp/grit/gaia_static_resources.h">
+      <Filter>..\..\..\out\x64-debug\gen\chrome\credential_provider\gaiacp\grit</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/credential_provider/gaiacp/grit/gaia_static_resources.rc">
+      <Filter>..\..\..\out\x64-debug\gen\chrome\credential_provider\gaiacp\grit</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

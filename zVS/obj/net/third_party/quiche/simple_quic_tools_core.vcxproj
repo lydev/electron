@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6013EA5C-4142-49B6-7F9C-F64FBE987E41}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>simple_quic_tools_core</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/net/third_party/quiche/simple_quic_tools_core.stamp</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../..;../../../../../../out/x64-debug/gen;../../../../../../third_party/perfetto/include;../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../third_party/abseil-cpp;../../../../../../third_party/boringssl/src/include;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/protoc_out;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../../net/third_party/quiche/overrides;../../../../../../net/third_party/quiche/src/common/platform/default;../../../../../../net/third_party/quiche/src;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/chlo_extractor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/chlo_extractor.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/chlo_extractor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/chlo_extractor.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_server_stream_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_spdy_server_stream_base.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_spdy_server_stream_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_server_stream_base.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_buffered_packet_store.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_buffered_packet_store.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_buffered_packet_store.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_buffered_packet_store.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_dispatcher.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_writer_wrapper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_packet_writer_wrapper.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_packet_writer_wrapper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_writer_wrapper.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_process_packet_interface.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_wait_list_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_time_wait_list_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_time_wait_list_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_wait_list_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/tls_chlo_extractor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/tls_chlo_extractor.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/tls_chlo_extractor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/core/tls_chlo_extractor.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_default_proof_providers.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_system_event_loop.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/fake_proof_verifier.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_backend_response.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_backend_response.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_backend_response.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_backend_response.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_client_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_client_base.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_client_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_client_base.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_memory_cache_backend.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_memory_cache_backend.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_memory_cache_backend.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_memory_cache_backend.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_client_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_client_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_client_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_client_session.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_client_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_client_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_client_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_client_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_crypto_server_stream_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_crypto_server_stream_helper.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_crypto_server_stream_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_crypto_server_stream_helper.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_dispatcher.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_server_backend.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_server_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_server_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_server_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_server_session.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_server_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_server_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_simple_server_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_simple_server_stream.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_spdy_client_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_spdy_client_base.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_spdy_client_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_spdy_client_base.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_spdy_server_base.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_transport_simple_server_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_transport_simple_server_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_transport_simple_server_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_transport_simple_server_dispatcher.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_transport_simple_server_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_transport_simple_server_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_transport_simple_server_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_transport_simple_server_session.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_url.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/quic_url.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/quic_url.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_url.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/simple_ticket_crypter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core/simple_ticket_crypter.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/simple_quic_tools_core/simple_ticket_crypter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/tools/simple_ticket_crypter.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/simple_quic_tools_core.stamp" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/net/third_party/quiche/simple_quic_tools_core.stamp" />
+  </Target>
+</Project>

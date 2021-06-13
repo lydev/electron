@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="chrome">
+      <UniqueIdentifier>{374F4AEB-E002-175B-93C4-749CAA07EEA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log_replay">
+      <UniqueIdentifier>{BFC680C6-2F52-B57F-4EE0-6D2DB80AE921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{6EE990AB-8D5A-EDB4-F3F6-510B9F50DC3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{25573B70-44C7-1374-37BA-A0AFC0410B2E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/capabilities_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/browser_info_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/cast_tracker_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_finder_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/console_logger_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/device_manager_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client_impl_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_endpoint_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_http_client_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/dom_tracker_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/download_directory_override_manager_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/frame_tracker_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/geolocation_override_manager_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/heap_snapshot_taker_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/javascript_dialog_manager_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/mobile_emulation_override_manager_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/navigation_tracker_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions_override_manager_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/recorder_devtools_client.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/recorder_devtools_client.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/status_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/stub_chrome.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/stub_chrome.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/stub_devtools_client.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/stub_devtools_client.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/stub_web_view.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/stub_web_view.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/web_view_impl_unittest.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome_launcher_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/command_listener_proxy_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/commands_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/element_commands_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/key_converter_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/keycode_text_conversion_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/devtools_log_reader_unittest.cc">
+      <Filter>log_replay</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/logging_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/adb_client_socket_unittest.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/net_util_unittest.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_impl_unittest.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/test_http_server.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/test_http_server.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/timeout_unittest.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/websocket_unittest.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/performance_logger_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/server/http_handler_unittest.cc">
+      <Filter>server</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/session_commands_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/session_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/util_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/window_commands_unittest.cc" />
+  </ItemGroup>
+</Project>

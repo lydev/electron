@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shell\browser\ui">
+      <UniqueIdentifier>{77E39ABF-76BA-4857-C928-6065672E38BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser">
+      <UniqueIdentifier>{0FE433D2-57A7-AE4D-B035-EC0B0AFDEC58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{30FF0113-2473-626B-9634-EA7C672D69FA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/accelerator_util_unittests.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/run_all_unittests.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

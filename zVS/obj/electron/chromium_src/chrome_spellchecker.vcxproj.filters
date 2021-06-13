@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser\spellchecker">
+      <UniqueIdentifier>{A795C0CA-C83B-E3C5-4267-983C8955D9E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/spellchecker/spell_check_host_chrome_impl.cc">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/spellchecker/spell_check_host_chrome_impl.h">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/spellchecker/spellcheck_custom_dictionary.cc">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/spellchecker/spellcheck_custom_dictionary.h">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/spellchecker/spellcheck_factory.cc">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/spellchecker/spellcheck_factory.h">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/spellchecker/spellcheck_hunspell_dictionary.cc">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/spellchecker/spellcheck_hunspell_dictionary.h">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/spellchecker/spellcheck_language_blocklist_policy_handler.cc">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/spellchecker/spellcheck_language_blocklist_policy_handler.h">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/spellchecker/spellcheck_language_policy_handler.cc">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/spellchecker/spellcheck_language_policy_handler.h">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/spellchecker/spellcheck_service.cc">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/spellchecker/spellcheck_service.h">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/spellchecker/spelling_request.cc">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/spellchecker/spelling_request.h">
+      <Filter>..\..\chrome\browser\spellchecker</Filter>
+    </None>
+  </ItemGroup>
+</Project>

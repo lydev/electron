@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../chrome/browser/ui/webui/bluetooth_internals/bluetooth_internals_handler.cc" />
+    <None Include="../../../../../../../../chrome/browser/ui/webui/bluetooth_internals/bluetooth_internals_handler.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/ui/webui/bluetooth_internals/bluetooth_internals_ui.cc" />
+    <None Include="../../../../../../../../chrome/browser/ui/webui/bluetooth_internals/bluetooth_internals_ui.h" />
+  </ItemGroup>
+</Project>

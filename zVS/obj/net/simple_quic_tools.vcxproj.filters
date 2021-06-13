@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="quic\platform\impl">
+      <UniqueIdentifier>{1A90F128-BB03-86ED-246A-00348316ED20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic\platform">
+      <UniqueIdentifier>{548D38A1-B1B4-052B-AAC0-5E4AC05E5188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic">
+      <UniqueIdentifier>{F6643CD4-47DE-7201-1E49-DF440379ECD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\quic">
+      <UniqueIdentifier>{C1892512-D456-89F5-F793-9219E89721A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{0E9715BA-57B3-F23F-1EED-56699DC72D4B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_default_proof_providers_impl.cc">
+      <Filter>quic\platform\impl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_default_proof_providers_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <None Include="../../../../net/quic/platform/impl/quic_system_event_loop_impl.h">
+      <Filter>quic\platform\impl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_client_message_loop_network_helper.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_client_message_loop_network_helper.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_http_proxy_backend.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_http_proxy_backend.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_http_proxy_backend_stream.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_http_proxy_backend_stream.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_simple_client.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_simple_client.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_simple_server.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_simple_server.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_simple_server_packet_writer.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_simple_server_packet_writer.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_simple_server_session_helper.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_simple_server_session_helper.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_simple_server_socket.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_simple_server_socket.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/quic_transport_simple_server.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/quic_transport_simple_server.h">
+      <Filter>tools\quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/tools/quic/synchronous_host_resolver.cc">
+      <Filter>tools\quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/tools/quic/synchronous_host_resolver.h">
+      <Filter>tools\quic</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings">
+      <UniqueIdentifier>{DF08B1C4-D41E-CCBF-74E5-643ABA12FA33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public\interfaces">
+      <UniqueIdentifier>{5A26B906-6F3A-1E6E-E794-2FDDB68054ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo\public">
+      <UniqueIdentifier>{57633762-397C-8E07-3664-01E0705C98B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\mojo">
+      <UniqueIdentifier>{671FDBA5-B66A-6EFD-1725-C9F50205ED00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/interface_control_messages.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/interface_control_messages.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/interface_control_messages.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/interface_control_messages.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/native_struct.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/native_struct.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/native_struct.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/native_struct.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/pipe_control_messages.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/pipe_control_messages.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/pipe_control_messages.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/mojo/public/interfaces/bindings/pipe_control_messages.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\mojo\public\interfaces\bindings</Filter>
+    </None>
+  </ItemGroup>
+</Project>

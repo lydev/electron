@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="chrome">
+      <UniqueIdentifier>{374F4AEB-E002-175B-93C4-749CAA07EEA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="constants">
+      <UniqueIdentifier>{A1B47466-D4F0-9D07-B68D-ADD4D3E1BC5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log_replay">
+      <UniqueIdentifier>{BFC680C6-2F52-B57F-4EE0-6D2DB80AE921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{6EE990AB-8D5A-EDB4-F3F6-510B9F50DC3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\chrome\test\chromedriver\chrome">
+      <UniqueIdentifier>{C027E11D-9D27-C32B-BB7E-4005EBC33937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\chrome\test\chromedriver">
+      <UniqueIdentifier>{AF41CAE5-2382-4A60-8D5A-68DFFF5D7BCA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\chrome\test">
+      <UniqueIdentifier>{CDA55C8C-85DF-085C-96CE-3377D7998F00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{8EECFB24-03C3-30BE-6D4D-07CA53C1F9B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{96638BD7-4C41-4F0D-A035-4B0D220C45C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug">
+      <UniqueIdentifier>{8E0664AF-844A-8DAE-2839-49242DA467FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out">
+      <UniqueIdentifier>{50BC2BDD-CE9C-16A8-60AF-198B16301065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/adb.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/adb_impl.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/adb_impl.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/browser_info.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/browser_info.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/cast_tracker.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/cast_tracker.h">
+      <Filter>chrome</Filter>
+    </None>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_android_impl.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_android_impl.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_desktop_impl.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_desktop_impl.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_finder.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_finder.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_impl.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_impl.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/chrome_remote_impl.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/chrome_remote_impl.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/console_logger.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/console_logger.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/device_manager.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/device_manager.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/device_metrics.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/device_metrics.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client_impl.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_client_impl.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_endpoint.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_endpoint.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_event_listener.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_event_listener.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/devtools_http_client.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/devtools_http_client.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/dom_tracker.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/dom_tracker.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/download_directory_override_manager.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/download_directory_override_manager.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/frame_tracker.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/frame_tracker.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/geolocation_override_manager.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/geolocation_override_manager.h">
+      <Filter>chrome</Filter>
+    </None>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/geoposition.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/heap_snapshot_taker.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/heap_snapshot_taker.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/javascript_dialog_manager.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/javascript_dialog_manager.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/log.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/log.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/mobile_device.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/mobile_device.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/mobile_device_list.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/mobile_device_list.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/mobile_emulation_override_manager.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/mobile_emulation_override_manager.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/navigation_tracker.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/navigation_tracker.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions_override_manager.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/network_conditions_override_manager.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/network_list.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/network_list.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/non_blocking_navigation_tracker.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/non_blocking_navigation_tracker.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/page_load_strategy.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/page_load_strategy.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/scoped_temp_dir_with_retry.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/scoped_temp_dir_with_retry.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/status.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/status.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/ui_events.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/ui_events.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/util.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/util.h">
+      <Filter>chrome</Filter>
+    </None>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/web_view.h">
+      <Filter>chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome/web_view_impl.cc">
+      <Filter>chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/chrome/web_view_impl.h">
+      <Filter>chrome</Filter>
+    </None>
+    <None Include="../../../../../../chrome/test/chromedriver/constants/version.h">
+      <Filter>constants</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/chrome_replay_impl.cc">
+      <Filter>log_replay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/log_replay/chrome_replay_impl.h">
+      <Filter>log_replay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/devtools_log_reader.cc">
+      <Filter>log_replay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/log_replay/devtools_log_reader.h">
+      <Filter>log_replay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/log_replay_socket.cc">
+      <Filter>log_replay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/log_replay/log_replay_socket.h">
+      <Filter>log_replay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/log_replay/replay_http_client.cc">
+      <Filter>log_replay</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/log_replay/replay_http_client.h">
+      <Filter>log_replay</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/adb_client_socket.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/adb_client_socket.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/command_id.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/command_id.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/net_util.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/net_util.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/pipe_handler.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/pipe_handler.h">
+      <Filter>net</Filter>
+    </None>
+    <None Include="../../../../../../chrome/test/chromedriver/net/sync_websocket.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_factory.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_factory.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_impl.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/sync_websocket_impl.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/timeout.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/timeout.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/url_request_context_getter.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/url_request_context_getter.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/net/websocket.cc">
+      <Filter>net</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/net/websocket.h">
+      <Filter>net</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/test/chromedriver/chrome/js.cc">
+      <Filter>..\..\..\out\x64-debug\gen\chrome\test\chromedriver\chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/test/chromedriver/chrome/js.h">
+      <Filter>..\..\..\out\x64-debug\gen\chrome\test\chromedriver\chrome</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/chrome/test/chromedriver/chrome/user_data_dir.cc">
+      <Filter>..\..\..\out\x64-debug\gen\chrome\test\chromedriver\chrome</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../out/x64-debug/gen/chrome/test/chromedriver/chrome/user_data_dir.h">
+      <Filter>..\..\..\out\x64-debug\gen\chrome\test\chromedriver\chrome</Filter>
+    </None>
+  </ItemGroup>
+</Project>

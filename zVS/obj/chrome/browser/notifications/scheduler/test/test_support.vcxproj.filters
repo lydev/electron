@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_display_agent.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_display_agent.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_notification_background_task_scheduler.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_notification_background_task_scheduler.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_notification_schedule_service.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_notification_schedule_service.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_notification_scheduler_client.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_notification_scheduler_client.h" />
+  </ItemGroup>
+</Project>

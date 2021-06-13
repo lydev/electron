@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{B26D2D58-FFA3-D057-BCAA-1FE8AD111DC6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="policy">
+      <UniqueIdentifier>{5FDF65AA-D1FC-FDD3-6B79-AF63CD3E77B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="policy\win">
+      <UniqueIdentifier>{262C9B5B-E1A0-E6ED-657E-3AF2A2394326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win">
+      <UniqueIdentifier>{A2FD7ED2-524A-B7B7-B76C-D928BB55947B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\net">
+      <UniqueIdentifier>{807AB12A-9D7D-8365-AFF8-ABED921C71E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win\setup">
+      <UniqueIdentifier>{63905890-A63F-724D-6F09-4D624C0035DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/updater/app/app_server_unittest.cc">
+      <Filter>app</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/enum_traits_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/external_constants_builder_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/external_constants_override_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/lib_util_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/persisted_data_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/policy/dm_policy_manager_unittest.cc">
+      <Filter>policy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/policy/manager_unittest.cc">
+      <Filter>policy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/policy/service_unittest.cc">
+      <Filter>policy</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/prefs_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/tag_unittest.cc" />
+    <None Include="../../../../../chrome/updater/test/integration_test_commands.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/test/integration_test_commands_system.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/test/integration_test_commands_user.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/test/integration_tests.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/test/integration_tests_impl.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/test/integration_tests_impl.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/test/server.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/updater/test/server.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/updater/unittest_util_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/update_service_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/updater_scope_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/updater_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/activity_impl_win_unittest.cc" />
+    <CustomBuild Include="../../../../../chrome/updater/policy/win/group_policy_manager_unittest.cc">
+      <Filter>policy\win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/test/integration_tests_win.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/installer_api_unittest.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/net/network_unittest.cc">
+      <Filter>win\net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/net/proxy_configuration_unittest.cc">
+      <Filter>win\net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/net/proxy_info_unittest.cc">
+      <Filter>win\net</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/setup/setup_util_unittest.cc">
+      <Filter>win\setup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/tag_extractor_unittest.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/task_scheduler_unittest.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/updater/win/win_util_unittest.cc">
+      <Filter>win</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

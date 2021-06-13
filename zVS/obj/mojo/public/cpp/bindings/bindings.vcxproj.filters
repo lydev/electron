@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2F6606DF-76DD-82A1-CF84-E87632C76713}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_interface_ptr_info.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_interface_request.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_receiver_set.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/associated_remote.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/async_flusher.cc" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/async_flusher.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/binder_map.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/callback_helpers.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/connection_error_callback.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/connector.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/generic_pending_associated_receiver.cc" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/generic_pending_associated_receiver.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/generic_pending_receiver.cc" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/generic_pending_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_endpoint_client.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_endpoint_controller.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_ptr.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_ptr_info.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/interface_request.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/associated_interface_ptr_state.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/associated_interface_ptr_state.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/associated_receiver.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/binder_map_internal.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/binding_state.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/binding_state.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/connector.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/control_message_handler.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/control_message_handler.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/control_message_proxy.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/control_message_proxy.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/generated_code_util.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/generated_code_util.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/interface_endpoint_client.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/interface_ptr_state.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/interface_ptr_state.h">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/interface_serialization.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/message_dispatcher.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/message_quota_checker.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/message_quota_checker.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/multiplex_router.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/multiplex_router.h">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/native_enum_data.h">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/native_enum_serialization.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/native_struct_serialization.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/native_struct_serialization.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/pipe_control_message_handler.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/pipe_control_message_proxy.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sequence_local_sync_event_watcher.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sync_call_restrictions.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sync_event_watcher.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sync_handle_registry.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/sync_handle_watcher.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/task_runner_helper.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/task_runner_helper.h">
+      <Filter>lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/thread_safe_forwarder_base.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/thread_safe_forwarder_base.h">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/message_dispatcher.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/native_enum.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_associated_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_associated_remote.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/pending_flush.cc" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_flush.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pending_remote.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pipe_control_message_handler.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pipe_control_message_handler_delegate.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/pipe_control_message_proxy.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/raw_ptr_impl_ref_traits.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/receiver.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/receiver_set.cc" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/receiver_set.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/remote.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/remote_set.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/self_owned_associated_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/self_owned_receiver.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sequence_local_sync_event_watcher.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/service_factory.cc" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/service_factory.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/shared_associated_remote.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/shared_remote.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sync_call_restrictions.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sync_event_watcher.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sync_handle_registry.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/sync_handle_watcher.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/thread_safe_proxy.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/unique_associated_receiver_set.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/unique_ptr_impl_ref_traits.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/unique_receiver_set.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/message_dumper.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/message_dumper.h" />
+  </ItemGroup>
+</Project>

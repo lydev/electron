@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="presentation">
+      <UniqueIdentifier>{08850DE7-B3D7-DB54-9B36-805DE340B681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mojo">
+      <UniqueIdentifier>{D34E9B9D-ED53-9997-BE90-C36B273093AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="providers\cast">
+      <UniqueIdentifier>{44FBE792-3947-5A3D-F49A-9D7EEA871109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="providers">
+      <UniqueIdentifier>{06CC4551-B5D8-5C14-0B80-60CE73FD2D62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="providers\common">
+      <UniqueIdentifier>{8E8F7247-0ACE-A03B-E220-3B07178A2B5A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="providers\dial">
+      <UniqueIdentifier>{4FB8B8E9-06EA-DEB5-140F-84FA8110CA06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="providers\wired_display">
+      <UniqueIdentifier>{2F729D15-78EF-3DA4-802E-DCD234F78ED6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/chrome_media_router_factory.cc" />
+    <None Include="../../../../../../../chrome/browser/media/router/chrome_media_router_factory.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/presentation/chrome_local_presentation_manager_factory.cc">
+      <Filter>presentation</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/presentation/chrome_local_presentation_manager_factory.h">
+      <Filter>presentation</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/event_page_request_manager.cc" />
+    <None Include="../../../../../../../chrome/browser/media/router/event_page_request_manager.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/event_page_request_manager_factory.cc" />
+    <None Include="../../../../../../../chrome/browser/media/router/event_page_request_manager_factory.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/mojo/media_router_desktop.cc">
+      <Filter>mojo</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/mojo/media_router_desktop.h">
+      <Filter>mojo</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/mojo/media_router_mojo_impl.cc">
+      <Filter>mojo</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/mojo/media_router_mojo_impl.h">
+      <Filter>mojo</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/mojo/media_router_mojo_metrics.cc">
+      <Filter>mojo</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/mojo/media_router_mojo_metrics.h">
+      <Filter>mojo</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/mojo/media_sink_service_status.cc">
+      <Filter>mojo</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/mojo/media_sink_service_status.h">
+      <Filter>mojo</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/app_activity.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/app_activity.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_activity.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_activity.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_activity_manager.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_activity_manager.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_app_availability_tracker.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_app_availability_tracker.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_app_discovery_service.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_app_discovery_service.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_internal_message_util.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_internal_message_util.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_media_controller.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_media_controller.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_media_route_provider.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_media_route_provider.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_media_route_provider_metrics.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_media_route_provider_metrics.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_session_client.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_session_client.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_session_client_impl.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_session_client_impl.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_session_tracker.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/cast_session_tracker.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/chrome_cast_message_handler.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/chrome_cast_message_handler.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/dual_media_sink_service.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/dual_media_sink_service.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/cast/mirroring_activity.cc">
+      <Filter>providers\cast</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/cast/mirroring_activity.h">
+      <Filter>providers\cast</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/common/buffered_message_sender.cc">
+      <Filter>providers\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/common/buffered_message_sender.h">
+      <Filter>providers\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/dial/dial_activity_manager.cc">
+      <Filter>providers\dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/dial/dial_activity_manager.h">
+      <Filter>providers\dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/dial/dial_internal_message_util.cc">
+      <Filter>providers\dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/dial/dial_internal_message_util.h">
+      <Filter>providers\dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/dial/dial_media_route_provider.cc">
+      <Filter>providers\dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/dial/dial_media_route_provider.h">
+      <Filter>providers\dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/dial/dial_media_route_provider_metrics.cc">
+      <Filter>providers\dial</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/dial/dial_media_route_provider_metrics.h">
+      <Filter>providers\dial</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/wired_display/wired_display_media_route_provider.cc">
+      <Filter>providers\wired_display</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/wired_display/wired_display_media_route_provider.h">
+      <Filter>providers\wired_display</Filter>
+    </None>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/wired_display/wired_display_presentation_receiver.h">
+      <Filter>providers\wired_display</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/providers/wired_display/wired_display_presentation_receiver_factory.cc">
+      <Filter>providers\wired_display</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/providers/wired_display/wired_display_presentation_receiver_factory.h">
+      <Filter>providers\wired_display</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../chrome/browser/media/router/mojo/media_route_provider_util_win.cc">
+      <Filter>mojo</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../chrome/browser/media/router/mojo/media_route_provider_util_win.h">
+      <Filter>mojo</Filter>
+    </None>
+  </ItemGroup>
+</Project>

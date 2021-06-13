@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/background_task_coordinator_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/display_decider_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/icon_converter_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/icon_store_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/impression_history_tracker_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/impression_store_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/impression_types_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/init_aware_scheduler_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/notification_scheduler_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/notification_store_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/proto_conversion_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/scheduled_notification_manager_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/scheduler_config_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/scheduler_utils_unittest.cc" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/internal/stats_unittest.cc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="system_web_apps\test">
+      <UniqueIdentifier>{D8F270E7-B5CA-0232-D584-87893C1E20C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_web_apps">
+      <UniqueIdentifier>{7EFABF43-B17F-DAC4-AECB-0C7E08F19CBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/system_web_app_browsertest_base.cc">
+      <Filter>system_web_apps\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/system_web_app_browsertest_base.h">
+      <Filter>system_web_apps\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/test_system_web_app_installation.cc">
+      <Filter>system_web_apps\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/test_system_web_app_installation.h">
+      <Filter>system_web_apps\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/test_system_web_app_url_data_source.cc">
+      <Filter>system_web_apps\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/test_system_web_app_url_data_source.h">
+      <Filter>system_web_apps\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/test_system_web_app_web_ui_controller_factory.cc">
+      <Filter>system_web_apps\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/system_web_apps/test/test_system_web_app_web_ui_controller_factory.h">
+      <Filter>system_web_apps\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/fake_protocol_handler_manager.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/fake_protocol_handler_manager.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/fake_url_handler_manager.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/fake_url_handler_manager.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/fake_web_app_origin_association_manager.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/fake_web_app_origin_association_manager.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_app_registrar.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_app_registrar.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_app_registry_controller.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_app_registry_controller.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_data_retriever.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_data_retriever.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_externally_managed_app_manager.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_externally_managed_app_manager.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_externally_managed_app_manager_impl.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_externally_managed_app_manager_impl.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_file_handler_manager.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_file_handler_manager.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_file_utils.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_file_utils.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_install_finalizer.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_install_finalizer.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_os_integration_manager.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_os_integration_manager.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_web_app_database_factory.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_web_app_database_factory.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_web_app_registry_controller.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_web_app_registry_controller.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_web_app_ui_manager.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_web_app_ui_manager.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/test_web_app_url_loader.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/test_web_app_url_loader.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/web_app_icon_test_utils.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/web_app_icon_test_utils.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/web_app_registration_waiter.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/web_app_registration_waiter.h">
+      <Filter>test</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/web_applications/test/web_app_test.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/web_app_test_utils.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/web_app_test_utils.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/web_applications/test/web_app_uninstall_waiter.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/web_applications/test/web_app_uninstall_waiter.h">
+      <Filter>test</Filter>
+    </None>
+  </ItemGroup>
+</Project>

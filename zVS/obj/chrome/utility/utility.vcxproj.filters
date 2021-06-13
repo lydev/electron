@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="importer">
+      <UniqueIdentifier>{603E08C5-F62C-D069-80B2-66CA14CE2D7E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/utility/browser_exposed_utility_interfaces.cc" />
+    <None Include="../../../../../chrome/utility/browser_exposed_utility_interfaces.h" />
+    <CustomBuild Include="../../../../../chrome/utility/chrome_content_utility_client.cc" />
+    <None Include="../../../../../chrome/utility/chrome_content_utility_client.h" />
+    <CustomBuild Include="../../../../../chrome/utility/services.cc" />
+    <None Include="../../../../../chrome/utility/services.h" />
+    <CustomBuild Include="../../../../../chrome/utility/importer/bookmark_html_reader.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/bookmark_html_reader.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/bookmarks_file_importer.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/bookmarks_file_importer.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/external_process_importer_bridge.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/external_process_importer_bridge.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/favicon_reencode.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/favicon_reencode.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/firefox_importer.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/firefox_importer.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/importer.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/importer.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/importer_creator.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/importer_creator.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/profile_import_impl.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/profile_import_impl.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/nss_decryptor.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/nss_decryptor.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/edge_database_reader_win.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/edge_database_reader_win.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/edge_importer_win.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/edge_importer_win.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/ie_importer_win.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/ie_importer_win.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/importer/nss_decryptor_win.cc">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/importer/nss_decryptor_win.h">
+      <Filter>importer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/utility/printing_handler.cc" />
+    <None Include="../../../../../chrome/utility/printing_handler.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\grit">
+      <UniqueIdentifier>{33F8B793-336B-1D89-9242-D23AFE942D6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{6020ED40-B7B9-6AC5-7C58-D39617BE58E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/grit/new_tab_page_resources.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\grit</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/grit/new_tab_page_resources_map.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\grit</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/grit/new_tab_page_resources_map.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\grit</Filter>
+    </None>
+  </ItemGroup>
+</Project>

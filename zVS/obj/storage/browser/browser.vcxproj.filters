@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="blob">
+      <UniqueIdentifier>{5D228D9A-C1A5-25F1-993E-C2E2D93E8B60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{B0D1894D-D63D-4B6C-13AA-F5056C64815C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file_system">
+      <UniqueIdentifier>{6EE23EE1-E91B-066A-17B0-C64CC487E37C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file_system\quota">
+      <UniqueIdentifier>{1C2B1420-9BF7-E99F-6F69-17584ED7C666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quota">
+      <UniqueIdentifier>{99A10B2F-75AB-049A-0ADA-0F05A33C2424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_builder_from_stream.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_builder_from_stream.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_data_builder.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_data_builder.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_data_handle.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_data_handle.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_data_item.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_data_item.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_data_snapshot.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_data_snapshot.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_entry.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_entry.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_handle.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_handle.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_impl.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_impl.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_memory_controller.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_memory_controller.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_reader.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_reader.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_registry_impl.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_registry_impl.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_storage_constants.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_storage_constants.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_storage_context.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_storage_context.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_storage_registry.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_storage_registry.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_transport_strategy.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_transport_strategy.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_url_loader.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_url_loader.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_url_loader_factory.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_url_loader_factory.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_url_registry.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_url_registry.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_url_store_impl.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_url_store_impl.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/blob_url_utils.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/blob_url_utils.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/mojo_blob_reader.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/mojo_blob_reader.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/scoped_file.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/scoped_file.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/shareable_blob_data_item.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/shareable_blob_data_item.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/shareable_file_reference.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/shareable_file_reference.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/view_blob_internals_job.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/view_blob_internals_job.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/blob/write_blob_to_file.cc">
+      <Filter>blob</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/blob/write_blob_to_file.h">
+      <Filter>blob</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/database/database_connections.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/database/database_connections.h">
+      <Filter>database</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/database/database_quota_client.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/database/database_quota_client.h">
+      <Filter>database</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/database/database_tracker.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/database/database_tracker.h">
+      <Filter>database</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/database/database_util.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/database/database_util.h">
+      <Filter>database</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/database/databases_table.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/database/databases_table.h">
+      <Filter>database</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/database/vfs_backend.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/database/vfs_backend.h">
+      <Filter>database</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/async_file_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/async_file_util_adapter.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/async_file_util_adapter.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/copy_or_move_file_validator.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/copy_or_move_operation_delegate.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/copy_or_move_operation_delegate.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/dragged_file_util.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/dragged_file_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/external_mount_points.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/external_mount_points.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/file_observers.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/file_permission_policy.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_stream_reader.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_stream_reader.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/file_stream_writer.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/file_system_backend.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_context.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_context.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_features.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_features.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_file_util.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_file_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/file_system_operation.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_operation_context.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_operation_context.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_operation_impl.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_operation_impl.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_operation_runner.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_operation_runner.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_options.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_options.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_quota_client.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_quota_client.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/file_system_quota_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_url.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_url.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_system_usage_cache.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_system_usage_cache.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/file_writer_delegate.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/file_writer_delegate.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/filesystem_proxy_file_stream_reader.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/filesystem_proxy_file_stream_reader.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/isolated_context.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/isolated_context.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/isolated_file_system_backend.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/isolated_file_system_backend.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/local_file_stream_reader.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/local_file_stream_reader.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/local_file_stream_writer.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/local_file_stream_writer.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/local_file_util.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/local_file_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/memory_file_stream_reader.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/memory_file_stream_reader.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/memory_file_stream_writer.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/memory_file_stream_writer.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/mount_points.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/mount_points.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/native_file_util.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/native_file_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/obfuscated_file_util.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/obfuscated_file_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/obfuscated_file_util_delegate.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/obfuscated_file_util_disk_delegate.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/obfuscated_file_util_disk_delegate.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/obfuscated_file_util_memory_delegate.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/obfuscated_file_util_memory_delegate.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/open_file_system_mode.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/plugin_private_file_system_backend.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/plugin_private_file_system_backend.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/quota/open_file_handle.cc">
+      <Filter>file_system\quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/quota/open_file_handle.h">
+      <Filter>file_system\quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/quota/open_file_handle_context.cc">
+      <Filter>file_system\quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/quota/open_file_handle_context.h">
+      <Filter>file_system\quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/quota/quota_backend_impl.cc">
+      <Filter>file_system\quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/quota/quota_backend_impl.h">
+      <Filter>file_system\quota</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/quota/quota_limit_type.h">
+      <Filter>file_system\quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/quota/quota_reservation.cc">
+      <Filter>file_system\quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/quota/quota_reservation.h">
+      <Filter>file_system\quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/quota/quota_reservation_buffer.cc">
+      <Filter>file_system\quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/quota/quota_reservation_buffer.h">
+      <Filter>file_system\quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/quota/quota_reservation_manager.cc">
+      <Filter>file_system\quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/quota/quota_reservation_manager.h">
+      <Filter>file_system\quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/recursive_operation_delegate.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/recursive_operation_delegate.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/remove_operation_delegate.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/remove_operation_delegate.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_directory_database.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/sandbox_directory_database.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_file_stream_reader.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/sandbox_file_stream_reader.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_file_stream_writer.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/sandbox_file_stream_writer.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_file_system_backend.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/sandbox_file_system_backend.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_file_system_backend_delegate.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/sandbox_file_system_backend_delegate.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_origin_database.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/sandbox_origin_database.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_origin_database_interface.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/sandbox_origin_database_interface.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/sandbox_quota_observer.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/sandbox_quota_observer.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/task_runner_bound_observer_list.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/file_system/transient_file_util.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/file_system/transient_file_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/file_system/watcher_manager.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/client_usage_tracker.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/client_usage_tracker.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/mojo_quota_client_wrapper.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/mojo_quota_client_wrapper.h">
+      <Filter>quota</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/quota/quota_callbacks.h">
+      <Filter>quota</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/quota/quota_client.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_client_type.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_client_type.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_database.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_database.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_database_migrations.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_database_migrations.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_device_info_helper.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_device_info_helper.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_features.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_features.h">
+      <Filter>quota</Filter>
+    </None>
+    <None Include="../../../../../storage/browser/quota/quota_macros.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_manager.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_manager.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_manager_impl.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_manager_impl.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_manager_proxy.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_manager_proxy.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_override_handle.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_override_handle.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_settings.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_settings.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_task.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_task.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/quota_temporary_storage_evictor.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/quota_temporary_storage_evictor.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/special_storage_policy.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/special_storage_policy.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/storage_policy_observer.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/storage_policy_observer.h">
+      <Filter>quota</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/browser/quota/usage_tracker.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/browser/quota/usage_tracker.h">
+      <Filter>quota</Filter>
+    </None>
+  </ItemGroup>
+</Project>

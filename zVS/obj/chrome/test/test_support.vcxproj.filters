@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser\autofill\automated_tests">
+      <UniqueIdentifier>{243217E2-E7BD-38EA-A670-6A8AFDAE0579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\autofill">
+      <UniqueIdentifier>{4762ACA4-131E-0C80-F643-AB1B187D8E48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\notifications">
+      <UniqueIdentifier>{4BC4AA86-9C3C-67FA-402D-E66F9620CBF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\password_manager">
+      <UniqueIdentifier>{ACDC18FD-6A6C-FB27-1935-D6D952B91198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\permissions">
+      <UniqueIdentifier>{723F57BE-1438-DD85-D789-6509E678EB17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\search_engines">
+      <UniqueIdentifier>{3FD30AE9-4D57-0C95-08D2-65EAB9BC59E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\signin">
+      <UniqueIdentifier>{FB183586-E5E6-33C5-DE7B-97FB44E40799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{530671C4-A49E-2227-1185-B142528140EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logging\win">
+      <UniqueIdentifier>{E7051143-3114-6780-4D1C-65E837FA9E46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logging">
+      <UniqueIdentifier>{9B707920-F1A4-1F32-0FFD-E7D9F01B5105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\banners">
+      <UniqueIdentifier>{BDE813B0-BAD9-677C-6C07-B534EA62E7F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\themes\test">
+      <UniqueIdentifier>{EAF88061-8EF8-E2CF-E69D-E8FFA4691B61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\themes">
+      <UniqueIdentifier>{DFC67167-75C8-20E3-ECD5-285E31C94D4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\enterprise\reporting\extension_request">
+      <UniqueIdentifier>{1A3249EB-A5EF-19A0-E301-D80902ABA29F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\enterprise\reporting">
+      <UniqueIdentifier>{C95355E7-BAF7-D27E-FF64-A16160500751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\enterprise">
+      <UniqueIdentifier>{39DEF7F8-7017-6C85-A599-D57DCFA10B5D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\tabs">
+      <UniqueIdentifier>{209EFE4F-D876-F6A0-35AA-7AF679FF44FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui">
+      <UniqueIdentifier>{07FEDA6E-25E1-9E6C-F6A2-84E1B5CC5098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\webshare\win">
+      <UniqueIdentifier>{A20CC0BC-792B-F1C1-911E-D3B3757B8E0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\webshare">
+      <UniqueIdentifier>{14B7D346-BAFC-2987-2395-16EAFF75F29D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\app">
+      <UniqueIdentifier>{939568C5-7D16-D249-3832-C52371FD0B57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pixel">
+      <UniqueIdentifier>{4961A9FD-1043-B696-ED75-BA91918B11A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views">
+      <UniqueIdentifier>{483726F9-C93B-8F3E-9401-0B412CBE13D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\desktop_capture">
+      <UniqueIdentifier>{905ED923-F7F2-D35B-582D-AEE5E7CEB641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\media_router">
+      <UniqueIdentifier>{AC8985AC-B4E6-9ED5-D4A9-6A94011182DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\web_apps\frame_toolbar">
+      <UniqueIdentifier>{07468573-6389-9716-98C2-F21030A5831B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\web_apps">
+      <UniqueIdentifier>{E23EE0FB-6BE2-9B92-DC55-6F7F8D793A87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="views">
+      <UniqueIdentifier>{F7525B47-5D8B-47B5-06F1-E33F06F97944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\extensions">
+      <UniqueIdentifier>{6067944E-65D0-26B2-1EE2-E433EFEBF109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\web_applications\test">
+      <UniqueIdentifier>{0E944793-7C66-F6D0-8A96-DC069AE70853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\web_applications">
+      <UniqueIdentifier>{7A9B0440-BE11-6345-7F2C-C89001640A27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/autofill/automated_tests/cache_replayer.cc">
+      <Filter>..\..\chrome\browser\autofill\automated_tests</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/autofill/automated_tests/cache_replayer.h">
+      <Filter>..\..\chrome\browser\autofill\automated_tests</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_display_service_tester.cc">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/notifications/notification_display_service_tester.h">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/stub_notification_platform_bridge.cc">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/notifications/stub_notification_platform_bridge.h">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_test_util.cc">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/password_manager/password_manager_test_util.h">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/permissions/crowd_deny_fake_safe_browsing_database_manager.cc">
+      <Filter>..\..\chrome\browser\permissions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/permissions/crowd_deny_fake_safe_browsing_database_manager.h">
+      <Filter>..\..\chrome\browser\permissions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/search_engines/template_url_service_factory_test_util.cc">
+      <Filter>..\..\chrome\browser\search_engines</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/search_engines/template_url_service_factory_test_util.h">
+      <Filter>..\..\chrome\browser\search_engines</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/search_engines/template_url_service_test_util.cc">
+      <Filter>..\..\chrome\browser\search_engines</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/search_engines/template_url_service_test_util.h">
+      <Filter>..\..\chrome\browser\search_engines</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/signin/identity_test_environment_profile_adaptor.cc">
+      <Filter>..\..\chrome\browser\signin</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/signin/identity_test_environment_profile_adaptor.h">
+      <Filter>..\..\chrome\browser\signin</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/chrome_render_view_host_test_harness.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/chrome_render_view_host_test_harness.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/chrome_test_launcher.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/chrome_test_launcher.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/chrome_test_suite.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/chrome_test_suite.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/chrome_test_utils.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/chrome_test_utils.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/chrome_unit_test_suite.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/chrome_unit_test_suite.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/fake_profile_manager.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/fake_profile_manager.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/find_result_waiter.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/find_result_waiter.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/js_test_api.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/js_test_api.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/profile_deletion_observer.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/profile_deletion_observer.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/profile_waiter.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/profile_waiter.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/scoped_browser_locale.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/scoped_browser_locale.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/scoped_testing_local_state.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/scoped_testing_local_state.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/search_test_utils.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/search_test_utils.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/test_launcher_utils.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/test_launcher_utils.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/test_switches.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/test_switches.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/testing_browser_process.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/testing_browser_process.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/testing_browser_process_platform_part.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/testing_browser_process_platform_part.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/testing_profile.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/testing_profile.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/testing_profile_key.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/testing_profile_key.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/testing_profile_manager.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/testing_profile_manager.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/tracing.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/tracing.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/process_inspector_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/process_inspector_win.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/process_lineage_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/process_lineage_win.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/logging/win/file_logger.cc">
+      <Filter>logging\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/logging/win/file_logger.h">
+      <Filter>logging\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/logging/win/log_file_printer.cc">
+      <Filter>logging\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/logging/win/log_file_printer.h">
+      <Filter>logging\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/logging/win/log_file_reader.cc">
+      <Filter>logging\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/logging/win/log_file_reader.h">
+      <Filter>logging\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/logging/win/mof_data_parser.cc">
+      <Filter>logging\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/logging/win/mof_data_parser.h">
+      <Filter>logging\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/logging/win/test_log_collector.cc">
+      <Filter>logging\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/logging/win/test_log_collector.h">
+      <Filter>logging\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/banners/test_app_banner_manager_desktop.cc">
+      <Filter>..\..\chrome\browser\banners</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/banners/test_app_banner_manager_desktop.h">
+      <Filter>..\..\chrome\browser\banners</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/themes/test/theme_service_changed_waiter.cc">
+      <Filter>..\..\chrome\browser\themes\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/themes/test/theme_service_changed_waiter.h">
+      <Filter>..\..\chrome\browser\themes\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/enterprise/reporting/extension_request/extension_request_report_throttler_test.cc">
+      <Filter>..\..\chrome\browser\enterprise\reporting\extension_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/enterprise/reporting/extension_request/extension_request_report_throttler_test.h">
+      <Filter>..\..\chrome\browser\enterprise\reporting\extension_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/tabs/pinned_tab_test_utils.cc">
+      <Filter>..\..\chrome\browser\ui\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/tabs/pinned_tab_test_utils.h">
+      <Filter>..\..\chrome\browser\ui\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/dialog_test_browser_window.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/dialog_test_browser_window.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/test_browser_window.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/test_browser_window.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/fake_buffer.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/fake_buffer.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/fake_data_transfer_manager.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/fake_data_transfer_manager.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/fake_data_transfer_manager_interop.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/fake_data_transfer_manager_interop.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/fake_data_writer_factory.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/fake_data_writer_factory.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/webshare/win/fake_iasync_operation_with_progress.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/fake_random_access_stream.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/fake_random_access_stream.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/fake_storage_file_statics.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/fake_storage_file_statics.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/fake_uri_runtime_class_factory.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/fake_uri_runtime_class_factory.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/scoped_fake_data_transfer_manager_interop.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/scoped_fake_data_transfer_manager_interop.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/webshare/win/scoped_share_operation_fake_components.cc">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/webshare/win/scoped_share_operation_fake_components.h">
+      <Filter>..\..\chrome\browser\webshare\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/app/chrome_crash_reporter_client_win.cc">
+      <Filter>..\..\chrome\app</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/pixel/browser_skia_gold_pixel_diff.cc">
+      <Filter>pixel</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/pixel/browser_skia_gold_pixel_diff.h">
+      <Filter>pixel</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/test_browser_window_aura.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/test_browser_window_aura.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/autofill/autofill_uitest_util.cc">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/autofill/autofill_uitest_util.h">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/ui/chooser_bubble_testapi.h">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/chooser_bubble_testapi_views.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/desktop_capture/desktop_media_picker_views_test_api.cc">
+      <Filter>..\..\chrome\browser\ui\views\desktop_capture</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/desktop_capture/desktop_media_picker_views_test_api.h">
+      <Filter>..\..\chrome\browser\ui\views\desktop_capture</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/ui/views/media_router/app_menu_test_api.h">
+      <Filter>..\..\chrome\browser\ui\views\media_router</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/media_router/app_menu_test_api_views.cc">
+      <Filter>..\..\chrome\browser\ui\views\media_router</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/web_apps/frame_toolbar/web_app_frame_toolbar_test_helper.cc">
+      <Filter>..\..\chrome\browser\ui\views\web_apps\frame_toolbar</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/web_apps/frame_toolbar/web_app_frame_toolbar_test_helper.h">
+      <Filter>..\..\chrome\browser\ui\views\web_apps\frame_toolbar</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/test_theme_provider.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/test_theme_provider.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/views/accessibility_checker.cc">
+      <Filter>views</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/views/accessibility_checker.h">
+      <Filter>views</Filter>
+    </None>
+    <None Include="../../../../../chrome/test/views/chrome_test_views_delegate.h">
+      <Filter>views</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/views/chrome_test_widget.cc">
+      <Filter>views</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/views/chrome_test_widget.h">
+      <Filter>views</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/views/chrome_views_test_base.cc">
+      <Filter>views</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/views/chrome_views_test_base.h">
+      <Filter>views</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/browsertest_util.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/browsertest_util.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_apitest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/extension_apitest.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_browsertest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/extension_browsertest.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/permissions_test_util.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/permissions_test_util.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/test_extension_environment.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/test_extension_environment.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/test_extension_prefs.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/test_extension_prefs.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/web_applications/test/ssl_test_utils.cc">
+      <Filter>..\..\chrome\browser\ui\web_applications\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/web_applications/test/ssl_test_utils.h">
+      <Filter>..\..\chrome\browser\ui\web_applications\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/web_applications/test/web_app_browsertest_util.cc">
+      <Filter>..\..\chrome\browser\ui\web_applications\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/web_applications/test/web_app_browsertest_util.h">
+      <Filter>..\..\chrome\browser\ui\web_applications\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/web_applications/web_app_controller_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\web_applications</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/web_applications/web_app_controller_browsertest.h">
+      <Filter>..\..\chrome\browser\ui\web_applications</Filter>
+    </None>
+  </ItemGroup>
+</Project>

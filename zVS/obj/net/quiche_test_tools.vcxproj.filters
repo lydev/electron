@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="quiche\common\platform\impl">
+      <UniqueIdentifier>{3B8296E3-6222-07E2-FC21-30BE80E72037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quiche\common\platform">
+      <UniqueIdentifier>{03C133D3-9AF6-46E9-0B28-35F7CDA4B645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quiche\common">
+      <UniqueIdentifier>{B9B14DEC-A7A8-9CD7-B114-9C15228A8E6A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quiche">
+      <UniqueIdentifier>{859340F5-7015-C9F1-0A8D-62CE1F01D382}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../net/quiche/common/platform/impl/quiche_test_helpers_impl.h">
+      <Filter>quiche\common\platform\impl</Filter>
+    </None>
+    <None Include="../../../../net/quiche/common/platform/impl/quiche_test_impl.h">
+      <Filter>quiche\common\platform\impl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

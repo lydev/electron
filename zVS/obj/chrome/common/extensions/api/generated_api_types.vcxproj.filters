@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api">
+      <UniqueIdentifier>{81698A1A-3904-AA3F-6F2B-1B55A95056B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\common\extensions">
+      <UniqueIdentifier>{AB61CDFC-03B2-7F84-C592-D2ACCAA66F3F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\common">
+      <UniqueIdentifier>{F046658D-21E6-B5A2-DC65-06E53847E83B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{6020ED40-B7B9-6AC5-7C58-D39617BE58E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/accessibility_features.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/accessibility_features.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/accessibility_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/accessibility_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/activity_log_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/activity_log_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/autofill_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/autofill_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/autotest_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/autotest_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/bookmark_manager_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/bookmark_manager_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/bookmarks.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/bookmarks.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/braille_display_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/braille_display_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/chrome_web_view_internal.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/chrome_web_view_internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/command_line_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/command_line_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/content_settings.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/content_settings.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/context_menus.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/context_menus.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/cookies.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/cookies.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/cryptotoken_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/cryptotoken_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/dashboard_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/dashboard_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/debugger.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/debugger.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/desktop_capture.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/desktop_capture.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/developer_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/developer_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/crash_report_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/crash_report_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/downloads.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/downloads.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/downloads_internal.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/downloads_internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/enterprise_hardware_platform.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/enterprise_hardware_platform.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/enterprise_reporting_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/enterprise_reporting_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/font_settings.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/font_settings.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/gcm.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/gcm.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/history.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/history.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/i18n.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/i18n.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/identity.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/identity.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/identity_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/identity_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/image_writer_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/image_writer_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/instance_id.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/instance_id.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/language_settings_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/language_settings_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/notifications.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/notifications.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/omnibox.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/omnibox.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/page_capture.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/page_capture.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/passwords_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/passwords_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/permissions.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/permissions.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/resources_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/resources_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/safe_browsing_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/safe_browsing_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/scripting.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/scripting.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/search.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/search.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/sessions.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/sessions.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/settings_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/settings_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/signed_in_devices.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/signed_in_devices.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/system_indicator.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/system_indicator.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/system_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/system_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tab_capture.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tab_capture.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tab_groups.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tab_groups.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tabs.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/tabs.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/types.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/types.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/web_navigation.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/web_navigation.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_audio_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_audio_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_desktop_capture_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_desktop_capture_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_logging_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webrtc_logging_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webstore_private.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/webstore_private.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/windows.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/windows.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/processes.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/processes.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/input_ime.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/input_ime.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/mdns.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/mdns.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/manifest_types.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/common/extensions/api/manifest_types.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\common\extensions\api</Filter>
+    </None>
+  </ItemGroup>
+</Project>

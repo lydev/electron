@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="modules">
+      <UniqueIdentifier>{8CF3D52A-FC57-B6AD-46A8-0C0126C591BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public">
+      <UniqueIdentifier>{8916BD77-96C0-B1A6-EA3D-2989EE410847}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../gin/arguments.cc" />
+    <None Include="../../../../gin/arguments.h" />
+    <CustomBuild Include="../../../../gin/array_buffer.cc" />
+    <None Include="../../../../gin/array_buffer.h" />
+    <CustomBuild Include="../../../../gin/context_holder.cc" />
+    <CustomBuild Include="../../../../gin/converter.cc" />
+    <None Include="../../../../gin/converter.h" />
+    <CustomBuild Include="../../../../gin/cppgc.cc" />
+    <CustomBuild Include="../../../../gin/data_object_builder.cc" />
+    <None Include="../../../../gin/data_object_builder.h" />
+    <CustomBuild Include="../../../../gin/debug_impl.cc" />
+    <None Include="../../../../gin/debug_impl.h" />
+    <CustomBuild Include="../../../../gin/dictionary.cc" />
+    <None Include="../../../../gin/dictionary.h" />
+    <CustomBuild Include="../../../../gin/function_template.cc" />
+    <None Include="../../../../gin/function_template.h" />
+    <None Include="../../../../gin/gin_export.h" />
+    <CustomBuild Include="../../../../gin/gin_features.cc" />
+    <None Include="../../../../gin/gin_features.h" />
+    <None Include="../../../../gin/handle.h" />
+    <CustomBuild Include="../../../../gin/interceptor.cc" />
+    <None Include="../../../../gin/interceptor.h" />
+    <CustomBuild Include="../../../../gin/isolate_holder.cc" />
+    <CustomBuild Include="../../../../gin/modules/console.cc">
+      <Filter>modules</Filter>
+    </CustomBuild>
+    <None Include="../../../../gin/modules/console.h">
+      <Filter>modules</Filter>
+    </None>
+    <CustomBuild Include="../../../../gin/object_template_builder.cc" />
+    <None Include="../../../../gin/object_template_builder.h" />
+    <CustomBuild Include="../../../../gin/per_context_data.cc" />
+    <None Include="../../../../gin/per_context_data.h" />
+    <CustomBuild Include="../../../../gin/per_isolate_data.cc" />
+    <None Include="../../../../gin/per_isolate_data.h" />
+    <None Include="../../../../gin/public/context_holder.h">
+      <Filter>public</Filter>
+    </None>
+    <None Include="../../../../gin/public/cppgc.h">
+      <Filter>public</Filter>
+    </None>
+    <None Include="../../../../gin/public/debug.h">
+      <Filter>public</Filter>
+    </None>
+    <None Include="../../../../gin/public/gin_embedders.h">
+      <Filter>public</Filter>
+    </None>
+    <None Include="../../../../gin/public/isolate_holder.h">
+      <Filter>public</Filter>
+    </None>
+    <None Include="../../../../gin/public/v8_idle_task_runner.h">
+      <Filter>public</Filter>
+    </None>
+    <None Include="../../../../gin/public/v8_platform.h">
+      <Filter>public</Filter>
+    </None>
+    <None Include="../../../../gin/public/wrapper_info.h">
+      <Filter>public</Filter>
+    </None>
+    <CustomBuild Include="../../../../gin/runner.cc" />
+    <None Include="../../../../gin/runner.h" />
+    <CustomBuild Include="../../../../gin/shell_runner.cc" />
+    <None Include="../../../../gin/shell_runner.h" />
+    <CustomBuild Include="../../../../gin/try_catch.cc" />
+    <None Include="../../../../gin/try_catch.h" />
+    <CustomBuild Include="../../../../gin/v8_foreground_task_runner.cc" />
+    <None Include="../../../../gin/v8_foreground_task_runner.h" />
+    <CustomBuild Include="../../../../gin/v8_foreground_task_runner_base.cc" />
+    <None Include="../../../../gin/v8_foreground_task_runner_base.h" />
+    <CustomBuild Include="../../../../gin/v8_foreground_task_runner_with_locker.cc" />
+    <None Include="../../../../gin/v8_foreground_task_runner_with_locker.h" />
+    <CustomBuild Include="../../../../gin/v8_initializer.cc" />
+    <None Include="../../../../gin/v8_initializer.h" />
+    <CustomBuild Include="../../../../gin/v8_isolate_memory_dump_provider.cc" />
+    <None Include="../../../../gin/v8_isolate_memory_dump_provider.h" />
+    <CustomBuild Include="../../../../gin/v8_platform.cc" />
+    <CustomBuild Include="../../../../gin/v8_shared_memory_dump_provider.cc" />
+    <None Include="../../../../gin/v8_shared_memory_dump_provider.h" />
+    <CustomBuild Include="../../../../gin/wrappable.cc" />
+    <None Include="../../../../gin/wrappable.h" />
+    <CustomBuild Include="../../../../gin/wrapper_info.cc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/payments/abort_payment_handler_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/android_payment_app_factory_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/colocated_payment_manifests_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/empty_parameters_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/has_enrolled_instrument_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/has_enrolled_instrument_query_quota_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/iframe_csp_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/ignore_payment_method_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/journey_logger_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/load_and_remove_iframe_with_many_payment_requests_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_handler_change_shipping_address_option_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_handler_enable_delegations_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_handler_enforce_full_delegation_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_handler_exploit_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_handler_jit_install_with_registered_sw_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_handler_just_in_time_installation_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_handler_ui_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_handler_uninstall_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_request_app_store_billing_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_request_can_make_payment_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_request_can_make_payment_event_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_request_minimal_ui_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/sec_fetch_site_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/secure_payment_confirmation_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/two_payment_requests_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/manifest_verifier_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/payment_manifest_parser_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/service_worker_payment_app_finder_browsertest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/payments/site_per_process_payments_browsertest.cc" />
+  </ItemGroup>
+</Project>

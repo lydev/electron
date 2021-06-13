@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="activity_log">
+      <UniqueIdentifier>{51D9F8CC-A20A-A246-6722-2A6B1CD0F547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\activity_log_private">
+      <UniqueIdentifier>{55EEC189-199D-10D2-3AD1-19C0C1E642EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api">
+      <UniqueIdentifier>{FC8162BE-E3CB-F504-D413-29FDB3D330FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\autofill_private">
+      <UniqueIdentifier>{19EED333-4B64-BB10-4982-33ABD6E3146A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\automation_internal">
+      <UniqueIdentifier>{059AB49B-C5EE-ED80-F9ED-61FF456F7779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\bookmark_manager_private">
+      <UniqueIdentifier>{CCA13DC2-4033-4A3A-A0C8-716DDB2D2C83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\bookmarks">
+      <UniqueIdentifier>{075E8369-4B71-435E-A70A-DF16B8ACDA6A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\braille_display_private">
+      <UniqueIdentifier>{A6C320DE-4A54-497F-CCD3-A8B210B3D0F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\browsing_data">
+      <UniqueIdentifier>{664E285F-2A7E-3A70-3884-83DA4376AD8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\command_line_private">
+      <UniqueIdentifier>{E6C7FC5B-3573-2504-81D7-A5D901D318D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\commands">
+      <UniqueIdentifier>{546B30F7-D846-3DB6-9220-E3144EBAAE7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\content_settings">
+      <UniqueIdentifier>{8D3A510E-6D51-1C83-FD36-87B03054E258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\context_menus">
+      <UniqueIdentifier>{23055B99-B5CF-B8F2-3131-C4110889BAFD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\cookies">
+      <UniqueIdentifier>{BE7E4F95-ED33-86B0-D5B7-6DD5FEFA2319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\cryptotoken_private">
+      <UniqueIdentifier>{D10A624C-F55F-2995-67AD-CFD202FD1D96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\dashboard_private">
+      <UniqueIdentifier>{ADB7754E-D4D9-7E45-8446-0A845CE84AAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\debugger">
+      <UniqueIdentifier>{FBB3C0BF-2104-D13F-5A2F-A7A47BF8E1C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\declarative_content">
+      <UniqueIdentifier>{02EE242C-D809-6EF5-AF78-89ECCE4D5BAB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\desktop_capture">
+      <UniqueIdentifier>{94C37089-615F-F2EE-3251-7F38C5E2063F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\developer_private">
+      <UniqueIdentifier>{C7B4C961-88B1-727C-EE66-0A2D4075D37F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\downloads">
+      <UniqueIdentifier>{9CFE2780-1948-31EC-3B9E-64737197919C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\downloads_internal">
+      <UniqueIdentifier>{2A3D3661-86F3-D3FC-53CD-94D23B8DCA00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\enterprise_hardware_platform">
+      <UniqueIdentifier>{EC4B7867-73B4-78F3-21E2-2A9A869EFDFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\enterprise_reporting_private">
+      <UniqueIdentifier>{B6EFD350-B7C1-65DD-9979-2723A5B52D81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\extension_action">
+      <UniqueIdentifier>{F3C4326D-C27D-A675-BF17-52C11C8F1FEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\feedback_private">
+      <UniqueIdentifier>{133F3448-1774-E2E0-0665-BF98B52FA0CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\file_system">
+      <UniqueIdentifier>{7B5FCB5A-34B0-3135-0755-4D23BB535428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\font_settings">
+      <UniqueIdentifier>{737B8BAE-B2FA-EF70-703D-3000D841F7D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\gcm">
+      <UniqueIdentifier>{4C1F0FFD-BA3D-BCD9-64E5-133486A74E85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\history">
+      <UniqueIdentifier>{D4FBCEFA-0DED-CF90-D998-A46F598C0D8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\i18n">
+      <UniqueIdentifier>{AA0D3939-51AD-D30E-7AAA-BA73B291B922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\identity">
+      <UniqueIdentifier>{A5D9C21F-EE8C-BBB5-BBA0-6D629FBA5553}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\idltest">
+      <UniqueIdentifier>{E8CEC3AA-AF59-AA2B-AFFB-35B8199B7B73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\image_writer_private">
+      <UniqueIdentifier>{7B2B71E8-9A94-7E67-DE63-4CA879920C8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\instance_id">
+      <UniqueIdentifier>{47114C87-0F8D-35B7-E06A-7C0FC9CF5657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\language_settings_private">
+      <UniqueIdentifier>{21D4BC28-A17B-867E-784E-9162C797EF3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\management">
+      <UniqueIdentifier>{1A221172-7F5A-B186-1E52-AD130A9EDDD6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\messaging">
+      <UniqueIdentifier>{3139C77F-4749-D573-BD1D-FFE9C29E8400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\metrics_private">
+      <UniqueIdentifier>{B0DC3C37-AA16-5B47-3F75-31572EB0321D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\module">
+      <UniqueIdentifier>{76E5FD2D-31AE-61CC-803A-815A4899F68D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\networking_private">
+      <UniqueIdentifier>{23B293FC-B85F-AEE9-3BF5-BC1CC7DBFDD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\notifications">
+      <UniqueIdentifier>{06A41CA0-120C-0F48-BAF1-15A1D1BA71DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\omnibox">
+      <UniqueIdentifier>{3D4D6923-C23F-AD4A-6F73-4ACA430141D3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\page_capture">
+      <UniqueIdentifier>{B5F54F7D-5855-E474-AF62-1AC70F77340C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\passwords_private">
+      <UniqueIdentifier>{D0C4A08D-F12B-A0DB-AA01-29ED3EFDC57A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\permissions">
+      <UniqueIdentifier>{7C094AE0-9FF4-9C43-FF02-D1BDE2E3E291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\preference">
+      <UniqueIdentifier>{07A01D65-4695-E2A8-B0CF-DCBFB098A80F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\processes">
+      <UniqueIdentifier>{01DA0B63-9F47-4D48-378E-6446E9F2D6F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\proxy">
+      <UniqueIdentifier>{BA726377-5F2A-2B68-D265-70CFF096185C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\resources_private">
+      <UniqueIdentifier>{99502DFD-12BD-7749-0EBE-C3A6288643EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\runtime">
+      <UniqueIdentifier>{2516872C-9087-4D61-71D4-31525743C57B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\safe_browsing_private">
+      <UniqueIdentifier>{EBE9CC61-55D4-5E98-8ECD-AC5617CD03CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\scripting">
+      <UniqueIdentifier>{24CFBD46-68D3-F1D5-0909-83D59EFA14ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\search">
+      <UniqueIdentifier>{11DDF8F3-4B83-0D06-64B6-0AEE888993ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\sessions">
+      <UniqueIdentifier>{AF938B94-8179-FA01-81CB-E1EBD81A8848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\settings_overrides">
+      <UniqueIdentifier>{63255ACC-183E-CABC-9D9A-945ED747C956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\settings_private">
+      <UniqueIdentifier>{F8D31070-CC6A-6A19-0F7F-4D414A24A239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\signed_in_devices">
+      <UniqueIdentifier>{EC299F77-E1CD-291E-220F-FFF995ECCF4E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\storage">
+      <UniqueIdentifier>{D7B65D8E-7748-AECB-D7BA-F247E2D7CEA4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\streams_private">
+      <UniqueIdentifier>{27BCD740-4B86-B8BB-285A-1D1DA746FBEB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\system_indicator">
+      <UniqueIdentifier>{D8AE210F-9656-7EB7-D103-8C655D1D9349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\system_private">
+      <UniqueIdentifier>{5138C749-8EFF-D328-B780-2A8C5C430F73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\tab_capture">
+      <UniqueIdentifier>{D4B5B99A-1F84-0A59-3F4B-6029B458396C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\tab_groups">
+      <UniqueIdentifier>{518175AA-58A7-FE7D-F040-6008AF1A016A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\tabs">
+      <UniqueIdentifier>{6DB8F7D5-64F9-5F4C-4A74-11320AD45AB6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\top_sites">
+      <UniqueIdentifier>{D0E9188F-84B4-C80B-7CCD-87B255FA862F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\web_navigation">
+      <UniqueIdentifier>{ECAE6AA2-C642-5F31-6D15-5C8A7EFA00D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\web_view">
+      <UniqueIdentifier>{917BC81D-127B-D679-ADC4-DCAE9ED03261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\webrtc_audio_private">
+      <UniqueIdentifier>{3C76F88F-6E02-992C-A59F-BF78D4648C9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\webrtc_desktop_capture_private">
+      <UniqueIdentifier>{FE21FEB1-6137-A576-19C4-048DB6B2B7F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\webrtc_logging_private">
+      <UniqueIdentifier>{8CB2D00D-C3BB-CAB0-2231-0F10862C7A70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\webstore_private">
+      <UniqueIdentifier>{D233A861-B9B2-18BA-0800-607D451B45E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="component_extensions_allowlist">
+      <UniqueIdentifier>{843B8318-47F7-2024-9C6E-5A935783A233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="error_console">
+      <UniqueIdentifier>{65D9FF86-B6C6-83B6-9611-564A00DAD4D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="forced_extensions">
+      <UniqueIdentifier>{D47FDAD2-5150-CCF5-4AC5-9078FE753590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system_display">
+      <UniqueIdentifier>{839D6E1E-CE65-B38F-4C62-93D1CE146C68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="updater">
+      <UniqueIdentifier>{FB7664C7-F88D-2D5A-B871-C8E1B9613738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\mdns">
+      <UniqueIdentifier>{3BFD1588-CD95-1918-9CF8-B4A0657D89B7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/active_install_data.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/active_install_data.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/active_tab_permission_granter.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/active_tab_permission_granter.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/activity_action_constants.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/activity_action_constants.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/activity_actions.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/activity_actions.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/activity_database.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/activity_database.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/activity_log.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/activity_log.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/activity_log_policy.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/activity_log_policy.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/activity_log_task_runner.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/activity_log_task_runner.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/counting_policy.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/counting_policy.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/database_string_table.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/database_string_table.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/activity_log/fullstream_ui_policy.cc">
+      <Filter>activity_log</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/activity_log/fullstream_ui_policy.h">
+      <Filter>activity_log</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/activity_log_private/activity_log_private_api.cc">
+      <Filter>api\activity_log_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/activity_log_private/activity_log_private_api.h">
+      <Filter>api\activity_log_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/autofill_private/autofill_private_api.cc">
+      <Filter>api\autofill_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/autofill_private/autofill_private_api.h">
+      <Filter>api\autofill_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/autofill_private/autofill_private_event_router.cc">
+      <Filter>api\autofill_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/autofill_private/autofill_private_event_router.h">
+      <Filter>api\autofill_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/autofill_private/autofill_private_event_router_factory.cc">
+      <Filter>api\autofill_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/autofill_private/autofill_private_event_router_factory.h">
+      <Filter>api\autofill_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/autofill_private/autofill_util.cc">
+      <Filter>api\autofill_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/autofill_private/autofill_util.h">
+      <Filter>api\autofill_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/automation_internal/chrome_automation_internal_api_delegate.cc">
+      <Filter>api\automation_internal</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/automation_internal/chrome_automation_internal_api_delegate.h">
+      <Filter>api\automation_internal</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/bookmark_manager_private/bookmark_manager_private_api.cc">
+      <Filter>api\bookmark_manager_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/bookmark_manager_private/bookmark_manager_private_api.h">
+      <Filter>api\bookmark_manager_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/bookmarks/bookmark_api_constants.cc">
+      <Filter>api\bookmarks</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/bookmarks/bookmark_api_constants.h">
+      <Filter>api\bookmarks</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/bookmarks/bookmark_api_helpers.cc">
+      <Filter>api\bookmarks</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/bookmarks/bookmark_api_helpers.h">
+      <Filter>api\bookmarks</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/bookmarks/bookmarks_api.cc">
+      <Filter>api\bookmarks</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/bookmarks/bookmarks_api.h">
+      <Filter>api\bookmarks</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/extensions/api/braille_display_private/braille_controller.h">
+      <Filter>api\braille_display_private</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/extensions/api/braille_display_private/braille_controller_brlapi.h">
+      <Filter>api\braille_display_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/braille_display_private/braille_display_private_api.cc">
+      <Filter>api\braille_display_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/braille_display_private/braille_display_private_api.h">
+      <Filter>api\braille_display_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/braille_display_private/stub_braille_controller.cc">
+      <Filter>api\braille_display_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/braille_display_private/stub_braille_controller.h">
+      <Filter>api\braille_display_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/browsing_data/browsing_data_api.cc">
+      <Filter>api\browsing_data</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/browsing_data/browsing_data_api.h">
+      <Filter>api\browsing_data</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/extensions/api/chrome_device_permissions_prompt.h">
+      <Filter>api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/chrome_extensions_api_client.cc">
+      <Filter>api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/chrome_extensions_api_client.h">
+      <Filter>api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/command_line_private/command_line_private_api.cc">
+      <Filter>api\command_line_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/command_line_private/command_line_private_api.h">
+      <Filter>api\command_line_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/commands/command_service.cc">
+      <Filter>api\commands</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/commands/command_service.h">
+      <Filter>api\commands</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/commands/commands.cc">
+      <Filter>api\commands</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/commands/commands.h">
+      <Filter>api\commands</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_api.cc">
+      <Filter>api\content_settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_api.h">
+      <Filter>api\content_settings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_api_constants.cc">
+      <Filter>api\content_settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_api_constants.h">
+      <Filter>api\content_settings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_custom_extension_provider.cc">
+      <Filter>api\content_settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_custom_extension_provider.h">
+      <Filter>api\content_settings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_helpers.cc">
+      <Filter>api\content_settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_helpers.h">
+      <Filter>api\content_settings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_service.cc">
+      <Filter>api\content_settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_service.h">
+      <Filter>api\content_settings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_store.cc">
+      <Filter>api\content_settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/content_settings/content_settings_store.h">
+      <Filter>api\content_settings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/context_menus/context_menus_api.cc">
+      <Filter>api\context_menus</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/context_menus/context_menus_api.h">
+      <Filter>api\context_menus</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/context_menus/context_menus_api_helpers.cc">
+      <Filter>api\context_menus</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/context_menus/context_menus_api_helpers.h">
+      <Filter>api\context_menus</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/cookies/cookies_api.cc">
+      <Filter>api\cookies</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/cookies/cookies_api.h">
+      <Filter>api\cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/cookies/cookies_api_constants.cc">
+      <Filter>api\cookies</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/cookies/cookies_api_constants.h">
+      <Filter>api\cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/cookies/cookies_helpers.cc">
+      <Filter>api\cookies</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/cookies/cookies_helpers.h">
+      <Filter>api\cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/cryptotoken_private/cryptotoken_private_api.cc">
+      <Filter>api\cryptotoken_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/cryptotoken_private/cryptotoken_private_api.h">
+      <Filter>api\cryptotoken_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/dashboard_private/dashboard_private_api.cc">
+      <Filter>api\dashboard_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/dashboard_private/dashboard_private_api.h">
+      <Filter>api\dashboard_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/debugger/debugger_api.cc">
+      <Filter>api\debugger</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/debugger/debugger_api.h">
+      <Filter>api\debugger</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/debugger/debugger_api_constants.cc">
+      <Filter>api\debugger</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/debugger/debugger_api_constants.h">
+      <Filter>api\debugger</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/debugger/extension_dev_tools_infobar_delegate.cc">
+      <Filter>api\debugger</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/debugger/extension_dev_tools_infobar_delegate.h">
+      <Filter>api\debugger</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/chrome_content_rules_registry.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/chrome_content_rules_registry.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/content_action.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/content_action.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/content_condition.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/content_condition.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/content_predicate.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/content_predicate.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/content_predicate_evaluator.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/content_predicate_evaluator.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/declarative_content_css_condition_tracker.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/declarative_content_css_condition_tracker.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/declarative_content_is_bookmarked_condition_tracker.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/declarative_content_is_bookmarked_condition_tracker.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/declarative_content_page_url_condition_tracker.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/declarative_content_page_url_condition_tracker.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/declarative_content/default_content_predicate_evaluators.cc">
+      <Filter>api\declarative_content</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/declarative_content/default_content_predicate_evaluators.h">
+      <Filter>api\declarative_content</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/desktop_capture/desktop_capture_api.cc">
+      <Filter>api\desktop_capture</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/desktop_capture/desktop_capture_api.h">
+      <Filter>api\desktop_capture</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/desktop_capture/desktop_capture_base.cc">
+      <Filter>api\desktop_capture</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/desktop_capture/desktop_capture_base.h">
+      <Filter>api\desktop_capture</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/developer_private/developer_private_api.cc">
+      <Filter>api\developer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/developer_private/developer_private_api.h">
+      <Filter>api\developer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/developer_private/developer_private_mangle.cc">
+      <Filter>api\developer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/developer_private/developer_private_mangle.h">
+      <Filter>api\developer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/developer_private/entry_picker.cc">
+      <Filter>api\developer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/developer_private/entry_picker.h">
+      <Filter>api\developer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/developer_private/extension_info_generator.cc">
+      <Filter>api\developer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/developer_private/extension_info_generator.h">
+      <Filter>api\developer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/developer_private/inspectable_views_finder.cc">
+      <Filter>api\developer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/developer_private/inspectable_views_finder.h">
+      <Filter>api\developer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/developer_private/show_permissions_dialog_helper.cc">
+      <Filter>api\developer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/developer_private/show_permissions_dialog_helper.h">
+      <Filter>api\developer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/downloads/downloads_api.cc">
+      <Filter>api\downloads</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/downloads/downloads_api.h">
+      <Filter>api\downloads</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/downloads_internal/downloads_internal_api.cc">
+      <Filter>api\downloads_internal</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/downloads_internal/downloads_internal_api.h">
+      <Filter>api\downloads_internal</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/enterprise_hardware_platform/enterprise_hardware_platform_api.cc">
+      <Filter>api\enterprise_hardware_platform</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/enterprise_hardware_platform/enterprise_hardware_platform_api.h">
+      <Filter>api\enterprise_hardware_platform</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/enterprise_reporting_private/enterprise_reporting_private_api.cc">
+      <Filter>api\enterprise_reporting_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/enterprise_reporting_private/enterprise_reporting_private_api.h">
+      <Filter>api\enterprise_reporting_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/extension_action/extension_action_api.cc">
+      <Filter>api\extension_action</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/extension_action/extension_action_api.h">
+      <Filter>api\extension_action</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/extension_action/extension_page_actions_api_constants.cc">
+      <Filter>api\extension_action</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/extension_action/extension_page_actions_api_constants.h">
+      <Filter>api\extension_action</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/feedback_private/chrome_feedback_private_delegate.cc">
+      <Filter>api\feedback_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/feedback_private/chrome_feedback_private_delegate.h">
+      <Filter>api\feedback_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/file_system/chrome_file_system_delegate.cc">
+      <Filter>api\file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/file_system/chrome_file_system_delegate.h">
+      <Filter>api\file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/file_system/file_entry_picker.cc">
+      <Filter>api\file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/file_system/file_entry_picker.h">
+      <Filter>api\file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/font_settings/font_settings_api.cc">
+      <Filter>api\font_settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/font_settings/font_settings_api.h">
+      <Filter>api\font_settings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/gcm/gcm_api.cc">
+      <Filter>api\gcm</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/gcm/gcm_api.h">
+      <Filter>api\gcm</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/history/history_api.cc">
+      <Filter>api\history</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/history/history_api.h">
+      <Filter>api\history</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/i18n/i18n_api.cc">
+      <Filter>api\i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/i18n/i18n_api.h">
+      <Filter>api\i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/extension_token_key.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/extension_token_key.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/gaia_remote_consent_flow.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/gaia_remote_consent_flow.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_api.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_api.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_clear_all_cached_auth_tokens_function.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_clear_all_cached_auth_tokens_function.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_constants.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_constants.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_get_accounts_function.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_get_accounts_function.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_get_auth_token_error.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_get_auth_token_error.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_get_auth_token_function.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_get_auth_token_function.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_get_profile_user_info_function.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_get_profile_user_info_function.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_launch_web_auth_flow_function.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_launch_web_auth_flow_function.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_mint_queue.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_mint_queue.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_private_api.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_private_api.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_remove_cached_auth_token_function.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_remove_cached_auth_token_function.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/identity_token_cache.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/identity_token_cache.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/identity/web_auth_flow.cc">
+      <Filter>api\identity</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/identity/web_auth_flow.h">
+      <Filter>api\identity</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/idltest/idltest_api.cc">
+      <Filter>api\idltest</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/idltest/idltest_api.h">
+      <Filter>api\idltest</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/destroy_partitions_operation.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/destroy_partitions_operation.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/error_messages.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/error_messages.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/extraction_properties.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/extraction_properties.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/image_writer_private_api.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/image_writer_private_api.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/image_writer_utility_client.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/image_writer_utility_client.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/operation.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/operation.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/operation_manager.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/operation_manager.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/removable_storage_provider.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/removable_storage_provider.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/single_file_tar_reader.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/single_file_tar_reader.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/tar_extractor.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/tar_extractor.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/write_from_file_operation.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/write_from_file_operation.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/write_from_url_operation.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/write_from_url_operation.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/xz_extractor.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/xz_extractor.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/zip_extractor.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/image_writer_private/zip_extractor.h">
+      <Filter>api\image_writer_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/instance_id/instance_id_api.cc">
+      <Filter>api\instance_id</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/instance_id/instance_id_api.h">
+      <Filter>api\instance_id</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/language_settings_private/language_settings_private_api.cc">
+      <Filter>api\language_settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/language_settings_private/language_settings_private_api.h">
+      <Filter>api\language_settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/language_settings_private/language_settings_private_delegate.cc">
+      <Filter>api\language_settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/language_settings_private/language_settings_private_delegate.h">
+      <Filter>api\language_settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/language_settings_private/language_settings_private_delegate_factory.cc">
+      <Filter>api\language_settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/language_settings_private/language_settings_private_delegate_factory.h">
+      <Filter>api\language_settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/management/chrome_management_api_delegate.cc">
+      <Filter>api\management</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/management/chrome_management_api_delegate.h">
+      <Filter>api\management</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/chrome_messaging_delegate.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/chrome_messaging_delegate.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/incognito_connectability.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/incognito_connectability.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/incognito_connectability_infobar_delegate.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/incognito_connectability_infobar_delegate.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/native_message_port.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/native_message_port.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/native_messaging_host_manifest.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/native_messaging_host_manifest.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/native_messaging_policy_handler.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/native_messaging_policy_handler.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/metrics_private/chrome_metrics_private_delegate.cc">
+      <Filter>api\metrics_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/metrics_private/chrome_metrics_private_delegate.h">
+      <Filter>api\metrics_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/module/module.cc">
+      <Filter>api\module</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/module/module.h">
+      <Filter>api\module</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/networking_private/networking_private_ui_delegate_factory_impl.cc">
+      <Filter>api\networking_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/networking_private/networking_private_ui_delegate_factory_impl.h">
+      <Filter>api\networking_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/notifications/extension_notification_display_helper.cc">
+      <Filter>api\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/notifications/extension_notification_display_helper.h">
+      <Filter>api\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/notifications/extension_notification_display_helper_factory.cc">
+      <Filter>api\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/notifications/extension_notification_display_helper_factory.h">
+      <Filter>api\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/notifications/extension_notification_handler.cc">
+      <Filter>api\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/notifications/extension_notification_handler.h">
+      <Filter>api\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/notifications/notifications_api.cc">
+      <Filter>api\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/notifications/notifications_api.h">
+      <Filter>api\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/omnibox/omnibox_api.cc">
+      <Filter>api\omnibox</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/omnibox/omnibox_api.h">
+      <Filter>api\omnibox</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/page_capture/page_capture_api.cc">
+      <Filter>api\page_capture</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/page_capture/page_capture_api.h">
+      <Filter>api\page_capture</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/passwords_private/password_check_delegate.cc">
+      <Filter>api\passwords_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/password_check_delegate.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_api.cc">
+      <Filter>api\passwords_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_api.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_delegate.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_delegate_factory.cc">
+      <Filter>api\passwords_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_delegate_factory.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_delegate_impl.cc">
+      <Filter>api\passwords_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_delegate_impl.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_event_router.cc">
+      <Filter>api\passwords_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_event_router.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_event_router_factory.cc">
+      <Filter>api\passwords_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_event_router_factory.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_utils.cc">
+      <Filter>api\passwords_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/passwords_private_utils.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/passwords_private/test_passwords_private_delegate.cc">
+      <Filter>api\passwords_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/passwords_private/test_passwords_private_delegate.h">
+      <Filter>api\passwords_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/permissions/permissions_api.cc">
+      <Filter>api\permissions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/permissions/permissions_api.h">
+      <Filter>api\permissions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/permissions/permissions_api_helpers.cc">
+      <Filter>api\permissions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/permissions/permissions_api_helpers.h">
+      <Filter>api\permissions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/preference/preference_api.cc">
+      <Filter>api\preference</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/preference/preference_api.h">
+      <Filter>api\preference</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/preference/preference_api_constants.cc">
+      <Filter>api\preference</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/preference/preference_api_constants.h">
+      <Filter>api\preference</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/preference/preference_helpers.cc">
+      <Filter>api\preference</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/preference/preference_helpers.h">
+      <Filter>api\preference</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/processes/processes_api.cc">
+      <Filter>api\processes</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/processes/processes_api.h">
+      <Filter>api\processes</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/proxy/proxy_api.cc">
+      <Filter>api\proxy</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/proxy/proxy_api.h">
+      <Filter>api\proxy</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/proxy/proxy_api_constants.cc">
+      <Filter>api\proxy</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/proxy/proxy_api_constants.h">
+      <Filter>api\proxy</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/proxy/proxy_api_helpers.cc">
+      <Filter>api\proxy</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/proxy/proxy_api_helpers.h">
+      <Filter>api\proxy</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/resources_private/resources_private_api.cc">
+      <Filter>api\resources_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/resources_private/resources_private_api.h">
+      <Filter>api\resources_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/runtime/chrome_runtime_api_delegate.cc">
+      <Filter>api\runtime</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/runtime/chrome_runtime_api_delegate.h">
+      <Filter>api\runtime</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/safe_browsing_private/safe_browsing_private_api.cc">
+      <Filter>api\safe_browsing_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/safe_browsing_private/safe_browsing_private_api.h">
+      <Filter>api\safe_browsing_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/safe_browsing_private/safe_browsing_private_event_router.cc">
+      <Filter>api\safe_browsing_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/safe_browsing_private/safe_browsing_private_event_router.h">
+      <Filter>api\safe_browsing_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/safe_browsing_private/safe_browsing_private_event_router_factory.cc">
+      <Filter>api\safe_browsing_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/safe_browsing_private/safe_browsing_private_event_router_factory.h">
+      <Filter>api\safe_browsing_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/safe_browsing_private/safe_browsing_util.cc">
+      <Filter>api\safe_browsing_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/safe_browsing_private/safe_browsing_util.h">
+      <Filter>api\safe_browsing_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/scripting/scripting_api.cc">
+      <Filter>api\scripting</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/scripting/scripting_api.h">
+      <Filter>api\scripting</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/search/search_api.cc">
+      <Filter>api\search</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/search/search_api.h">
+      <Filter>api\search</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/sessions/session_id.cc">
+      <Filter>api\sessions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/sessions/session_id.h">
+      <Filter>api\sessions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/sessions/sessions_api.cc">
+      <Filter>api\sessions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/sessions/sessions_api.h">
+      <Filter>api\sessions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_overrides/settings_overrides_api.cc">
+      <Filter>api\settings_overrides</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_overrides/settings_overrides_api.h">
+      <Filter>api\settings_overrides</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/generated_pref.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/generated_pref.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/generated_prefs.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/generated_prefs.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/generated_prefs_factory.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/generated_prefs_factory.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/prefs_util.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/prefs_util.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_api.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_api.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_delegate.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_delegate.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_delegate_factory.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_delegate_factory.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_event_router.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_event_router.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_event_router_factory.cc">
+      <Filter>api\settings_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/settings_private/settings_private_event_router_factory.h">
+      <Filter>api\settings_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/signed_in_devices/id_mapping_helper.cc">
+      <Filter>api\signed_in_devices</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/signed_in_devices/id_mapping_helper.h">
+      <Filter>api\signed_in_devices</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/signed_in_devices/signed_in_devices_api.cc">
+      <Filter>api\signed_in_devices</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/signed_in_devices/signed_in_devices_api.h">
+      <Filter>api\signed_in_devices</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/signed_in_devices/signed_in_devices_manager.cc">
+      <Filter>api\signed_in_devices</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/signed_in_devices/signed_in_devices_manager.h">
+      <Filter>api\signed_in_devices</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/storage/managed_value_store_cache.cc">
+      <Filter>api\storage</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/storage/managed_value_store_cache.h">
+      <Filter>api\storage</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/storage/policy_value_store.cc">
+      <Filter>api\storage</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/storage/policy_value_store.h">
+      <Filter>api\storage</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/storage/setting_sync_data.cc">
+      <Filter>api\storage</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/storage/setting_sync_data.h">
+      <Filter>api\storage</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/storage/settings_sync_processor.cc">
+      <Filter>api\storage</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/storage/settings_sync_processor.h">
+      <Filter>api\storage</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/storage/settings_sync_util.cc">
+      <Filter>api\storage</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/storage/settings_sync_util.h">
+      <Filter>api\storage</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/storage/sync_storage_backend.cc">
+      <Filter>api\storage</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/storage/sync_storage_backend.h">
+      <Filter>api\storage</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/storage/sync_value_store_cache.cc">
+      <Filter>api\storage</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/storage/sync_value_store_cache.h">
+      <Filter>api\storage</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/storage/syncable_settings_storage.cc">
+      <Filter>api\storage</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/storage/syncable_settings_storage.h">
+      <Filter>api\storage</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/streams_private/streams_private_api.cc">
+      <Filter>api\streams_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/streams_private/streams_private_api.h">
+      <Filter>api\streams_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/system_indicator/system_indicator_api.cc">
+      <Filter>api\system_indicator</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/system_indicator/system_indicator_api.h">
+      <Filter>api\system_indicator</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/system_indicator/system_indicator_manager.cc">
+      <Filter>api\system_indicator</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/system_indicator/system_indicator_manager.h">
+      <Filter>api\system_indicator</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/system_indicator/system_indicator_manager_factory.cc">
+      <Filter>api\system_indicator</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/system_indicator/system_indicator_manager_factory.h">
+      <Filter>api\system_indicator</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/system_private/system_private_api.cc">
+      <Filter>api\system_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/system_private/system_private_api.h">
+      <Filter>api\system_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tab_capture/offscreen_tabs_owner.cc">
+      <Filter>api\tab_capture</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tab_capture/offscreen_tabs_owner.h">
+      <Filter>api\tab_capture</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tab_capture/tab_capture_api.cc">
+      <Filter>api\tab_capture</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tab_capture/tab_capture_api.h">
+      <Filter>api\tab_capture</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tab_capture/tab_capture_registry.cc">
+      <Filter>api\tab_capture</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tab_capture/tab_capture_registry.h">
+      <Filter>api\tab_capture</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_api.cc">
+      <Filter>api\tab_groups</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_api.h">
+      <Filter>api\tab_groups</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_constants.cc">
+      <Filter>api\tab_groups</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_constants.h">
+      <Filter>api\tab_groups</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_event_router.cc">
+      <Filter>api\tab_groups</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_event_router.h">
+      <Filter>api\tab_groups</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_event_router_factory.cc">
+      <Filter>api\tab_groups</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_event_router_factory.h">
+      <Filter>api\tab_groups</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_util.cc">
+      <Filter>api\tab_groups</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tab_groups/tab_groups_util.h">
+      <Filter>api\tab_groups</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/app_base_window.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/app_base_window.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/app_window_controller.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/app_window_controller.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_api.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_api.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_constants.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_constants.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_event_router.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_event_router.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_util.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_windows_api.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_windows_api.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/windows_event_router.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/windows_event_router.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/windows_util.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/tabs/windows_util.h">
+      <Filter>api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/top_sites/top_sites_api.cc">
+      <Filter>api\top_sites</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/top_sites/top_sites_api.h">
+      <Filter>api\top_sites</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/web_navigation/frame_navigation_state.cc">
+      <Filter>api\web_navigation</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/web_navigation/frame_navigation_state.h">
+      <Filter>api\web_navigation</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/web_navigation/web_navigation_api.cc">
+      <Filter>api\web_navigation</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/web_navigation/web_navigation_api.h">
+      <Filter>api\web_navigation</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/web_navigation/web_navigation_api_constants.cc">
+      <Filter>api\web_navigation</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/web_navigation/web_navigation_api_constants.h">
+      <Filter>api\web_navigation</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/web_navigation/web_navigation_api_helpers.cc">
+      <Filter>api\web_navigation</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/web_navigation/web_navigation_api_helpers.h">
+      <Filter>api\web_navigation</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/web_view/chrome_web_view_internal_api.cc">
+      <Filter>api\web_view</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/web_view/chrome_web_view_internal_api.h">
+      <Filter>api\web_view</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/webrtc_audio_private/webrtc_audio_private_api.cc">
+      <Filter>api\webrtc_audio_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/webrtc_audio_private/webrtc_audio_private_api.h">
+      <Filter>api\webrtc_audio_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/webrtc_desktop_capture_private/webrtc_desktop_capture_private_api.cc">
+      <Filter>api\webrtc_desktop_capture_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/webrtc_desktop_capture_private/webrtc_desktop_capture_private_api.h">
+      <Filter>api\webrtc_desktop_capture_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/webrtc_logging_private/webrtc_logging_private_api.cc">
+      <Filter>api\webrtc_logging_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/webrtc_logging_private/webrtc_logging_private_api.h">
+      <Filter>api\webrtc_logging_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/webstore_private/extension_install_status.cc">
+      <Filter>api\webstore_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/webstore_private/extension_install_status.h">
+      <Filter>api\webstore_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/webstore_private/webstore_private_api.cc">
+      <Filter>api\webstore_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/webstore_private/webstore_private_api.h">
+      <Filter>api\webstore_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/blocklist.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/blocklist.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/blocklist_check.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/blocklist_check.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/blocklist_extension_prefs.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/blocklist_extension_prefs.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/blocklist_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/blocklist_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/blocklist_state_fetcher.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/blocklist_state_fetcher.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/browser_context_keyed_service_factories.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/browser_context_keyed_service_factories.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/browser_extension_window_controller.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/browser_extension_window_controller.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_app_icon.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_app_icon.h" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_app_icon_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_app_icon_loader.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_app_icon_loader.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_app_icon_service.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_app_icon_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_app_icon_service_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_app_icon_service_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_app_sorting.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_app_sorting.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_component_extension_resource_manager.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_component_extension_resource_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_content_browser_client_extensions_part.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_content_browser_client_extensions_part.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_content_verifier_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_content_verifier_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extension_browser_constants.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extension_browser_constants.h" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extension_chooser_dialog.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extension_cookies.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extension_cookies.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extension_cookies_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extension_cookies_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extension_frame_host.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extension_frame_host.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extension_function_details.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extension_function_details.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extension_host_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extension_host_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extension_web_contents_observer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extension_web_contents_observer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extensions_browser_api_provider.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extensions_browser_api_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extensions_browser_client.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extensions_browser_client.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_extensions_browser_interface_binders.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_extensions_browser_interface_binders.h" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_kiosk_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_process_manager_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_process_manager_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_url_request_util.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_url_request_util.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_zipfile_installer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/chrome_zipfile_installer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/component_extensions_allowlist/allowlist.cc">
+      <Filter>component_extensions_allowlist</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/component_extensions_allowlist/allowlist.h">
+      <Filter>component_extensions_allowlist</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/component_loader.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/component_loader.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/context_menu_matcher.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/context_menu_matcher.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/convert_user_script.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/convert_user_script.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/convert_web_app.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/convert_web_app.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/crx_installer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/crx_installer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/data_deleter.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/data_deleter.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/dev_mode_bubble_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/dev_mode_bubble_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/device_permissions_dialog_controller.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/device_permissions_dialog_controller.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/devtools_util.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/devtools_util.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/error_console/error_console.cc">
+      <Filter>error_console</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/error_console/error_console.h">
+      <Filter>error_console</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/error_console/error_console_factory.cc">
+      <Filter>error_console</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/error_console/error_console_factory.h">
+      <Filter>error_console</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/event_router_forwarder.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/event_router_forwarder.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_action_icon_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_action_icon_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_action_runner.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_action_runner.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_action_storage_manager.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_action_storage_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_allowlist.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_allowlist.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_assets_manager.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_assets_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_browser_window_helper.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_browser_window_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_checkup.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_checkup.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_commands_global_registry.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_commands_global_registry.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_context_menu_model.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_context_menu_model.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_disabled_ui.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_disabled_ui.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_error_controller.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_error_controller.h" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_error_ui.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_error_ui_default.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_error_ui_default.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_garbage_collector.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_garbage_collector.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_garbage_collector_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_garbage_collector_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_gcm_app_handler.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_gcm_app_handler.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_icon_manager.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_icon_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_install_error_menu_item_id_provider.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_install_error_menu_item_id_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_install_prompt.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_install_prompt.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_install_prompt_show_params.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_install_prompt_show_params.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_keybinding_registry.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_keybinding_registry.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_management.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_management.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_management_constants.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_management_constants.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_management_internal.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_management_internal.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_message_bubble_controller.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_message_bubble_controller.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_migrator.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_migrator.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_service.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_special_storage_policy.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_special_storage_policy.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_sync_data.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_sync_data.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_sync_service.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_sync_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_sync_service_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_sync_service_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_system_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_system_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_system_impl.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_system_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_tab_util.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_tab_util.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_ui_util.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_ui_util.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_uninstall_dialog.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_uninstall_dialog.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_util.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_util.h" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_view.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_view_host.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_view_host.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_view_host_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_view_host_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_web_ui.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_web_ui.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_web_ui_override_registrar.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_web_ui_override_registrar.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/extension_webkit_preferences.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/extension_webkit_preferences.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_component_loader.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_component_loader.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_install_error.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_install_error.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_install_error_constants.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_install_error_constants.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_install_manager.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_install_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_loader.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_loader.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_policy_loader.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_policy_loader.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_pref_loader.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_pref_loader.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_provider_impl.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_provider_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/forced_extensions/force_installed_metrics.cc">
+      <Filter>forced_extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/forced_extensions/force_installed_metrics.h">
+      <Filter>forced_extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/forced_extensions/force_installed_tracker.cc">
+      <Filter>forced_extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/forced_extensions/force_installed_tracker.h">
+      <Filter>forced_extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/forced_extensions/install_stage_tracker.cc">
+      <Filter>forced_extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/forced_extensions/install_stage_tracker.h">
+      <Filter>forced_extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/forced_extensions/install_stage_tracker_factory.cc">
+      <Filter>forced_extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/forced_extensions/install_stage_tracker_factory.h">
+      <Filter>forced_extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/global_shortcut_listener.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/global_shortcut_listener.h" />
+    <None Include="../../../../../../chrome/browser/extensions/install_gate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/install_observer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/install_observer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/install_prompt_permissions.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/install_prompt_permissions.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/install_signer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/install_signer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/install_tracker.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/install_tracker.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/install_tracker_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/install_tracker_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/install_verifier.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/install_verifier.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/install_verifier_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/install_verifier_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/installed_loader.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/installed_loader.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/launch_util.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/launch_util.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/load_error_reporter.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/load_error_reporter.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/media_router_extension_access_logger_impl.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/media_router_extension_access_logger_impl.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/menu_manager.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/menu_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/menu_manager_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/menu_manager_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/navigation_observer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/navigation_observer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/omaha_attributes_handler.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/omaha_attributes_handler.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/pack_extension_job.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/pack_extension_job.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/pending_extension_info.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/pending_extension_info.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/pending_extension_manager.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/pending_extension_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/permissions_based_management_policy_provider.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/permissions_based_management_policy_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/permissions_updater.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/permissions_updater.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/policy_extension_reinstaller.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/policy_extension_reinstaller.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/policy_handlers.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/policy_handlers.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/proxy_overridden_bubble_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/proxy_overridden_bubble_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/safe_browsing_verdict_handler.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/safe_browsing_verdict_handler.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/scoped_active_install.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/scoped_active_install.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/scripting_permissions_modifier.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/scripting_permissions_modifier.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/settings_api_bubble_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/settings_api_bubble_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/settings_api_helpers.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/settings_api_helpers.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/shared_module_service.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/shared_module_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/standard_management_policy_provider.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/standard_management_policy_provider.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/startup_helper.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/startup_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/suspicious_extension_bubble_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/suspicious_extension_bubble_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/sync_bundle.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/sync_bundle.h" />
+    <None Include="../../../../../../chrome/browser/extensions/system_display/display_info_provider.h">
+      <Filter>system_display</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/tab_helper.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/tab_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/theme_installed_infobar_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/theme_installed_infobar_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/unpacked_installer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/unpacked_installer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/update_install_gate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/update_install_gate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/updater/chrome_extension_downloader_factory.cc">
+      <Filter>updater</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/updater/chrome_extension_downloader_factory.h">
+      <Filter>updater</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/updater/chrome_update_client_config.cc">
+      <Filter>updater</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/updater/chrome_update_client_config.h">
+      <Filter>updater</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/updater/extension_update_client_command_line_config_policy.cc">
+      <Filter>updater</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/updater/extension_update_client_command_line_config_policy.h">
+      <Filter>updater</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/updater/extension_updater.cc">
+      <Filter>updater</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/updater/extension_updater.h">
+      <Filter>updater</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/updater/extension_updater_switches.cc">
+      <Filter>updater</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/updater/extension_updater_switches.h">
+      <Filter>updater</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/user_script_listener.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/user_script_listener.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/warning_badge_service.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/warning_badge_service.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/warning_badge_service_factory.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/warning_badge_service_factory.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/webstore_data_fetcher.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/webstore_data_fetcher.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/webstore_data_fetcher_delegate.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/webstore_data_fetcher_delegate.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/webstore_install_helper.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/webstore_install_helper.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/webstore_install_with_prompt.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/webstore_install_with_prompt.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/webstore_installer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/webstore_installer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/webstore_reinstaller.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/webstore_reinstaller.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/webstore_standalone_installer.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/webstore_standalone_installer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/window_controller.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/window_controller.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/window_controller_list.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/window_controller_list.h" />
+    <None Include="../../../../../../chrome/browser/extensions/window_controller_list_observer.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/native_message_process_host.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/native_message_process_host.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/native_messaging_launch_from_native.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/native_messaging_launch_from_native.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/native_process_launcher.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/messaging/native_process_launcher.h">
+      <Filter>api\messaging</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/enterprise_reporting_private/chrome_desktop_report_request_helper.cc">
+      <Filter>api\enterprise_reporting_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/enterprise_reporting_private/chrome_desktop_report_request_helper.h">
+      <Filter>api\enterprise_reporting_private</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/extensions/api/enterprise_reporting_private/keychain_data_helper_mac.h">
+      <Filter>api\enterprise_reporting_private</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/extensions/api/enterprise_reporting_private/keychain_data_helper_mac.mm">
+      <Filter>api\enterprise_reporting_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/operation_nonchromeos.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/tabs/tabs_util.cc">
+      <Filter>api\tabs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/chrome_kiosk_delegate.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/preinstalled_apps.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/preinstalled_apps.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/image_writer_private/removable_storage_provider_win.cc">
+      <Filter>api\image_writer_private</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/messaging/native_process_launcher_win.cc">
+      <Filter>api\messaging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/external_registry_loader_win.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/external_registry_loader_win.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/global_shortcut_listener_win.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/global_shortcut_listener_win.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/system_display/display_info_provider_win.cc">
+      <Filter>system_display</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/system_display/display_info_provider_win.h">
+      <Filter>system_display</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/plugin_manager.cc" />
+    <None Include="../../../../../../chrome/browser/extensions/plugin_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/mdns/mdns_api.cc">
+      <Filter>api\mdns</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/extensions/api/mdns/mdns_api.h">
+      <Filter>api\mdns</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/extensions/api/braille_display_private/braille_controller_stub.cc">
+      <Filter>api\braille_display_private</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/fake_clock.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/fake_clock.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_background_task_coordinator.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_background_task_coordinator.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_display_decider.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_display_decider.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_impression_history_tracker.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_impression_history_tracker.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_scheduled_notification_manager.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/mock_scheduled_notification_manager.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/test/test_utils.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/test/test_utils.h" />
+  </ItemGroup>
+</Project>

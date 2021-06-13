@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E389EDEE-D332-AF6D-5DD4-76661BE7AC2E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>quiche_tests</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/net/third_party/quiche/quiche_tests.stamp</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../../..;../../../../../../out/x64-debug/gen;../../../../../../third_party/perfetto/include;../../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../../third_party/protobuf/src;../../../../../../out/x64-debug/gen/protoc_out;../../../../../../third_party/protobuf/src;../../../../../../third_party/abseil-cpp;../../../../../../third_party/boringssl/src/include;../../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../../net/third_party/quiche/overrides;../../../../../../net/third_party/quiche/src/common/platform/default;../../../../../../net/third_party/quiche/src;../../../../../../third_party/googletest/custom;../../../../../../third_party/googletest/src/googlemock/include;../../../../../../third_party/googletest/custom;../../../../../../third_party/googletest/src/googletest/include;../../../../../../third_party/abseil-cpp;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 -Wno-inconsistent-missing-override %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;GTEST_API_=;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;GTEST_HAS_ABSL=1;UNIT_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/platform/api/quiche_time_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quiche_time_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quiche_time_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_circular_deque_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quiche_circular_deque_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quiche_circular_deque_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_data_writer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quiche_data_writer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quiche_data_writer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_endian_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quiche_endian_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quiche_endian_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_linked_hash_map_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quiche_linked_hash_map_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quiche_linked_hash_map_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/common/quiche_text_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quiche_text_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quiche_text_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/core/http2_priority_write_scheduler_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_priority_write_scheduler_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_priority_write_scheduler_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/core/priority_write_scheduler_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/priority_write_scheduler_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/priority_write_scheduler_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_buffer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/decode_buffer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/decode_buffer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/decode_http2_structures_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/decode_http2_structures_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/decode_http2_structures_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/frame_decoder_state_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/frame_decoder_state_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/frame_decoder_state_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/frame_decoder_state_test_util.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder_listener_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_frame_decoder_listener_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_frame_decoder_listener_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder_listener_test_util.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_frame_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_frame_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_frame_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_structure_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_structure_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_structure_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_structure_decoder_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_structure_decoder_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_structure_decoder_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/http2_structure_decoder_test_util.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/altsvc_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/altsvc_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/altsvc_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/continuation_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/continuation_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/continuation_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/data_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/data_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/data_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/goaway_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/goaway_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/goaway_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/headers_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/headers_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/headers_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/payload_decoder_base_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/payload_decoder_base_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/payload_decoder_base_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/payload_decoder_base_test_util.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/ping_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/ping_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/ping_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/priority_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/priority_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/priority_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/priority_update_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/priority_update_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/priority_update_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/push_promise_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/push_promise_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/push_promise_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/rst_stream_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/rst_stream_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/rst_stream_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/settings_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/settings_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/settings_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/unknown_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/unknown_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/unknown_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/decoder/payload_decoders/window_update_payload_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/window_update_payload_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/window_update_payload_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_block_collector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_block_collector.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_block_collector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_block_collector.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_block_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_block_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_block_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_state_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_decoder_state_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_decoder_state_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_string_buffer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_decoder_string_buffer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_decoder_string_buffer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_tables_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_decoder_tables_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_decoder_tables_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_collector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_entry_collector.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_entry_collector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_collector.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_entry_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_entry_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_entry_type_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_entry_type_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_entry_type_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_collector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_string_collector.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_string_collector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_collector.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_string_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_string_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_string_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/decoder/hpack_whole_entry_buffer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_whole_entry_buffer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_whole_entry_buffer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/http2_hpack_constants_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_hpack_constants_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_hpack_constants_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_huffman_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_huffman_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_encoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_huffman_encoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_huffman_encoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/huffman/hpack_huffman_transcoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_huffman_transcoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_huffman_transcoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_block_builder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_block_builder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_block_builder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_block_builder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_block_builder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_block_builder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_block_builder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_example.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_example.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_example.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/hpack/tools/hpack_example.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_varint_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_varint_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_encoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_varint_encoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_varint_encoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/hpack/varint/hpack_varint_round_trip_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_varint_round_trip_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_varint_round_trip_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_constants_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_constants_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_constants_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_constants_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_constants_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_constants_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/http2_constants_test_util.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_structures_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_structures_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_structures_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/http2_structures_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_structures_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_structures_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/http2_structures_test_util.h" />
+    <None Include="../../../../../../net/third_party/quiche/src/http2/platform/api/http2_test_helpers.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/frame_parts.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/frame_parts.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts_collector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/frame_parts_collector.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/frame_parts_collector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts_collector.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts_collector_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/frame_parts_collector_listener.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/frame_parts_collector_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/test_tools/frame_parts_collector_listener.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/http2_random.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_random.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_random.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/test_tools/http2_random.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/test_tools/http2_random_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_random_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_random_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/tools/http2_frame_builder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http2_frame_builder.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http2_frame_builder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/tools/http2_frame_builder.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/tools/random_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/random_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/random_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/tools/random_decoder_test.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/http2/tools/random_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/random_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/random_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/http2/tools/random_util.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bandwidth_sampler_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/bandwidth_sampler_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/bandwidth_sampler_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr2_simulator_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/bbr2_simulator_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/bbr2_simulator_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/bbr_sender_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/bbr_sender_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/bbr_sender_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/cubic_bytes_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/cubic_bytes_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/cubic_bytes_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/general_loss_algorithm_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/general_loss_algorithm_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/general_loss_algorithm_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/hybrid_slow_start_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hybrid_slow_start_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hybrid_slow_start_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/pacing_sender_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/pacing_sender_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/pacing_sender_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/prr_sender_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/prr_sender_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/prr_sender_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/rtt_stats_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/rtt_stats_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/rtt_stats_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/send_algorithm_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/send_algorithm_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/send_algorithm_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/tcp_cubic_sender_bytes_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/tcp_cubic_sender_bytes_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/tcp_cubic_sender_bytes_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/uber_loss_algorithm_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/uber_loss_algorithm_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/uber_loss_algorithm_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/congestion_control/windowed_filter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/windowed_filter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/windowed_filter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_12_decrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/aes_128_gcm_12_decrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/aes_128_gcm_12_decrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_12_encrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/aes_128_gcm_12_encrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/aes_128_gcm_12_encrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_decrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/aes_128_gcm_decrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/aes_128_gcm_decrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_128_gcm_encrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/aes_128_gcm_encrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/aes_128_gcm_encrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_256_gcm_decrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/aes_256_gcm_decrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/aes_256_gcm_decrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/aes_256_gcm_encrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/aes_256_gcm_encrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/aes_256_gcm_encrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/cert_compressor_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/cert_compressor_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/cert_compressor_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/certificate_view_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/certificate_view_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/certificate_view_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_decrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/chacha20_poly1305_decrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/chacha20_poly1305_decrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_encrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/chacha20_poly1305_encrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/chacha20_poly1305_encrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_tls_decrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/chacha20_poly1305_tls_decrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/chacha20_poly1305_tls_decrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/chacha20_poly1305_tls_encrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/chacha20_poly1305_tls_encrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/chacha20_poly1305_tls_encrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/channel_id_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/channel_id_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/channel_id_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/common_cert_set_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/common_cert_set_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/common_cert_set_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_framer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/crypto_framer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/crypto_framer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_handshake_message_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/crypto_handshake_message_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/crypto_handshake_message_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_secret_boxer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/crypto_secret_boxer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/crypto_secret_boxer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_server_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/crypto_server_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/crypto_server_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/crypto_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/crypto_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/crypto_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/curve25519_key_exchange_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/curve25519_key_exchange_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/curve25519_key_exchange_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/null_decrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/null_decrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/null_decrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/null_encrypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/null_encrypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/null_encrypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/p256_key_exchange_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/p256_key_exchange_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/p256_key_exchange_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_compressed_certs_cache_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_compressed_certs_cache_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_compressed_certs_cache_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_client_config_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_crypto_client_config_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_crypto_client_config_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_crypto_server_config_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_crypto_server_config_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_crypto_server_config_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_hkdf_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_hkdf_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_hkdf_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/quic_random_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_random_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_random_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/crypto/transport_parameters_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/transport_parameters_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/transport_parameters_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/frames/quic_frames_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_frames_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_frames_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/http_encoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/http_encoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/http_encoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_client_promised_info_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_client_promised_info_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_client_promised_info_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_client_push_promise_index_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_client_push_promise_index_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_client_push_promise_index_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_header_list_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_header_list_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_header_list_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_headers_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_headers_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_headers_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_receive_control_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_receive_control_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_receive_control_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_send_control_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_send_control_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_send_control_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_server_session_base_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_server_session_base_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_server_session_base_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_session_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_spdy_session_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_spdy_session_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_stream_body_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_spdy_stream_body_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_spdy_stream_body_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/quic_spdy_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_spdy_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_spdy_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/spdy_server_push_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_server_push_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_server_push_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/http/spdy_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/legacy_quic_stream_id_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/legacy_quic_stream_id_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/legacy_quic_stream_id_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/packet_number_indexed_queue_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/packet_number_indexed_queue_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/packet_number_indexed_queue_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_blocking_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_blocking_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_blocking_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoded_headers_accumulator_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_decoded_headers_accumulator_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_decoded_headers_accumulator_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_stream_receiver_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_decoder_stream_receiver_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_decoder_stream_receiver_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_stream_sender_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_decoder_stream_sender_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_decoder_stream_sender_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_stream_receiver_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_encoder_stream_receiver_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_encoder_stream_receiver_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_stream_sender_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_encoder_stream_sender_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_encoder_stream_sender_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_encoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_encoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_encoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_header_table_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_header_table_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_header_table_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_index_conversions_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_index_conversions_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_index_conversions_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instruction_decoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_instruction_decoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_instruction_decoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_instruction_encoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_instruction_encoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_instruction_encoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_receive_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_receive_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_receive_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_required_insert_count_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_required_insert_count_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_required_insert_count_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_round_trip_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_round_trip_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_round_trip_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_send_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_send_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_send_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/qpack_static_table_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/qpack_static_table_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/qpack_static_table_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/qpack/value_splitting_header_list_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/value_splitting_header_list_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/value_splitting_header_list_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_alarm_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_alarm_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_alarm_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_arena_scoped_ptr_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_arena_scoped_ptr_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_arena_scoped_ptr_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_bandwidth_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_bandwidth_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_bandwidth_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_buffered_packet_store_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_buffered_packet_store_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_buffered_packet_store_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_chaos_protector_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_chaos_protector_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_chaos_protector_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_coalesced_packet_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_coalesced_packet_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_coalesced_packet_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_config_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_config_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_config_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_id_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_connection_id_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_connection_id_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_id_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_connection_id_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_connection_id_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_connection_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_connection_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_connection_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_control_frame_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_control_frame_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_control_frame_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_client_handshaker_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_crypto_client_handshaker_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_crypto_client_handshaker_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_client_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_crypto_client_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_crypto_client_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_server_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_crypto_server_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_crypto_server_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_crypto_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_crypto_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_crypto_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_data_writer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_data_writer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_data_writer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_datagram_queue_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_datagram_queue_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_datagram_queue_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_dispatcher_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_dispatcher_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_dispatcher_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_error_codes_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_error_codes_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_error_codes_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_flow_controller_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_flow_controller_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_flow_controller_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_framer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_framer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_framer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_idle_network_detector_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_idle_network_detector_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_idle_network_detector_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval_deque_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_interval_deque_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_interval_deque_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval_set_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_interval_set_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_interval_set_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_interval_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_interval_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_interval_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_legacy_version_encapsulator_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_legacy_version_encapsulator_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_legacy_version_encapsulator_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_lru_cache_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_lru_cache_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_lru_cache_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_network_blackhole_detector_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_network_blackhole_detector_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_network_blackhole_detector_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_one_block_arena_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_one_block_arena_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_one_block_arena_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_creator_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_packet_creator_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_packet_creator_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packet_number_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_packet_number_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_packet_number_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_packets_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_packets_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_packets_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_path_validator_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_path_validator_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_path_validator_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_received_packet_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_received_packet_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_received_packet_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_sent_packet_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_sent_packet_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_sent_packet_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_server_id_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_server_id_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_server_id_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_session_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_session_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_session_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_simple_buffer_allocator_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_simple_buffer_allocator_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_simple_buffer_allocator_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_socket_address_coder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_socket_address_coder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_socket_address_coder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_id_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_stream_id_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_stream_id_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_send_buffer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_stream_send_buffer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_stream_send_buffer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_sequencer_buffer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_stream_sequencer_buffer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_stream_sequencer_buffer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_sequencer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_stream_sequencer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_stream_sequencer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_sustained_bandwidth_recorder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_sustained_bandwidth_recorder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_sustained_bandwidth_recorder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_tag_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_tag_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_tag_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_accumulator_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_time_accumulator_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_time_accumulator_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_time_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_time_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_time_wait_list_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_time_wait_list_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_time_wait_list_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_trace_visitor_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_trace_visitor_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_trace_visitor_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_unacked_packet_map_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_unacked_packet_map_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_unacked_packet_map_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_version_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_version_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_version_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_versions_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_versions_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_versions_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/quic_write_blocked_list_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_write_blocked_list_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_write_blocked_list_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/tls_chlo_extractor_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/tls_chlo_extractor_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/tls_chlo_extractor_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/uber_quic_stream_id_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/uber_quic_stream_id_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/uber_quic_stream_id_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/core/uber_received_packet_manager_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/uber_received_packet_manager_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/uber_received_packet_manager_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_containers_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_containers_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_containers_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_hostname_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_hostname_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_hostname_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_ip_address_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_ip_address_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_ip_address_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice_span_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_mem_slice_span_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_mem_slice_span_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice_storage_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_mem_slice_storage_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_mem_slice_storage_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_mem_slice_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_mem_slice_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_mem_slice_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_reference_counted_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_reference_counted_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_reference_counted_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/platform/api/quic_socket_address_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_socket_address_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_socket_address_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_client_session_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_transport_client_session_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_transport_client_session_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_integration_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_transport_integration_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_transport_integration_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_server_session_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_transport_server_session_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_transport_server_session_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/quic_transport_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_transport_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_transport_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/quic_transport/web_transport_fingerprint_proof_verifier_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/web_transport_fingerprint_proof_verifier_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/web_transport_fingerprint_proof_verifier_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/crypto_test_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/crypto_test_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/crypto_test_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/mock_quic_time_wait_list_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/mock_quic_time_wait_list_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/mock_quic_time_wait_list_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/quic/test_tools/mock_quic_time_wait_list_manager.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/quic_test_utils_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_test_utils_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_test_utils_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/simple_session_notifier_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/simple_session_notifier_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/simple_session_notifier_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/simulator/quic_endpoint_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_endpoint_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_endpoint_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/test_tools/simulator/simulator_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/simulator_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/simulator_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_memory_cache_backend_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_memory_cache_backend_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_memory_cache_backend_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_tcp_like_trace_converter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/quic_tcp_like_trace_converter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/quic_tcp_like_trace_converter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/simple_ticket_crypter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/simple_ticket_crypter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/simple_ticket_crypter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/array_output_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/array_output_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/array_output_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/array_output_buffer.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/array_output_buffer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/array_output_buffer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/array_output_buffer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_decoder_adapter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_decoder_adapter_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_decoder_adapter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_encoder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_encoder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_encoder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_entry_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_entry_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_entry_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_header_table_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_header_table_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_header_table_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_output_stream_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_output_stream_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_output_stream_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_round_trip_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_round_trip_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_round_trip_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/hpack/hpack_static_table_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/hpack_static_table_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/hpack_static_table_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/mock_spdy_framer_visitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/mock_spdy_framer_visitor.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/mock_spdy_framer_visitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/mock_spdy_framer_visitor.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_alt_svc_wire_format_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_alt_svc_wire_format_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_alt_svc_wire_format_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_frame_builder_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_frame_builder_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_frame_builder_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_frame_reader_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_frame_reader_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_frame_reader_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_framer_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_framer_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_framer_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_header_block_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_header_block_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_header_block_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_header_storage_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_header_storage_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_header_storage_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_intrusive_list_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_intrusive_list_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_intrusive_list_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_pinnable_buffer_piece_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_pinnable_buffer_piece_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_pinnable_buffer_piece_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_prefixed_buffer_reader_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_prefixed_buffer_reader_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_prefixed_buffer_reader_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_protocol_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_protocol_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_protocol_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_protocol_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_protocol_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_protocol_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_protocol_test_utils.h" />
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_simple_arena_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_simple_arena_test.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_simple_arena_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests/spdy_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/third_party/quiche/quiche_tests/spdy_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../../net/third_party/quiche/src/spdy/core/spdy_test_utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/net/third_party/quiche/quiche_tests.stamp" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/net/third_party/quiche/quiche_tests.stamp" />
+  </Target>
+</Project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/digest_verifier.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/digest_verifier.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/disk_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/disk_util.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/disk_util_types.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/disk_util_types.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/early_exit.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/early_exit.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/file_path_sanitization.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/file_path_sanitization.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/file_path_set.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/file_path_set.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/inheritable_event.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/inheritable_event.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/initializer.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/initializer.h" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/layered_service_provider_api.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/layered_service_provider_wrapper.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/layered_service_provider_wrapper.h" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/nt_internals.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/post_reboot_registration.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/post_reboot_registration.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/pre_fetched_paths.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/pre_fetched_paths.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/process.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/process.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/registry.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/registry.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/registry_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/registry_util.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/resource_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/resource_util.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/scoped_disable_wow64_redirection.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/scoped_disable_wow64_redirection.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/scoped_service_handle.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/scoped_service_handle.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/secure_dll_loading.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/secure_dll_loading.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/shutdown_watchdog.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/shutdown_watchdog.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/system_util.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/system_util.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/task_scheduler.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/task_scheduler.h" />
+    <CustomBuild Include="../../../../../../chrome/chrome_cleaner/os/whitelisted_directory.cc" />
+    <None Include="../../../../../../chrome/chrome_cleaner/os/whitelisted_directory.h" />
+  </ItemGroup>
+</Project>

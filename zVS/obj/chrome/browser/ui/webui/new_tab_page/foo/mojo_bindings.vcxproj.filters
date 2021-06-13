@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\new_tab_page\foo">
+      <UniqueIdentifier>{FF1A961A-80B2-6315-5A4A-8C0BB2BF410E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\new_tab_page">
+      <UniqueIdentifier>{5044060C-0598-8CC2-8264-767905BD7C11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui">
+      <UniqueIdentifier>{5F588633-8FE8-81D9-7DE7-5B95D32C510C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui">
+      <UniqueIdentifier>{64F904AB-D24A-1B9B-DB20-1FE9AE466136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..\out\x64-debug\gen\chrome\browser">
+      <UniqueIdentifier>{463A613A-369F-6C56-F727-B8D2840B6309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{EC4BE51B-EC19-94C4-3842-499C7A8F9273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{8B083ED6-60E0-A773-C7A9-0AAD34A11D80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{86C4703D-E027-AB9D-820B-E0399FAA0730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..\out">
+      <UniqueIdentifier>{65F4463A-98B0-4DEE-8786-73C4A53E515A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\..">
+      <UniqueIdentifier>{17BA600B-078F-3341-8A95-7F761982E857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..">
+      <UniqueIdentifier>{1109D6BC-040F-9837-EA64-A8443901A8C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../../../out/x64-debug/gen/chrome/browser/ui/webui/new_tab_page/foo/foo.mojom-forward.h">
+      <Filter>..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\new_tab_page\foo</Filter>
+    </None>
+    <None Include="../../../../../../../../../out/x64-debug/gen/chrome/browser/ui/webui/new_tab_page/foo/foo.mojom-import-headers.h">
+      <Filter>..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\new_tab_page\foo</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../../out/x64-debug/gen/chrome/browser/ui/webui/new_tab_page/foo/foo.mojom-test-utils.cc">
+      <Filter>..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\new_tab_page\foo</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../../out/x64-debug/gen/chrome/browser/ui/webui/new_tab_page/foo/foo.mojom-test-utils.h">
+      <Filter>..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\new_tab_page\foo</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../../out/x64-debug/gen/chrome/browser/ui/webui/new_tab_page/foo/foo.mojom.cc">
+      <Filter>..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\new_tab_page\foo</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../../out/x64-debug/gen/chrome/browser/ui/webui/new_tab_page/foo/foo.mojom.h">
+      <Filter>..\..\..\..\..\..\out\x64-debug\gen\chrome\browser\ui\webui\new_tab_page\foo</Filter>
+    </None>
+  </ItemGroup>
+</Project>

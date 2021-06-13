@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="huffman">
+      <UniqueIdentifier>{31B00B9F-B3C8-1FE3-BC0D-AA6A30886DD1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="trie">
+      <UniqueIdentifier>{789815B9-CC02-9E97-F03C-92348B9BDADE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../net/tools/huffman_trie/bit_writer_unittest.cc" />
+    <CustomBuild Include="../../../../../../net/tools/huffman_trie/huffman/huffman_builder_unittest.cc">
+      <Filter>huffman</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../net/tools/huffman_trie/trie/trie_bit_buffer_unittest.cc">
+      <Filter>trie</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

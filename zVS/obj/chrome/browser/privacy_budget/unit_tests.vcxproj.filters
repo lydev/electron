@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/privacy_budget/encountered_surface_tracker_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/privacy_budget/identifiability_study_state_unittest.cc" />
+    <None Include="../../../../../../chrome/browser/privacy_budget/inspectable_identifiability_study_state.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/privacy_budget/privacy_budget_metrics_provider_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/browser/privacy_budget/privacy_budget_ukm_entry_filter_unittest.cc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C1AA674B-48D0-4E41-E41C-6914CB1A590F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>net</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/net/net.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../..;../../../../out/x64-debug/gen;../../../../third_party/perfetto/include;../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../out/x64-debug/gen/third_party/perfetto;../../../../third_party/protobuf/src;../../../../out/x64-debug/gen/protoc_out;../../../../third_party/protobuf/src;../../../../third_party/abseil-cpp;../../../../third_party/boringssl/src/include;../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../net/third_party/quiche/overrides;../../../../net/third_party/quiche/src/common/platform/default;../../../../net/third_party/quiche/src;../../../../third_party/zlib;../../../../third_party/ced/src;../../../../third_party/icu/source/common;../../../../third_party/icu/source/i18n;../../../../third_party/brotli/include;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare /Ob2 /Oy- /Zc:inline /Gw -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 -Wexit-time-destructors %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;NET_IMPLEMENTATION;ENABLE_BUILT_IN_DNS;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../net/base/address_family.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/address_family.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/address_family.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/address_family.h" />
+    <CustomBuild Include="../../../../net/base/address_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/address_list.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/address_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/address_list.h" />
+    <CustomBuild Include="../../../../net/base/auth.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/auth.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/auth.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/auth.h" />
+    <CustomBuild Include="../../../../net/base/backoff_entry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/backoff_entry.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/backoff_entry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/backoff_entry.h" />
+    <CustomBuild Include="../../../../net/base/backoff_entry_serializer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/backoff_entry_serializer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/backoff_entry_serializer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/backoff_entry_serializer.h" />
+    <CustomBuild Include="../../../../net/base/cache_metrics.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cache_metrics.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cache_metrics.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/cache_metrics.h" />
+    <None Include="../../../../net/base/cache_type.h" />
+    <CustomBuild Include="../../../../net/base/chunked_upload_data_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/chunked_upload_data_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/chunked_upload_data_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/chunked_upload_data_stream.h" />
+    <None Include="../../../../net/base/completion_once_callback.h" />
+    <None Include="../../../../net/base/completion_repeating_callback.h" />
+    <CustomBuild Include="../../../../net/base/data_url.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/data_url.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/data_url.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/data_url.h" />
+    <CustomBuild Include="../../../../net/base/datagram_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/datagram_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/datagram_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/datagram_buffer.h" />
+    <CustomBuild Include="../../../../net/base/elements_upload_data_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/elements_upload_data_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/elements_upload_data_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/elements_upload_data_stream.h" />
+    <CustomBuild Include="../../../../net/base/escape.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/escape.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/escape.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/escape.h" />
+    <None Include="../../../../net/base/expiring_cache.h" />
+    <CustomBuild Include="../../../../net/base/features.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/features.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/features.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/features.h" />
+    <CustomBuild Include="../../../../net/base/file_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/file_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/file_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/file_stream.h" />
+    <CustomBuild Include="../../../../net/base/file_stream_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/file_stream_context.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/file_stream_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/file_stream_context.h" />
+    <CustomBuild Include="../../../../net/base/filename_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/filename_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/filename_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/filename_util.h" />
+    <CustomBuild Include="../../../../net/base/filename_util_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/filename_util_internal.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/filename_util_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/filename_util_internal.h" />
+    <CustomBuild Include="../../../../net/base/hash_value.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/hash_value.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/hash_value.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/hash_value.h" />
+    <CustomBuild Include="../../../../net/base/hex_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/hex_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/hex_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/hex_utils.h" />
+    <CustomBuild Include="../../../../net/base/host_mapping_rules.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/host_mapping_rules.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/host_mapping_rules.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/host_mapping_rules.h" />
+    <CustomBuild Include="../../../../net/base/host_port_pair.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/host_port_pair.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/host_port_pair.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/host_port_pair.h" />
+    <None Include="../../../../net/base/http_user_agent_settings.h" />
+    <None Include="../../../../net/base/idempotency.h" />
+    <None Include="../../../../net/base/interval.h" />
+    <CustomBuild Include="../../../../net/base/io_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/io_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/io_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/io_buffer.h" />
+    <CustomBuild Include="../../../../net/base/ip_address.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ip_address.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ip_address.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/ip_address.h" />
+    <CustomBuild Include="../../../../net/base/ip_endpoint.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ip_endpoint.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ip_endpoint.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/ip_endpoint.h" />
+    <CustomBuild Include="../../../../net/base/isolation_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/isolation_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/isolation_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/isolation_info.h" />
+    <None Include="../../../../net/base/load_flags.h" />
+    <None Include="../../../../net/base/load_flags_list.h" />
+    <None Include="../../../../net/base/load_states.h" />
+    <None Include="../../../../net/base/load_states_list.h" />
+    <CustomBuild Include="../../../../net/base/load_timing_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/load_timing_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/load_timing_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/load_timing_info.h" />
+    <CustomBuild Include="../../../../net/base/logging_network_change_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/logging_network_change_observer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/logging_network_change_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/logging_network_change_observer.h" />
+    <CustomBuild Include="../../../../net/base/lookup_string_in_fixed_set.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/lookup_string_in_fixed_set.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/lookup_string_in_fixed_set.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/lookup_string_in_fixed_set.h" />
+    <CustomBuild Include="../../../../net/base/mime_sniffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/mime_sniffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/mime_sniffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/mime_sniffer.h" />
+    <CustomBuild Include="../../../../net/base/mime_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/mime_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/mime_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/mime_util.h" />
+    <None Include="../../../../net/base/net_error_details.h" />
+    <None Include="../../../../net/base/net_error_list.h" />
+    <CustomBuild Include="../../../../net/base/net_errors.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_errors.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_errors.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/net_errors.h" />
+    <None Include="../../../../net/base/net_info_source_list.h" />
+    <CustomBuild Include="../../../../net/base/net_module.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_module.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_module.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/net_module.h" />
+    <None Include="../../../../net/base/net_string_util.h" />
+    <CustomBuild Include="../../../../net/base/network_activity_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_activity_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_activity_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/network_activity_monitor.h" />
+    <CustomBuild Include="../../../../net/base/network_change_notifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_change_notifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_change_notifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/network_change_notifier.h" />
+    <None Include="../../../../net/base/network_change_notifier_factory.h" />
+    <CustomBuild Include="../../../../net/base/network_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/network_delegate.h" />
+    <CustomBuild Include="../../../../net/base/network_delegate_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_delegate_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_delegate_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/network_delegate_impl.h" />
+    <CustomBuild Include="../../../../net/base/network_interfaces.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_interfaces.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_interfaces.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/network_interfaces.h" />
+    <CustomBuild Include="../../../../net/base/network_isolation_key.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_isolation_key.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_isolation_key.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/network_isolation_key.h" />
+    <CustomBuild Include="../../../../net/base/parse_number.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/parse_number.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/parse_number.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/parse_number.h" />
+    <None Include="../../../../net/base/platform_mime_util.h" />
+    <CustomBuild Include="../../../../net/base/port_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/port_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/port_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/port_util.h" />
+    <CustomBuild Include="../../../../net/base/prioritized_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/prioritized_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/prioritized_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/prioritized_dispatcher.h" />
+    <CustomBuild Include="../../../../net/base/prioritized_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/prioritized_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/prioritized_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/prioritized_task_runner.h" />
+    <None Include="../../../../net/base/priority_queue.h" />
+    <CustomBuild Include="../../../../net/base/privacy_mode.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/privacy_mode.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/privacy_mode.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/privacy_mode.h" />
+    <None Include="../../../../net/base/proxy_delegate.h" />
+    <CustomBuild Include="../../../../net/base/proxy_server.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_server.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_server.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/proxy_server.h" />
+    <None Include="../../../../net/base/rand_callback.h" />
+    <CustomBuild Include="../../../../net/base/registry_controlled_domains/registry_controlled_domain.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/registry_controlled_domain.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/registry_controlled_domain.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/registry_controlled_domains/registry_controlled_domain.h" />
+    <CustomBuild Include="../../../../net/base/request_priority.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/request_priority.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/request_priority.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/request_priority.h" />
+    <CustomBuild Include="../../../../net/base/scheme_host_port_matcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/scheme_host_port_matcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/scheme_host_port_matcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/scheme_host_port_matcher.h" />
+    <None Include="../../../../net/base/scheme_host_port_matcher_result.h" />
+    <CustomBuild Include="../../../../net/base/scheme_host_port_matcher_rule.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/scheme_host_port_matcher_rule.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/scheme_host_port_matcher_rule.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/scheme_host_port_matcher_rule.h" />
+    <CustomBuild Include="../../../../net/base/schemeful_site.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/schemeful_site.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/schemeful_site.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/schemeful_site.h" />
+    <CustomBuild Include="../../../../net/base/sockaddr_storage.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/sockaddr_storage.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/sockaddr_storage.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/sockaddr_storage.h" />
+    <None Include="../../../../net/base/sys_addrinfo.h" />
+    <CustomBuild Include="../../../../net/base/transport_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/transport_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/transport_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/transport_info.h" />
+    <CustomBuild Include="../../../../net/base/upload_bytes_element_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/upload_bytes_element_reader.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/upload_bytes_element_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/upload_bytes_element_reader.h" />
+    <CustomBuild Include="../../../../net/base/upload_data_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/upload_data_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/upload_data_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/upload_data_stream.h" />
+    <CustomBuild Include="../../../../net/base/upload_element_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/upload_element_reader.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/upload_element_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/upload_element_reader.h" />
+    <CustomBuild Include="../../../../net/base/upload_file_element_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/upload_file_element_reader.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/upload_file_element_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/upload_file_element_reader.h" />
+    <None Include="../../../../net/base/upload_progress.h" />
+    <CustomBuild Include="../../../../net/base/url_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/url_util.h" />
+    <CustomBuild Include="../../../../net/cert/asn1_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/asn1_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/asn1_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/asn1_util.h" />
+    <CustomBuild Include="../../../../net/cert/caching_cert_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/caching_cert_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/caching_cert_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/caching_cert_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/cert_and_ct_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_and_ct_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_and_ct_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/cert_and_ct_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/cert_database.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_database.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_database.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/cert_database.h" />
+    <None Include="../../../../net/cert/cert_net_fetcher.h" />
+    <CustomBuild Include="../../../../net/cert/cert_status_flags.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_status_flags.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_status_flags.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/cert_status_flags.h" />
+    <None Include="../../../../net/cert/cert_status_flags_list.h" />
+    <CustomBuild Include="../../../../net/cert/cert_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/cert_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/cert_verify_proc.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_verify_proc.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_verify_proc.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/cert_verify_proc.h" />
+    <CustomBuild Include="../../../../net/cert/cert_verify_proc_builtin.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_verify_proc_builtin.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_verify_proc_builtin.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/cert_verify_proc_builtin.h" />
+    <CustomBuild Include="../../../../net/cert/cert_verify_result.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_verify_result.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_verify_result.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/cert_verify_result.h" />
+    <None Include="../../../../net/cert/client_cert_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/coalescing_cert_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/coalescing_cert_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/coalescing_cert_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/coalescing_cert_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/crl_set.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/crl_set.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/crl_set.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/crl_set.h" />
+    <CustomBuild Include="../../../../net/cert/ct_log_response_parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ct_log_response_parser.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ct_log_response_parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ct_log_response_parser.h" />
+    <CustomBuild Include="../../../../net/cert/ct_log_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ct_log_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ct_log_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ct_log_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/ct_log_verifier_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ct_log_verifier_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ct_log_verifier_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ct_log_verifier_util.h" />
+    <CustomBuild Include="../../../../net/cert/ct_objects_extractor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ct_objects_extractor.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ct_objects_extractor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ct_objects_extractor.h" />
+    <CustomBuild Include="../../../../net/cert/ct_policy_enforcer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ct_policy_enforcer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ct_policy_enforcer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ct_policy_enforcer.h" />
+    <None Include="../../../../net/cert/ct_policy_status.h" />
+    <CustomBuild Include="../../../../net/cert/ct_sct_to_string.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ct_sct_to_string.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ct_sct_to_string.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ct_sct_to_string.h" />
+    <CustomBuild Include="../../../../net/cert/ct_serialization.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ct_serialization.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ct_serialization.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ct_serialization.h" />
+    <CustomBuild Include="../../../../net/cert/ct_signed_certificate_timestamp_log_param.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ct_signed_certificate_timestamp_log_param.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ct_signed_certificate_timestamp_log_param.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ct_signed_certificate_timestamp_log_param.h" />
+    <None Include="../../../../net/cert/ct_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/do_nothing_ct_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/do_nothing_ct_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/do_nothing_ct_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/do_nothing_ct_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/ev_root_ca_metadata.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ev_root_ca_metadata.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ev_root_ca_metadata.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ev_root_ca_metadata.h" />
+    <CustomBuild Include="../../../../net/cert/internal/cert_error_id.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_error_id.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_error_id.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/cert_error_id.h" />
+    <CustomBuild Include="../../../../net/cert/internal/cert_error_params.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_error_params.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_error_params.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/cert_error_params.h" />
+    <CustomBuild Include="../../../../net/cert/internal/cert_errors.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_errors.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_errors.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/cert_errors.h" />
+    <None Include="../../../../net/cert/internal/cert_issuer_source.h" />
+    <CustomBuild Include="../../../../net/cert/internal/cert_issuer_source_aia.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_issuer_source_aia.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_issuer_source_aia.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/cert_issuer_source_aia.h" />
+    <CustomBuild Include="../../../../net/cert/internal/cert_issuer_source_static.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_issuer_source_static.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_issuer_source_static.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/cert_issuer_source_static.h" />
+    <CustomBuild Include="../../../../net/cert/internal/certificate_policies.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/certificate_policies.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/certificate_policies.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/certificate_policies.h" />
+    <CustomBuild Include="../../../../net/cert/internal/common_cert_errors.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/common_cert_errors.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/common_cert_errors.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/common_cert_errors.h" />
+    <CustomBuild Include="../../../../net/cert/internal/crl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/crl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/crl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/crl.h" />
+    <CustomBuild Include="../../../../net/cert/internal/extended_key_usage.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/extended_key_usage.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/extended_key_usage.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/extended_key_usage.h" />
+    <CustomBuild Include="../../../../net/cert/internal/general_names.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/general_names.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/general_names.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/general_names.h" />
+    <CustomBuild Include="../../../../net/cert/internal/name_constraints.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/name_constraints.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/name_constraints.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/name_constraints.h" />
+    <CustomBuild Include="../../../../net/cert/internal/ocsp.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ocsp.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ocsp.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/ocsp.h" />
+    <CustomBuild Include="../../../../net/cert/internal/parse_certificate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/parse_certificate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/parse_certificate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/parse_certificate.h" />
+    <CustomBuild Include="../../../../net/cert/internal/parse_name.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/parse_name.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/parse_name.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/parse_name.h" />
+    <CustomBuild Include="../../../../net/cert/internal/parsed_certificate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/parsed_certificate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/parsed_certificate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/parsed_certificate.h" />
+    <CustomBuild Include="../../../../net/cert/internal/path_builder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/path_builder.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/path_builder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/path_builder.h" />
+    <CustomBuild Include="../../../../net/cert/internal/revocation_checker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/revocation_checker.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/revocation_checker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/revocation_checker.h" />
+    <CustomBuild Include="../../../../net/cert/internal/revocation_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/revocation_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/revocation_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/revocation_util.h" />
+    <CustomBuild Include="../../../../net/cert/internal/signature_algorithm.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/signature_algorithm.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/signature_algorithm.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/signature_algorithm.h" />
+    <CustomBuild Include="../../../../net/cert/internal/simple_path_builder_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_path_builder_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_path_builder_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/simple_path_builder_delegate.h" />
+    <CustomBuild Include="../../../../net/cert/internal/system_trust_store.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/system_trust_store.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/system_trust_store.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/system_trust_store.h" />
+    <CustomBuild Include="../../../../net/cert/internal/trust_store.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/trust_store.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/trust_store.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/trust_store.h" />
+    <CustomBuild Include="../../../../net/cert/internal/trust_store_collection.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/trust_store_collection.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/trust_store_collection.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/trust_store_collection.h" />
+    <CustomBuild Include="../../../../net/cert/internal/trust_store_in_memory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/trust_store_in_memory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/trust_store_in_memory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/trust_store_in_memory.h" />
+    <CustomBuild Include="../../../../net/cert/internal/verify_certificate_chain.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/verify_certificate_chain.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/verify_certificate_chain.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/verify_certificate_chain.h" />
+    <CustomBuild Include="../../../../net/cert/internal/verify_name_match.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/verify_name_match.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/verify_name_match.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/verify_name_match.h" />
+    <CustomBuild Include="../../../../net/cert/internal/verify_signed_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/verify_signed_data.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/verify_signed_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/internal/verify_signed_data.h" />
+    <CustomBuild Include="../../../../net/cert/known_roots.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/known_roots.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/known_roots.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/known_roots.h" />
+    <CustomBuild Include="../../../../net/cert/merkle_audit_proof.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/merkle_audit_proof.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/merkle_audit_proof.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/merkle_audit_proof.h" />
+    <CustomBuild Include="../../../../net/cert/merkle_consistency_proof.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/merkle_consistency_proof.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/merkle_consistency_proof.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/merkle_consistency_proof.h" />
+    <CustomBuild Include="../../../../net/cert/merkle_tree_leaf.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/merkle_tree_leaf.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/merkle_tree_leaf.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/merkle_tree_leaf.h" />
+    <CustomBuild Include="../../../../net/cert/multi_log_ct_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/multi_log_ct_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/multi_log_ct_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/multi_log_ct_verifier.h" />
+    <CustomBuild Include="../../../../net/cert/multi_threaded_cert_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/multi_threaded_cert_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/multi_threaded_cert_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/multi_threaded_cert_verifier.h" />
+    <None Include="../../../../net/cert/ocsp_revocation_status.h" />
+    <CustomBuild Include="../../../../net/cert/ocsp_verify_result.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ocsp_verify_result.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ocsp_verify_result.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/ocsp_verify_result.h" />
+    <CustomBuild Include="../../../../net/cert/pem.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/pem.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/pem.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/pem.h" />
+    <None Include="../../../../net/cert/root_cert_list_generated.h" />
+    <None Include="../../../../net/cert/sct_auditing_delegate.h" />
+    <CustomBuild Include="../../../../net/cert/sct_status_flags.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/sct_status_flags.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/sct_status_flags.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/sct_status_flags.h" />
+    <CustomBuild Include="../../../../net/cert/signed_certificate_timestamp.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/signed_certificate_timestamp.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/signed_certificate_timestamp.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/signed_certificate_timestamp.h" />
+    <CustomBuild Include="../../../../net/cert/signed_certificate_timestamp_and_status.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/signed_certificate_timestamp_and_status.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/signed_certificate_timestamp_and_status.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/signed_certificate_timestamp_and_status.h" />
+    <CustomBuild Include="../../../../net/cert/signed_tree_head.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/signed_tree_head.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/signed_tree_head.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/signed_tree_head.h" />
+    <CustomBuild Include="../../../../net/cert/symantec_certs.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/symantec_certs.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/symantec_certs.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/symantec_certs.h" />
+    <CustomBuild Include="../../../../net/cert/test_root_certs.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/test_root_certs.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/test_root_certs.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/test_root_certs.h" />
+    <CustomBuild Include="../../../../net/cert/x509_cert_types.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/x509_cert_types.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/x509_cert_types.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/x509_cert_types.h" />
+    <CustomBuild Include="../../../../net/cert/x509_certificate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/x509_certificate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/x509_certificate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/x509_certificate.h" />
+    <CustomBuild Include="../../../../net/cert/x509_certificate_net_log_param.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/x509_certificate_net_log_param.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/x509_certificate_net_log_param.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/x509_certificate_net_log_param.h" />
+    <CustomBuild Include="../../../../net/cert/x509_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/x509_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/x509_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/x509_util.h" />
+    <CustomBuild Include="../../../../net/cert_net/cert_net_fetcher_url_request.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_net_fetcher_url_request.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_net_fetcher_url_request.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert_net/cert_net_fetcher_url_request.h" />
+    <CustomBuild Include="../../../../net/cookies/canonical_cookie.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/canonical_cookie.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/canonical_cookie.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/canonical_cookie.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_access_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_access_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_access_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_access_delegate.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_access_result.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_access_result.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_access_result.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_access_result.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_change_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_change_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_change_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_change_dispatcher.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_constants.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_constants.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_deletion_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_deletion_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_deletion_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_deletion_info.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_inclusion_status.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_inclusion_status.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_inclusion_status.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_inclusion_status.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_monster.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_monster.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_monster.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_monster.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_monster_change_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_monster_change_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_monster_change_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_monster_change_dispatcher.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_monster_netlog_params.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_monster_netlog_params.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_monster_netlog_params.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_monster_netlog_params.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_options.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_options.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_options.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_options.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_store.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_store.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_store.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_store.h" />
+    <CustomBuild Include="../../../../net/cookies/cookie_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cookie_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cookie_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_util.h" />
+    <CustomBuild Include="../../../../net/cookies/parsed_cookie.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/parsed_cookie.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/parsed_cookie.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/parsed_cookie.h" />
+    <CustomBuild Include="../../../../net/cookies/site_for_cookies.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/site_for_cookies.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/site_for_cookies.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/site_for_cookies.h" />
+    <CustomBuild Include="../../../../net/cookies/static_cookie_policy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/static_cookie_policy.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/static_cookie_policy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/static_cookie_policy.h" />
+    <CustomBuild Include="../../../../net/der/encode_values.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/encode_values.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/encode_values.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/der/encode_values.h" />
+    <CustomBuild Include="../../../../net/der/input.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/input.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/input.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/der/input.h" />
+    <CustomBuild Include="../../../../net/der/parse_values.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/parse_values.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/parse_values.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/der/parse_values.h" />
+    <CustomBuild Include="../../../../net/der/parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/parser.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/der/parser.h" />
+    <CustomBuild Include="../../../../net/der/tag.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/tag.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/tag.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/der/tag.h" />
+    <CustomBuild Include="../../../../net/disk_cache/backend_cleanup_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/backend_cleanup_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/backend_cleanup_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/backend_cleanup_tracker.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/addr.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/addr.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/addr.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/addr.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/backend_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/backend_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/backend_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/backend_impl.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/bitmap.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/bitmap.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/bitmap.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/bitmap.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/block_files.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/block_files.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/block_files.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/block_files.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/disk_format.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/disk_format.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/disk_format.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/disk_format.h" />
+    <None Include="../../../../net/disk_cache/blockfile/disk_format_base.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/entry_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/entry_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/entry_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/entry_impl.h" />
+    <None Include="../../../../net/disk_cache/blockfile/errors.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/eviction.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/eviction.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/eviction.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/eviction.h" />
+    <None Include="../../../../net/disk_cache/blockfile/experiments.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/file.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/file.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/file.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/file.h" />
+    <None Include="../../../../net/disk_cache/blockfile/file_block.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/file_lock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/file_lock.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/file_lock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/file_lock.h" />
+    <None Include="../../../../net/disk_cache/blockfile/histogram_macros.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/in_flight_backend_io.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/in_flight_backend_io.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/in_flight_backend_io.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/in_flight_backend_io.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/in_flight_io.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/in_flight_io.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/in_flight_io.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/in_flight_io.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/mapped_file.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/mapped_file.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/mapped_file.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/mapped_file.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/rankings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/rankings.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/rankings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/rankings.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/sparse_control.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/sparse_control.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/sparse_control.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/sparse_control.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/stats.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/stats.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/stats.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/blockfile/stats.h" />
+    <None Include="../../../../net/disk_cache/blockfile/storage_block-inl.h" />
+    <None Include="../../../../net/disk_cache/blockfile/storage_block.h" />
+    <None Include="../../../../net/disk_cache/blockfile/stress_support.h" />
+    <CustomBuild Include="../../../../net/disk_cache/cache_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cache_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cache_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/cache_util.h" />
+    <CustomBuild Include="../../../../net/disk_cache/disk_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/disk_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/disk_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/disk_cache.h" />
+    <CustomBuild Include="../../../../net/disk_cache/memory/mem_backend_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/mem_backend_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/mem_backend_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/memory/mem_backend_impl.h" />
+    <CustomBuild Include="../../../../net/disk_cache/memory/mem_entry_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/mem_entry_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/mem_entry_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/memory/mem_entry_impl.h" />
+    <CustomBuild Include="../../../../net/disk_cache/net_log_parameters.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_log_parameters.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_log_parameters.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/net_log_parameters.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/post_doom_waiter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/post_doom_waiter.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/post_doom_waiter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/post_doom_waiter.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_backend_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_backend_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_backend_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_backend_impl.h" />
+    <None Include="../../../../net/disk_cache/simple/simple_backend_version.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_entry_format.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_entry_format.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_entry_format.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_entry_format.h" />
+    <None Include="../../../../net/disk_cache/simple/simple_entry_format_history.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_entry_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_entry_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_entry_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_entry_impl.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_entry_operation.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_entry_operation.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_entry_operation.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_entry_operation.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_file_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_file_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_file_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_file_tracker.h" />
+    <None Include="../../../../net/disk_cache/simple/simple_histogram_macros.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_index.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_index.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_index.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_index.h" />
+    <None Include="../../../../net/disk_cache/simple/simple_index_delegate.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_index_file.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_index_file.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_index_file.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_index_file.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_net_log_parameters.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_net_log_parameters.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_net_log_parameters.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_net_log_parameters.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_synchronous_entry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_synchronous_entry.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_synchronous_entry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_synchronous_entry.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_util.h" />
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_version_upgrade.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_version_upgrade.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_version_upgrade.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/simple/simple_version_upgrade.h" />
+    <CustomBuild Include="../../../../net/filter/filter_source_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/filter_source_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/filter_source_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/filter/filter_source_stream.h" />
+    <CustomBuild Include="../../../../net/filter/gzip_header.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/gzip_header.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/gzip_header.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/filter/gzip_header.h" />
+    <CustomBuild Include="../../../../net/filter/gzip_source_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/gzip_source_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/gzip_source_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/filter/gzip_source_stream.h" />
+    <CustomBuild Include="../../../../net/filter/source_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/source_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/source_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/filter/source_stream.h" />
+    <CustomBuild Include="../../../../net/http/alternative_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/alternative_service.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/alternative_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/alternative_service.h" />
+    <CustomBuild Include="../../../../net/http/bidirectional_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/bidirectional_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/bidirectional_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/bidirectional_stream.h" />
+    <CustomBuild Include="../../../../net/http/bidirectional_stream_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/bidirectional_stream_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/bidirectional_stream_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/bidirectional_stream_impl.h" />
+    <CustomBuild Include="../../../../net/http/bidirectional_stream_request_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/bidirectional_stream_request_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/bidirectional_stream_request_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/bidirectional_stream_request_info.h" />
+    <CustomBuild Include="../../../../net/http/broken_alternative_services.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/broken_alternative_services.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/broken_alternative_services.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/broken_alternative_services.h" />
+    <None Include="../../../../net/http/hsts_info.h" />
+    <CustomBuild Include="../../../../net/http/http_auth.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_cache.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_challenge_tokenizer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_challenge_tokenizer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_challenge_tokenizer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_challenge_tokenizer.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_controller.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_controller.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_filter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_filter.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_filter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_filter.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_handler.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_handler.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_handler_basic.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_handler_basic.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_handler_basic.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_handler_basic.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_handler_digest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_handler_digest.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_handler_digest.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_handler_digest.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_handler_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_handler_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_handler_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_handler_factory.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_handler_ntlm.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_handler_ntlm.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_handler_ntlm.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_handler_ntlm.h" />
+    <None Include="../../../../net/http/http_auth_mechanism.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_multi_round_parse.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_multi_round_parse.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_multi_round_parse.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_multi_round_parse.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_preferences.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_preferences.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_preferences.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_preferences.h" />
+    <CustomBuild Include="../../../../net/http/http_auth_scheme.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_scheme.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_scheme.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_scheme.h" />
+    <CustomBuild Include="../../../../net/http/http_basic_state.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_basic_state.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_basic_state.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_basic_state.h" />
+    <CustomBuild Include="../../../../net/http/http_basic_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_basic_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_basic_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_basic_stream.h" />
+    <CustomBuild Include="../../../../net/http/http_byte_range.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_byte_range.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_byte_range.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_byte_range.h" />
+    <CustomBuild Include="../../../../net/http/http_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_cache.h" />
+    <CustomBuild Include="../../../../net/http/http_cache_lookup_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_cache_lookup_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_cache_lookup_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_cache_lookup_manager.h" />
+    <CustomBuild Include="../../../../net/http/http_cache_transaction.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_cache_transaction.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_cache_transaction.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_cache_transaction.h" />
+    <CustomBuild Include="../../../../net/http/http_cache_writers.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_cache_writers.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_cache_writers.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_cache_writers.h" />
+    <CustomBuild Include="../../../../net/http/http_chunked_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_chunked_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_chunked_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_chunked_decoder.h" />
+    <CustomBuild Include="../../../../net/http/http_content_disposition.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_content_disposition.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_content_disposition.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_content_disposition.h" />
+    <CustomBuild Include="../../../../net/http/http_log_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_log_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_log_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_log_util.h" />
+    <CustomBuild Include="../../../../net/http/http_network_layer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_network_layer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_network_layer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_network_layer.h" />
+    <CustomBuild Include="../../../../net/http/http_network_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_network_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_network_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_network_session.h" />
+    <CustomBuild Include="../../../../net/http/http_network_session_peer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_network_session_peer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_network_session_peer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_network_session_peer.h" />
+    <CustomBuild Include="../../../../net/http/http_network_transaction.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_network_transaction.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_network_transaction.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_network_transaction.h" />
+    <CustomBuild Include="../../../../net/http/http_proxy_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_proxy_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_proxy_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_proxy_client_socket.h" />
+    <CustomBuild Include="../../../../net/http/http_proxy_connect_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_proxy_connect_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_proxy_connect_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_proxy_connect_job.h" />
+    <CustomBuild Include="../../../../net/http/http_raw_request_headers.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_raw_request_headers.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_raw_request_headers.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_raw_request_headers.h" />
+    <CustomBuild Include="../../../../net/http/http_request_headers.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_request_headers.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_request_headers.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_request_headers.h" />
+    <CustomBuild Include="../../../../net/http/http_request_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_request_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_request_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_request_info.h" />
+    <CustomBuild Include="../../../../net/http/http_response_body_drainer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_response_body_drainer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_response_body_drainer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_response_body_drainer.h" />
+    <CustomBuild Include="../../../../net/http/http_response_headers.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_response_headers.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_response_headers.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_response_headers.h" />
+    <CustomBuild Include="../../../../net/http/http_response_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_response_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_response_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_response_info.h" />
+    <CustomBuild Include="../../../../net/http/http_security_headers.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_security_headers.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_security_headers.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_security_headers.h" />
+    <CustomBuild Include="../../../../net/http/http_server_properties.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_server_properties.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_server_properties.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_server_properties.h" />
+    <CustomBuild Include="../../../../net/http/http_server_properties_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_server_properties_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_server_properties_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_server_properties_manager.h" />
+    <CustomBuild Include="../../../../net/http/http_status_code.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_status_code.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_status_code.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_status_code.h" />
+    <None Include="../../../../net/http/http_status_code_list.h" />
+    <None Include="../../../../net/http/http_stream.h" />
+    <CustomBuild Include="../../../../net/http/http_stream_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_stream_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_stream_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_stream_factory.h" />
+    <CustomBuild Include="../../../../net/http/http_stream_factory_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_stream_factory_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_stream_factory_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_stream_factory_job.h" />
+    <CustomBuild Include="../../../../net/http/http_stream_factory_job_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_stream_factory_job_controller.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_stream_factory_job_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_stream_factory_job_controller.h" />
+    <CustomBuild Include="../../../../net/http/http_stream_parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_stream_parser.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_stream_parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_stream_parser.h" />
+    <CustomBuild Include="../../../../net/http/http_stream_request.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_stream_request.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_stream_request.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_stream_request.h" />
+    <None Include="../../../../net/http/http_transaction.h" />
+    <None Include="../../../../net/http/http_transaction_factory.h" />
+    <CustomBuild Include="../../../../net/http/http_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_util.h" />
+    <CustomBuild Include="../../../../net/http/http_vary_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_vary_data.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_vary_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_vary_data.h" />
+    <None Include="../../../../net/http/http_version.h" />
+    <CustomBuild Include="../../../../net/http/partial_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/partial_data.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/partial_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/partial_data.h" />
+    <CustomBuild Include="../../../../net/http/proxy_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/proxy_client_socket.h" />
+    <CustomBuild Include="../../../../net/http/proxy_fallback.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_fallback.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_fallback.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/proxy_fallback.h" />
+    <CustomBuild Include="../../../../net/http/structured_headers.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/structured_headers.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/structured_headers.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/structured_headers.h" />
+    <CustomBuild Include="../../../../net/http/transport_security_persister.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/transport_security_persister.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/transport_security_persister.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/transport_security_persister.h" />
+    <None Include="../../../../net/http/transport_security_state.h" />
+    <CustomBuild Include="../../../../net/http/transport_security_state_source.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/transport_security_state_source.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/transport_security_state_source.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/transport_security_state_source.h" />
+    <CustomBuild Include="../../../../net/http/url_security_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_security_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_security_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/url_security_manager.h" />
+    <CustomBuild Include="../../../../net/http/webfonts_histogram.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/webfonts_histogram.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/webfonts_histogram.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/webfonts_histogram.h" />
+    <None Include="../../../../net/http2/platform/impl/http2_macros_impl.h" />
+    <None Include="../../../../net/http2/platform/impl/http2_string_utils_impl.h" />
+    <CustomBuild Include="../../../../net/log/file_net_log_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/file_net_log_observer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/file_net_log_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/file_net_log_observer.h" />
+    <CustomBuild Include="../../../../net/log/net_log.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_log.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_log.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/net_log.h" />
+    <CustomBuild Include="../../../../net/log/net_log_capture_mode.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_log_capture_mode.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_log_capture_mode.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/net_log_capture_mode.h" />
+    <CustomBuild Include="../../../../net/log/net_log_entry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_log_entry.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_log_entry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/net_log_entry.h" />
+    <None Include="../../../../net/log/net_log_event_type.h" />
+    <None Include="../../../../net/log/net_log_event_type_list.h" />
+    <CustomBuild Include="../../../../net/log/net_log_source.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_log_source.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_log_source.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/net_log_source.h" />
+    <None Include="../../../../net/log/net_log_source_type.h" />
+    <None Include="../../../../net/log/net_log_source_type_list.h" />
+    <CustomBuild Include="../../../../net/log/net_log_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_log_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_log_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/net_log_util.h" />
+    <CustomBuild Include="../../../../net/log/net_log_values.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_log_values.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_log_values.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/net_log_values.h" />
+    <CustomBuild Include="../../../../net/log/net_log_with_source.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_log_with_source.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_log_with_source.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/net_log_with_source.h" />
+    <CustomBuild Include="../../../../net/log/trace_net_log_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/trace_net_log_observer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/trace_net_log_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/log/trace_net_log_observer.h" />
+    <CustomBuild Include="../../../../net/nqe/cached_network_quality.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cached_network_quality.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cached_network_quality.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/cached_network_quality.h" />
+    <CustomBuild Include="../../../../net/nqe/connectivity_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/connectivity_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/connectivity_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/connectivity_monitor.h" />
+    <CustomBuild Include="../../../../net/nqe/effective_connection_type.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/effective_connection_type.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/effective_connection_type.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/effective_connection_type.h" />
+    <None Include="../../../../net/nqe/effective_connection_type_observer.h" />
+    <CustomBuild Include="../../../../net/nqe/event_creator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/event_creator.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/event_creator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/event_creator.h" />
+    <CustomBuild Include="../../../../net/nqe/network_id.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_id.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_id.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_id.h" />
+    <CustomBuild Include="../../../../net/nqe/network_qualities_prefs_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_qualities_prefs_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_qualities_prefs_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_qualities_prefs_manager.h" />
+    <CustomBuild Include="../../../../net/nqe/network_quality.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_quality.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_quality.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_quality.h" />
+    <CustomBuild Include="../../../../net/nqe/network_quality_estimator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_quality_estimator.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_quality_estimator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_quality_estimator.h" />
+    <CustomBuild Include="../../../../net/nqe/network_quality_estimator_params.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_quality_estimator_params.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_quality_estimator_params.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_quality_estimator_params.h" />
+    <CustomBuild Include="../../../../net/nqe/network_quality_estimator_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_quality_estimator_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_quality_estimator_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_quality_estimator_util.h" />
+    <CustomBuild Include="../../../../net/nqe/network_quality_observation.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_quality_observation.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_quality_observation.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_quality_observation.h" />
+    <None Include="../../../../net/nqe/network_quality_observation_source.h" />
+    <CustomBuild Include="../../../../net/nqe/network_quality_store.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_quality_store.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_quality_store.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_quality_store.h" />
+    <CustomBuild Include="../../../../net/nqe/observation_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/observation_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/observation_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/observation_buffer.h" />
+    <None Include="../../../../net/nqe/peer_to_peer_connections_count_observer.h" />
+    <CustomBuild Include="../../../../net/nqe/pref_names.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/pref_names.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/pref_names.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/pref_names.h" />
+    <None Include="../../../../net/nqe/rtt_throughput_estimates_observer.h" />
+    <CustomBuild Include="../../../../net/nqe/socket_watcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socket_watcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socket_watcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/socket_watcher.h" />
+    <CustomBuild Include="../../../../net/nqe/socket_watcher_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socket_watcher_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socket_watcher_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/socket_watcher_factory.h" />
+    <CustomBuild Include="../../../../net/nqe/throughput_analyzer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/throughput_analyzer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/throughput_analyzer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/throughput_analyzer.h" />
+    <None Include="../../../../net/nqe/weighted_observation.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/configured_proxy_resolution_request.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/configured_proxy_resolution_request.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/configured_proxy_resolution_request.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/configured_proxy_resolution_request.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/configured_proxy_resolution_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/configured_proxy_resolution_service.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/configured_proxy_resolution_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/configured_proxy_resolution_service.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/dhcp_pac_file_fetcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/dhcp_pac_file_fetcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/dhcp_pac_file_fetcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/dhcp_pac_file_fetcher.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/multi_threaded_proxy_resolver.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/multi_threaded_proxy_resolver.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/multi_threaded_proxy_resolver.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/multi_threaded_proxy_resolver.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/network_delegate_error_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_delegate_error_observer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_delegate_error_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/network_delegate_error_observer.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/pac_file_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/pac_file_data.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/pac_file_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/pac_file_data.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/pac_file_decider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/pac_file_decider.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/pac_file_decider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/pac_file_decider.h" />
+    <None Include="../../../../net/proxy_resolution/pac_file_fetcher.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/pac_file_fetcher_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/pac_file_fetcher_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/pac_file_fetcher_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/pac_file_fetcher_impl.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/polling_proxy_config_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/polling_proxy_config_service.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/polling_proxy_config_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/polling_proxy_config_service.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_bypass_rules.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_bypass_rules.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_bypass_rules.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/proxy_bypass_rules.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_config.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_config.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_config.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/proxy_config.h" />
+    <None Include="../../../../net/proxy_resolution/proxy_config_service.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_config_service_fixed.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_config_service_fixed.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_config_service_fixed.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/proxy_config_service_fixed.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_config_with_annotation.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_config_with_annotation.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_config_with_annotation.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/proxy_config_with_annotation.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/proxy_info.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_list.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/proxy_list.h" />
+    <None Include="../../../../net/proxy_resolution/proxy_resolution_request.h" />
+    <None Include="../../../../net/proxy_resolution/proxy_resolution_service.h" />
+    <None Include="../../../../net/proxy_resolution/proxy_resolve_dns_operation.h" />
+    <None Include="../../../../net/proxy_resolution/proxy_resolver.h" />
+    <None Include="../../../../net/proxy_resolution/proxy_resolver_error_observer.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_resolver_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_resolver_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_resolver_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/proxy_resolver_factory.h" />
+    <None Include="../../../../net/proxy_resolution/proxy_retry_info.h" />
+    <None Include="../../../../net/quic/address_utils.h" />
+    <CustomBuild Include="../../../../net/quic/bidirectional_stream_quic_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/bidirectional_stream_quic_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/bidirectional_stream_quic_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/bidirectional_stream_quic_impl.h" />
+    <CustomBuild Include="../../../../net/quic/crypto/proof_source_chromium.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proof_source_chromium.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proof_source_chromium.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/crypto/proof_source_chromium.h" />
+    <CustomBuild Include="../../../../net/quic/crypto/proof_verifier_chromium.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proof_verifier_chromium.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proof_verifier_chromium.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/crypto/proof_verifier_chromium.h" />
+    <CustomBuild Include="../../../../net/quic/dedicated_web_transport_http3_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/dedicated_web_transport_http3_client.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/dedicated_web_transport_http3_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/dedicated_web_transport_http3_client.h" />
+    <CustomBuild Include="../../../../net/quic/network_connection.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_connection.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_connection.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/network_connection.h" />
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_chromium_clock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_chromium_clock.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_chromium_clock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_chromium_clock.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_client_stats_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_containers_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_error_code_wrappers_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_file_utils_impl.h" />
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_flags_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_flags_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_flags_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_flags_impl.h" />
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_hostname_utils_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_hostname_utils_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_hostname_utils_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_hostname_utils_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_iovec_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_map_util_impl.h" />
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_mem_slice_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_mem_slice_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_mem_slice_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_mem_slice_impl.h" />
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_mem_slice_span_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_mem_slice_span_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_mem_slice_span_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_mem_slice_span_impl.h" />
+    <CustomBuild Include="../../../../net/quic/platform/impl/quic_mem_slice_storage_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_mem_slice_storage_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_mem_slice_storage_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/platform/impl/quic_mem_slice_storage_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_prefetch_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_reference_counted_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_server_stats_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_sleep_impl.h" />
+    <None Include="../../../../net/quic/platform/impl/quic_stack_trace_impl.h" />
+    <CustomBuild Include="../../../../net/quic/properties_based_quic_server_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/properties_based_quic_server_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/properties_based_quic_server_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/properties_based_quic_server_info.h" />
+    <CustomBuild Include="../../../../net/quic/quic_address_mismatch.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_address_mismatch.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_address_mismatch.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_address_mismatch.h" />
+    <CustomBuild Include="../../../../net/quic/quic_chromium_alarm_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_chromium_alarm_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_chromium_alarm_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_chromium_alarm_factory.h" />
+    <CustomBuild Include="../../../../net/quic/quic_chromium_client_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_chromium_client_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_chromium_client_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_chromium_client_session.h" />
+    <CustomBuild Include="../../../../net/quic/quic_chromium_client_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_chromium_client_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_chromium_client_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_chromium_client_stream.h" />
+    <CustomBuild Include="../../../../net/quic/quic_chromium_connection_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_chromium_connection_helper.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_chromium_connection_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_chromium_connection_helper.h" />
+    <CustomBuild Include="../../../../net/quic/quic_chromium_packet_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_chromium_packet_reader.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_chromium_packet_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_chromium_packet_reader.h" />
+    <CustomBuild Include="../../../../net/quic/quic_chromium_packet_writer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_chromium_packet_writer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_chromium_packet_writer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_chromium_packet_writer.h" />
+    <CustomBuild Include="../../../../net/quic/quic_client_session_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_client_session_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_client_session_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_client_session_cache.h" />
+    <CustomBuild Include="../../../../net/quic/quic_clock_skew_detector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_clock_skew_detector.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_clock_skew_detector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_clock_skew_detector.h" />
+    <CustomBuild Include="../../../../net/quic/quic_connection_logger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_connection_logger.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_connection_logger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_connection_logger.h" />
+    <CustomBuild Include="../../../../net/quic/quic_connectivity_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_connectivity_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_connectivity_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_connectivity_monitor.h" />
+    <CustomBuild Include="../../../../net/quic/quic_connectivity_probing_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_connectivity_probing_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_connectivity_probing_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_connectivity_probing_manager.h" />
+    <CustomBuild Include="../../../../net/quic/quic_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_context.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_context.h" />
+    <CustomBuild Include="../../../../net/quic/quic_crypto_client_config_handle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_crypto_client_config_handle.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_crypto_client_config_handle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_crypto_client_config_handle.h" />
+    <CustomBuild Include="../../../../net/quic/quic_crypto_client_stream_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_crypto_client_stream_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_crypto_client_stream_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_crypto_client_stream_factory.h" />
+    <CustomBuild Include="../../../../net/quic/quic_event_logger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_event_logger.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_event_logger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_event_logger.h" />
+    <CustomBuild Include="../../../../net/quic/quic_http3_logger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_http3_logger.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_http3_logger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_http3_logger.h" />
+    <CustomBuild Include="../../../../net/quic/quic_http_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_http_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_http_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_http_stream.h" />
+    <CustomBuild Include="../../../../net/quic/quic_http_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_http_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_http_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_http_utils.h" />
+    <CustomBuild Include="../../../../net/quic/quic_proxy_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_proxy_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_proxy_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_proxy_client_socket.h" />
+    <CustomBuild Include="../../../../net/quic/quic_server_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_server_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_server_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_server_info.h" />
+    <CustomBuild Include="../../../../net/quic/quic_session_key.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_session_key.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_session_key.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_session_key.h" />
+    <CustomBuild Include="../../../../net/quic/quic_stream_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_stream_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_stream_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_stream_factory.h" />
+    <CustomBuild Include="../../../../net/quic/quic_transport_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quic_transport_client.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quic_transport_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_transport_client.h" />
+    <CustomBuild Include="../../../../net/quic/web_transport_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/web_transport_client.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/web_transport_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/web_transport_client.h" />
+    <CustomBuild Include="../../../../net/quic/web_transport_error.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/web_transport_error.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/web_transport_error.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quic/web_transport_error.h" />
+    <None Include="../../../../net/quiche/common/platform/impl/quiche_bug_tracker_impl.h" />
+    <None Include="../../../../net/quiche/common/platform/impl/quiche_flag_utils_impl.h" />
+    <CustomBuild Include="../../../../net/quiche/common/platform/impl/quiche_flags_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/quiche_flags_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/quiche_flags_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/quiche/common/platform/impl/quiche_flags_impl.h" />
+    <CustomBuild Include="../../../../net/socket/client_socket_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/client_socket_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/client_socket_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/client_socket_factory.h" />
+    <CustomBuild Include="../../../../net/socket/client_socket_handle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/client_socket_handle.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/client_socket_handle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/client_socket_handle.h" />
+    <CustomBuild Include="../../../../net/socket/client_socket_pool.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/client_socket_pool.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/client_socket_pool.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/client_socket_pool.h" />
+    <CustomBuild Include="../../../../net/socket/client_socket_pool_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/client_socket_pool_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/client_socket_pool_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/client_socket_pool_manager.h" />
+    <CustomBuild Include="../../../../net/socket/client_socket_pool_manager_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/client_socket_pool_manager_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/client_socket_pool_manager_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/client_socket_pool_manager_impl.h" />
+    <CustomBuild Include="../../../../net/socket/connect_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/connect_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/connect_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/connect_job.h" />
+    <None Include="../../../../net/socket/connection_attempts.h" />
+    <None Include="../../../../net/socket/datagram_client_socket.h" />
+    <None Include="../../../../net/socket/datagram_server_socket.h" />
+    <None Include="../../../../net/socket/datagram_socket.h" />
+    <None Include="../../../../net/socket/diff_serv_code_point.h" />
+    <CustomBuild Include="../../../../net/socket/next_proto.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/next_proto.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/next_proto.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/next_proto.h" />
+    <CustomBuild Include="../../../../net/socket/server_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/server_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/server_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/server_socket.h" />
+    <CustomBuild Include="../../../../net/socket/socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socket.h" />
+    <CustomBuild Include="../../../../net/socket/socket_bio_adapter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socket_bio_adapter.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socket_bio_adapter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socket_bio_adapter.h" />
+    <CustomBuild Include="../../../../net/socket/socket_descriptor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socket_descriptor.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socket_descriptor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socket_descriptor.h" />
+    <CustomBuild Include="../../../../net/socket/socket_net_log_params.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socket_net_log_params.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socket_net_log_params.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socket_net_log_params.h" />
+    <CustomBuild Include="../../../../net/socket/socket_options.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socket_options.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socket_options.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socket_options.h" />
+    <None Include="../../../../net/socket/socket_performance_watcher.h" />
+    <None Include="../../../../net/socket/socket_performance_watcher_factory.h" />
+    <CustomBuild Include="../../../../net/socket/socket_tag.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socket_tag.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socket_tag.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socket_tag.h" />
+    <CustomBuild Include="../../../../net/socket/socks5_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socks5_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socks5_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socks5_client_socket.h" />
+    <CustomBuild Include="../../../../net/socket/socks_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socks_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socks_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socks_client_socket.h" />
+    <CustomBuild Include="../../../../net/socket/socks_connect_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/socks_connect_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/socks_connect_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socks_connect_job.h" />
+    <CustomBuild Include="../../../../net/socket/ssl_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/ssl_client_socket.h" />
+    <CustomBuild Include="../../../../net/socket/ssl_client_socket_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_client_socket_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_client_socket_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/ssl_client_socket_impl.h" />
+    <CustomBuild Include="../../../../net/socket/ssl_connect_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_connect_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_connect_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/ssl_connect_job.h" />
+    <None Include="../../../../net/socket/ssl_server_socket.h" />
+    <CustomBuild Include="../../../../net/socket/ssl_server_socket_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_server_socket_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_server_socket_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/ssl_server_socket_impl.h" />
+    <None Include="../../../../net/socket/ssl_socket.h" />
+    <CustomBuild Include="../../../../net/socket/stream_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/stream_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/stream_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/stream_socket.h" />
+    <CustomBuild Include="../../../../net/socket/tcp_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/tcp_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/tcp_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/tcp_client_socket.h" />
+    <CustomBuild Include="../../../../net/socket/tcp_server_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/tcp_server_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/tcp_server_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/tcp_server_socket.h" />
+    <None Include="../../../../net/socket/tcp_socket.h" />
+    <CustomBuild Include="../../../../net/socket/transport_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/transport_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/transport_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/transport_client_socket.h" />
+    <CustomBuild Include="../../../../net/socket/transport_client_socket_pool.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/transport_client_socket_pool.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/transport_client_socket_pool.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/transport_client_socket_pool.h" />
+    <CustomBuild Include="../../../../net/socket/transport_connect_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/transport_connect_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/transport_connect_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/transport_connect_job.h" />
+    <CustomBuild Include="../../../../net/socket/udp_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/udp_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/udp_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/udp_client_socket.h" />
+    <CustomBuild Include="../../../../net/socket/udp_net_log_parameters.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/udp_net_log_parameters.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/udp_net_log_parameters.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/udp_net_log_parameters.h" />
+    <CustomBuild Include="../../../../net/socket/udp_server_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/udp_server_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/udp_server_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/udp_server_socket.h" />
+    <None Include="../../../../net/socket/udp_socket.h" />
+    <CustomBuild Include="../../../../net/socket/udp_socket_global_limits.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/udp_socket_global_limits.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/udp_socket_global_limits.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/udp_socket_global_limits.h" />
+    <CustomBuild Include="../../../../net/socket/websocket_endpoint_lock_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_endpoint_lock_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_endpoint_lock_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/websocket_endpoint_lock_manager.h" />
+    <CustomBuild Include="../../../../net/socket/websocket_transport_client_socket_pool.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_transport_client_socket_pool.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_transport_client_socket_pool.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/websocket_transport_client_socket_pool.h" />
+    <CustomBuild Include="../../../../net/socket/websocket_transport_connect_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_transport_connect_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_transport_connect_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/websocket_transport_connect_job.h" />
+    <CustomBuild Include="../../../../net/socket/websocket_transport_connect_sub_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_transport_connect_sub_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_transport_connect_sub_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/websocket_transport_connect_sub_job.h" />
+    <CustomBuild Include="../../../../net/spdy/alps_decoder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/alps_decoder.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/alps_decoder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/alps_decoder.h" />
+    <CustomBuild Include="../../../../net/spdy/bidirectional_stream_spdy_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/bidirectional_stream_spdy_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/bidirectional_stream_spdy_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/bidirectional_stream_spdy_impl.h" />
+    <CustomBuild Include="../../../../net/spdy/buffered_spdy_framer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/buffered_spdy_framer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/buffered_spdy_framer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/buffered_spdy_framer.h" />
+    <CustomBuild Include="../../../../net/spdy/header_coalescer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/header_coalescer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/header_coalescer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/header_coalescer.h" />
+    <CustomBuild Include="../../../../net/spdy/http2_priority_dependencies.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http2_priority_dependencies.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http2_priority_dependencies.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/http2_priority_dependencies.h" />
+    <CustomBuild Include="../../../../net/spdy/http2_push_promise_index.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http2_push_promise_index.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http2_push_promise_index.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/http2_push_promise_index.h" />
+    <CustomBuild Include="../../../../net/spdy/multiplexed_http_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/multiplexed_http_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/multiplexed_http_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/multiplexed_http_stream.h" />
+    <CustomBuild Include="../../../../net/spdy/multiplexed_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/multiplexed_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/multiplexed_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/multiplexed_session.h" />
+    <None Include="../../../../net/spdy/platform/impl/spdy_containers_impl.h" />
+    <CustomBuild Include="../../../../net/spdy/platform/impl/spdy_string_utils_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_string_utils_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_string_utils_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/platform/impl/spdy_string_utils_impl.h" />
+    <None Include="../../../../net/spdy/server_push_delegate.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_buffer.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_buffer_producer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_buffer_producer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_buffer_producer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_buffer_producer.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_http_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_http_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_http_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_http_stream.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_http_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_http_utils.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_http_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_http_utils.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_log_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_log_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_log_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_log_util.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_proxy_client_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_proxy_client_socket.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_proxy_client_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_proxy_client_socket.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_read_queue.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_read_queue.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_read_queue.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_read_queue.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_session.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_session_key.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_session_key.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_session_key.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_session_key.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_session_pool.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_session_pool.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_session_pool.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_session_pool.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_stream.h" />
+    <CustomBuild Include="../../../../net/spdy/spdy_write_queue.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/spdy_write_queue.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/spdy_write_queue.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_write_queue.h" />
+    <CustomBuild Include="../../../../net/ssl/cert_compression.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_compression.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_compression.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/cert_compression.h" />
+    <CustomBuild Include="../../../../net/ssl/client_cert_identity.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/client_cert_identity.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/client_cert_identity.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/client_cert_identity.h" />
+    <None Include="../../../../net/ssl/client_cert_store.h" />
+    <CustomBuild Include="../../../../net/ssl/openssl_ssl_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/openssl_ssl_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/openssl_ssl_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/openssl_ssl_util.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_cert_request_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_cert_request_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_cert_request_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_cert_request_info.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_cipher_suite_names.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_cipher_suite_names.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_cipher_suite_names.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_cipher_suite_names.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_client_auth_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_client_auth_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_client_auth_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_client_auth_cache.h" />
+    <None Include="../../../../net/ssl/ssl_client_cert_type.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_client_session_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_client_session_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_client_session_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_client_session_cache.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_config.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_config.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_config.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_config.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_config_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_config_service.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_config_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_config_service.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_config_service_defaults.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_config_service_defaults.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_config_service_defaults.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_config_service_defaults.h" />
+    <None Include="../../../../net/ssl/ssl_connection_status_flags.h" />
+    <None Include="../../../../net/ssl/ssl_handshake_details.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_info.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_key_logger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_key_logger.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_key_logger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_key_logger.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_key_logger_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_key_logger_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_key_logger_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_key_logger_impl.h" />
+    <None Include="../../../../net/ssl/ssl_legacy_crypto_fallback.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_platform_key_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_platform_key_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_platform_key_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_platform_key_util.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_private_key.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_private_key.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_private_key.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_private_key.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_server_config.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_server_config.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_server_config.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_server_config.h" />
+    <CustomBuild Include="../../../../net/ssl/threaded_ssl_private_key.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/threaded_ssl_private_key.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/threaded_ssl_private_key.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/threaded_ssl_private_key.h" />
+    <CustomBuild Include="../../../../net/third_party/uri_template/uri_template.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/uri_template.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/uri_template.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/third_party/uri_template/uri_template.h" />
+    <CustomBuild Include="../../../../net/url_request/redirect_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/redirect_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/redirect_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/redirect_info.h" />
+    <CustomBuild Include="../../../../net/url_request/redirect_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/redirect_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/redirect_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/redirect_util.h" />
+    <None Include="../../../../net/url_request/referrer_policy.h" />
+    <CustomBuild Include="../../../../net/url_request/report_sender.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/report_sender.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/report_sender.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/report_sender.h" />
+    <CustomBuild Include="../../../../net/url_request/static_http_user_agent_settings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/static_http_user_agent_settings.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/static_http_user_agent_settings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/static_http_user_agent_settings.h" />
+    <CustomBuild Include="../../../../net/url_request/url_fetcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_fetcher.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_fetcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_fetcher.h" />
+    <CustomBuild Include="../../../../net/url_request/url_fetcher_core.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_fetcher_core.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_fetcher_core.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_fetcher_core.h" />
+    <CustomBuild Include="../../../../net/url_request/url_fetcher_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_fetcher_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_fetcher_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_fetcher_delegate.h" />
+    <None Include="../../../../net/url_request/url_fetcher_factory.h" />
+    <CustomBuild Include="../../../../net/url_request/url_fetcher_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_fetcher_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_fetcher_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_fetcher_impl.h" />
+    <CustomBuild Include="../../../../net/url_request/url_fetcher_response_writer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_fetcher_response_writer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_fetcher_response_writer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_fetcher_response_writer.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_context.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_context.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_context_builder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_context_builder.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_context_builder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_context_builder.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_context_getter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_context_getter.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_context_getter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_context_getter.h" />
+    <None Include="../../../../net/url_request/url_request_context_getter_observer.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_context_storage.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_context_storage.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_context_storage.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_context_storage.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_error_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_error_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_error_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_error_job.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_filter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_filter.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_filter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_filter.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_http_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_http_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_http_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_http_job.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_interceptor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_interceptor.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_interceptor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_interceptor.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_job.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_job_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_job_factory.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_job_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_job_factory.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_netlog_params.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_netlog_params.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_netlog_params.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_netlog_params.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_redirect_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_redirect_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_redirect_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_redirect_job.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_throttler_entry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_throttler_entry.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_throttler_entry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_throttler_entry.h" />
+    <None Include="../../../../net/url_request/url_request_throttler_entry_interface.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_throttler_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_throttler_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_throttler_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_throttler_manager.h" />
+    <CustomBuild Include="../../../../net/url_request/view_cache_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/view_cache_helper.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/view_cache_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/view_cache_helper.h" />
+    <CustomBuild Include="../../../../net/url_request/websocket_handshake_userdata_key.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_handshake_userdata_key.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_handshake_userdata_key.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/websocket_handshake_userdata_key.h" />
+    <CustomBuild Include="../../../../net/network_error_logging/network_error_logging_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_error_logging_service.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_error_logging_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/network_error_logging/network_error_logging_service.h" />
+    <None Include="../../../../net/network_error_logging/persistent_reporting_and_nel_store.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_browsing_data_remover.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_browsing_data_remover.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_browsing_data_remover.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_browsing_data_remover.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_cache.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_cache_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_cache_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_cache_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_cache_impl.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_cache_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_cache_observer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_cache_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_cache_observer.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_context.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_context.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_delegate.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_delivery_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_delivery_agent.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_delivery_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_delivery_agent.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_endpoint.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_endpoint.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_endpoint.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_endpoint.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_endpoint_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_endpoint_manager.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_endpoint_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_endpoint_manager.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_garbage_collector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_garbage_collector.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_garbage_collector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_garbage_collector.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_header_parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_header_parser.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_header_parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_header_parser.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_network_change_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_network_change_observer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_network_change_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_network_change_observer.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_policy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_policy.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_policy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_policy.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_report.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_report.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_report.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_report.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_service.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_service.h" />
+    <CustomBuild Include="../../../../net/reporting/reporting_uploader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/reporting_uploader.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/reporting_uploader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_uploader.h" />
+    <CustomBuild Include="../../../../net/base/file_stream_context_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/file_stream_context_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/file_stream_context_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/net_errors_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_errors_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_errors_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/network_change_notifier_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_change_notifier_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_change_notifier_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/network_change_notifier_win.h" />
+    <CustomBuild Include="../../../../net/base/network_interfaces_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/network_interfaces_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/network_interfaces_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/network_interfaces_win.h" />
+    <CustomBuild Include="../../../../net/base/platform_mime_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/platform_mime_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/platform_mime_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/winsock_init.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/winsock_init.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/winsock_init.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/winsock_init.h" />
+    <CustomBuild Include="../../../../net/base/winsock_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/winsock_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/winsock_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/winsock_util.h" />
+    <CustomBuild Include="../../../../net/cert/cert_verify_proc_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cert_verify_proc_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cert_verify_proc_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/cert_verify_proc_win.h" />
+    <CustomBuild Include="../../../../net/cert/known_roots_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/known_roots_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/known_roots_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/known_roots_win.h" />
+    <CustomBuild Include="../../../../net/cert/test_root_certs_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/test_root_certs_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/test_root_certs_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cert/x509_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/x509_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/x509_util_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/cert/x509_util_win.h" />
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/file_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/file_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/file_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/blockfile/mapped_file_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/mapped_file_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/mapped_file_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/cache_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/cache_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/cache_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_index_file_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_index_file_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_index_file_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/simple/simple_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/simple_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/simple_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_handler_ntlm_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_handler_ntlm_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_handler_ntlm_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_sspi_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_sspi_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_sspi_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_sspi_win.h" />
+    <CustomBuild Include="../../../../net/http/url_security_manager_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_security_manager_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_security_manager_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/proxy_resolution/win/dhcp_pac_file_adapter_fetcher_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/dhcp_pac_file_adapter_fetcher_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/dhcp_pac_file_adapter_fetcher_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/dhcp_pac_file_adapter_fetcher_win.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/dhcp_pac_file_fetcher_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/dhcp_pac_file_fetcher_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/dhcp_pac_file_fetcher_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/dhcp_pac_file_fetcher_win.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/dhcpcsvc_init_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/dhcpcsvc_init_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/dhcpcsvc_init_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/dhcpcsvc_init_win.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/proxy_config_service_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_config_service_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_config_service_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/proxy_config_service_win.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/proxy_resolver_winhttp.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/proxy_resolver_winhttp.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/proxy_resolver_winhttp.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/proxy_resolver_winhttp.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/windows_system_proxy_resolution_request.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/windows_system_proxy_resolution_request.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/windows_system_proxy_resolution_request.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/windows_system_proxy_resolution_request.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/windows_system_proxy_resolution_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/windows_system_proxy_resolution_service.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/windows_system_proxy_resolution_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/windows_system_proxy_resolution_service.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/windows_system_proxy_resolver.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/windows_system_proxy_resolver.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/windows_system_proxy_resolver.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/windows_system_proxy_resolver.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/winhttp_api_wrapper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/winhttp_api_wrapper.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/winhttp_api_wrapper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/winhttp_api_wrapper.h" />
+    <CustomBuild Include="../../../../net/proxy_resolution/win/winhttp_proxy_resolver_functions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/winhttp_proxy_resolver_functions.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/winhttp_proxy_resolver_functions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/win/winhttp_proxy_resolver_functions.h" />
+    <CustomBuild Include="../../../../net/socket/tcp_socket_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/tcp_socket_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/tcp_socket_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/tcp_socket_win.h" />
+    <CustomBuild Include="../../../../net/socket/udp_socket_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/udp_socket_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/udp_socket_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/socket/udp_socket_win.h" />
+    <CustomBuild Include="../../../../net/ssl/client_cert_store_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/client_cert_store_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/client_cert_store_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/client_cert_store_win.h" />
+    <CustomBuild Include="../../../../net/ssl/ssl_platform_key_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ssl_platform_key_win.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ssl_platform_key_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/http/http_auth_handler_negotiate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/http_auth_handler_negotiate.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/http_auth_handler_negotiate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_auth_handler_negotiate.h" />
+    <CustomBuild Include="../../../../net/base/directory_lister.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/directory_lister.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/directory_lister.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/directory_lister.h" />
+    <CustomBuild Include="../../../../net/base/directory_listing.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/directory_listing.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/directory_listing.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/base/directory_listing.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_auth_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_auth_cache.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_auth_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_auth_cache.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_ctrl_response_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_ctrl_response_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_ctrl_response_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_ctrl_response_buffer.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_directory_listing_parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_directory_listing_parser.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_directory_listing_parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_directory_listing_parser.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_directory_listing_parser_ls.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_directory_listing_parser_ls.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_directory_listing_parser_ls.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_directory_listing_parser_ls.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_directory_listing_parser_vms.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_directory_listing_parser_vms.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_directory_listing_parser_vms.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_directory_listing_parser_vms.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_directory_listing_parser_windows.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_directory_listing_parser_windows.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_directory_listing_parser_windows.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_directory_listing_parser_windows.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_network_layer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_network_layer.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_network_layer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_network_layer.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_network_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_network_session.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_network_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_network_session.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_network_transaction.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_network_transaction.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_network_transaction.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_network_transaction.h" />
+    <None Include="../../../../net/ftp/ftp_request_info.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_response_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_response_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_response_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_response_info.h" />
+    <None Include="../../../../net/ftp/ftp_server_type.h" />
+    <None Include="../../../../net/ftp/ftp_transaction.h" />
+    <None Include="../../../../net/ftp/ftp_transaction_factory.h" />
+    <CustomBuild Include="../../../../net/ftp/ftp_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_util.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/ftp/ftp_util.h" />
+    <CustomBuild Include="../../../../net/url_request/ftp_protocol_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/ftp_protocol_handler.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/ftp_protocol_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/ftp_protocol_handler.h" />
+    <CustomBuild Include="../../../../net/url_request/url_request_ftp_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/url_request_ftp_job.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/url_request_ftp_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_ftp_job.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_basic_handshake_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_basic_handshake_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_basic_handshake_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_basic_handshake_stream.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_basic_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_basic_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_basic_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_basic_stream.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_basic_stream_adapters.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_basic_stream_adapters.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_basic_stream_adapters.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_basic_stream_adapters.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_channel.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_channel.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_channel.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_channel.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_deflate_parameters.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_deflate_parameters.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_deflate_parameters.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_deflate_parameters.h" />
+    <None Include="../../../../net/websockets/websocket_deflate_predictor.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_deflate_predictor_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_deflate_predictor_impl.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_deflate_predictor_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_deflate_predictor_impl.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_deflate_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_deflate_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_deflate_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_deflate_stream.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_deflater.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_deflater.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_deflater.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_deflater.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_errors.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_errors.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_errors.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_errors.h" />
+    <None Include="../../../../net/websockets/websocket_event_interface.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_extension.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_extension.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_extension.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_extension.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_extension_parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_extension_parser.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_extension_parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_extension_parser.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_frame.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_frame.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_frame_parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_frame_parser.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_frame_parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_frame_parser.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_handshake_challenge.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_handshake_challenge.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_handshake_challenge.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_handshake_challenge.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_handshake_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_handshake_constants.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_handshake_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_handshake_constants.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_handshake_request_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_handshake_request_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_handshake_request_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_handshake_request_info.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_handshake_response_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_handshake_response_info.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_handshake_response_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_handshake_response_info.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_handshake_stream_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_handshake_stream_base.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_handshake_stream_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_handshake_stream_base.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_handshake_stream_create_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_handshake_stream_create_helper.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_handshake_stream_create_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_handshake_stream_create_helper.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_http2_handshake_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_http2_handshake_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_http2_handshake_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_http2_handshake_stream.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_inflater.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_inflater.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_inflater.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_inflater.h" />
+    <CustomBuild Include="../../../../net/websockets/websocket_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/websocket_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/websocket_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/websockets/websocket_stream.h" />
+    <CustomBuild Include="../../../../net/base/filename_util_icu.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/filename_util_icu.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/filename_util_icu.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/base/net_string_util_icu.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/net_string_util_icu.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/net_string_util_icu.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/filter/brotli_source_stream.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/net/brotli_source_stream.obj</Command>
+      <Outputs>$(OutDir)obj/net/net/brotli_source_stream.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../net/filter/brotli_source_stream.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/net/net.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/net/net.lib" />
+  </Target>
+</Project>

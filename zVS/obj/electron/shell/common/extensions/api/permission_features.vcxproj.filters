@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\electron\shell\common\extensions\api">
+      <UniqueIdentifier>{168839B4-550C-0A74-5E8D-F2B6ED782952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\electron\shell\common\extensions">
+      <UniqueIdentifier>{26B31E51-52D5-22D2-8C76-F62BCFCA5DAA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\electron\shell\common">
+      <UniqueIdentifier>{92632F90-D3A0-0895-5D56-12EE65394852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\electron\shell">
+      <UniqueIdentifier>{49A08A1F-23A8-8F5B-1CF8-B24213E847FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\electron">
+      <UniqueIdentifier>{0C99FB6A-603D-E639-19B6-4F4A927445F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{E6448AF1-8BF1-E4CF-7A3E-8D79A0FC4C94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{9D755C22-D77A-628E-C34D-94F7A9E924B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out">
+      <UniqueIdentifier>{7EDCFEBF-244F-7524-40D7-1473E1524D83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..">
+      <UniqueIdentifier>{1109D6BC-040F-9837-EA64-A8443901A8C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../out/x64-debug/gen/electron/shell/common/extensions/api/permission_features.cc">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\electron\shell\common\extensions\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../out/x64-debug/gen/electron/shell/common/extensions/api/permission_features.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\electron\shell\common\extensions\api</Filter>
+    </None>
+  </ItemGroup>
+</Project>

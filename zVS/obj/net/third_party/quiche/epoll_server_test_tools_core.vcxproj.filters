@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src\epoll_server\platform\api">
+      <UniqueIdentifier>{FBE48357-FB0C-C136-B120-395E5015B586}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\epoll_server\platform">
+      <UniqueIdentifier>{CD0620AC-F2D0-23D0-B9D2-FAC6AF34F491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\epoll_server">
+      <UniqueIdentifier>{ED3EDB83-AE69-7A00-609C-3393AB6C44C1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{C5D85D62-2D1F-BBD0-3190-3BB2E70B1772}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../net/third_party/quiche/src/epoll_server/platform/api/epoll_address_test_utils.h">
+      <Filter>src\epoll_server\platform\api</Filter>
+    </None>
+    <None Include="../../../../../../net/third_party/quiche/src/epoll_server/platform/api/epoll_expect_bug.h">
+      <Filter>src\epoll_server\platform\api</Filter>
+    </None>
+    <None Include="../../../../../../net/third_party/quiche/src/epoll_server/platform/api/epoll_test.h">
+      <Filter>src\epoll_server\platform\api</Filter>
+    </None>
+  </ItemGroup>
+</Project>

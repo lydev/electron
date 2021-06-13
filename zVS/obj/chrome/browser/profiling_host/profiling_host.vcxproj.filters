@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/profiling_host/background_profiling_triggers.cc" />
+    <None Include="../../../../../../chrome/browser/profiling_host/background_profiling_triggers.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/profiling_host/chrome_browser_main_extra_parts_profiling.cc" />
+    <None Include="../../../../../../chrome/browser/profiling_host/chrome_browser_main_extra_parts_profiling.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/profiling_host/chrome_client_connection_manager.cc" />
+    <None Include="../../../../../../chrome/browser/profiling_host/chrome_client_connection_manager.h" />
+    <CustomBuild Include="../../../../../../chrome/browser/profiling_host/profiling_process_host.cc" />
+    <None Include="../../../../../../chrome/browser/profiling_host/profiling_process_host.h" />
+  </ItemGroup>
+</Project>

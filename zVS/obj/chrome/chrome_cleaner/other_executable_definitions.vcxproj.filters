@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="logging">
+      <UniqueIdentifier>{9B707920-F1A4-1F32-0FFD-E7D9F01B5105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings">
+      <UniqueIdentifier>{759AA6B8-E2DF-DCEE-0177-2242800BAA05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/chrome_cleaner/logging/other_logging_definitions.cc">
+      <Filter>logging</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/chrome_cleaner/settings/other_settings_definitions.cc">
+      <Filter>settings</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

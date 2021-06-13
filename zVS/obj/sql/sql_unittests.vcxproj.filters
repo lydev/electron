@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="recover_module">
+      <UniqueIdentifier>{0E490C6D-A240-F9BA-AE78-5E3E202F5682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../sql/database_unittest.cc" />
+    <CustomBuild Include="../../../../sql/meta_table_unittest.cc" />
+    <CustomBuild Include="../../../../sql/recover_module/module_unittest.cc">
+      <Filter>recover_module</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../sql/recovery_unittest.cc" />
+    <CustomBuild Include="../../../../sql/sql_memory_dump_provider_unittest.cc" />
+    <CustomBuild Include="../../../../sql/sqlite_features_unittest.cc" />
+    <CustomBuild Include="../../../../sql/statement_id_unittest.cc" />
+    <CustomBuild Include="../../../../sql/statement_unittest.cc" />
+    <CustomBuild Include="../../../../sql/test/database_test_peer.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/test/database_test_peer.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/test/paths.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/test/paths.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/test/run_all_unittests.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../sql/test/sql_test_suite.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../sql/test/sql_test_suite.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../sql/transaction_unittest.cc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser\vr\test">
+      <UniqueIdentifier>{5098A6E1-858C-9E25-D191-CFD9FC30F86C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\vr">
+      <UniqueIdentifier>{8711B0F5-E7BD-0F0C-3244-3EE2B87D557A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/vr/test/conditional_skipping.cc">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/vr/test/conditional_skipping.h">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </None>
+    <None Include="../../../../../chrome/browser/vr/test/multi_class_browser_test.h">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/vr/test/webxr_browser_test.cc">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/vr/test/webxr_browser_test.h">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/vr/test/webxr_vr_browser_test.cc">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/vr/test/webxr_vr_browser_test.h">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/vr/test/xr_browser_test.cc">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/vr/test/xr_browser_test.h">
+      <Filter>..\..\chrome\browser\vr\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/vr/webxr_vr_runtimeless_browser_test.cc">
+      <Filter>..\..\chrome\browser\vr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/vr/webxr_vr_spatial_tracking_test.cc">
+      <Filter>..\..\chrome\browser\vr</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

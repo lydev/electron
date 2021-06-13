@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D4270D7-9B7E-EA3A-8ABE-F0A9C97F04A2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gin</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/gin/gin.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../..;../../../../out/x64-debug/gen;../../../../third_party/perfetto/include;../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../out/x64-debug/gen/third_party/perfetto;../../../../third_party/abseil-cpp;../../../../third_party/boringssl/src/include;../../../../third_party/protobuf/src;../../../../out/x64-debug/gen/protoc_out;../../../../v8/include;../../../../out/x64-debug/gen/v8/include;../../../../out/x64-debug/gen/v8/include;../../../../v8/include;../../../../v8/include;../../../../out/x64-debug/gen/v8/include;../../../../third_party/icu/source/common;../../../../third_party/icu/source/i18n;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -DPROTOBUF_ALLOW_DEPRECATED=1 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>GIN_IMPLEMENTATION;DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;USE_V8_CONTEXT_SNAPSHOT;V8_CONTEXT_SNAPSHOT_FILENAME=&quot;v8_context_snapshot.bin&quot;;V8_USE_EXTERNAL_STARTUP_DATA;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../gin/arguments.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/arguments.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/arguments.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/arguments.h" />
+    <CustomBuild Include="../../../../gin/array_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/array_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/array_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/array_buffer.h" />
+    <CustomBuild Include="../../../../gin/context_holder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/context_holder.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/context_holder.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../gin/converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/converter.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/converter.h" />
+    <CustomBuild Include="../../../../gin/cppgc.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/cppgc.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/cppgc.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../gin/data_object_builder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/data_object_builder.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/data_object_builder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/data_object_builder.h" />
+    <CustomBuild Include="../../../../gin/debug_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/debug_impl.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/debug_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/debug_impl.h" />
+    <CustomBuild Include="../../../../gin/dictionary.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/dictionary.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/dictionary.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/dictionary.h" />
+    <CustomBuild Include="../../../../gin/function_template.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/function_template.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/function_template.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/function_template.h" />
+    <None Include="../../../../gin/gin_export.h" />
+    <CustomBuild Include="../../../../gin/gin_features.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/gin_features.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/gin_features.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/gin_features.h" />
+    <None Include="../../../../gin/handle.h" />
+    <CustomBuild Include="../../../../gin/interceptor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/interceptor.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/interceptor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/interceptor.h" />
+    <CustomBuild Include="../../../../gin/isolate_holder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/isolate_holder.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/isolate_holder.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../gin/modules/console.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/console.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/console.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/modules/console.h" />
+    <CustomBuild Include="../../../../gin/object_template_builder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/object_template_builder.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/object_template_builder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/object_template_builder.h" />
+    <CustomBuild Include="../../../../gin/per_context_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/per_context_data.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/per_context_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/per_context_data.h" />
+    <CustomBuild Include="../../../../gin/per_isolate_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/per_isolate_data.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/per_isolate_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/per_isolate_data.h" />
+    <None Include="../../../../gin/public/context_holder.h" />
+    <None Include="../../../../gin/public/cppgc.h" />
+    <None Include="../../../../gin/public/debug.h" />
+    <None Include="../../../../gin/public/gin_embedders.h" />
+    <None Include="../../../../gin/public/isolate_holder.h" />
+    <None Include="../../../../gin/public/v8_idle_task_runner.h" />
+    <None Include="../../../../gin/public/v8_platform.h" />
+    <None Include="../../../../gin/public/wrapper_info.h" />
+    <CustomBuild Include="../../../../gin/runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/runner.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/runner.h" />
+    <CustomBuild Include="../../../../gin/shell_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/shell_runner.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/shell_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/shell_runner.h" />
+    <CustomBuild Include="../../../../gin/try_catch.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/try_catch.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/try_catch.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/try_catch.h" />
+    <CustomBuild Include="../../../../gin/v8_foreground_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/v8_foreground_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/v8_foreground_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/v8_foreground_task_runner.h" />
+    <CustomBuild Include="../../../../gin/v8_foreground_task_runner_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/v8_foreground_task_runner_base.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/v8_foreground_task_runner_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/v8_foreground_task_runner_base.h" />
+    <CustomBuild Include="../../../../gin/v8_foreground_task_runner_with_locker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/v8_foreground_task_runner_with_locker.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/v8_foreground_task_runner_with_locker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/v8_foreground_task_runner_with_locker.h" />
+    <CustomBuild Include="../../../../gin/v8_initializer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/v8_initializer.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/v8_initializer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/v8_initializer.h" />
+    <CustomBuild Include="../../../../gin/v8_isolate_memory_dump_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/v8_isolate_memory_dump_provider.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/v8_isolate_memory_dump_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/v8_isolate_memory_dump_provider.h" />
+    <CustomBuild Include="../../../../gin/v8_platform.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/v8_platform.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/v8_platform.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../gin/v8_shared_memory_dump_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/v8_shared_memory_dump_provider.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/v8_shared_memory_dump_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/v8_shared_memory_dump_provider.h" />
+    <CustomBuild Include="../../../../gin/wrappable.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/wrappable.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/wrappable.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../gin/wrappable.h" />
+    <CustomBuild Include="../../../../gin/wrapper_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/gin/gin/wrapper_info.obj</Command>
+      <Outputs>$(OutDir)obj/gin/gin/wrapper_info.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/gin/gin.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/gin/gin.lib" />
+  </Target>
+</Project>

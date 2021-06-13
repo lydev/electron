@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/client_overview.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/client_overview.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/display_agent.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/display_agent.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/features.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/features.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/icon_bundle.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/icon_bundle.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/impression_detail.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/impression_detail.h" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_background_task_scheduler.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_data.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_data.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_params.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_params.h" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_schedule_service.h" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_scheduler_client.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_scheduler_client_registrar.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_scheduler_client_registrar.h" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_scheduler_constant.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_scheduler_types.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/notification_scheduler_types.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/schedule_params.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/schedule_params.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/schedule_service_utils.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/schedule_service_utils.h" />
+    <CustomBuild Include="../../../../../../../../chrome/browser/notifications/scheduler/public/throttle_config.cc" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/throttle_config.h" />
+    <None Include="../../../../../../../../chrome/browser/notifications/scheduler/public/user_action_handler.h" />
+  </ItemGroup>
+</Project>

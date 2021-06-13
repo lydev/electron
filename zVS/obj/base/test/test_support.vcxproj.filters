@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\base\task\sequence_manager\test">
+      <UniqueIdentifier>{C6F2570B-1DF5-C70E-4E93-7483A2B6D565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\base\task\sequence_manager">
+      <UniqueIdentifier>{8791EE4B-E7B5-0AB2-199A-5CAD8B05C320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\base\task">
+      <UniqueIdentifier>{11EB373F-0D2B-8056-0411-B4AADFE3C908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\base">
+      <UniqueIdentifier>{5C7A9B7B-30FC-0C2D-ED46-DD3338BC6E3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\base\timer">
+      <UniqueIdentifier>{004FCFE9-4248-0CB3-E6C6-C5539F0A439E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="launcher">
+      <UniqueIdentifier>{6D77ED44-2989-9A6C-D09D-A2CAB8604FD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metrics">
+      <UniqueIdentifier>{B7F0558C-A60D-F318-E3B9-BCB57736BE6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\base\trace_event">
+      <UniqueIdentifier>{FCA8FB7B-C894-F9C8-7C78-9D23E548040F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/fake_task.cc">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/fake_task.h">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/mock_time_domain.cc">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/mock_time_domain.h">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/mock_time_message_pump.cc">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/mock_time_message_pump.h">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/sequence_manager_for_test.cc">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/sequence_manager_for_test.h">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/task/sequence_manager/test/test_task_queue.cc">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/task/sequence_manager/test/test_task_queue.h">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </None>
+    <None Include="../../../../../base/task/sequence_manager/test/test_task_time_observer.h">
+      <Filter>..\..\base\task\sequence_manager\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/timer/mock_timer.cc">
+      <Filter>..\..\base\timer</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/timer/mock_timer.h">
+      <Filter>..\..\base\timer</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/test/bind.cc" />
+    <None Include="../../../../../base/test/bind.h" />
+    <CustomBuild Include="../../../../../base/test/copy_only_int.cc" />
+    <None Include="../../../../../base/test/copy_only_int.h" />
+    <None Include="../../../../../base/test/gmock_callback_support.h" />
+    <None Include="../../../../../base/test/gmock_move_support.h" />
+    <CustomBuild Include="../../../../../base/test/gtest_links.cc" />
+    <None Include="../../../../../base/test/gtest_links.h" />
+    <CustomBuild Include="../../../../../base/test/gtest_util.cc" />
+    <None Include="../../../../../base/test/gtest_util.h" />
+    <CustomBuild Include="../../../../../base/test/gtest_xml_unittest_result_printer.cc" />
+    <None Include="../../../../../base/test/gtest_xml_unittest_result_printer.h" />
+    <CustomBuild Include="../../../../../base/test/gtest_xml_util.cc" />
+    <None Include="../../../../../base/test/gtest_xml_util.h" />
+    <CustomBuild Include="../../../../../base/test/icu_test_util.cc" />
+    <None Include="../../../../../base/test/icu_test_util.h" />
+    <CustomBuild Include="../../../../../base/test/launcher/test_result.cc">
+      <Filter>launcher</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_result.h">
+      <Filter>launcher</Filter>
+    </None>
+    <None Include="../../../../../base/test/launcher/test_results_tracker.h">
+      <Filter>launcher</Filter>
+    </None>
+    <None Include="../../../../../base/test/launcher/unit_test_launcher.h">
+      <Filter>launcher</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/test/metrics/histogram_enum_reader.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/test/metrics/histogram_enum_reader.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/test/metrics/histogram_tester.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/test/metrics/histogram_tester.h">
+      <Filter>metrics</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/test/metrics/user_action_tester.cc">
+      <Filter>metrics</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/test/metrics/user_action_tester.h">
+      <Filter>metrics</Filter>
+    </None>
+    <None Include="../../../../../base/test/mock_callback.h" />
+    <CustomBuild Include="../../../../../base/test/mock_devices_changed_observer.cc" />
+    <None Include="../../../../../base/test/mock_devices_changed_observer.h" />
+    <CustomBuild Include="../../../../../base/test/mock_entropy_provider.cc" />
+    <None Include="../../../../../base/test/mock_entropy_provider.h" />
+    <CustomBuild Include="../../../../../base/test/mock_log.cc" />
+    <None Include="../../../../../base/test/mock_log.h" />
+    <None Include="../../../../../base/test/move_only_int.h" />
+    <None Include="../../../../../base/test/multiprocess_test.h" />
+    <CustomBuild Include="../../../../../base/test/null_task_runner.cc" />
+    <None Include="../../../../../base/test/null_task_runner.h" />
+    <CustomBuild Include="../../../../../base/test/perf_log.cc" />
+    <None Include="../../../../../base/test/perf_log.h" />
+    <CustomBuild Include="../../../../../base/test/perf_test_suite.cc" />
+    <None Include="../../../../../base/test/perf_test_suite.h" />
+    <CustomBuild Include="../../../../../base/test/perf_time_logger.cc" />
+    <None Include="../../../../../base/test/perf_time_logger.h" />
+    <CustomBuild Include="../../../../../base/test/power_monitor_test.cc" />
+    <None Include="../../../../../base/test/power_monitor_test.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_command_line.cc" />
+    <None Include="../../../../../base/test/scoped_command_line.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_environment_variable_override.cc" />
+    <None Include="../../../../../base/test/scoped_environment_variable_override.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_feature_list.cc" />
+    <None Include="../../../../../base/test/scoped_feature_list.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_field_trial_list_resetter.cc" />
+    <None Include="../../../../../base/test/scoped_field_trial_list_resetter.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_mock_clock_override.cc" />
+    <None Include="../../../../../base/test/scoped_mock_clock_override.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_mock_time_message_loop_task_runner.cc" />
+    <None Include="../../../../../base/test/scoped_mock_time_message_loop_task_runner.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_path_override.cc" />
+    <None Include="../../../../../base/test/scoped_path_override.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_run_loop_timeout.cc" />
+    <None Include="../../../../../base/test/scoped_run_loop_timeout.h" />
+    <CustomBuild Include="../../../../../base/test/sequenced_task_runner_test_template.cc" />
+    <None Include="../../../../../base/test/sequenced_task_runner_test_template.h" />
+    <CustomBuild Include="../../../../../base/test/simple_test_clock.cc" />
+    <None Include="../../../../../base/test/simple_test_clock.h" />
+    <CustomBuild Include="../../../../../base/test/simple_test_tick_clock.cc" />
+    <None Include="../../../../../base/test/simple_test_tick_clock.h" />
+    <CustomBuild Include="../../../../../base/test/task_environment.cc" />
+    <None Include="../../../../../base/test/task_environment.h" />
+    <CustomBuild Include="../../../../../base/test/task_runner_test_template.cc" />
+    <None Include="../../../../../base/test/task_runner_test_template.h" />
+    <CustomBuild Include="../../../../../base/test/test_discardable_memory_allocator.cc" />
+    <None Include="../../../../../base/test/test_discardable_memory_allocator.h" />
+    <CustomBuild Include="../../../../../base/test/test_file_util.cc" />
+    <None Include="../../../../../base/test/test_file_util.h" />
+    <CustomBuild Include="../../../../../base/test/test_io_thread.cc" />
+    <None Include="../../../../../base/test/test_io_thread.h" />
+    <CustomBuild Include="../../../../../base/test/test_message_loop.cc" />
+    <None Include="../../../../../base/test/test_message_loop.h" />
+    <CustomBuild Include="../../../../../base/test/test_mock_time_task_runner.cc" />
+    <None Include="../../../../../base/test/test_mock_time_task_runner.h" />
+    <CustomBuild Include="../../../../../base/test/test_pending_task.cc" />
+    <None Include="../../../../../base/test/test_pending_task.h" />
+    <CustomBuild Include="../../../../../base/test/test_shared_memory_util.cc" />
+    <None Include="../../../../../base/test/test_shared_memory_util.h" />
+    <CustomBuild Include="../../../../../base/test/test_simple_task_runner.cc" />
+    <None Include="../../../../../base/test/test_simple_task_runner.h" />
+    <CustomBuild Include="../../../../../base/test/test_suite.cc" />
+    <None Include="../../../../../base/test/test_suite.h" />
+    <CustomBuild Include="../../../../../base/test/test_waitable_event.cc" />
+    <None Include="../../../../../base/test/test_waitable_event.h" />
+    <CustomBuild Include="../../../../../base/test/thread_test_helper.cc" />
+    <None Include="../../../../../base/test/thread_test_helper.h" />
+    <CustomBuild Include="../../../../../base/test/values_test_util.cc" />
+    <None Include="../../../../../base/test/values_test_util.h" />
+    <CustomBuild Include="../../../../../base/test/with_feature_override.cc" />
+    <None Include="../../../../../base/test/with_feature_override.h" />
+    <None Include="../../../../../base/test/async_results_test_values_win.h" />
+    <None Include="../../../../../base/test/fake_iasync_operation_win.h" />
+    <CustomBuild Include="../../../../../base/test/scoped_os_info_override_win.cc" />
+    <None Include="../../../../../base/test/scoped_os_info_override_win.h" />
+    <CustomBuild Include="../../../../../base/test/test_file_util_win.cc" />
+    <CustomBuild Include="../../../../../base/test/test_reg_util_win.cc" />
+    <None Include="../../../../../base/test/test_reg_util_win.h" />
+    <CustomBuild Include="../../../../../base/test/test_shortcut_win.cc" />
+    <None Include="../../../../../base/test/test_shortcut_win.h" />
+    <CustomBuild Include="../../../../../base/test/launcher/test_launcher.cc">
+      <Filter>launcher</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_launcher.h">
+      <Filter>launcher</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/test/launcher/test_launcher_test_utils.cc">
+      <Filter>launcher</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_launcher_test_utils.h">
+      <Filter>launcher</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/test/launcher/test_launcher_tracer.cc">
+      <Filter>launcher</Filter>
+    </CustomBuild>
+    <None Include="../../../../../base/test/launcher/test_launcher_tracer.h">
+      <Filter>launcher</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/test/launcher/test_results_tracker.cc">
+      <Filter>launcher</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../base/test/launcher/unit_test_launcher.cc">
+      <Filter>launcher</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../base/test/multiprocess_test.cc" />
+    <None Include="../../../../../base/trace_event/trace_config_memory_test_util.h">
+      <Filter>..\..\base\trace_event</Filter>
+    </None>
+    <CustomBuild Include="../../../../../base/test/trace_event_analyzer.cc" />
+    <None Include="../../../../../base/test/trace_event_analyzer.h" />
+    <CustomBuild Include="../../../../../base/test/trace_test_utils.cc" />
+    <None Include="../../../../../base/test/trace_test_utils.h" />
+    <CustomBuild Include="../../../../../base/test/trace_to_file.cc" />
+    <None Include="../../../../../base/test/trace_to_file.h" />
+  </ItemGroup>
+</Project>

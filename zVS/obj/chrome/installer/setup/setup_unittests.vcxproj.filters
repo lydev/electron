@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/installer/setup/archive_patch_helper_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/downgrade_cleanup_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/install_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/install_worker_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/installer_state_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/memory_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/progress_calculator_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/run_all_unittests.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/setup_install_details_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/setup_singleton_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/setup_util_unittest.cc" />
+    <None Include="../../../../../../chrome/installer/setup/setup_util_unittest.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/update_active_setup_version_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/user_experiment_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/user_hive_visitor_unittest.cc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/common/profiler/process_type_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/common/profiler/thread_profiler_platform_configuration_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/common/profiler/thread_profiler_unittest.cc" />
+  </ItemGroup>
+</Project>

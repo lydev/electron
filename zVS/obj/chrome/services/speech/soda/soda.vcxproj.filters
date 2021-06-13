@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="../../../../../../../chrome/services/speech/soda/soda_async_impl.h" />
+    <CustomBuild Include="../../../../../../../chrome/services/speech/soda/soda_client.cc" />
+    <None Include="../../../../../../../chrome/services/speech/soda/soda_client.h" />
+    <None Include="../../../../../../../chrome/services/speech/soda/soda_test_paths.h" />
+  </ItemGroup>
+</Project>

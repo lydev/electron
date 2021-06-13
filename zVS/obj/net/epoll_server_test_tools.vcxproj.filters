@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tools\epoll_server\platform\impl">
+      <UniqueIdentifier>{7988A3BC-13E9-CEE7-1D9F-FE14235861A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\epoll_server\platform">
+      <UniqueIdentifier>{5F1768F2-C488-0857-D879-25201B316900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\epoll_server">
+      <UniqueIdentifier>{A76C3BC2-4EC4-6E3E-EA1C-9BCE5174C50B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{0E9715BA-57B3-F23F-1EED-56699DC72D4B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../net/tools/epoll_server/platform/impl/epoll_address_test_utils_impl.h">
+      <Filter>tools\epoll_server\platform\impl</Filter>
+    </None>
+    <None Include="../../../../net/tools/epoll_server/platform/impl/epoll_expect_bug_impl.h">
+      <Filter>tools\epoll_server\platform\impl</Filter>
+    </None>
+    <None Include="../../../../net/tools/epoll_server/platform/impl/epoll_test_impl.h">
+      <Filter>tools\epoll_server\platform\impl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

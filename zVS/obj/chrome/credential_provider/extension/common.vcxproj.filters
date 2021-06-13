@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/extension/extension_strings.cc" />
+    <None Include="../../../../../../chrome/credential_provider/extension/extension_strings.h" />
+    <CustomBuild Include="../../../../../../chrome/credential_provider/extension/extension_utils.cc" />
+    <None Include="../../../../../../chrome/credential_provider/extension/extension_utils.h" />
+    <CustomBuild Include="../../../../../../chrome/credential_provider/extension/os_service_manager.cc" />
+    <None Include="../../../../../../chrome/credential_provider/extension/os_service_manager.h" />
+    <None Include="../../../../../../chrome/credential_provider/extension/scoped_handle.h" />
+  </ItemGroup>
+</Project>

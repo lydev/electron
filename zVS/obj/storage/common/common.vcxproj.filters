@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="database">
+      <UniqueIdentifier>{B0D1894D-D63D-4B6C-13AA-F5056C64815C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file_system">
+      <UniqueIdentifier>{6EE23EE1-E91B-066A-17B0-C64CC487E37C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quota">
+      <UniqueIdentifier>{99A10B2F-75AB-049A-0ADA-0F05A33C2424}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../storage/common/database/database_identifier.cc">
+      <Filter>database</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/common/database/database_identifier.h">
+      <Filter>database</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/common/file_system/file_system_info.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/common/file_system/file_system_info.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/common/file_system/file_system_mount_option.h">
+      <Filter>file_system</Filter>
+    </None>
+    <None Include="../../../../../storage/common/file_system/file_system_types.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/common/file_system/file_system_util.cc">
+      <Filter>file_system</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/common/file_system/file_system_util.h">
+      <Filter>file_system</Filter>
+    </None>
+    <CustomBuild Include="../../../../../storage/common/quota/padding_key.cc">
+      <Filter>quota</Filter>
+    </CustomBuild>
+    <None Include="../../../../../storage/common/quota/padding_key.h">
+      <Filter>quota</Filter>
+    </None>
+  </ItemGroup>
+</Project>

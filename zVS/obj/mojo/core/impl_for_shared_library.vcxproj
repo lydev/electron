@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19FC0C4F-8D74-65B4-1E5A-40AD371E2249}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>impl_for_shared_library</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/mojo/core/impl_for_shared_library.stamp</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../..;../../../../../out/x64-debug/gen;../../../../../third_party/perfetto/include;../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../third_party/abseil-cpp;../../../../../third_party/boringssl/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/protoc_out;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wshadow /Ob2 /Oy- /Zc:inline /Gw -DPROTOBUF_ALLOW_DEPRECATED=1 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4324;4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>MOJO_CORE_SHARED_LIBRARY;DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="../../../../../mojo/core/atomic_flag.h" />
+    <None Include="../../../../../mojo/core/broker.h" />
+    <CustomBuild Include="../../../../../mojo/core/channel.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/channel.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/channel.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/configuration.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/configuration.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/configuration.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/connection_params.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/connection_params.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/connection_params.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/core.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/core.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/core.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/data_pipe_consumer_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/data_pipe_consumer_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/data_pipe_consumer_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/data_pipe_control_message.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/data_pipe_control_message.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/data_pipe_control_message.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/data_pipe_producer_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/data_pipe_producer_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/data_pipe_producer_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/dispatcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/entrypoints.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/entrypoints.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/entrypoints.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/handle_table.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/handle_table.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/handle_table.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/invitation_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/invitation_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/invitation_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/message_pipe_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/message_pipe_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/message_pipe_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/node_channel.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/node_channel.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/node_channel.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/node_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/node_controller.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/node_controller.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/platform_handle_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/platform_handle_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/platform_handle_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/platform_handle_in_transit.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/platform_handle_in_transit.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/platform_handle_in_transit.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../mojo/core/platform_handle_in_transit.h" />
+    <CustomBuild Include="../../../../../mojo/core/platform_handle_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/platform_handle_utils.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/platform_handle_utils.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/platform_shared_memory_mapping.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/platform_shared_memory_mapping.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/platform_shared_memory_mapping.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/request_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/request_context.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/request_context.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/shared_buffer_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/shared_buffer_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/shared_buffer_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/user_message_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/user_message_impl.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/user_message_impl.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/watch.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/watch.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/watch.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../mojo/core/watch.h" />
+    <CustomBuild Include="../../../../../mojo/core/watcher_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/watcher_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/watcher_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../mojo/core/watcher_dispatcher.h" />
+    <CustomBuild Include="../../../../../mojo/core/watcher_set.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/watcher_set.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/watcher_set.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../mojo/core/watcher_set.h" />
+    <CustomBuild Include="../../../../../mojo/core/broker_host.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/broker_host.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/broker_host.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../mojo/core/broker_host.h" />
+    <CustomBuild Include="../../../../../mojo/core/broker_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/broker_win.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/broker_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../mojo/core/channel_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library/channel_win.obj</Command>
+      <Outputs>$(OutDir)obj/mojo/core/impl_for_shared_library/channel_win.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/mojo/core/impl_for_shared_library.stamp" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/mojo/core/impl_for_shared_library.stamp" />
+  </Target>
+</Project>

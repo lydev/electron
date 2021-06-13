@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\out\x64-debug\gen\base\tracing\protos\grit">
+      <UniqueIdentifier>{6C4871E2-5BA4-8C59-3FD8-06ADC2763D18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\base\tracing\protos">
+      <UniqueIdentifier>{588CB77A-4AF7-B0C1-CB62-363C3EFF415F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\base\tracing">
+      <UniqueIdentifier>{9AAC06E7-F7E7-94AD-E80E-4384E47E73CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\base">
+      <UniqueIdentifier>{D0DF44E5-839A-7E7C-C305-2F634E25DBC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{96638BD7-4C41-4F0D-A035-4B0D220C45C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug">
+      <UniqueIdentifier>{8E0664AF-844A-8DAE-2839-49242DA467FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out">
+      <UniqueIdentifier>{50BC2BDD-CE9C-16A8-60AF-198B16301065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../out/x64-debug/gen/base/tracing/protos/grit/tracing_proto_resources.h">
+      <Filter>..\..\..\out\x64-debug\gen\base\tracing\protos\grit</Filter>
+    </None>
+  </ItemGroup>
+</Project>

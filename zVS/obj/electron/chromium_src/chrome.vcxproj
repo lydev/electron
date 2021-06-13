@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F14A2144-243C-504C-6404-42D681DAD1D1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>chrome</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/electron/chromium_src/chrome.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../..;../../../../../out/x64-debug/gen;../../../../../third_party/perfetto/include;../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../third_party/dawn/src/include;../../../../../third_party/libwebp/src;../../../../../third_party/libyuv/include;../../../../../third_party/jsoncpp/source/include;../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../third_party/khronos;../../../../../gpu;../../../../../third_party/wtl/include;../../../../../third_party/abseil-cpp;../../../../../third_party/boringssl/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/protoc_out;../../../../../third_party/ced/src;../../../../../third_party/icu/source/common;../../../../../third_party/icu/source/i18n;../../../../../third_party/skia;../../../../../third_party/libgifcodec;../../../../../third_party/vulkan/include;../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../net/third_party/quiche/overrides;../../../../../net/third_party/quiche/src/common/platform/default;../../../../../net/third_party/quiche/src;../../../../../third_party/webrtc_overrides;../../../../../third_party/webrtc;../../../../../out/x64-debug/gen/third_party/webrtc;../../../../../third_party/mesa_headers;../../../../../third_party/libwebm/source;../../../../../third_party/leveldatabase;../../../../../third_party/leveldatabase/src;../../../../../third_party/leveldatabase/src/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../out/x64-debug/gen/third_party/metrics_proto;../../../../../third_party/zlib;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen/components/policy/proto;../../../../../out/x64-debug/gen/third_party/private_membership/src;../../../../../out/x64-debug/gen/third_party/shell-encryption/src;../../../../../out/x64-debug/gen/components/policy/proto;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/re2/src;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-deprecated-declarations -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;WEBP_EXTERN=extern;USE_EGL;VK_USE_PLATFORM_WIN32_KHR;_WTL_NO_AUTOMATIC_NAMESPACE;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;SK_UNTIL_CRBUG_1187654_IS_FIXED;SK_CODEC_DECODES_PNG;SK_CODEC_DECODES_WEBP;SK_ENCODE_PNG;SK_ENCODE_WEBP;SK_USER_CONFIG_HEADER=&quot;../../skia/config/SkUserConfig.h&quot;;SK_GL;SK_CODEC_DECODES_JPEG;SK_ENCODE_JPEG;SK_USE_LIBGIFCODEC;SK_VULKAN_HEADER=&quot;../../skia/config/SkVulkanConfig.h&quot;;SK_VULKAN=1;SK_DAWN;SK_SUPPORT_GPU=1;SK_GPU_WORKAROUNDS_HEADER=&quot;gpu/config/gpu_driver_bug_workaround_autogen.h&quot;;GR_GL_FUNCTION_TYPE=__stdcall;VK_USE_PLATFORM_WIN32_KHR;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;V8_USE_EXTERNAL_STARTUP_DATA;WEBRTC_ENABLE_AVX2;RTC_ENABLE_WIN_WGC;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0;WEBRTC_CHROMIUM_BUILD;WEBRTC_WIN;ABSL_ALLOCATOR_NOTHROW=1;WEBRTC_USE_BUILTIN_ISAC_FIX=0;WEBRTC_USE_BUILTIN_ISAC_FLOAT=1;WEBRTC_HAVE_SCTP;NO_MAIN_THREAD_WRAPPING;LEVELDB_PLATFORM_CHROMIUM=1;LEVELDB_PLATFORM_CHROMIUM=1;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/accessibility/accessibility_ui.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/accessibility_ui.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/accessibility_ui.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/accessibility/accessibility_ui.h" />
+    <CustomBuild Include="../../../../../chrome/browser/browser_process.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/browser_process.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/browser_process.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/browser_process.h" />
+    <CustomBuild Include="../../../../../chrome/browser/devtools/devtools_contents_resizing_strategy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/devtools_contents_resizing_strategy.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/devtools_contents_resizing_strategy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/devtools/devtools_contents_resizing_strategy.h" />
+    <CustomBuild Include="../../../../../chrome/browser/devtools/devtools_embedder_message_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/devtools_embedder_message_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/devtools_embedder_message_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/devtools/devtools_embedder_message_dispatcher.h" />
+    <CustomBuild Include="../../../../../chrome/browser/devtools/devtools_file_system_indexer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/devtools_file_system_indexer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/devtools_file_system_indexer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/devtools/devtools_file_system_indexer.h" />
+    <CustomBuild Include="../../../../../chrome/browser/extensions/global_shortcut_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/global_shortcut_listener.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/global_shortcut_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/global_shortcut_listener.h" />
+    <CustomBuild Include="../../../../../chrome/browser/icon_loader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/icon_loader.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/icon_loader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/icon_loader.h" />
+    <CustomBuild Include="../../../../../chrome/browser/icon_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/icon_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/icon_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/icon_manager.h" />
+    <CustomBuild Include="../../../../../chrome/browser/net/chrome_mojo_proxy_resolver_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/chrome_mojo_proxy_resolver_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/chrome_mojo_proxy_resolver_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/net/chrome_mojo_proxy_resolver_factory.h" />
+    <CustomBuild Include="../../../../../chrome/browser/net/proxy_config_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/proxy_config_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/proxy_config_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/net/proxy_config_monitor.h" />
+    <CustomBuild Include="../../../../../chrome/browser/net/proxy_service_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/proxy_service_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/proxy_service_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/net/proxy_service_factory.h" />
+    <CustomBuild Include="../../../../../chrome/browser/predictors/preconnect_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/preconnect_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/preconnect_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/predictors/preconnect_manager.h" />
+    <CustomBuild Include="../../../../../chrome/browser/predictors/predictors_features.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/predictors_features.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/predictors_features.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/predictors/predictors_features.h" />
+    <CustomBuild Include="../../../../../chrome/browser/predictors/proxy_lookup_client_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/proxy_lookup_client_impl.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/proxy_lookup_client_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/predictors/proxy_lookup_client_impl.h" />
+    <CustomBuild Include="../../../../../chrome/browser/predictors/resolve_host_client_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/resolve_host_client_impl.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/resolve_host_client_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/predictors/resolve_host_client_impl.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/autofill_popup_view_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/autofill_popup_view_utils.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/autofill_popup_view_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/autofill/autofill_popup_view_utils.h" />
+    <CustomBuild Include="../../../../../extensions/browser/app_window/size_constraints.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/size_constraints.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/size_constraints.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../extensions/browser/app_window/size_constraints.h" />
+    <CustomBuild Include="../../../../../chrome/browser/extensions/global_shortcut_listener_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/global_shortcut_listener_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/global_shortcut_listener_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/global_shortcut_listener_win.h" />
+    <CustomBuild Include="../../../../../chrome/browser/icon_loader_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/icon_loader_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/icon_loader_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/win/chrome_process_finder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/chrome_process_finder.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/chrome_process_finder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/win/chrome_process_finder.h" />
+    <CustomBuild Include="../../../../../chrome/child/v8_crashpad_support_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/v8_crashpad_support_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/v8_crashpad_support_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/child/v8_crashpad_support_win.h" />
+    <CustomBuild Include="../../../../../chrome/browser/win/icon_reader_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/icon_reader_service.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/icon_reader_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/win/icon_reader_service.h" />
+    <None Include="../../../../../chrome/browser/media/webrtc/desktop_media_list.h" />
+    <CustomBuild Include="../../../../../chrome/browser/media/webrtc/desktop_media_list_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/desktop_media_list_base.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/desktop_media_list_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/media/webrtc/desktop_media_list_base.h" />
+    <None Include="../../../../../chrome/browser/media/webrtc/desktop_media_list_observer.h" />
+    <CustomBuild Include="../../../../../chrome/browser/media/webrtc/native_desktop_media_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/native_desktop_media_list.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/native_desktop_media_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/media/webrtc/native_desktop_media_list.h" />
+    <None Include="../../../../../chrome/browser/media/webrtc/window_icon_util.h" />
+    <CustomBuild Include="../../../../../chrome/browser/platform_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/platform_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/platform_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/platform_util.h" />
+    <None Include="../../../../../chrome/browser/ui/browser_dialogs.h" />
+    <None Include="../../../../../chrome/browser/ui/color_chooser.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/eye_dropper.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/eye_dropper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/eye_dropper_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/eye_dropper_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper_view.h" />
+    <CustomBuild Include="../../../../../chrome/browser/platform_util_aura.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/platform_util_aura.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/platform_util_aura.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/eye_dropper/eye_dropper_view_aura.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/eye_dropper_view_aura.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/eye_dropper_view_aura.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/media/webrtc/window_icon_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/window_icon_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/window_icon_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/color_chooser_dialog.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/color_chooser_dialog.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/color_chooser_dialog.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/color_chooser_dialog.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/color_chooser_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/color_chooser_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/color_chooser_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/printing/print_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/print_job.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/print_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/print_job.h" />
+    <CustomBuild Include="../../../../../chrome/browser/printing/print_job_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/print_job_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/print_job_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/print_job_manager.h" />
+    <CustomBuild Include="../../../../../chrome/browser/printing/print_job_worker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/print_job_worker.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/print_job_worker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/print_job_worker.h" />
+    <CustomBuild Include="../../../../../chrome/browser/printing/print_view_manager_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/print_view_manager_base.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/print_view_manager_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/print_view_manager_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/printing/printer_query.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/printer_query.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/printer_query.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/printer_query.h" />
+    <CustomBuild Include="../../../../../chrome/browser/printing/printing_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/printing_service.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/printing_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/printing_service.h" />
+    <CustomBuild Include="../../../../../chrome/browser/printing/pdf_to_emf_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/pdf_to_emf_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/pdf_to_emf_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/printing/pdf_to_emf_converter.h" />
+    <CustomBuild Include="../../../../../chrome/utility/printing_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/printing_handler.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/printing_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/utility/printing_handler.h" />
+    <CustomBuild Include="../../../../../chrome/browser/picture_in_picture/picture_in_picture_window_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/picture_in_picture_window_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/picture_in_picture_window_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/picture_in_picture/picture_in_picture_window_manager.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/back_to_tab_image_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/back_to_tab_image_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/back_to_tab_image_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/back_to_tab_image_button.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/back_to_tab_label_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/back_to_tab_label_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/back_to_tab_label_button.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/close_image_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/close_image_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/close_image_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/close_image_button.h" />
+    <None Include="../../../../../chrome/browser/ui/views/overlay/constants.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/hang_up_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/hang_up_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/hang_up_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/hang_up_button.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/overlay_window_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/overlay_window_views.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/overlay_window_views.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/overlay_window_views.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/playback_image_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/playback_image_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/playback_image_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/playback_image_button.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/resize_handle_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/resize_handle_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/resize_handle_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/resize_handle_button.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/skip_ad_label_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/skip_ad_label_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/skip_ad_label_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/skip_ad_label_button.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/toggle_camera_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/toggle_camera_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/toggle_camera_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/toggle_camera_button.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/toggle_microphone_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/toggle_microphone_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/toggle_microphone_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/toggle_microphone_button.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/overlay/track_image_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/track_image_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/track_image_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/overlay/track_image_button.h" />
+    <CustomBuild Include="../../../../../chrome/browser/extensions/chrome_url_request_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/chrome_url_request_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/chrome_url_request_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/chrome_url_request_util.h" />
+    <CustomBuild Include="../../../../../chrome/browser/plugins/plugin_response_interceptor_url_loader_throttle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/plugin_response_interceptor_url_loader_throttle.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/plugin_response_interceptor_url_loader_throttle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/plugins/plugin_response_interceptor_url_loader_throttle.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/extension_hooks_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/extension_hooks_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/extension_hooks_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/extension_hooks_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/extensions/tabs_hooks_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/tabs_hooks_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/tabs_hooks_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/extensions/tabs_hooks_delegate.h" />
+    <CustomBuild Include="../../../../../chrome/browser/pdf/pdf_extension_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/pdf_extension_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/pdf_extension_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/pdf/pdf_extension_util.h" />
+    <CustomBuild Include="../../../../../chrome/renderer/pepper/chrome_pdf_print_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/chrome_pdf_print_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/chrome_pdf_print_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/renderer/pepper/chrome_pdf_print_client.h" />
+    <None Include="../../../../../chrome/browser/hang_monitor/hang_crash_dump.h" />
+    <CustomBuild Include="../../../../../chrome/browser/hang_monitor/hang_crash_dump_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome/hang_crash_dump_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/chromium_src/chrome/hang_crash_dump_win.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/electron/chromium_src/chrome.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/electron/chromium_src/chrome.lib" />
+  </Target>
+</Project>

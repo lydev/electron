@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{2F6606DF-76DD-82A1-CF84-E87632C76713}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/array_traits_web_vector.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/array_traits_wtf_vector.h" />
+    <CustomBuild Include="../../../../../../../mojo/public/cpp/bindings/lib/string_traits_wtf.cc">
+      <Filter>lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/wtf_clone_equals_util.h">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/wtf_hash_util.h">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/lib/wtf_serialization.h">
+      <Filter>lib</Filter>
+    </None>
+    <None Include="../../../../../../../mojo/public/cpp/bindings/map_traits_wtf_hash_map.h" />
+    <None Include="../../../../../../../mojo/public/cpp/bindings/string_traits_wtf.h" />
+  </ItemGroup>
+</Project>

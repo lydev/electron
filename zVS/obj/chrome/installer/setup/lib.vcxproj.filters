@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/installer/setup/chromium_behaviors.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/archive_patch_helper.cc" />
+    <None Include="../../../../../../chrome/installer/setup/archive_patch_helper.h" />
+    <None Include="../../../../../../chrome/installer/setup/brand_behaviors.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/downgrade_cleanup.cc" />
+    <None Include="../../../../../../chrome/installer/setup/downgrade_cleanup.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/install.cc" />
+    <None Include="../../../../../../chrome/installer/setup/install.h" />
+    <None Include="../../../../../../chrome/installer/setup/install_params.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/install_worker.cc" />
+    <None Include="../../../../../../chrome/installer/setup/install_worker.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/installer_crash_reporter_client.cc" />
+    <None Include="../../../../../../chrome/installer/setup/installer_crash_reporter_client.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/installer_crash_reporting.cc" />
+    <None Include="../../../../../../chrome/installer/setup/installer_crash_reporting.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/installer_state.cc" />
+    <None Include="../../../../../../chrome/installer/setup/installer_state.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/last_breaking_installer_version.cc" />
+    <None Include="../../../../../../chrome/installer/setup/last_breaking_installer_version.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/launch_chrome.cc" />
+    <None Include="../../../../../../chrome/installer/setup/launch_chrome.h" />
+    <None Include="../../../../../../chrome/installer/setup/modify_params.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/progress_calculator.cc" />
+    <None Include="../../../../../../chrome/installer/setup/progress_calculator.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/setup_constants.cc" />
+    <None Include="../../../../../../chrome/installer/setup/setup_constants.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/setup_install_details.cc" />
+    <None Include="../../../../../../chrome/installer/setup/setup_install_details.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/setup_singleton.cc" />
+    <None Include="../../../../../../chrome/installer/setup/setup_singleton.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/setup_util.cc" />
+    <None Include="../../../../../../chrome/installer/setup/setup_util.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/update_active_setup_version_work_item.cc" />
+    <None Include="../../../../../../chrome/installer/setup/update_active_setup_version_work_item.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/user_experiment.cc" />
+    <None Include="../../../../../../chrome/installer/setup/user_experiment.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/setup/user_hive_visitor.cc" />
+    <None Include="../../../../../../chrome/installer/setup/user_hive_visitor.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="content_settings">
+      <UniqueIdentifier>{9733FC72-9676-7DD7-1B38-5825B7FABD95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="find_bar">
+      <UniqueIdentifier>{B42BC083-893B-455F-DCD3-F5C66AFFC09C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="login">
+      <UniqueIdentifier>{4B159BF5-E1C9-8F52-06C3-74655F915DD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="passwords\settings">
+      <UniqueIdentifier>{44EE9ACD-FD86-8E02-9F40-DD3ADF7689CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="passwords">
+      <UniqueIdentifier>{4984F87A-C350-42E1-528F-EBD731498A59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="toolbar">
+      <UniqueIdentifier>{F5B143ED-094A-27D3-9F6A-CBFC57AF5CF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extensions">
+      <UniqueIdentifier>{2EC5F4E1-6C71-BB4B-AD41-49D0D436F6EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="views\extensions">
+      <UniqueIdentifier>{59BF8998-DDC2-8D81-C0E5-43B13A0D00C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="views">
+      <UniqueIdentifier>{F7525B47-5D8B-47B5-06F1-E33F06F97944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="views\payments">
+      <UniqueIdentifier>{06C57709-A3E9-134B-C78B-70D6D836E29F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="views\webauthn">
+      <UniqueIdentifier>{A4430C02-0B2E-62A4-8DA7-5DB83E2D5106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exclusive_access">
+      <UniqueIdentifier>{ABCA9636-9FFE-9005-5A21-AD3559EA9D49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="global_error">
+      <UniqueIdentifier>{093D5D9A-D682-14DB-0A04-2D444EF1B130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="global_media_controls">
+      <UniqueIdentifier>{9AC51D52-9256-2D32-42BB-0323DDD58DEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hats">
+      <UniqueIdentifier>{5EA14FAB-90D4-A8BE-64FE-D2C856E3A250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tabs">
+      <UniqueIdentifier>{EABE868A-C8DB-1E90-7E72-D49C1DEC3CBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webui\help">
+      <UniqueIdentifier>{8C7A9181-9AF0-E559-6E51-2C1E944C4985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="webui">
+      <UniqueIdentifier>{47E2472A-B126-2A4D-5CEA-5770644CECAD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/content_settings/fake_owner.cc">
+      <Filter>content_settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/content_settings/fake_owner.h">
+      <Filter>content_settings</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/ui/find_bar/find_bar_host_unittest_util.h">
+      <Filter>find_bar</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/login/login_handler_test_utils.cc">
+      <Filter>login</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/login/login_handler_test_utils.h">
+      <Filter>login</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/passwords/settings/password_ui_view_mock.cc">
+      <Filter>passwords\settings</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/passwords/settings/password_ui_view_mock.h">
+      <Filter>passwords\settings</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/toolbar/test_toolbar_action_view_controller.cc">
+      <Filter>toolbar</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/toolbar/test_toolbar_action_view_controller.h">
+      <Filter>toolbar</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/toolbar/test_toolbar_actions_bar_bubble_delegate.cc">
+      <Filter>toolbar</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/toolbar/test_toolbar_actions_bar_bubble_delegate.h">
+      <Filter>toolbar</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/ui/extensions/extension_action_test_helper.h">
+      <Filter>extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/views/extensions/extensions_menu_test_util.cc">
+      <Filter>views\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/views/extensions/extensions_menu_test_util.h">
+      <Filter>views\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/views/find_bar_host_unittest_util_views.cc">
+      <Filter>views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/views/payments/test_chrome_payment_request_delegate.cc">
+      <Filter>views\payments</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/views/payments/test_chrome_payment_request_delegate.h">
+      <Filter>views\payments</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/views/payments/test_secure_payment_confirmation_payment_request_delegate.cc">
+      <Filter>views\payments</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/views/payments/test_secure_payment_confirmation_payment_request_delegate.h">
+      <Filter>views\payments</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/views/webauthn/authenticator_request_dialog_view_test_api.cc">
+      <Filter>views\webauthn</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/views/webauthn/authenticator_request_dialog_view_test_api.h">
+      <Filter>views\webauthn</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/views/extensions/extension_action_test_helper_aura.cc">
+      <Filter>views\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/exclusive_access/exclusive_access_test.cc">
+      <Filter>exclusive_access</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/exclusive_access/exclusive_access_test.h">
+      <Filter>exclusive_access</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/exclusive_access/fullscreen_controller_state_test.cc">
+      <Filter>exclusive_access</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/exclusive_access/fullscreen_controller_state_test.h">
+      <Filter>exclusive_access</Filter>
+    </None>
+    <None Include="../../../../../../chrome/browser/ui/exclusive_access/fullscreen_controller_state_tests.h">
+      <Filter>exclusive_access</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/global_error/global_error_waiter.cc">
+      <Filter>global_error</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/global_error/global_error_waiter.h">
+      <Filter>global_error</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/global_media_controls/test_helper.cc">
+      <Filter>global_media_controls</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/global_media_controls/test_helper.h">
+      <Filter>global_media_controls</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/hats/mock_hats_service.cc">
+      <Filter>hats</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/hats/mock_hats_service.h">
+      <Filter>hats</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/passwords/credential_manager_dialog_controller_mock.cc">
+      <Filter>passwords</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/passwords/credential_manager_dialog_controller_mock.h">
+      <Filter>passwords</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/passwords/manage_passwords_ui_controller_mock.cc">
+      <Filter>passwords</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/passwords/manage_passwords_ui_controller_mock.h">
+      <Filter>passwords</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/passwords/passwords_leak_dialog_delegate_mock.cc">
+      <Filter>passwords</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/passwords/passwords_leak_dialog_delegate_mock.h">
+      <Filter>passwords</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/passwords/passwords_model_delegate_mock.cc">
+      <Filter>passwords</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/passwords/passwords_model_delegate_mock.h">
+      <Filter>passwords</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/tabs/tab_ukm_test_helper.cc">
+      <Filter>tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/tabs/tab_ukm_test_helper.h">
+      <Filter>tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/test/test_confirm_bubble_model.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/test/test_confirm_bubble_model.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/browser/ui/webui/help/test_version_updater.cc">
+      <Filter>webui\help</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/browser/ui/webui/help/test_version_updater.h">
+      <Filter>webui\help</Filter>
+    </None>
+  </ItemGroup>
+</Project>

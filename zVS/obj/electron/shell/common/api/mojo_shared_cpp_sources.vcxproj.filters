@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\electron\shell\common\api">
+      <UniqueIdentifier>{97F621EB-93C8-216E-FD9C-613C2EA66B1E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\electron\shell\common">
+      <UniqueIdentifier>{BB38B211-B0E4-44B9-0B9D-B359E07DD3F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\electron\shell">
+      <UniqueIdentifier>{1D46F281-B82D-2808-AE30-1392DFAC07C6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\electron">
+      <UniqueIdentifier>{9847B998-E191-4FD4-EDF2-C21232FDF836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../out/x64-debug/gen/electron/shell/common/api/api.mojom-params-data.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\electron\shell\common\api</Filter>
+    </None>
+    <None Include="../../../../../../../out/x64-debug/gen/electron/shell/common/api/api.mojom-shared-internal.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\electron\shell\common\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/electron/shell/common/api/api.mojom-shared.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\electron\shell\common\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/electron/shell/common/api/api.mojom-shared.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\electron\shell\common\api</Filter>
+    </None>
+  </ItemGroup>
+</Project>

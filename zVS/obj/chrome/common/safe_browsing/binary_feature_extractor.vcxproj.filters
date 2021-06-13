@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/common/safe_browsing/binary_feature_extractor.cc" />
+    <None Include="../../../../../../chrome/common/safe_browsing/binary_feature_extractor.h" />
+    <CustomBuild Include="../../../../../../chrome/common/safe_browsing/binary_feature_extractor_win.cc" />
+  </ItemGroup>
+</Project>

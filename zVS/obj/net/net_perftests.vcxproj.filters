@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{530671C4-A49E-2227-1185-B142528140EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cookies">
+      <UniqueIdentifier>{7006C930-118C-1DF7-416B-E6000CD80D4F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disk_cache">
+      <UniqueIdentifier>{0E02E725-0B88-0DE2-EF73-E5C9A28DD664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras\sqlite">
+      <UniqueIdentifier>{FB7E8DA0-A37F-E1EF-485A-CC27D016A111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extras">
+      <UniqueIdentifier>{92E74AEE-E4AB-2B45-93D9-CA3E6F89B473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{73FFBDEA-29C2-4F50-E6C0-5FE466B20A7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="url_request">
+      <UniqueIdentifier>{30874AF5-9E1A-E818-4268-C74283DD1CE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="websockets">
+      <UniqueIdentifier>{CAB45EC4-AB0D-EF85-94DD-E12E8C14B8B5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../net/base/mime_sniffer_perftest.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/cookies/cookie_monster_perftest.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/disk_cache/disk_cache_perftest.cc">
+      <Filter>disk_cache</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/extras/sqlite/sqlite_persistent_cookie_store_perftest.cc">
+      <Filter>extras\sqlite</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/socket/udp_socket_perftest.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/url_request/url_request_quic_perftest.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/websockets/websocket_frame_perftest.cc">
+      <Filter>websockets</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

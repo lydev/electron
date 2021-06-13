@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\bookmarks">
+      <UniqueIdentifier>{16B58AA1-477E-CBE0-9907-AC1C433C1669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui">
+      <UniqueIdentifier>{61B2DD11-C91D-B9B4-009F-C11F035B4515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data">
+      <UniqueIdentifier>{62A5768D-34A9-41FA-A806-D6B2598B5F31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test">
+      <UniqueIdentifier>{D8783CE9-1F6B-DCAD-F003-69574543E277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{6020ED40-B7B9-6AC5-7C58-D39617BE58E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\cr_elements">
+      <UniqueIdentifier>{1F7D013F-EC63-59A5-B31F-C886F8FB0DA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\extensions">
+      <UniqueIdentifier>{F9F41FB9-1188-FE78-BCC3-E910B288060E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\history">
+      <UniqueIdentifier>{7423AED0-BD6B-5A5F-E1C7-0131F942178E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\print_preview">
+      <UniqueIdentifier>{4792596E-C2A3-0FA2-3663-25439DACDCC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\settings">
+      <UniqueIdentifier>{E2CC5E4C-9D44-6664-71C2-CC8182293F44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\tab_search">
+      <UniqueIdentifier>{6BF4552D-4C45-02FC-7378-59E4813C3A8F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\signin">
+      <UniqueIdentifier>{DCADFCE3-9666-D308-AABD-CCD8A2969B60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/bookmarks/bookmarks_focus_test-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\bookmarks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/cr_elements/cr_elements_focus_test-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\cr_elements</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/cr_focus_row_behavior_interactive_test-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/extensions/cr_extensions_interactive_ui_tests-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/history/history_focus_test-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\history</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/print_preview/print_preview_interactive_ui_tests-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\print_preview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/settings/cr_settings_interactive_ui_tests-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/tab_search/tab_search_interactive_ui_tests-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\tab_search</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/signin/local_profile_customization_interactive_ui_test-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\signin</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

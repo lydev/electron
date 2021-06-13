@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/browser/ui/color/chrome_color_mixers.cc" />
+    <None Include="../../../../../../../chrome/browser/ui/color/chrome_color_mixers.h" />
+    <CustomBuild Include="../../../../../../../chrome/browser/ui/color/omnibox_color_mixers.cc" />
+    <None Include="../../../../../../../chrome/browser/ui/color/omnibox_color_mixers.h" />
+  </ItemGroup>
+</Project>

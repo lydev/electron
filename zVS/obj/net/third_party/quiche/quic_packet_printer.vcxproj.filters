@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src\quic\tools">
+      <UniqueIdentifier>{6FB26E81-15F9-3C4E-F878-B17A7677B2BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\quic">
+      <UniqueIdentifier>{565CA7AD-1F78-D2D2-8E3F-4DBEEDB0439A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{C5D85D62-2D1F-BBD0-3190-3BB2E70B1772}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../net/third_party/quiche/src/quic/tools/quic_packet_printer_bin.cc">
+      <Filter>src\quic\tools</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

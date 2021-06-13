@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/common/engine_digest_verifier.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/common/engine_digest_verifier.h" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/common/engine_result_codes.h" />
+    <CustomBuild Include="../../../../../../../chrome/chrome_cleaner/engines/common/registry_util.cc" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/common/registry_util.h" />
+    <None Include="../../../../../../../chrome/chrome_cleaner/engines/common/sandbox_error_code.h" />
+  </ItemGroup>
+</Project>

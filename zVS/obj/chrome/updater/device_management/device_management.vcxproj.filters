@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/updater/device_management/dm_cached_policy_info.cc" />
+    <None Include="../../../../../../chrome/updater/device_management/dm_cached_policy_info.h" />
+    <CustomBuild Include="../../../../../../chrome/updater/device_management/dm_client.cc" />
+    <None Include="../../../../../../chrome/updater/device_management/dm_client.h" />
+    <CustomBuild Include="../../../../../../chrome/updater/device_management/dm_message.cc" />
+    <None Include="../../../../../../chrome/updater/device_management/dm_message.h" />
+    <CustomBuild Include="../../../../../../chrome/updater/device_management/dm_response_validator.cc" />
+    <None Include="../../../../../../chrome/updater/device_management/dm_response_validator.h" />
+    <CustomBuild Include="../../../../../../chrome/updater/device_management/dm_storage.cc" />
+    <None Include="../../../../../../chrome/updater/device_management/dm_storage.h" />
+    <CustomBuild Include="../../../../../../chrome/updater/device_management/dm_storage_win.cc" />
+  </ItemGroup>
+</Project>

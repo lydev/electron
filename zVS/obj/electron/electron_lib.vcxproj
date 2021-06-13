@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F791311A-8D20-8D31-F2B1-6788BFFD8A4C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>electron_lib</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/electron/electron_lib.stamp</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../electron/chromium_src;../../../../electron;../../../../out/x64-debug/gen/electron;../../../../third_party/blink/renderer;../../../..;../../../../out/x64-debug/gen;../../../../electron;../../../../third_party/perfetto/include;../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../out/x64-debug/gen/third_party/perfetto;../../../../third_party/libyuv/include;../../../../third_party/jsoncpp/source/include;../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../third_party/dawn/src/include;../../../../third_party/libwebp/src;../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../third_party/khronos;../../../../gpu;../../../../third_party/wtl/include;../../../../third_party/abseil-cpp;../../../../third_party/boringssl/src/include;../../../../third_party/protobuf/src;../../../../out/x64-debug/gen/protoc_out;../../../../third_party/ced/src;../../../../third_party/icu/source/common;../../../../third_party/icu/source/i18n;../../../../third_party/crashpad/crashpad;../../../../third_party/crashpad/crashpad/compat/win;../../../../third_party/zlib;../../../../third_party/skia;../../../../third_party/libgifcodec;../../../../third_party/vulkan/include;../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../third_party/protobuf/src;../../../../out/x64-debug/gen;../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../net/third_party/quiche/overrides;../../../../net/third_party/quiche/src/common/platform/default;../../../../net/third_party/quiche/src;../../../../third_party/webrtc_overrides;../../../../third_party/webrtc;../../../../out/x64-debug/gen/third_party/webrtc;../../../../third_party/mesa_headers;../../../../third_party/libwebm/source;../../../../third_party/leveldatabase;../../../../third_party/leveldatabase/src;../../../../third_party/leveldatabase/src/include;../../../../v8/include;../../../../out/x64-debug/gen/v8/include;../../../../out/x64-debug/gen/third_party/metrics_proto;../../../../out/x64-debug/gen;../../../../out/x64-debug/gen/components/policy/proto;../../../../out/x64-debug/gen/third_party/private_membership/src;../../../../out/x64-debug/gen/third_party/shell-encryption/src;../../../../out/x64-debug/gen/components/policy/proto;../../../../out/x64-debug/gen;../../../../out/x64-debug/gen;../../../../third_party/re2/src;../../../../out/x64-debug/gen;../../../../out/x64-debug/gen;../../../../out/x64-debug/gen;../../../../out/x64-debug/gen;../../../../third_party/libgav1/src;../../../../third_party/libgav1/src/src;../../../../v8/include;../../../../out/x64-debug/gen/v8/include;../../../../out/x64-debug/gen/v8/include;../../../../v8/include;../../../../v8/include;../../../../out/x64-debug/gen/v8/include;../../../../third_party/electron_node/src;../../../../third_party/electron_node/deps/uv/include;../../../../out/x64-debug/gen;../../../../out/x64-debug/gen;../../../../out/x64-debug/gen;../../../../third_party/flatbuffers/src/include;../../../../out/x64-debug/gen;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-deprecated-declarations -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 -Wno-microsoft-include %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>V8_DEPRECATION_WARNINGS;ALLOW_RUNTIME_CONFIGURABLE_KEY_STORAGE;DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;V8_USE_EXTERNAL_STARTUP_DATA;NODE_WANT_INTERNALS=1;ELECTRON_PRODUCT_NAME=&quot;Electron&quot;;ELECTRON_PROJECT_NAME=&quot;electron&quot;;ENABLE_IPC_FUZZER;WEBP_EXTERN=extern;USE_EGL;VK_USE_PLATFORM_WIN32_KHR;_WTL_NO_AUTOMATIC_NAMESPACE;TOOLKIT_VIEWS=1;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;CRASHPAD_ZLIB_SOURCE_EXTERNAL;SK_UNTIL_CRBUG_1187654_IS_FIXED;SK_CODEC_DECODES_PNG;SK_CODEC_DECODES_WEBP;SK_ENCODE_PNG;SK_ENCODE_WEBP;SK_USER_CONFIG_HEADER=&quot;../../skia/config/SkUserConfig.h&quot;;SK_GL;SK_CODEC_DECODES_JPEG;SK_ENCODE_JPEG;SK_USE_LIBGIFCODEC;SK_VULKAN_HEADER=&quot;../../skia/config/SkVulkanConfig.h&quot;;SK_VULKAN=1;SK_DAWN;SK_SUPPORT_GPU=1;SK_GPU_WORKAROUNDS_HEADER=&quot;gpu/config/gpu_driver_bug_workaround_autogen.h&quot;;GR_GL_FUNCTION_TYPE=__stdcall;VK_USE_PLATFORM_WIN32_KHR;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;WEBRTC_ENABLE_AVX2;RTC_ENABLE_WIN_WGC;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0;WEBRTC_CHROMIUM_BUILD;WEBRTC_WIN;ABSL_ALLOCATOR_NOTHROW=1;WEBRTC_USE_BUILTIN_ISAC_FIX=0;WEBRTC_USE_BUILTIN_ISAC_FLOAT=1;WEBRTC_HAVE_SCTP;NO_MAIN_THREAD_WRAPPING;LEVELDB_PLATFORM_CHROMIUM=1;LEVELDB_PLATFORM_CHROMIUM=1;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;LIBGAV1_MAX_BITDEPTH=10;LIBGAV1_THREADPOOL_USE_STD_MUTEX;LIBGAV1_ENABLE_LOGGING=0;LIBGAV1_PUBLIC=;VK_NO_PROTOTYPES;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;HAVE_INSPECTOR=1;HAVE_OPENSSL=1;OPENSSL_NO_SSL_TRACE=1;NODE_HAVE_I18N_SUPPORT=1;NODE_USE_V8_PLATFORM=0;FLATBUFFERS_LOCALE_INDEPENDENT=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="../../../../electron/chromium_src/chrome/browser/process_singleton.h" />
+    <CustomBuild Include="../../../../electron/shell/app/command_line_args.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/command_line_args.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/command_line_args.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/command_line_args.h" />
+    <CustomBuild Include="../../../../electron/shell/app/electron_content_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_content_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_content_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/electron_content_client.h" />
+    <CustomBuild Include="../../../../electron/shell/app/electron_crash_reporter_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_crash_reporter_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_crash_reporter_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/electron_crash_reporter_client.h" />
+    <CustomBuild Include="../../../../electron/shell/app/electron_main_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_main_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_main_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/electron_main_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/app/uv_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/uv_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/uv_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/uv_task_runner.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_app.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_app.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_app.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_app.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_auto_updater.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_auto_updater.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_auto_updater.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_auto_updater.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_base_window.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_base_window.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_base_window.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_base_window.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_browser_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_browser_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_browser_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_browser_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_browser_window.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_browser_window.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_browser_window.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_browser_window.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_content_tracing.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_content_tracing.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_content_tracing.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_cookies.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_cookies.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_cookies.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_cookies.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_crash_reporter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_crash_reporter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_crash_reporter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_crash_reporter.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_data_pipe_holder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_data_pipe_holder.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_data_pipe_holder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_data_pipe_holder.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_debugger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_debugger.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_debugger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_debugger.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_dialog.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_dialog.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_dialog.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_download_item.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_download_item.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_download_item.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_download_item.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_event.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_event.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_event.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_event_emitter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_event_emitter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_event_emitter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_event_emitter.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_global_shortcut.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_global_shortcut.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_global_shortcut.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_global_shortcut.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_in_app_purchase.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_in_app_purchase.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_in_app_purchase.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_in_app_purchase.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_menu.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_menu.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_menu.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_menu.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_native_theme.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_native_theme.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_native_theme.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_native_theme.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_net.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_net.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_net.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_net_log.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_net_log.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_net_log.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_net_log.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_notification.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_notification.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_notification.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_notification.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_power_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_power_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_power_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_power_monitor.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_power_save_blocker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_power_save_blocker.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_power_save_blocker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_power_save_blocker.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_printing.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_printing.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_printing.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_protocol.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_protocol.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_protocol.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_protocol.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_screen.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_screen.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_screen.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_screen.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_service_worker_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_service_worker_context.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_service_worker_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_service_worker_context.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_session.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_session.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_session.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_session.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_system_preferences.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_system_preferences.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_system_preferences.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_system_preferences.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_tray.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_tray.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_tray.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_tray.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_url_loader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_url_loader.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_url_loader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_url_loader.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_contents.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_web_contents.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_web_contents.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_web_contents.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_contents_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_web_contents_impl.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_web_contents_impl.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_contents_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_web_contents_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_web_contents_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_web_contents_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_frame_main.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_web_frame_main.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_web_frame_main.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_web_frame_main.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_request.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_web_request.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_web_request.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_web_request.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_view_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_web_view_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_web_view_manager.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/event.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/event.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/event.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/event.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/frame_subscriber.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/frame_subscriber.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/frame_subscriber.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/frame_subscriber.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/gpu_info_enumerator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/gpu_info_enumerator.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/gpu_info_enumerator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/gpu_info_enumerator.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/gpuinfo_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/gpuinfo_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/gpuinfo_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/gpuinfo_manager.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/message_port.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/message_port.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/message_port.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/message_port.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/process_metric.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/process_metric.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/process_metric.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/process_metric.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/save_page_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/save_page_handler.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/save_page_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/save_page_handler.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/ui_event.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/ui_event.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/ui_event.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/ui_event.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/auto_updater.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/auto_updater.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/auto_updater.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/auto_updater.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/badging/badge_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/badge_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/badge_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/badging/badge_manager.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/badging/badge_manager_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/badge_manager_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/badge_manager_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/badging/badge_manager_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/bluetooth/electron_bluetooth_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_bluetooth_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_bluetooth_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/bluetooth/electron_bluetooth_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/browser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/browser.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/browser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/browser.h" />
+    <None Include="../../../../electron/shell/browser/browser_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/browser_process_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/browser_process_impl.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/browser_process_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/browser_process_impl.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/child_web_contents_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/child_web_contents_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/child_web_contents_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/child_web_contents_tracker.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/cookie_change_notifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/cookie_change_notifier.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/cookie_change_notifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/cookie_change_notifier.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_autofill_driver.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_autofill_driver.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_autofill_driver.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_autofill_driver.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_autofill_driver_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_autofill_driver_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_autofill_driver_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_autofill_driver_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_browser_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_browser_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_browser_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_browser_client.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_browser_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_browser_context.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_browser_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_browser_context.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_browser_handler_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_browser_handler_impl.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_browser_handler_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_browser_handler_impl.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_browser_main_parts.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_browser_main_parts.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_browser_main_parts.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_browser_main_parts.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_download_manager_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_download_manager_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_download_manager_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_download_manager_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_gpu_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_gpu_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_gpu_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_gpu_client.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_javascript_dialog_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_javascript_dialog_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_javascript_dialog_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_javascript_dialog_manager.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_navigation_throttle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_navigation_throttle.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_navigation_throttle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_navigation_throttle.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_permission_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_permission_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_permission_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_permission_manager.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_quota_permission_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_quota_permission_context.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_quota_permission_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_quota_permission_context.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_speech_recognition_manager_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_speech_recognition_manager_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_speech_recognition_manager_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_speech_recognition_manager_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_web_ui_controller_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_web_ui_controller_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_web_ui_controller_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_web_ui_controller_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/event_emitter_mixin.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/event_emitter_mixin.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/event_emitter_mixin.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/event_emitter_mixin.h" />
+    <None Include="../../../../electron/shell/browser/extended_web_contents_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/feature_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/feature_list.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/feature_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/feature_list.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/file_select_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/file_select_helper.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/file_select_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/file_select_helper.h" />
+    <None Include="../../../../electron/shell/browser/file_select_helper_mac.mm" />
+    <CustomBuild Include="../../../../electron/shell/browser/font_defaults.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/font_defaults.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/font_defaults.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/font_defaults.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/javascript_environment.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/javascript_environment.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/javascript_environment.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/javascript_environment.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/lib/bluetooth_chooser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/bluetooth_chooser.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/bluetooth_chooser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/lib/bluetooth_chooser.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/login_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/login_handler.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/login_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/login_handler.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/media/media_capture_devices_dispatcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/media_capture_devices_dispatcher.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/media_capture_devices_dispatcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/media/media_capture_devices_dispatcher.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/media/media_device_id_salt.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/media_device_id_salt.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/media_device_id_salt.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/media/media_device_id_salt.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/media/media_stream_devices_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/media_stream_devices_controller.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/media_stream_devices_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/media/media_stream_devices_controller.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/microtasks_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/microtasks_runner.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/microtasks_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/microtasks_runner.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/native_browser_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/native_browser_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/native_browser_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/native_browser_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/native_window.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/native_window.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/native_window.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/native_window.h" />
+    <None Include="../../../../electron/shell/browser/native_window_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/asar/asar_url_loader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/asar_url_loader.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/asar_url_loader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/asar/asar_url_loader.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/asar/asar_url_loader_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/asar_url_loader_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/asar_url_loader_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/asar/asar_url_loader_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/cert_verifier_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/cert_verifier_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/cert_verifier_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/cert_verifier_client.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/electron_url_loader_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_url_loader_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_url_loader_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/electron_url_loader_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/network_context_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/network_context_service.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/network_context_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/network_context_service.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/network_context_service_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/network_context_service_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/network_context_service_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/network_context_service_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/node_stream_loader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/node_stream_loader.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/node_stream_loader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/node_stream_loader.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/proxying_url_loader_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/proxying_url_loader_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/proxying_url_loader_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/proxying_url_loader_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/proxying_websocket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/proxying_websocket.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/proxying_websocket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/proxying_websocket.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/resolve_proxy_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/resolve_proxy_helper.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/resolve_proxy_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/resolve_proxy_helper.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/system_network_context_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/system_network_context_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/system_network_context_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/system_network_context_manager.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/net/url_pipe_loader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/url_pipe_loader.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/url_pipe_loader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/url_pipe_loader.h" />
+    <None Include="../../../../electron/shell/browser/net/web_request_api_interface.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/network_hints_handler_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/network_hints_handler_impl.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/network_hints_handler_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/network_hints_handler_impl.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/notification.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/notification.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/notification.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/notification.h" />
+    <None Include="../../../../electron/shell/browser/notifications/notification_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/notification_presenter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/notification_presenter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/notification_presenter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/notification_presenter.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/platform_notification_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/platform_notification_service.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/platform_notification_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/platform_notification_service.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/plugins/plugin_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/plugin_utils.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/plugin_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/plugins/plugin_utils.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/pref_store_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/pref_store_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/pref_store_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/pref_store_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/protocol_registry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/protocol_registry.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/protocol_registry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/protocol_registry.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/relauncher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/relauncher.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/relauncher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/relauncher.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/serial/electron_serial_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_serial_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_serial_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/serial/electron_serial_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/serial/serial_chooser_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/serial_chooser_context.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/serial_chooser_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/serial/serial_chooser_context.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/serial/serial_chooser_context_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/serial_chooser_context_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/serial_chooser_context_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/serial/serial_chooser_context_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/serial/serial_chooser_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/serial_chooser_controller.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/serial_chooser_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/serial/serial_chooser_controller.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/session_preferences.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/session_preferences.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/session_preferences.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/session_preferences.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/special_storage_policy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/special_storage_policy.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/special_storage_policy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/special_storage_policy.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/accelerator_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/accelerator_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/accelerator_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/accelerator_util.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/autofill_popup.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/autofill_popup.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/autofill_popup.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/autofill_popup.h" />
+    <None Include="../../../../electron/shell/browser/ui/certificate_trust.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/devtools_manager_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/devtools_manager_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/devtools_manager_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/devtools_manager_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/devtools_ui.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/devtools_ui.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/devtools_ui.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/devtools_ui.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/drag_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/drag_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/drag_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/drag_util.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/electron_menu_model.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_menu_model.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_menu_model.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/electron_menu_model.h" />
+    <None Include="../../../../electron/shell/browser/ui/file_dialog.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/inspectable_web_contents.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/inspectable_web_contents.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/inspectable_web_contents.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/inspectable_web_contents.h" />
+    <None Include="../../../../electron/shell/browser/ui/inspectable_web_contents_delegate.h" />
+    <None Include="../../../../electron/shell/browser/ui/inspectable_web_contents_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/inspectable_web_contents_view_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/inspectable_web_contents_view_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/inspectable_web_contents_view_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/inspectable_web_contents_view_delegate.h" />
+    <None Include="../../../../electron/shell/browser/ui/message_box.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/tray_icon.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/tray_icon.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/tray_icon.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/tray_icon.h" />
+    <None Include="../../../../electron/shell/browser/ui/tray_icon_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/webui/accessibility_ui.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/accessibility_ui.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/accessibility_ui.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/webui/accessibility_ui.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/unresponsive_suppressor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/unresponsive_suppressor.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/unresponsive_suppressor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/unresponsive_suppressor.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/web_contents_permission_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/web_contents_permission_helper.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/web_contents_permission_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_contents_permission_helper.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/web_contents_preferences.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/web_contents_preferences.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/web_contents_preferences.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_contents_preferences.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/web_contents_zoom_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/web_contents_zoom_controller.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/web_contents_zoom_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_contents_zoom_controller.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/web_dialog_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/web_dialog_helper.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/web_dialog_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_dialog_helper.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/web_view_guest_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/web_view_guest_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/web_view_guest_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_view_guest_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/web_view_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/web_view_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/web_view_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_view_manager.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/window_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/window_list.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/window_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/window_list.h" />
+    <None Include="../../../../electron/shell/browser/window_list_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/zoom_level_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/zoom_level_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/zoom_level_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/zoom_level_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_asar.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_asar.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_asar.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_clipboard.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_clipboard.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_clipboard.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/electron_api_clipboard.h" />
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_command_line.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_command_line.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_command_line.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_environment.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_environment.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_environment.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/electron_api_key_weak_map.h" />
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_native_image.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_native_image.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_native_image.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/electron_api_native_image.h" />
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_shell.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_shell.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_shell.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_v8_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_v8_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_v8_util.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_bindings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_bindings.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_bindings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/electron_bindings.h" />
+    <CustomBuild Include="../../../../electron/shell/common/api/features.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/features.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/features.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/object_life_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/object_life_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/object_life_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/object_life_monitor.h" />
+    <CustomBuild Include="../../../../electron/shell/common/application_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/application_info.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/application_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/application_info.h" />
+    <CustomBuild Include="../../../../electron/shell/common/asar/archive.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/archive.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/archive.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/asar/archive.h" />
+    <CustomBuild Include="../../../../electron/shell/common/asar/asar_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/asar_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/asar_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/asar/asar_util.h" />
+    <CustomBuild Include="../../../../electron/shell/common/asar/scoped_temporary_file.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/scoped_temporary_file.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/scoped_temporary_file.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/asar/scoped_temporary_file.h" />
+    <CustomBuild Include="../../../../electron/shell/common/color_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/color_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/color_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/color_util.h" />
+    <CustomBuild Include="../../../../electron/shell/common/crash_keys.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/crash_keys.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/crash_keys.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/crash_keys.h" />
+    <CustomBuild Include="../../../../electron/shell/common/electron_command_line.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_command_line.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_command_line.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/electron_command_line.h" />
+    <CustomBuild Include="../../../../electron/shell/common/electron_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_constants.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/electron_constants.h" />
+    <None Include="../../../../electron/shell/common/electron_paths.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/accelerator_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/accelerator_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/accelerator_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/accelerator_converter.h" />
+    <None Include="../../../../electron/shell/common/gin_converters/base_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/blink_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/blink_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/blink_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/blink_converter.h" />
+    <None Include="../../../../electron/shell/common/gin_converters/callback_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/content_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/content_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/content_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/content_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/file_dialog_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/file_dialog_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/file_dialog_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/file_dialog_converter.h" />
+    <None Include="../../../../electron/shell/common/gin_converters/file_path_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/frame_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/frame_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/frame_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/frame_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/gfx_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/gfx_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/gfx_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/gfx_converter.h" />
+    <None Include="../../../../electron/shell/common/gin_converters/guid_converter.h" />
+    <None Include="../../../../electron/shell/common/gin_converters/gurl_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/image_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/image_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/image_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/image_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/message_box_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/message_box_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/message_box_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/message_box_converter.h" />
+    <None Include="../../../../electron/shell/common/gin_converters/native_window_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/net_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/net_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/net_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/net_converter.h" />
+    <None Include="../../../../electron/shell/common/gin_converters/std_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/time_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/time_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/time_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/time_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/value_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/value_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/value_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/value_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/arguments.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/arguments.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/arguments.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/arguments.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/callback.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/callback.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/callback.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/callback.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/cleaned_up_at_exit.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/cleaned_up_at_exit.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/cleaned_up_at_exit.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/cleaned_up_at_exit.h" />
+    <None Include="../../../../electron/shell/common/gin_helper/constructible.h" />
+    <None Include="../../../../electron/shell/common/gin_helper/constructor.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/destroyable.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/destroyable.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/destroyable.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/destroyable.h" />
+    <None Include="../../../../electron/shell/common/gin_helper/dictionary.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/error_thrower.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/error_thrower.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/error_thrower.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/error_thrower.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/event_emitter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/event_emitter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/event_emitter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/event_emitter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/event_emitter_caller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/event_emitter_caller.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/event_emitter_caller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/event_emitter_caller.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/function_template.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/function_template.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/function_template.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/function_template.h" />
+    <None Include="../../../../electron/shell/common/gin_helper/function_template_extensions.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/locker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/locker.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/locker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/locker.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/microtasks_scope.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/microtasks_scope.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/microtasks_scope.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/microtasks_scope.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/object_template_builder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/object_template_builder.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/object_template_builder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/object_template_builder.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/persistent_dictionary.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/persistent_dictionary.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/persistent_dictionary.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/persistent_dictionary.h" />
+    <None Include="../../../../electron/shell/common/gin_helper/pinnable.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/promise.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/promise.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/promise.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/promise.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/trackable_object.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/trackable_object.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/trackable_object.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/trackable_object.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/wrappable.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/wrappable.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/wrappable.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/wrappable.h" />
+    <None Include="../../../../electron/shell/common/gin_helper/wrappable_base.h" />
+    <CustomBuild Include="../../../../electron/shell/common/heap_snapshot.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/heap_snapshot.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/heap_snapshot.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/heap_snapshot.h" />
+    <None Include="../../../../electron/shell/common/key_weak_map.h" />
+    <CustomBuild Include="../../../../electron/shell/common/keyboard_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/keyboard_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/keyboard_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/keyboard_util.h" />
+    <None Include="../../../../electron/shell/common/language_util.h" />
+    <CustomBuild Include="../../../../electron/shell/common/mouse_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/mouse_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/mouse_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/mouse_util.h" />
+    <CustomBuild Include="../../../../electron/shell/common/node_bindings.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/node_bindings.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/node_bindings.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/node_bindings.h" />
+    <None Include="../../../../electron/shell/common/node_includes.h" />
+    <CustomBuild Include="../../../../electron/shell/common/node_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/node_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/node_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/node_util.h" />
+    <CustomBuild Include="../../../../electron/shell/common/options_switches.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/options_switches.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/options_switches.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/options_switches.h" />
+    <CustomBuild Include="../../../../electron/shell/common/platform_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/platform_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/platform_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/platform_util.h" />
+    <None Include="../../../../electron/shell/common/platform_util_internal.h" />
+    <CustomBuild Include="../../../../electron/shell/common/process_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/process_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/process_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/process_util.h" />
+    <CustomBuild Include="../../../../electron/shell/common/skia_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/skia_util.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/skia_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/skia_util.h" />
+    <CustomBuild Include="../../../../electron/shell/common/v8_value_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/v8_value_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/v8_value_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/v8_value_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/common/v8_value_serializer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/v8_value_serializer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/v8_value_serializer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/v8_value_serializer.h" />
+    <None Include="../../../../electron/shell/common/world_ids.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/api/context_bridge/object_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/object_cache.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/object_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/api/context_bridge/object_cache.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_context_bridge.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_context_bridge.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_context_bridge.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/api/electron_api_context_bridge.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_crash_reporter_renderer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_crash_reporter_renderer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_crash_reporter_renderer.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_ipc_renderer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_ipc_renderer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_ipc_renderer.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_spell_check_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_spell_check_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_spell_check_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/api/electron_api_spell_check_client.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_web_frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_web_frame.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_web_frame.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/renderer/browser_exposed_renderer_interfaces.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/browser_exposed_renderer_interfaces.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/browser_exposed_renderer_interfaces.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/browser_exposed_renderer_interfaces.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/content_settings_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/content_settings_observer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/content_settings_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/content_settings_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_api_service_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_service_impl.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_service_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_api_service_impl.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_autofill_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_autofill_agent.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_autofill_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_autofill_agent.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_render_frame_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_render_frame_observer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_render_frame_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_render_frame_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_renderer_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_renderer_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_renderer_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_renderer_client.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_renderer_pepper_host_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_renderer_pepper_host_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_renderer_pepper_host_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_renderer_pepper_host_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_sandboxed_renderer_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_sandboxed_renderer_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_sandboxed_renderer_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_sandboxed_renderer_client.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/guest_view_container.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/guest_view_container.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/guest_view_container.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/guest_view_container.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/renderer_client_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/renderer_client_base.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/renderer_client_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/renderer_client_base.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/web_worker_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/web_worker_observer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/web_worker_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/web_worker_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/utility/electron_content_utility_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_content_utility_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_content_utility_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/utility/electron_content_utility_client.h" />
+    <CustomBuild Include="../../../../electron/chromium_src/chrome/browser/process_singleton_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/process_singleton_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/process_singleton_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_power_monitor_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_power_monitor_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_power_monitor_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_system_preferences_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_system_preferences_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_system_preferences_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/browser_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/browser_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/browser_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/native_window_views_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/native_window_views_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/native_window_views_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/notification_presenter_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/notification_presenter_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/notification_presenter_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/notification_presenter_win.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/notification_presenter_win7.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/notification_presenter_win7.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/notification_presenter_win7.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/notification_presenter_win7.h" />
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/common.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/desktop_notification_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/desktop_notification_controller.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/desktop_notification_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/desktop_notification_controller.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/toast_uia.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/toast_uia.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/toast_uia.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/toast_uia.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/toast.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/toast.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/toast.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/toast.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/win32_notification.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/win32_notification.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/win32_notification.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_notification.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/windows_toast_notification.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/windows_toast_notification.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/windows_toast_notification.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/windows_toast_notification.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/relauncher_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/relauncher_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/relauncher_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/certificate_trust_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/certificate_trust_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/certificate_trust_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/file_dialog_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/file_dialog_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/file_dialog_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/message_box_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/message_box_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/message_box_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/tray_icon_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/tray_icon_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/tray_icon_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/electron_views_delegate_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_views_delegate_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_views_delegate_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/win_frame_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/win_frame_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/win_frame_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/win_frame_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/dialog_thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/dialog_thread.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/dialog_thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/dialog_thread.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/electron_desktop_native_widget_aura.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_desktop_native_widget_aura.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_desktop_native_widget_aura.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/electron_desktop_native_widget_aura.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/electron_desktop_window_tree_host_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_desktop_window_tree_host_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_desktop_window_tree_host_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/electron_desktop_window_tree_host_win.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/jump_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/jump_list.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/jump_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/jump_list.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/notify_icon_host.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/notify_icon_host.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/notify_icon_host.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/notify_icon_host.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/notify_icon.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/notify_icon.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/notify_icon.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/notify_icon.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/taskbar_host.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/taskbar_host.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/taskbar_host.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/taskbar_host.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/win/scoped_hstring.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/scoped_hstring.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/scoped_hstring.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/win/scoped_hstring.h" />
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_native_image_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_native_image_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_native_image_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/application_info_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/application_info_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/application_info_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/language_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/language_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/language_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/node_bindings_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/node_bindings_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/node_bindings_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/node_bindings_win.h" />
+    <CustomBuild Include="../../../../electron/shell/common/platform_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/platform_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/platform_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_browser_window_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_browser_window_views.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_browser_window_views.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_menu_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_menu_views.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_menu_views.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_menu_views.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/native_browser_view_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/native_browser_view_views.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/native_browser_view_views.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/native_browser_view_views.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/native_window_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/native_window_views.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/native_window_views.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/native_window_views.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/drag_util_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/drag_util_views.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/drag_util_views.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/autofill_popup_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/autofill_popup_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/autofill_popup_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/autofill_popup_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/electron_views_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_views_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_views_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/electron_views_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/frameless_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/frameless_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/frameless_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/frameless_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/inspectable_web_contents_view_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/inspectable_web_contents_view_views.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/inspectable_web_contents_view_views.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/inspectable_web_contents_view_views.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/menu_bar.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/menu_bar.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/menu_bar.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/menu_bar.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/menu_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/menu_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/menu_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/menu_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/menu_model_adapter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/menu_model_adapter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/menu_model_adapter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/menu_model_adapter.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/native_frame_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/native_frame_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/native_frame_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/native_frame_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/root_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/root_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/root_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/root_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/submenu_button.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/submenu_button.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/submenu_button.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/submenu_button.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/fake_location_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/fake_location_provider.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/fake_location_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/fake_location_provider.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/pepper_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/pepper_helper.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/pepper_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/pepper_helper.h" />
+    <CustomBuild Include="../../../../electron/shell/app/node_main.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/node_main.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/node_main.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/node_main.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_host_display_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/osr_host_display_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/osr_host_display_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_host_display_client.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_render_widget_host_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/osr_render_widget_host_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/osr_render_widget_host_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_render_widget_host_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_video_consumer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/osr_video_consumer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/osr_video_consumer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_video_consumer.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_view_proxy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/osr_view_proxy.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/osr_view_proxy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_view_proxy.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_web_contents_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/osr_web_contents_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/osr_web_contents_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_web_contents_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_desktop_capturer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_desktop_capturer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_desktop_capturer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_desktop_capturer.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/api/views/electron_api_image_view.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_api_image_view.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_api_image_view.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/views/electron_api_image_view.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/printing/print_preview_message_handler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/print_preview_message_handler.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/print_preview_message_handler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/printing/print_preview_message_handler.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/printing/print_view_manager_electron.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/print_view_manager_electron.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/print_view_manager_electron.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/printing/print_view_manager_electron.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/printing/print_render_frame_helper_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/print_render_frame_helper_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/print_render_frame_helper_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/printing/print_render_frame_helper_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/i18n/i18n_api.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/i18n_api.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/i18n_api.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/i18n/i18n_api.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/management/electron_management_api_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_management_api_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_management_api_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/management/electron_management_api_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/resources_private/resources_private_api.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/resources_private_api.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/resources_private_api.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/resources_private/resources_private_api.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/runtime/electron_runtime_api_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_runtime_api_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_runtime_api_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/runtime/electron_runtime_api_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/streams_private/streams_private_api.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/streams_private_api.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/streams_private_api.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/streams_private/streams_private_api.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/tabs/tabs_api.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/tabs_api.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/tabs_api.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/tabs/tabs_api.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_browser_context_keyed_service_factories.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_browser_context_keyed_service_factories.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_browser_context_keyed_service_factories.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_browser_context_keyed_service_factories.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_component_extension_resource_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_component_extension_resource_manager.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_component_extension_resource_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_component_extension_resource_manager.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_display_info_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_display_info_provider.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_display_info_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_display_info_provider.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_host_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extension_host_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extension_host_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_host_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_loader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extension_loader.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extension_loader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_loader.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_message_filter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extension_message_filter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extension_message_filter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_message_filter.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_system_factory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extension_system_factory.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extension_system_factory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_system_factory.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_system.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extension_system.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extension_system.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_system.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_web_contents_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extension_web_contents_observer.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extension_web_contents_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_web_contents_observer.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extensions_api_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extensions_api_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extensions_api_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extensions_api_client.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extensions_browser_api_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extensions_browser_api_provider.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extensions_browser_api_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extensions_browser_api_provider.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extensions_browser_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extensions_browser_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extensions_browser_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extensions_browser_client.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_kiosk_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_kiosk_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_kiosk_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_kiosk_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_messaging_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_messaging_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_messaging_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_messaging_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_navigation_ui_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_navigation_ui_data.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_navigation_ui_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_navigation_ui_data.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_process_manager_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_process_manager_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_process_manager_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_process_manager_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/common/extensions/electron_extensions_api_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extensions_api_provider.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extensions_api_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/extensions/electron_extensions_api_provider.h" />
+    <CustomBuild Include="../../../../electron/shell/common/extensions/electron_extensions_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extensions_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extensions_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/extensions/electron_extensions_client.h" />
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/extension_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/extension_converter.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/extension_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/extension_converter.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/extensions/electron_extensions_dispatcher_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extensions_dispatcher_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extensions_dispatcher_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/extensions/electron_extensions_dispatcher_delegate.h" />
+    <CustomBuild Include="../../../../electron/shell/renderer/extensions/electron_extensions_renderer_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_extensions_renderer_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_extensions_renderer_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/extensions/electron_extensions_renderer_client.h" />
+    <CustomBuild Include="../../../../electron/shell/browser/electron_pdf_web_contents_helper_client.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/electron_pdf_web_contents_helper_client.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/electron_pdf_web_contents_helper_client.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_pdf_web_contents_helper_client.h" />
+    <None Include="../../../../out/x64-debug/gen/electron/fuses.h" />
+    <CustomBuild Include="../../../../out/x64-debug/gen/electron/fuses.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/electron/electron_lib/fuses.obj</Command>
+      <Outputs>$(OutDir)obj/electron/electron_lib/fuses.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/electron/electron_lib.stamp" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/electron/electron_lib.stamp" />
+  </Target>
+</Project>

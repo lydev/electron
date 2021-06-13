@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\third_party\webdriver">
+      <UniqueIdentifier>{53380FCF-DE33-CCA3-F8A6-27C79C0F92F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\third_party">
+      <UniqueIdentifier>{C8D00450-CB46-C9C2-42EB-618150BC4A1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{25573B70-44C7-1374-37BA-A0AFC0410B2E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../third_party/webdriver/atoms.cc">
+      <Filter>..\..\..\third_party\webdriver</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../third_party/webdriver/atoms.h">
+      <Filter>..\..\..\third_party\webdriver</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/alert_commands.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/alert_commands.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/basic_types.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/basic_types.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/capabilities.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/capabilities.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/chrome_launcher.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/chrome_launcher.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/command.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/command_listener.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/command_listener_proxy.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/command_listener_proxy.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/commands.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/commands.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/connection_session_map.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/devtools_events_logger.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/devtools_events_logger.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/element_commands.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/element_commands.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/element_util.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/element_util.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/key_converter.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/key_converter.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/keycode_text_conversion.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/logging.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/logging.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/performance_logger.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/performance_logger.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/server/http_handler.cc">
+      <Filter>server</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/server/http_handler.h">
+      <Filter>server</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/server/http_server.cc">
+      <Filter>server</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../chrome/test/chromedriver/server/http_server.h">
+      <Filter>server</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/session.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/session.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/session_commands.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/session_commands.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/session_connection_map.h" />
+    <None Include="../../../../../../chrome/test/chromedriver/session_thread_map.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/util.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/util.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/webauthn_commands.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/webauthn_commands.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/window_commands.cc" />
+    <None Include="../../../../../../chrome/test/chromedriver/window_commands.h" />
+    <CustomBuild Include="../../../../../../chrome/test/chromedriver/keycode_text_conversion_win.cc" />
+  </ItemGroup>
+</Project>

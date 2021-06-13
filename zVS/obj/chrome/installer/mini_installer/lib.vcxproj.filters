@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="../../../../../../chrome/installer/mini_installer/appid.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/chrome_appid.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/configuration.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/configuration.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/decompress.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/decompress.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/delete_with_retry.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/delete_with_retry.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/mini_file.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/mini_file.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/mini_installer.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/mini_installer.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/mini_installer.rc" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/mini_installer_constants.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/mini_installer_constants.h" />
+    <None Include="../../../../../../chrome/installer/mini_installer/mini_installer_resource.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/mini_string.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/mini_string.h" />
+    <None Include="../../../../../../chrome/installer/mini_installer/path_string.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/pe_resource.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/pe_resource.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/mini_installer/regkey.cc" />
+    <None Include="../../../../../../chrome/installer/mini_installer/regkey.h" />
+  </ItemGroup>
+</Project>

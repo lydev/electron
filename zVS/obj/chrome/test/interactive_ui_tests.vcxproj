@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{847B8679-C72E-A10F-A7D3-57EE48582BC6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>interactive_ui_tests</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\interactive_ui_tests.exe</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../..;../../../../../out/x64-debug/gen;../../../../../third_party/perfetto/include;../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../out/x64-debug/gen/third_party/dawn/src/include;../../../../../third_party/dawn/src/include;../../../../../third_party/libwebp/src;../../../../../third_party/libyuv/include;../../../../../third_party/jsoncpp/source/include;../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../third_party/khronos;../../../../../gpu;../../../../../third_party/wtl/include;../../../../../third_party/abseil-cpp;../../../../../third_party/boringssl/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/protoc_out;../../../../../third_party/ced/src;../../../../../third_party/icu/source/common;../../../../../third_party/icu/source/i18n;../../../../../third_party/googletest/custom;../../../../../third_party/googletest/src/googlemock/include;../../../../../third_party/googletest/custom;../../../../../third_party/googletest/src/googletest/include;../../../../../third_party/abseil-cpp;../../../../../third_party/skia;../../../../../third_party/libgifcodec;../../../../../third_party/vulkan/include;../../../../../third_party/vulkan-deps/vulkan-headers/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../net/third_party/quiche/overrides;../../../../../net/third_party/quiche/src/common/platform/default;../../../../../net/third_party/quiche/src;../../../../../third_party/webrtc_overrides;../../../../../third_party/webrtc;../../../../../out/x64-debug/gen/third_party/webrtc;../../../../../third_party/mesa_headers;../../../../../third_party/libwebm/source;../../../../../third_party/leveldatabase;../../../../../third_party/leveldatabase/src;../../../../../third_party/leveldatabase/src/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../out/x64-debug/gen/third_party/metrics_proto;../../../../../third_party/zlib;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen/components/policy/proto;../../../../../out/x64-debug/gen/third_party/private_membership/src;../../../../../out/x64-debug/gen/third_party/shell-encryption/src;../../../../../out/x64-debug/gen/components/policy/proto;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/re2/src;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/libaddressinput/src/cpp/include;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;../../../../../third_party/flatbuffers/src/include;../../../../../third_party/libjpeg_turbo;../../../../../third_party/iccjpeg;../../../../../third_party/libpng;../../../../../third_party/ots/src/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../v8/include;../../../../../v8/include;../../../../../out/x64-debug/gen/v8/include;../../../../../out/x64-debug/gen;../../../../../out/x64-debug/gen;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wno-deprecated-declarations -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-inconsistent-missing-override -Wno-shorten-64-to-32 -Xclang -add-plugin -Xclang blink-gc-plugin %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;4800;4305;4324;4714;4800;4996;4344;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>HAS_OUT_OF_PROC_TEST_RUNNER;DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;ENABLE_IPC_FUZZER;WEBP_EXTERN=extern;USE_EGL;VK_USE_PLATFORM_WIN32_KHR;_WTL_NO_AUTOMATIC_NAMESPACE;TOOLKIT_VIEWS=1;ON_FOCUS_PING_ENABLED;EXPAT_RELATIVE_PATH;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;GTEST_API_=;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;GTEST_HAS_ABSL=1;UNIT_TEST;SK_UNTIL_CRBUG_1187654_IS_FIXED;SK_CODEC_DECODES_PNG;SK_CODEC_DECODES_WEBP;SK_ENCODE_PNG;SK_ENCODE_WEBP;SK_USER_CONFIG_HEADER=&quot;../../skia/config/SkUserConfig.h&quot;;SK_GL;SK_CODEC_DECODES_JPEG;SK_ENCODE_JPEG;SK_USE_LIBGIFCODEC;SK_VULKAN_HEADER=&quot;../../skia/config/SkVulkanConfig.h&quot;;SK_VULKAN=1;SK_DAWN;SK_SUPPORT_GPU=1;SK_GPU_WORKAROUNDS_HEADER=&quot;gpu/config/gpu_driver_bug_workaround_autogen.h&quot;;GR_GL_FUNCTION_TYPE=__stdcall;VK_USE_PLATFORM_WIN32_KHR;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;V8_USE_EXTERNAL_STARTUP_DATA;WEBRTC_ENABLE_AVX2;RTC_ENABLE_WIN_WGC;WEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=0;WEBRTC_CHROMIUM_BUILD;WEBRTC_WIN;ABSL_ALLOCATOR_NOTHROW=1;WEBRTC_USE_BUILTIN_ISAC_FIX=0;WEBRTC_USE_BUILTIN_ISAC_FLOAT=1;WEBRTC_HAVE_SCTP;NO_MAIN_THREAD_WRAPPING;LEVELDB_PLATFORM_CHROMIUM=1;LEVELDB_PLATFORM_CHROMIUM=1;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;I18N_ADDRESS_VALIDATION_DATA_URL=&quot;https://chromium-i18n.appspot.com/ssl-aggregate-address/&quot;;FLATBUFFERS_LOCALE_INDEPENDENT=0;WTF_USE_WEBAUDIO_PFFFT=1;USE_BLINK_V8_BINDING_NEW_IDL_INTERFACE;USE_BLINK_V8_BINDING_NEW_IDL_UNION;USE_LIBJPEG_TURBO=1;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;V8_COMPRESS_POINTERS;V8_COMPRESS_POINTERS_IN_SHARED_CAGE;V8_31BIT_SMIS_ON_64BIT_ARCH;V8_DEPRECATION_WARNINGS;CPPGC_CAGED_HEAP;HUNSPELL_STATIC;HUNSPELL_CHROME_CLIENT;USE_HUNSPELL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>CONSOLE</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/about_flags_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/about_flags_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/about_flags_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/apps/guest_view/web_view_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/web_view_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/web_view_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/apps/platform_apps/app_browsertest_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/app_browsertest_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/app_browsertest_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/apps/platform_apps/app_browsertest_util.h" />
+    <CustomBuild Include="../../../../../chrome/browser/apps/platform_apps/app_pointer_lock_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/app_pointer_lock_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/app_pointer_lock_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/apps/platform_apps/app_window_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/app_window_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/app_window_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/apps/platform_apps/app_window_interactive_uitest_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/app_window_interactive_uitest_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/app_window_interactive_uitest_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/apps/platform_apps/app_window_interactive_uitest_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/autofill/autofill_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/autofill_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/autofill_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/autofill/autofill_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/autofill_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/autofill_uitest.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/autofill/autofill_uitest.h" />
+    <CustomBuild Include="../../../../../chrome/browser/browser_keyevents_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/browser_keyevents_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/browser_keyevents_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/chrome_render_widget_host_browsertests.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/chrome_render_widget_host_browsertests.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/chrome_render_widget_host_browsertests.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/devtools/devtools_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/devtools_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/devtools_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/extension_action/browser_action_interactive_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/browser_action_interactive_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/browser_action_interactive_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/extension_action/page_action_interactive_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/page_action_interactive_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/page_action_interactive_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/notifications/notifications_apitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/notifications_apitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/notifications_apitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/omnibox/omnibox_api_interactive_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/omnibox_api_interactive_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/omnibox_api_interactive_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/tabs/tabs_interactive_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/tabs_interactive_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/tabs_interactive_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/chrome_extension_test_notification_observer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/chrome_extension_test_notification_observer.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/chrome_extension_test_notification_observer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/chrome_extension_test_notification_observer.h" />
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_apitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_apitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_apitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_commands_global_registry_apitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_commands_global_registry_apitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_commands_global_registry_apitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_crash_recovery_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_crash_recovery_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_crash_recovery_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_fullscreen_apitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_fullscreen_apitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_fullscreen_apitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_function_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_function_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_function_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/extension_function_test_utils.h" />
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_keybinding_apitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_keybinding_apitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_keybinding_apitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/omnibox_focus_interactive_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/omnibox_focus_interactive_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/omnibox_focus_interactive_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/window_open_interactive_apitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/window_open_interactive_apitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/window_open_interactive_apitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/focus_ring_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/focus_ring_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/focus_ring_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/mouse_events_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/mouse_events_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/mouse_events_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/platform_notification_service_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/platform_notification_service_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/platform_notification_service_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_generation_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/password_generation_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/password_generation_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_interactive_test_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/password_manager_interactive_test_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/password_manager_interactive_test_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/password_manager/password_manager_interactive_test_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/password_manager_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/password_manager_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/portal/portal_interactive_uittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/portal_interactive_uittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/portal_interactive_uittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/renderer_context_menu/link_to_text_menu_observer_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/link_to_text_menu_observer_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/link_to_text_menu_observer_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/renderer_context_menu/mock_render_view_context_menu.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/mock_render_view_context_menu.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/mock_render_view_context_menu.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/renderer_context_menu/mock_render_view_context_menu.h" />
+    <CustomBuild Include="../../../../../chrome/browser/renderer_context_menu/render_view_context_menu_browsertest_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/render_view_context_menu_browsertest_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/render_view_context_menu_browsertest_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/renderer_context_menu/render_view_context_menu_browsertest_util.h" />
+    <CustomBuild Include="../../../../../chrome/browser/renderer_context_menu/render_view_context_menu_test_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/render_view_context_menu_test_util.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/render_view_context_menu_test_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/renderer_context_menu/render_view_context_menu_test_util.h" />
+    <CustomBuild Include="../../../../../chrome/browser/resource_coordinator/tab_metrics_logger_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/tab_metrics_logger_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/tab_metrics_logger_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/sessions/session_restore_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/session_restore_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/session_restore_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/site_isolation/site_per_process_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/site_per_process_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/site_per_process_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/site_isolation/site_per_process_text_input_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/site_per_process_text_input_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/site_per_process_text_input_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ssl/typed_navigation_upgrade_throttle_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/typed_navigation_upgrade_throttle_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/typed_navigation_upgrade_throttle_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/autofill/autofill_popup_controller_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/autofill_popup_controller_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/autofill_popup_controller_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/blocked_content/popup_blocker_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/popup_blocker_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/popup_blocker_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/browser_command_controller_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/browser_command_controller_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/browser_command_controller_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/browser_focus_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/browser_focus_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/browser_focus_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/exclusive_access/fullscreen_controller_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/fullscreen_controller_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/fullscreen_controller_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/exclusive_access/fullscreen_controller_state_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/fullscreen_controller_state_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/fullscreen_controller_state_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/exclusive_access/fullscreen_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/fullscreen_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/fullscreen_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/find_bar/find_bar_host_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/find_bar_host_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/find_bar_host_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/fullscreen_keyboard_browsertest_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/fullscreen_keyboard_browsertest_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/fullscreen_keyboard_browsertest_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/fullscreen_keyboard_browsertest_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/hung_renderer/hung_renderer_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/hung_renderer_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/hung_renderer_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/keyboard_lock_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/keyboard_lock_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/keyboard_lock_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/omnibox/omnibox_view_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/omnibox_view_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/omnibox_view_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/passwords/manage_passwords_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/manage_passwords_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/manage_passwords_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/passwords/manage_passwords_test.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/search/instant_extended_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/instant_extended_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/instant_extended_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/search/instant_test_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/instant_test_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/instant_test_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/search/instant_test_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/search/third_party_ntp_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/third_party_ntp_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/third_party_ntp_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/signin_view_controller_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/signin_view_controller_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/signin_view_controller_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/startup/invalid_user_data_dir_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/invalid_user_data_dir_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/invalid_user_data_dir_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/startup/startup_browser_creator_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/startup_browser_creator_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/startup_browser_creator_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/translate/translate_bubble_test_utils.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/accessibility/caption_bubble_controller_views_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/caption_bubble_controller_views_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/caption_bubble_controller_views_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/content_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/content_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/content_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/content_test_utils.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/web_apps/frame_toolbar/web_app_frame_toolbar_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/web_app_frame_toolbar_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/web_app_frame_toolbar_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/web_dialog_view_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/web_dialog_view_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/web_dialog_view_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/webauth_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/webauth_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/webauth_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../ui/base/clipboard/clipboard_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/clipboard_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/clipboard_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/interactive_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/interactive_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/interactive_test_utils.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_aura.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/interactive_test_utils_aura.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/interactive_test_utils_aura.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/interactive_test_utils_aura.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/interactive_test_utils_views.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/interactive_test_utils_views.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_ui_tests_main.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/interactive_ui_tests_main.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/interactive_ui_tests_main.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/ppapi/ppapi_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/ppapi_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/ppapi_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/aura/accessibility/automation_manager_aura_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/automation_manager_aura_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/automation_manager_aura_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/drag_and_drop_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/drag_and_drop_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/drag_and_drop_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/read_later/read_later_test_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/read_later_test_utils.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/read_later_test_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/read_later/read_later_test_utils.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/payments/offer_notification_bubble_views_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/offer_notification_bubble_views_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/offer_notification_bubble_views_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/payments/virtual_card_manual_fallback_bubble_views_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/virtual_card_manual_fallback_bubble_views_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/virtual_card_manual_fallback_bubble_views_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/bookmarks/bookmark_bar_view_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/bookmark_bar_view_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/bookmark_bar_view_test.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/bookmarks/bookmark_bar_view_test_helper.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/certificate_selector_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/certificate_selector_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/certificate_selector_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/commander_frontend_views_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/commander_frontend_views_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/commander_frontend_views_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/constrained_window_views_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/constrained_window_views_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/constrained_window_views_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/exclusive_access_bubble_views_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/exclusive_access_bubble_views_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/exclusive_access_bubble_views_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/extensions/extension_dialog_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_dialog_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_dialog_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/extensions/extensions_toolbar_interactive_ui_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extensions_toolbar_interactive_ui_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extensions_toolbar_interactive_ui_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/find_bar_views_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/find_bar_views_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/find_bar_views_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/browser_view_focus_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/browser_view_focus_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/browser_view_focus_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/browser_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/browser_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/browser_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/tab_strip_region_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/tab_strip_region_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/tab_strip_region_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/fullscreen_control/fullscreen_control_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/fullscreen_control_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/fullscreen_control_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/keyboard_access_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/keyboard_access_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/keyboard_access_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/location_bar/location_icon_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/location_icon_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/location_icon_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/location_bar/selected_keyword_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/selected_keyword_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/selected_keyword_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/location_bar/star_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/star_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/star_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_controller_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/menu_controller_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/menu_controller_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/menu_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/menu_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_item_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/menu_item_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/menu_item_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_model_adapter_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/menu_model_adapter_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/menu_model_adapter_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_test_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/menu_test_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/menu_test_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/menu_test_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_view_drag_and_drop_test.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/menu_view_drag_and_drop_test.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/menu_view_drag_and_drop_test.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/omnibox/omnibox_view_views_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/omnibox_view_views_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/omnibox_view_views_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/passwords/manage_passwords_icon_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/manage_passwords_icon_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/manage_passwords_icon_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/passwords/password_bubble_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/password_bubble_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/password_bubble_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/permission_bubble/permission_bubble_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/permission_bubble_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/permission_bubble_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/sad_tab_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/sad_tab_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/sad_tab_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/ssl_client_certificate_selector_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/ssl_client_certificate_selector_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/ssl_client_certificate_selector_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/tabs/tab_drag_controller_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/tab_drag_controller_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/tab_drag_controller_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/tabs/tab_drag_controller_interactive_uitest.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/tabs/tab_hover_card_bubble_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/tab_hover_card_bubble_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/tab_hover_card_bubble_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/test/view_event_test_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/view_event_test_base.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/view_event_test_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/test/view_event_test_base.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/toolbar/toolbar_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/toolbar_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/toolbar_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/translate/translate_bubble_test_utils_views.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/translate_bubble_test_utils_views.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/translate_bubble_test_utils_views.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/user_education/feature_promo_bubble_view_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/feature_promo_bubble_view_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/feature_promo_bubble_view_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/user_education/feature_promo_snooze_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/feature_promo_snooze_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/feature_promo_snooze_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/global_media_controls/media_dialog_view_interactive_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/media_dialog_view_interactive_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/media_dialog_view_interactive_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/web_applications/test/system_web_app_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/system_web_app_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/system_web_app_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/tooltip/tooltip_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/tooltip_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/tooltip_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/accessibility/post_install_announcement_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/post_install_announcement_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/post_install_announcement_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/browser_window_property_manager_browsertest_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/browser_window_property_manager_browsertest_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/browser_window_property_manager_browsertest_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/status_icons/status_tray_state_changer_interactive_uitest_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/status_tray_state_changer_interactive_uitest_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/status_tray_state_changer_interactive_uitest_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/tooltip/tooltip_aura_interactive_uitest_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/tooltip_aura_interactive_uitest_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/tooltip_aura_interactive_uitest_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/notification_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/notification_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_interactive_uitest_support.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/notification_interactive_uitest_support.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/notification_interactive_uitest_support.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/notifications/notification_interactive_uitest_support.h" />
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_ui_manager_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/notification_ui_manager_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/notification_ui_manager_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/downgrade/user_data_downgrade_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/user_data_downgrade_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/user_data_downgrade_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_platform_bridge_win_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/notification_platform_bridge_win_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/notification_platform_bridge_win_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/win/fake_itoastnotifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/fake_itoastnotifier.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/fake_itoastnotifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/notifications/win/fake_itoastnotifier.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/send_mouse_move_uitest_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/send_mouse_move_uitest_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/send_mouse_move_uitest_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/accessibility/navigation_accessibility_uitest_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/navigation_accessibility_uitest_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/navigation_accessibility_uitest_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/accessibility/uia_accessibility_event_waiter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/uia_accessibility_event_waiter.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/uia_accessibility_event_waiter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/accessibility/uia_accessibility_event_waiter.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/touch_events_interactive_uitest_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/touch_events_interactive_uitest_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/touch_events_interactive_uitest_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/always_on_top_window_killer_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/always_on_top_window_killer_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/always_on_top_window_killer_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/always_on_top_window_killer_win.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/interactive_test_utils_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/interactive_test_utils_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/save_desktop_snapshot_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/save_desktop_snapshot_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/save_desktop_snapshot_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/save_desktop_snapshot_win.h" />
+    <CustomBuild Include="../../../../../chrome/test/base/window_contents_as_string_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/window_contents_as_string_win.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/window_contents_as_string_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/window_contents_as_string_win.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/autofill_accessibility_win_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/autofill_accessibility_win_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/autofill_accessibility_win_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/downgrade/user_data_snapshot_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/user_data_snapshot_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/user_data_snapshot_browsertest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/webui/extensions/extension_settings_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/extension_settings_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/extension_settings_browsertest.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/webui/extensions/extension_settings_browsertest.h" />
+    <CustomBuild Include="../../../../../chrome/browser/ui/webui/management/management_a11y_browsertest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/management_a11y_browsertest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/management_a11y_browsertest.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/webui/management/management_a11y_browsertest.h" />
+    <CustomBuild Include="../../../../../chrome/browser/metrics/desktop_session_duration/chrome_visibility_observer_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/chrome_visibility_observer_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/chrome_visibility_observer_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/webui_tab_strip_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/webui_tab_strip_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/webui_tab_strip_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/profiles/profile_bubble_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/profile_bubble_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/profile_bubble_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/profiles/profile_picker_interactive_uitest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/chrome/test/interactive_ui_tests/profile_picker_interactive_uitest.obj</Command>
+      <Outputs>$(OutDir)obj/chrome/test/interactive_ui_tests/profile_picker_interactive_uitest.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  interactive_ui_tests.exe" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean interactive_ui_tests.exe" />
+  </Target>
+</Project>

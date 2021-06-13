@@ -1,0 +1,1924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="chromium_src\chrome\browser">
+      <UniqueIdentifier>{8935F5A0-8B0A-FA11-3A89-7B8279302FED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chromium_src\chrome">
+      <UniqueIdentifier>{5B63783B-D352-A1A1-5FCC-C2D20CCE2FF3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chromium_src">
+      <UniqueIdentifier>{F2D485B0-6486-B966-65A8-6D4B3012AB82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\app">
+      <UniqueIdentifier>{C09D0471-4916-33A9-D912-C2C8D8BB4F33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell">
+      <UniqueIdentifier>{30FF0113-2473-626B-9634-EA7C672D69FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\api">
+      <UniqueIdentifier>{D0CEB8E7-47C1-44B4-9B49-89393597CD7F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser">
+      <UniqueIdentifier>{0FE433D2-57A7-AE4D-B035-EC0B0AFDEC58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\badging">
+      <UniqueIdentifier>{51AC1BC8-034D-3AA4-26AA-7234DF4B52DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\bluetooth">
+      <UniqueIdentifier>{944D4D25-5140-709C-CD46-7326426B98B5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\lib">
+      <UniqueIdentifier>{2847D65C-08D7-A8CC-9C9F-9E5B5DA46FBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\media">
+      <UniqueIdentifier>{92F9CE7E-2A09-CD0D-CAD4-D7D79FFF109C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\net\asar">
+      <UniqueIdentifier>{5AAC5303-3950-0AAC-EDEC-40328EB607A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\net">
+      <UniqueIdentifier>{86740B67-6068-78F5-3B31-456F59666A48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\notifications">
+      <UniqueIdentifier>{D78E93C7-565C-14E3-66AD-5CE9FCD3512C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\plugins">
+      <UniqueIdentifier>{B163DC5D-D84F-761E-E681-D8BC2ECDE811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\serial">
+      <UniqueIdentifier>{AC3E5F2D-BFF9-50E3-902B-6AA2DCAD8E6B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\ui">
+      <UniqueIdentifier>{77E39ABF-76BA-4857-C928-6065672E38BD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\ui\webui">
+      <UniqueIdentifier>{B8D1EBDB-89B9-91B9-0665-D4F99EB8F135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\common\api">
+      <UniqueIdentifier>{341A689F-C41D-7544-C733-200C89A343FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\common">
+      <UniqueIdentifier>{ACACA5A6-80F7-1C2A-BC43-249CBFB4D575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\common\asar">
+      <UniqueIdentifier>{4241E279-51D7-B560-84BF-DC6F9B9FF03C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\common\gin_converters">
+      <UniqueIdentifier>{3BFFAF1A-CA1F-628C-CAF3-B9E24F8CFF8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\common\gin_helper">
+      <UniqueIdentifier>{651AB0D3-D8C1-10FC-A1E7-073EAA48A692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\renderer\api\context_bridge">
+      <UniqueIdentifier>{DF882EBD-9FB8-B621-A1DC-3D10699834E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\renderer\api">
+      <UniqueIdentifier>{237AB494-5710-C94D-C43B-BEFEB49EE24E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\renderer">
+      <UniqueIdentifier>{D6E4E528-FD2D-3175-30AA-1D09A0DBD6F1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\utility">
+      <UniqueIdentifier>{490596ED-FE40-6C6A-7E0C-DEA4C5AB88BE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\notifications\win">
+      <UniqueIdentifier>{084D1397-D1D4-AD5A-86B2-2EA0956020F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\notifications\win\win32_desktop_notifications">
+      <UniqueIdentifier>{1908C5CC-0B1F-254D-9805-45FCD22923F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\ui\views">
+      <UniqueIdentifier>{E85B9742-3157-631C-EC14-DFDA9A4C83EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\ui\win">
+      <UniqueIdentifier>{583CD49E-4E48-DB52-FD07-20C90140BB9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\win">
+      <UniqueIdentifier>{6B093102-C700-C892-D92C-271C422A5BD4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\osr">
+      <UniqueIdentifier>{24DE370E-C9F4-F975-8A15-9C070C5A070C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\api\views">
+      <UniqueIdentifier>{7F6D961B-8419-F9A7-2D98-1A026BD5FAF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\printing">
+      <UniqueIdentifier>{1A57707A-494A-B28B-B823-23A8CE520C0A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\renderer\printing">
+      <UniqueIdentifier>{4EE35FE6-75D3-7E96-2B22-352934CACBCE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\extensions\api\i18n">
+      <UniqueIdentifier>{B513ACE6-383C-2128-A7DE-AD2BB8A8C852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\extensions\api">
+      <UniqueIdentifier>{912328BC-53B7-BA76-F6B3-86D35889B772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\extensions">
+      <UniqueIdentifier>{3F0BCF2F-D369-EFF6-70AF-CFE761841461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\extensions\api\management">
+      <UniqueIdentifier>{C0F89869-296D-F1C7-70D0-2349A2D05D18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\extensions\api\resources_private">
+      <UniqueIdentifier>{B2926F8E-5E71-9FC6-14DC-127BBADE7E59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\extensions\api\runtime">
+      <UniqueIdentifier>{AD78D677-4BF1-1622-60E2-C534E42B9585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\extensions\api\streams_private">
+      <UniqueIdentifier>{3D00F9B5-9F75-A07C-B45F-15A2FB5E5BF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\browser\extensions\api\tabs">
+      <UniqueIdentifier>{562CD215-CB46-85D1-FB4C-92955A09F223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\common\extensions">
+      <UniqueIdentifier>{49487436-B904-583F-9EE6-00142528ACAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shell\renderer\extensions">
+      <UniqueIdentifier>{7BCEFFEB-436E-9555-BC6C-1147FD3B71C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\out\x64-debug\gen\electron">
+      <UniqueIdentifier>{DA094045-DDF0-ED2F-E361-8D3EB158D21B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\out\x64-debug\gen">
+      <UniqueIdentifier>{FB7B6038-CACC-C9C1-D2B9-9215EB2B7EBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\out\x64-debug">
+      <UniqueIdentifier>{27883513-87D4-456D-412B-294A3C7498F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\out">
+      <UniqueIdentifier>{FBD62108-6F7E-E78E-9895-92E1AA2F5AC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../electron/chromium_src/chrome/browser/process_singleton.h">
+      <Filter>chromium_src\chrome\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/app/command_line_args.cc">
+      <Filter>shell\app</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/command_line_args.h">
+      <Filter>shell\app</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/app/electron_content_client.cc">
+      <Filter>shell\app</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/electron_content_client.h">
+      <Filter>shell\app</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/app/electron_crash_reporter_client.cc">
+      <Filter>shell\app</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/electron_crash_reporter_client.h">
+      <Filter>shell\app</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/app/electron_main_delegate.cc">
+      <Filter>shell\app</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/electron_main_delegate.h">
+      <Filter>shell\app</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/app/uv_task_runner.cc">
+      <Filter>shell\app</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/uv_task_runner.h">
+      <Filter>shell\app</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_app.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_app.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_auto_updater.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_auto_updater.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_base_window.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_base_window.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_browser_view.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_browser_view.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_browser_window.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_browser_window.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_content_tracing.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_cookies.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_cookies.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_crash_reporter.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_crash_reporter.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_data_pipe_holder.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_data_pipe_holder.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_debugger.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_debugger.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_dialog.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_download_item.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_download_item.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_event.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_event_emitter.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_event_emitter.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_global_shortcut.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_global_shortcut.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_in_app_purchase.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_in_app_purchase.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_menu.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_menu.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_native_theme.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_native_theme.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_net.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_net_log.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_net_log.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_notification.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_notification.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_power_monitor.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_power_monitor.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_power_save_blocker.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_power_save_blocker.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_printing.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_protocol.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_protocol.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_screen.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_screen.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_service_worker_context.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_service_worker_context.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_session.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_session.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_system_preferences.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_system_preferences.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_tray.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_tray.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_url_loader.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_url_loader.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_view.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_view.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_contents.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_web_contents.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_contents_impl.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_contents_view.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_web_contents_view.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_frame_main.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_web_frame_main.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_request.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_web_request.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_web_view_manager.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/event.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/event.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/frame_subscriber.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/frame_subscriber.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/gpu_info_enumerator.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/gpu_info_enumerator.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/gpuinfo_manager.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/gpuinfo_manager.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/message_port.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/message_port.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/process_metric.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/process_metric.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/save_page_handler.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/save_page_handler.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/ui_event.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/ui_event.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/auto_updater.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/auto_updater.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/badging/badge_manager.cc">
+      <Filter>shell\browser\badging</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/badging/badge_manager.h">
+      <Filter>shell\browser\badging</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/badging/badge_manager_factory.cc">
+      <Filter>shell\browser\badging</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/badging/badge_manager_factory.h">
+      <Filter>shell\browser\badging</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/bluetooth/electron_bluetooth_delegate.cc">
+      <Filter>shell\browser\bluetooth</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/bluetooth/electron_bluetooth_delegate.h">
+      <Filter>shell\browser\bluetooth</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/browser.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/browser.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/browser_observer.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/browser_process_impl.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/browser_process_impl.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/child_web_contents_tracker.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/child_web_contents_tracker.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/cookie_change_notifier.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/cookie_change_notifier.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_autofill_driver.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_autofill_driver.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_autofill_driver_factory.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_autofill_driver_factory.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_browser_client.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_browser_client.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_browser_context.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_browser_context.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_browser_handler_impl.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_browser_handler_impl.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_browser_main_parts.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_browser_main_parts.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_download_manager_delegate.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_download_manager_delegate.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_gpu_client.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_gpu_client.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_javascript_dialog_manager.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_javascript_dialog_manager.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_navigation_throttle.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_navigation_throttle.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_permission_manager.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_permission_manager.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_quota_permission_context.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_quota_permission_context.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_speech_recognition_manager_delegate.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_speech_recognition_manager_delegate.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_web_ui_controller_factory.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_web_ui_controller_factory.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/event_emitter_mixin.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/event_emitter_mixin.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/extended_web_contents_observer.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/feature_list.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/feature_list.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/file_select_helper.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/file_select_helper.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/file_select_helper_mac.mm">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/font_defaults.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/font_defaults.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/javascript_environment.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/javascript_environment.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/lib/bluetooth_chooser.cc">
+      <Filter>shell\browser\lib</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/lib/bluetooth_chooser.h">
+      <Filter>shell\browser\lib</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/login_handler.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/login_handler.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/media/media_capture_devices_dispatcher.cc">
+      <Filter>shell\browser\media</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/media/media_capture_devices_dispatcher.h">
+      <Filter>shell\browser\media</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/media/media_device_id_salt.cc">
+      <Filter>shell\browser\media</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/media/media_device_id_salt.h">
+      <Filter>shell\browser\media</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/media/media_stream_devices_controller.cc">
+      <Filter>shell\browser\media</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/media/media_stream_devices_controller.h">
+      <Filter>shell\browser\media</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/microtasks_runner.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/microtasks_runner.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/native_browser_view.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/native_browser_view.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/native_window.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/native_window.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/native_window_observer.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/asar/asar_url_loader.cc">
+      <Filter>shell\browser\net\asar</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/asar/asar_url_loader.h">
+      <Filter>shell\browser\net\asar</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/asar/asar_url_loader_factory.cc">
+      <Filter>shell\browser\net\asar</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/asar/asar_url_loader_factory.h">
+      <Filter>shell\browser\net\asar</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/cert_verifier_client.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/cert_verifier_client.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/electron_url_loader_factory.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/electron_url_loader_factory.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/network_context_service.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/network_context_service.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/network_context_service_factory.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/network_context_service_factory.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/node_stream_loader.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/node_stream_loader.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/proxying_url_loader_factory.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/proxying_url_loader_factory.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/proxying_websocket.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/proxying_websocket.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/resolve_proxy_helper.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/resolve_proxy_helper.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/system_network_context_manager.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/system_network_context_manager.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/net/url_pipe_loader.cc">
+      <Filter>shell\browser\net</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/net/url_pipe_loader.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/net/web_request_api_interface.h">
+      <Filter>shell\browser\net</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/network_hints_handler_impl.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/network_hints_handler_impl.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/notification.cc">
+      <Filter>shell\browser\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/notification.h">
+      <Filter>shell\browser\notifications</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/notifications/notification_delegate.h">
+      <Filter>shell\browser\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/notification_presenter.cc">
+      <Filter>shell\browser\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/notification_presenter.h">
+      <Filter>shell\browser\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/platform_notification_service.cc">
+      <Filter>shell\browser\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/platform_notification_service.h">
+      <Filter>shell\browser\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/plugins/plugin_utils.cc">
+      <Filter>shell\browser\plugins</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/plugins/plugin_utils.h">
+      <Filter>shell\browser\plugins</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/pref_store_delegate.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/pref_store_delegate.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/protocol_registry.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/protocol_registry.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/relauncher.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/relauncher.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/serial/electron_serial_delegate.cc">
+      <Filter>shell\browser\serial</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/serial/electron_serial_delegate.h">
+      <Filter>shell\browser\serial</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/serial/serial_chooser_context.cc">
+      <Filter>shell\browser\serial</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/serial/serial_chooser_context.h">
+      <Filter>shell\browser\serial</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/serial/serial_chooser_context_factory.cc">
+      <Filter>shell\browser\serial</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/serial/serial_chooser_context_factory.h">
+      <Filter>shell\browser\serial</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/serial/serial_chooser_controller.cc">
+      <Filter>shell\browser\serial</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/serial/serial_chooser_controller.h">
+      <Filter>shell\browser\serial</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/session_preferences.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/session_preferences.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/special_storage_policy.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/special_storage_policy.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/accelerator_util.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/accelerator_util.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/autofill_popup.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/autofill_popup.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/ui/certificate_trust.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/devtools_manager_delegate.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/devtools_manager_delegate.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/devtools_ui.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/devtools_ui.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/drag_util.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/drag_util.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/electron_menu_model.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/electron_menu_model.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/ui/file_dialog.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/inspectable_web_contents.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/inspectable_web_contents.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/ui/inspectable_web_contents_delegate.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/ui/inspectable_web_contents_view.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/inspectable_web_contents_view_delegate.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/inspectable_web_contents_view_delegate.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/ui/message_box.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/tray_icon.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/tray_icon.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/ui/tray_icon_observer.h">
+      <Filter>shell\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/webui/accessibility_ui.cc">
+      <Filter>shell\browser\ui\webui</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/webui/accessibility_ui.h">
+      <Filter>shell\browser\ui\webui</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/unresponsive_suppressor.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/unresponsive_suppressor.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/web_contents_permission_helper.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_contents_permission_helper.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/web_contents_preferences.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_contents_preferences.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/web_contents_zoom_controller.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_contents_zoom_controller.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/web_dialog_helper.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_dialog_helper.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/web_view_guest_delegate.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_view_guest_delegate.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/web_view_manager.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/web_view_manager.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/window_list.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/window_list.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/window_list_observer.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/zoom_level_delegate.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/zoom_level_delegate.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_asar.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_clipboard.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/electron_api_clipboard.h">
+      <Filter>shell\common\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_command_line.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_environment.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/electron_api_key_weak_map.h">
+      <Filter>shell\common\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_native_image.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/electron_api_native_image.h">
+      <Filter>shell\common\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_shell.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_v8_util.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_bindings.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/electron_bindings.h">
+      <Filter>shell\common\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/api/features.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/api/object_life_monitor.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/api/object_life_monitor.h">
+      <Filter>shell\common\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/application_info.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/application_info.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/asar/archive.cc">
+      <Filter>shell\common\asar</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/asar/archive.h">
+      <Filter>shell\common\asar</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/asar/asar_util.cc">
+      <Filter>shell\common\asar</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/asar/asar_util.h">
+      <Filter>shell\common\asar</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/asar/scoped_temporary_file.cc">
+      <Filter>shell\common\asar</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/asar/scoped_temporary_file.h">
+      <Filter>shell\common\asar</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/color_util.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/color_util.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/crash_keys.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/crash_keys.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/electron_command_line.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/electron_command_line.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/electron_constants.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/electron_constants.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/electron_paths.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/accelerator_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/accelerator_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_converters/base_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/blink_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/blink_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_converters/callback_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/content_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/content_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/file_dialog_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/file_dialog_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_converters/file_path_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/frame_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/frame_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/gfx_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/gfx_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_converters/guid_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_converters/gurl_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/image_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/image_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/message_box_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/message_box_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_converters/native_window_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/net_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/net_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_converters/std_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/time_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/time_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/value_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/value_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/arguments.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/arguments.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/callback.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/callback.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/cleaned_up_at_exit.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/cleaned_up_at_exit.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_helper/constructible.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_helper/constructor.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/destroyable.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/destroyable.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_helper/dictionary.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/error_thrower.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/error_thrower.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/event_emitter.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/event_emitter.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/event_emitter_caller.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/event_emitter_caller.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/function_template.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/function_template.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_helper/function_template_extensions.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/locker.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/locker.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/microtasks_scope.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/microtasks_scope.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/object_template_builder.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/object_template_builder.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/persistent_dictionary.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/persistent_dictionary.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_helper/pinnable.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/promise.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/promise.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/trackable_object.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/trackable_object.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_helper/wrappable.cc">
+      <Filter>shell\common\gin_helper</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_helper/wrappable.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/gin_helper/wrappable_base.h">
+      <Filter>shell\common\gin_helper</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/heap_snapshot.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/heap_snapshot.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/key_weak_map.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/keyboard_util.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/keyboard_util.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/language_util.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/mouse_util.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/mouse_util.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/node_bindings.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/node_bindings.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/node_includes.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/node_util.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/node_util.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/options_switches.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/options_switches.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/platform_util.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/platform_util.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/platform_util_internal.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/process_util.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/process_util.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/skia_util.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/skia_util.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/v8_value_converter.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/v8_value_converter.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/v8_value_serializer.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/v8_value_serializer.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <None Include="../../../../electron/shell/common/world_ids.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/api/context_bridge/object_cache.cc">
+      <Filter>shell\renderer\api\context_bridge</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/api/context_bridge/object_cache.h">
+      <Filter>shell\renderer\api\context_bridge</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_context_bridge.cc">
+      <Filter>shell\renderer\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/api/electron_api_context_bridge.h">
+      <Filter>shell\renderer\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_crash_reporter_renderer.cc">
+      <Filter>shell\renderer\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_ipc_renderer.cc">
+      <Filter>shell\renderer\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_spell_check_client.cc">
+      <Filter>shell\renderer\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/api/electron_api_spell_check_client.h">
+      <Filter>shell\renderer\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/api/electron_api_web_frame.cc">
+      <Filter>shell\renderer\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/renderer/browser_exposed_renderer_interfaces.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/browser_exposed_renderer_interfaces.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/content_settings_observer.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/content_settings_observer.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_api_service_impl.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_api_service_impl.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_autofill_agent.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_autofill_agent.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_render_frame_observer.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_render_frame_observer.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_renderer_client.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_renderer_client.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_renderer_pepper_host_factory.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_renderer_pepper_host_factory.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/electron_sandboxed_renderer_client.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/electron_sandboxed_renderer_client.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/guest_view_container.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/guest_view_container.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/renderer_client_base.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/renderer_client_base.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/web_worker_observer.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/web_worker_observer.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/utility/electron_content_utility_client.cc">
+      <Filter>shell\utility</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/utility/electron_content_utility_client.h">
+      <Filter>shell\utility</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/chromium_src/chrome/browser/process_singleton_win.cc">
+      <Filter>chromium_src\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_power_monitor_win.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_system_preferences_win.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/browser_win.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/native_window_views_win.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/notification_presenter_win.cc">
+      <Filter>shell\browser\notifications\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/notification_presenter_win.h">
+      <Filter>shell\browser\notifications\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/notification_presenter_win7.cc">
+      <Filter>shell\browser\notifications\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/notification_presenter_win7.h">
+      <Filter>shell\browser\notifications\win</Filter>
+    </None>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/common.h">
+      <Filter>shell\browser\notifications\win\win32_desktop_notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/desktop_notification_controller.cc">
+      <Filter>shell\browser\notifications\win\win32_desktop_notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/desktop_notification_controller.h">
+      <Filter>shell\browser\notifications\win\win32_desktop_notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/toast_uia.cc">
+      <Filter>shell\browser\notifications\win\win32_desktop_notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/toast_uia.h">
+      <Filter>shell\browser\notifications\win\win32_desktop_notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/toast.cc">
+      <Filter>shell\browser\notifications\win\win32_desktop_notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_desktop_notifications/toast.h">
+      <Filter>shell\browser\notifications\win\win32_desktop_notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/win32_notification.cc">
+      <Filter>shell\browser\notifications\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/win32_notification.h">
+      <Filter>shell\browser\notifications\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/notifications/win/windows_toast_notification.cc">
+      <Filter>shell\browser\notifications\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/notifications/win/windows_toast_notification.h">
+      <Filter>shell\browser\notifications\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/relauncher_win.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/certificate_trust_win.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/file_dialog_win.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/message_box_win.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/tray_icon_win.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/electron_views_delegate_win.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/win_frame_view.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/win_frame_view.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/dialog_thread.cc">
+      <Filter>shell\browser\ui\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/dialog_thread.h">
+      <Filter>shell\browser\ui\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/electron_desktop_native_widget_aura.cc">
+      <Filter>shell\browser\ui\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/electron_desktop_native_widget_aura.h">
+      <Filter>shell\browser\ui\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/electron_desktop_window_tree_host_win.cc">
+      <Filter>shell\browser\ui\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/electron_desktop_window_tree_host_win.h">
+      <Filter>shell\browser\ui\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/jump_list.cc">
+      <Filter>shell\browser\ui\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/jump_list.h">
+      <Filter>shell\browser\ui\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/notify_icon_host.cc">
+      <Filter>shell\browser\ui\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/notify_icon_host.h">
+      <Filter>shell\browser\ui\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/notify_icon.cc">
+      <Filter>shell\browser\ui\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/notify_icon.h">
+      <Filter>shell\browser\ui\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/win/taskbar_host.cc">
+      <Filter>shell\browser\ui\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/win/taskbar_host.h">
+      <Filter>shell\browser\ui\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/win/scoped_hstring.cc">
+      <Filter>shell\browser\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/win/scoped_hstring.h">
+      <Filter>shell\browser\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/api/electron_api_native_image_win.cc">
+      <Filter>shell\common\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/application_info_win.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/language_util_win.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/common/node_bindings_win.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/node_bindings_win.h">
+      <Filter>shell\common</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/platform_util_win.cc">
+      <Filter>shell\common</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_browser_window_views.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_menu_views.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_menu_views.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/native_browser_view_views.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/native_browser_view_views.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/native_window_views.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/native_window_views.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/drag_util_views.cc">
+      <Filter>shell\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/autofill_popup_view.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/autofill_popup_view.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/electron_views_delegate.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/electron_views_delegate.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/frameless_view.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/frameless_view.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/inspectable_web_contents_view_views.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/inspectable_web_contents_view_views.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/menu_bar.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/menu_bar.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/menu_delegate.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/menu_delegate.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/menu_model_adapter.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/menu_model_adapter.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/native_frame_view.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/native_frame_view.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/root_view.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/root_view.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/ui/views/submenu_button.cc">
+      <Filter>shell\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/ui/views/submenu_button.h">
+      <Filter>shell\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/fake_location_provider.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/fake_location_provider.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/pepper_helper.cc">
+      <Filter>shell\renderer</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/pepper_helper.h">
+      <Filter>shell\renderer</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/app/node_main.cc">
+      <Filter>shell\app</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/app/node_main.h">
+      <Filter>shell\app</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_host_display_client.cc">
+      <Filter>shell\browser\osr</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_host_display_client.h">
+      <Filter>shell\browser\osr</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_render_widget_host_view.cc">
+      <Filter>shell\browser\osr</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_render_widget_host_view.h">
+      <Filter>shell\browser\osr</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_video_consumer.cc">
+      <Filter>shell\browser\osr</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_video_consumer.h">
+      <Filter>shell\browser\osr</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_view_proxy.cc">
+      <Filter>shell\browser\osr</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_view_proxy.h">
+      <Filter>shell\browser\osr</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/osr/osr_web_contents_view.cc">
+      <Filter>shell\browser\osr</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/osr/osr_web_contents_view.h">
+      <Filter>shell\browser\osr</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/electron_api_desktop_capturer.cc">
+      <Filter>shell\browser\api</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/electron_api_desktop_capturer.h">
+      <Filter>shell\browser\api</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/api/views/electron_api_image_view.cc">
+      <Filter>shell\browser\api\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/api/views/electron_api_image_view.h">
+      <Filter>shell\browser\api\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/printing/print_preview_message_handler.cc">
+      <Filter>shell\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/printing/print_preview_message_handler.h">
+      <Filter>shell\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/printing/print_view_manager_electron.cc">
+      <Filter>shell\browser\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/printing/print_view_manager_electron.h">
+      <Filter>shell\browser\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/printing/print_render_frame_helper_delegate.cc">
+      <Filter>shell\renderer\printing</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/printing/print_render_frame_helper_delegate.h">
+      <Filter>shell\renderer\printing</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/i18n/i18n_api.cc">
+      <Filter>shell\browser\extensions\api\i18n</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/i18n/i18n_api.h">
+      <Filter>shell\browser\extensions\api\i18n</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/management/electron_management_api_delegate.cc">
+      <Filter>shell\browser\extensions\api\management</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/management/electron_management_api_delegate.h">
+      <Filter>shell\browser\extensions\api\management</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/resources_private/resources_private_api.cc">
+      <Filter>shell\browser\extensions\api\resources_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/resources_private/resources_private_api.h">
+      <Filter>shell\browser\extensions\api\resources_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/runtime/electron_runtime_api_delegate.cc">
+      <Filter>shell\browser\extensions\api\runtime</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/runtime/electron_runtime_api_delegate.h">
+      <Filter>shell\browser\extensions\api\runtime</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/streams_private/streams_private_api.cc">
+      <Filter>shell\browser\extensions\api\streams_private</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/streams_private/streams_private_api.h">
+      <Filter>shell\browser\extensions\api\streams_private</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/api/tabs/tabs_api.cc">
+      <Filter>shell\browser\extensions\api\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/api/tabs/tabs_api.h">
+      <Filter>shell\browser\extensions\api\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_browser_context_keyed_service_factories.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_browser_context_keyed_service_factories.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_component_extension_resource_manager.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_component_extension_resource_manager.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_display_info_provider.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_display_info_provider.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_host_delegate.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_host_delegate.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_loader.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_loader.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_message_filter.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_message_filter.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_system_factory.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_system_factory.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_system.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_system.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extension_web_contents_observer.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extension_web_contents_observer.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extensions_api_client.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extensions_api_client.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extensions_browser_api_provider.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extensions_browser_api_provider.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_extensions_browser_client.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_extensions_browser_client.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_kiosk_delegate.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_kiosk_delegate.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_messaging_delegate.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_messaging_delegate.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_navigation_ui_data.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_navigation_ui_data.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/extensions/electron_process_manager_delegate.cc">
+      <Filter>shell\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/extensions/electron_process_manager_delegate.h">
+      <Filter>shell\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/extensions/electron_extensions_api_provider.cc">
+      <Filter>shell\common\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/extensions/electron_extensions_api_provider.h">
+      <Filter>shell\common\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/extensions/electron_extensions_client.cc">
+      <Filter>shell\common\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/extensions/electron_extensions_client.h">
+      <Filter>shell\common\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/common/gin_converters/extension_converter.cc">
+      <Filter>shell\common\gin_converters</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/common/gin_converters/extension_converter.h">
+      <Filter>shell\common\gin_converters</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/extensions/electron_extensions_dispatcher_delegate.cc">
+      <Filter>shell\renderer\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/extensions/electron_extensions_dispatcher_delegate.h">
+      <Filter>shell\renderer\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/renderer/extensions/electron_extensions_renderer_client.cc">
+      <Filter>shell\renderer\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/renderer/extensions/electron_extensions_renderer_client.h">
+      <Filter>shell\renderer\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../electron/shell/browser/electron_pdf_web_contents_helper_client.cc">
+      <Filter>shell\browser</Filter>
+    </CustomBuild>
+    <None Include="../../../../electron/shell/browser/electron_pdf_web_contents_helper_client.h">
+      <Filter>shell\browser</Filter>
+    </None>
+    <None Include="../../../../out/x64-debug/gen/electron/fuses.h">
+      <Filter>..\out\x64-debug\gen\electron</Filter>
+    </None>
+    <CustomBuild Include="../../../../out/x64-debug/gen/electron/fuses.cc">
+      <Filter>..\out\x64-debug\gen\electron</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

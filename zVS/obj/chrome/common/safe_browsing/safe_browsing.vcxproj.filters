@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="../../../../../../chrome/common/safe_browsing/ipc_protobuf_message_macros.h" />
+    <None Include="../../../../../../chrome/common/safe_browsing/ipc_protobuf_message_null_macros.h" />
+    <None Include="../../../../../../chrome/common/safe_browsing/protobuf_message_log_macros.h" />
+    <None Include="../../../../../../chrome/common/safe_browsing/protobuf_message_read_macros.h" />
+    <None Include="../../../../../../chrome/common/safe_browsing/protobuf_message_write_macros.h" />
+    <CustomBuild Include="../../../../../../chrome/common/safe_browsing/zip_analyzer.cc" />
+    <None Include="../../../../../../chrome/common/safe_browsing/zip_analyzer.h" />
+  </ItemGroup>
+</Project>

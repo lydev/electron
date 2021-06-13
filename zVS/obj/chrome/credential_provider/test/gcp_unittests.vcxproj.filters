@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\chrome\credential_provider\extension">
+      <UniqueIdentifier>{35067F57-C43B-E66B-18CD-5879BF787C50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\chrome\credential_provider">
+      <UniqueIdentifier>{FE02D594-163C-3C72-FC26-C6087B5A9E92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\chrome">
+      <UniqueIdentifier>{0B63EBD7-5A1A-B88C-9F18-86224ECCC5DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\chrome\credential_provider\gaiacp">
+      <UniqueIdentifier>{8F2ED451-E7AD-E039-8815-24636DB1460D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/extension/app_inventory_manager_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\extension</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/extension/service_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\extension</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/extension/task_manager_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\extension</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/associated_user_validator_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/device_policies_manager_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/experiments_manager_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/gaia_credential_base_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/gaia_credential_other_user_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/gaia_credential_provider_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/gaia_credential_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/gcp_utils_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/gem_device_details_manager_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/reauth_credential_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/user_policies_manager_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/gaiacp/win_http_url_fetcher_unittests.cc">
+      <Filter>..\..\..\chrome\credential_provider\gaiacp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/test/com_fakes.cc" />
+    <None Include="../../../../../../chrome/credential_provider/test/com_fakes.h" />
+    <CustomBuild Include="../../../../../../chrome/credential_provider/test/gcp_fakes.cc" />
+    <None Include="../../../../../../chrome/credential_provider/test/gcp_fakes.h" />
+    <CustomBuild Include="../../../../../../chrome/credential_provider/test/gcp_gls_output_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/credential_provider/test/gcp_setup_unittests.cc" />
+    <CustomBuild Include="../../../../../../chrome/credential_provider/test/gcp_test_main.cc" />
+    <CustomBuild Include="../../../../../../chrome/credential_provider/test/gls_runner_test_base.cc" />
+    <None Include="../../../../../../chrome/credential_provider/test/gls_runner_test_base.h" />
+    <None Include="../../../../../../chrome/credential_provider/test/test_credential.h" />
+    <None Include="../../../../../../chrome/credential_provider/test/test_credential_provider.h" />
+  </ItemGroup>
+</Project>

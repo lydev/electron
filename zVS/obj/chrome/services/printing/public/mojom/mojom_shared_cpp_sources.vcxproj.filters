@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom">
+      <UniqueIdentifier>{8D88C434-0913-40DB-670B-1AA5025A55FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public">
+      <UniqueIdentifier>{D2B4A6F0-7340-62ED-96B1-46980C98D6F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome\services\printing">
+      <UniqueIdentifier>{E8C11A1C-56DB-8851-B14A-1C7034ED7DBB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome\services">
+      <UniqueIdentifier>{AD406625-E34F-60CD-E087-043CBA941B3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{0631C16B-79A0-2B09-03B1-1194DA0D7239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{E6448AF1-8BF1-E4CF-7A3E-8D79A0FC4C94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{9D755C22-D77A-628E-C34D-94F7A9E924B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..\out">
+      <UniqueIdentifier>{7EDCFEBF-244F-7524-40D7-1473E1524D83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\..">
+      <UniqueIdentifier>{1109D6BC-040F-9837-EA64-A8443901A8C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_nup_converter.mojom-params-data.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_nup_converter.mojom-shared-internal.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_nup_converter.mojom-shared.cc">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_nup_converter.mojom-shared.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_render_settings.mojom-params-data.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_render_settings.mojom-shared-internal.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_render_settings.mojom-shared.cc">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_render_settings.mojom-shared.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_to_pwg_raster_converter.mojom-params-data.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_to_pwg_raster_converter.mojom-shared-internal.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_to_pwg_raster_converter.mojom-shared.cc">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_to_pwg_raster_converter.mojom-shared.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/printing_service.mojom-params-data.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/printing_service.mojom-shared-internal.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/printing_service.mojom-shared.cc">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/printing_service.mojom-shared.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_to_emf_converter.mojom-params-data.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_to_emf_converter.mojom-shared-internal.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_to_emf_converter.mojom-shared.cc">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/pdf_to_emf_converter.mojom-shared.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/print_backend_service.mojom-params-data.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/print_backend_service.mojom-shared-internal.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/print_backend_service.mojom-shared.cc">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../../out/x64-debug/gen/chrome/services/printing/public/mojom/print_backend_service.mojom-shared.h">
+      <Filter>..\..\..\..\..\out\x64-debug\gen\chrome\services\printing\public\mojom</Filter>
+    </None>
+  </ItemGroup>
+</Project>

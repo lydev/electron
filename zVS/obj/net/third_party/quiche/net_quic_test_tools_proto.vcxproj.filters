@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\out\x64-debug\gen\net\third_party\quiche\src\quic\test_tools">
+      <UniqueIdentifier>{2341A219-1A58-16F7-FD2E-CF2C1DE3FD34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\net\third_party\quiche\src\quic">
+      <UniqueIdentifier>{755F24C2-A211-589B-AF58-01949A677032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\net\third_party\quiche\src">
+      <UniqueIdentifier>{4F180DE9-5523-866F-3514-43462313DED3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\net\third_party\quiche">
+      <UniqueIdentifier>{D0100B1B-3FB6-460E-27FA-F0B01A376DD2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\net\third_party">
+      <UniqueIdentifier>{51F052B1-CFA6-73CA-A344-65BD8E2B5614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen\net">
+      <UniqueIdentifier>{03F7167A-15B3-4C61-7FE3-51099F866198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{96638BD7-4C41-4F0D-A035-4B0D220C45C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out\x64-debug">
+      <UniqueIdentifier>{8E0664AF-844A-8DAE-2839-49242DA467FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\out">
+      <UniqueIdentifier>{50BC2BDD-CE9C-16A8-60AF-198B16301065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../out/x64-debug/gen/net/third_party/quiche/src/quic/test_tools/send_algorithm_test_result.pb.h">
+      <Filter>..\..\..\out\x64-debug\gen\net\third_party\quiche\src\quic\test_tools</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../out/x64-debug/gen/net/third_party/quiche/src/quic/test_tools/send_algorithm_test_result.pb.cc">
+      <Filter>..\..\..\out\x64-debug\gen\net\third_party\quiche\src\quic\test_tools</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

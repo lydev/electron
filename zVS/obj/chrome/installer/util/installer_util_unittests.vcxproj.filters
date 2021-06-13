@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/installer/util/advanced_firewall_manager_win_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/beacons_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/callback_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/channel_info_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/conditional_work_item_list_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/copy_tree_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/create_dir_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/create_reg_key_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_after_reboot_helper_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_old_versions_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_reg_key_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_reg_value_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/delete_tree_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/duplicate_tree_detector_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_labels_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_storage_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/experiment_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/google_update_settings_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/helper_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/initial_preferences_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/install_util_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/l10n_string_util_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/logging_installer_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/lzma_util_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/move_tree_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/product_state_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/product_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/registry_key_backup_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/registry_test_data.cc" />
+    <None Include="../../../../../../chrome/installer/util/registry_test_data.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/run_all_unittests.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/scoped_token_privilege_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/scoped_user_protocol_entry_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/self_cleaning_temp_dir_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/set_reg_value_work_item_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/shell_util_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/work_item_list_unittest.cc" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/work_item_mocks.cc" />
+    <None Include="../../../../../../chrome/installer/util/work_item_mocks.h" />
+    <CustomBuild Include="../../../../../../chrome/installer/util/work_item_unittest.cc" />
+  </ItemGroup>
+</Project>

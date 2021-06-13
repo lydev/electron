@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{530671C4-A49E-2227-1185-B142528140EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cert">
+      <UniqueIdentifier>{128BBFA8-A761-783A-8000-22EA1AE044BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cookies">
+      <UniqueIdentifier>{7006C930-118C-1DF7-416B-E6000CD80D4F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disk_cache">
+      <UniqueIdentifier>{0E02E725-0B88-0DE2-EF73-E5C9A28DD664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filter">
+      <UniqueIdentifier>{610876E0-2CEE-64E2-9FE4-376FFEB6B9B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="http">
+      <UniqueIdentifier>{2A6457FD-8445-F485-B14F-09BB3C91EA95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{560C82B6-B156-D6D3-5E51-CC6E8A513FC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nqe">
+      <UniqueIdentifier>{E674FA4A-2AD7-5372-F896-168302C71516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy_resolution">
+      <UniqueIdentifier>{3DB801E8-19F7-0FAE-A26E-C4CCF98F3609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="quic">
+      <UniqueIdentifier>{F6643CD4-47DE-7201-1E49-DF440379ECD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{73FFBDEA-29C2-4F50-E6C0-5FE466B20A7C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="spdy">
+      <UniqueIdentifier>{B7007C7E-7418-AD4E-4832-E099ECE5DD37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ssl">
+      <UniqueIdentifier>{8DE9147C-8908-6530-5D16-179130CA5EA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{DF44A234-9BB1-A451-D75B-D95B649E9002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\embedded_test_server">
+      <UniqueIdentifier>{AE0DC416-4113-DA2D-58EB-206796DFBBC5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\url_request">
+      <UniqueIdentifier>{74DDAA0B-6BBB-CD57-2326-775C96DF95F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="url_request">
+      <UniqueIdentifier>{30874AF5-9E1A-E818-4268-C74283DD1CE2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\spawned_test_server">
+      <UniqueIdentifier>{45813359-5265-DFE1-7087-CE36C0988A85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network_error_logging">
+      <UniqueIdentifier>{71D1DA50-40BF-94CF-FA46-996BB719085C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="reporting">
+      <UniqueIdentifier>{BF30706A-86FE-40E0-6147-BFC06271BAB5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../net/base/load_timing_info_test_util.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/base/load_timing_info_test_util.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/base/mock_file_stream.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/base/mock_file_stream.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/base/mock_network_change_notifier.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/base/mock_network_change_notifier.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/base/test_completion_callback.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/base/test_completion_callback.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/base/test_data_stream.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/base/test_data_stream.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cert/mock_cert_verifier.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cert/mock_cert_verifier.h">
+      <Filter>cert</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cert/mock_client_cert_verifier.cc">
+      <Filter>cert</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cert/mock_client_cert_verifier.h">
+      <Filter>cert</Filter>
+    </None>
+    <None Include="../../../../net/cookies/canonical_cookie_test_helpers.h">
+      <Filter>cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cookies/cookie_change_dispatcher_test_helpers.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_change_dispatcher_test_helpers.h">
+      <Filter>cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cookies/cookie_monster_store_test.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_monster_store_test.h">
+      <Filter>cookies</Filter>
+    </None>
+    <None Include="../../../../net/cookies/cookie_store_change_unittest.h">
+      <Filter>cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cookies/cookie_store_test_callbacks.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_store_test_callbacks.h">
+      <Filter>cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cookies/cookie_store_test_helpers.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/cookie_store_test_helpers.h">
+      <Filter>cookies</Filter>
+    </None>
+    <None Include="../../../../net/cookies/cookie_store_unittest.h">
+      <Filter>cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/cookies/test_cookie_access_delegate.cc">
+      <Filter>cookies</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/cookies/test_cookie_access_delegate.h">
+      <Filter>cookies</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/disk_cache/disk_cache_test_base.cc">
+      <Filter>disk_cache</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/disk_cache_test_base.h">
+      <Filter>disk_cache</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/disk_cache/disk_cache_test_util.cc">
+      <Filter>disk_cache</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/disk_cache/disk_cache_test_util.h">
+      <Filter>disk_cache</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/filter/filter_source_stream_test_util.cc">
+      <Filter>filter</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/filter/filter_source_stream_test_util.h">
+      <Filter>filter</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/filter/mock_source_stream.cc">
+      <Filter>filter</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/filter/mock_source_stream.h">
+      <Filter>filter</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/http/http_stream_factory_test_util.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_stream_factory_test_util.h">
+      <Filter>http</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/http/http_transaction_test_util.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http/http_transaction_test_util.h">
+      <Filter>http</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/http/mock_http_cache.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http/mock_http_cache.h">
+      <Filter>http</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/http/transport_security_state_test_util.cc">
+      <Filter>http</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/http/transport_security_state_test_util.h">
+      <Filter>http</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/log/test_net_log.cc">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/log/test_net_log.h">
+      <Filter>log</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/log/test_net_log_util.cc">
+      <Filter>log</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/log/test_net_log_util.h">
+      <Filter>log</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/nqe/network_quality_estimator_test_util.cc">
+      <Filter>nqe</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/nqe/network_quality_estimator_test_util.h">
+      <Filter>nqe</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/proxy_resolution/mock_pac_file_fetcher.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/mock_pac_file_fetcher.h">
+      <Filter>proxy_resolution</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/proxy_resolution/mock_proxy_resolver.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/mock_proxy_resolver.h">
+      <Filter>proxy_resolution</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/proxy_resolution/proxy_config_service_common_unittest.cc">
+      <Filter>proxy_resolution</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/proxy_resolution/proxy_config_service_common_unittest.h">
+      <Filter>proxy_resolution</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/quic/quic_test_packet_printer.cc">
+      <Filter>quic</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/quic/quic_test_packet_printer.h">
+      <Filter>quic</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/socket/read_buffering_stream_socket.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/socket/read_buffering_stream_socket.h">
+      <Filter>socket</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/socket/socket_test_util.cc">
+      <Filter>socket</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/socket/socket_test_util.h">
+      <Filter>socket</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/spdy/spdy_test_util_common.cc">
+      <Filter>spdy</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/spdy/spdy_test_util_common.h">
+      <Filter>spdy</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/ssl/client_cert_identity_test_util.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/client_cert_identity_test_util.h">
+      <Filter>ssl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/ssl/ssl_private_key_test_util.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/ssl_private_key_test_util.h">
+      <Filter>ssl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/ssl/test_ssl_config_service.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/test_ssl_config_service.h">
+      <Filter>ssl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/ssl/test_ssl_private_key.cc">
+      <Filter>ssl</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/ssl/test_ssl_private_key.h">
+      <Filter>ssl</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/cert_builder.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/cert_builder.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/cert_test_util.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/cert_test_util.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/ct_test_util.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/ct_test_util.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/controllable_http_response.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/embedded_test_server/controllable_http_response.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/default_handlers.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/embedded_test_server/default_handlers.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/embedded_test_server.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/embedded_test_server/embedded_test_server.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <None Include="../../../../net/test/embedded_test_server/embedded_test_server_connection_listener.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/http_connection.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/embedded_test_server/http_connection.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/http_request.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/embedded_test_server/http_request.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/http_response.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/embedded_test_server/http_response.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/request_handler_util.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/embedded_test_server/request_handler_util.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/embedded_test_server/simple_connection_listener.cc">
+      <Filter>test\embedded_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/embedded_test_server/simple_connection_listener.h">
+      <Filter>test\embedded_test_server</Filter>
+    </None>
+    <None Include="../../../../net/test/event_waiter.h">
+      <Filter>test</Filter>
+    </None>
+    <None Include="../../../../net/test/gtest_util.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/key_util.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/key_util.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/net_test_suite.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/net_test_suite.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/quic_simple_test_server.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/quic_simple_test_server.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/revocation_builder.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/revocation_builder.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/scoped_disable_exit_on_dfatal.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/scoped_disable_exit_on_dfatal.h">
+      <Filter>test</Filter>
+    </None>
+    <None Include="../../../../net/test/test_certificate_data.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/test_data_directory.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/test_data_directory.h">
+      <Filter>test</Filter>
+    </None>
+    <None Include="../../../../net/test/test_with_task_environment.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/url_request/ssl_certificate_error_job.cc">
+      <Filter>test\url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/url_request/ssl_certificate_error_job.h">
+      <Filter>test\url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/url_request/url_request_failed_job.cc">
+      <Filter>test\url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/url_request/url_request_failed_job.h">
+      <Filter>test\url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/url_request/url_request_hanging_read_job.cc">
+      <Filter>test\url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/url_request/url_request_hanging_read_job.h">
+      <Filter>test\url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/url_request/url_request_mock_data_job.cc">
+      <Filter>test\url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/url_request/url_request_mock_data_job.h">
+      <Filter>test\url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/url_request/test_url_fetcher_factory.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/test_url_fetcher_factory.h">
+      <Filter>url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/url_request/url_request_test_job.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_test_job.h">
+      <Filter>url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/url_request/url_request_test_util.cc">
+      <Filter>url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/url_request/url_request_test_util.h">
+      <Filter>url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/spawned_test_server/base_test_server.cc">
+      <Filter>test\spawned_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/spawned_test_server/base_test_server.h">
+      <Filter>test\spawned_test_server</Filter>
+    </None>
+    <None Include="../../../../net/test/spawned_test_server/spawned_test_server.h">
+      <Filter>test\spawned_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/spawned_test_server/local_test_server.cc">
+      <Filter>test\spawned_test_server</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/spawned_test_server/local_test_server.h">
+      <Filter>test\spawned_test_server</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/spawned_test_server/local_test_server_win.cc">
+      <Filter>test\spawned_test_server</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../net/test/python_utils.cc">
+      <Filter>test</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/python_utils.h">
+      <Filter>test</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/url_request/url_request_mock_http_job.cc">
+      <Filter>test\url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/url_request/url_request_mock_http_job.h">
+      <Filter>test\url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/test/url_request/url_request_test_job_backed_by_file.cc">
+      <Filter>test\url_request</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/test/url_request/url_request_test_job_backed_by_file.h">
+      <Filter>test\url_request</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/network_error_logging/mock_persistent_nel_store.cc">
+      <Filter>network_error_logging</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/network_error_logging/mock_persistent_nel_store.h">
+      <Filter>network_error_logging</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/network_error_logging/network_error_logging_test_util.cc">
+      <Filter>network_error_logging</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/network_error_logging/network_error_logging_test_util.h">
+      <Filter>network_error_logging</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/reporting/mock_persistent_reporting_store.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/mock_persistent_reporting_store.h">
+      <Filter>reporting</Filter>
+    </None>
+    <CustomBuild Include="../../../../net/reporting/reporting_test_util.cc">
+      <Filter>reporting</Filter>
+    </CustomBuild>
+    <None Include="../../../../net/reporting/reporting_test_util.h">
+      <Filter>reporting</Filter>
+    </None>
+  </ItemGroup>
+</Project>

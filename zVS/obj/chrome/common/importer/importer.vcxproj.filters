@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/common/importer/firefox_importer_utils.cc" />
+    <None Include="../../../../../../chrome/common/importer/firefox_importer_utils.h" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/imported_bookmark_entry.cc" />
+    <None Include="../../../../../../chrome/common/importer/imported_bookmark_entry.h" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/importer_autofill_form_data_entry.cc" />
+    <None Include="../../../../../../chrome/common/importer/importer_autofill_form_data_entry.h" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/importer_bridge.cc" />
+    <None Include="../../../../../../chrome/common/importer/importer_bridge.h" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/importer_data_types.cc" />
+    <None Include="../../../../../../chrome/common/importer/importer_data_types.h" />
+    <None Include="../../../../../../chrome/common/importer/importer_type.h" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/importer_url_row.cc" />
+    <None Include="../../../../../../chrome/common/importer/importer_url_row.h" />
+    <None Include="../../../../../../chrome/common/importer/pstore_declarations.h" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/edge_importer_utils_win.cc" />
+    <None Include="../../../../../../chrome/common/importer/edge_importer_utils_win.h" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/firefox_importer_utils_win.cc" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/ie_importer_utils_win.cc" />
+    <None Include="../../../../../../chrome/common/importer/ie_importer_utils_win.h" />
+    <CustomBuild Include="../../../../../../chrome/common/importer/importer_test_registry_overrider_win.cc" />
+    <None Include="../../../../../../chrome/common/importer/importer_test_registry_overrider_win.h" />
+  </ItemGroup>
+</Project>

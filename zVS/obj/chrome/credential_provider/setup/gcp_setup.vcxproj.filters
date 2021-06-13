@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../chrome/credential_provider/setup/gcp_installer_crash_reporting.cc" />
+    <None Include="../../../../../../chrome/credential_provider/setup/gcp_installer_crash_reporting.h" />
+    <CustomBuild Include="../../../../../../chrome/credential_provider/setup/setup.cc" />
+  </ItemGroup>
+</Project>

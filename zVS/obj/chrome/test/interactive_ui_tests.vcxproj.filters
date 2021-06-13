@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\chrome\browser">
+      <UniqueIdentifier>{501D27F6-73CC-A0EB-9F82-84880537DDC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome">
+      <UniqueIdentifier>{25A56F1F-53DE-4418-63A3-F720F328D73F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\apps\guest_view">
+      <UniqueIdentifier>{494F1AE3-795D-612C-1998-F01BDECF02DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\apps">
+      <UniqueIdentifier>{2B459B4F-64A6-BB7F-3C5E-E1913F291E5C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\apps\platform_apps">
+      <UniqueIdentifier>{23AE22A3-AB79-E289-491A-6933ED906BA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\autofill">
+      <UniqueIdentifier>{4762ACA4-131E-0C80-F643-AB1B187D8E48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\devtools">
+      <UniqueIdentifier>{33EEC02D-B8D3-410C-358F-5F6D783E4914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\extensions\api\extension_action">
+      <UniqueIdentifier>{CAC9647F-122C-0EF6-7D55-4B4279214F37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\extensions\api">
+      <UniqueIdentifier>{30579D2A-E555-9B32-7CF6-2EF6D5DB52E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\extensions">
+      <UniqueIdentifier>{6067944E-65D0-26B2-1EE2-E433EFEBF109}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\extensions\api\notifications">
+      <UniqueIdentifier>{A75DBA3D-C841-AE20-7235-E0C880FF2473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\extensions\api\omnibox">
+      <UniqueIdentifier>{8B50DAC7-A58F-B449-ACAA-BF9445115690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\extensions\api\tabs">
+      <UniqueIdentifier>{BE28DAE3-D575-4FB9-7BDE-122D174A76E8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\notifications">
+      <UniqueIdentifier>{4BC4AA86-9C3C-67FA-402D-E66F9620CBF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\password_manager">
+      <UniqueIdentifier>{ACDC18FD-6A6C-FB27-1935-D6D952B91198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\portal">
+      <UniqueIdentifier>{D2C974FD-65D5-BCEB-F913-3BCA6B99897A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\renderer_context_menu">
+      <UniqueIdentifier>{4C55534C-EC17-7F31-D908-C63FDFDC974D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\resource_coordinator">
+      <UniqueIdentifier>{AAF55E44-94FC-80D5-C746-1F494B6349E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\sessions">
+      <UniqueIdentifier>{1F8FEB5F-5BC5-22FA-15BA-D777A935B103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\site_isolation">
+      <UniqueIdentifier>{67880DCD-AA6D-B477-B07B-2FF33B4C79F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ssl">
+      <UniqueIdentifier>{5C36DAF6-7012-EB12-80B1-1FE4699B548B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\autofill">
+      <UniqueIdentifier>{6D94118E-40C9-1FA6-6063-12FA090BC961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui">
+      <UniqueIdentifier>{07FEDA6E-25E1-9E6C-F6A2-84E1B5CC5098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\blocked_content">
+      <UniqueIdentifier>{B7C3F53E-13F7-06AC-FEB3-2946C0BC4A27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\exclusive_access">
+      <UniqueIdentifier>{55EB6186-1025-84E6-C7FA-AC427251D6EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\find_bar">
+      <UniqueIdentifier>{B1FCCA58-2F1B-16CA-B3AD-60E5D250490E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\hung_renderer">
+      <UniqueIdentifier>{58D1BA9D-218A-A616-46BE-6551C374111E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\omnibox">
+      <UniqueIdentifier>{01581719-0070-1990-80B1-C12E2A5F1AD0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\passwords">
+      <UniqueIdentifier>{F11F6B39-489C-EE7C-62F8-05B160D5413B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\search">
+      <UniqueIdentifier>{6BA802A5-F335-1ACE-3EBC-DE8C3AC4925E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\startup">
+      <UniqueIdentifier>{49C276CF-8057-6481-883F-AD1C308F9D44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\translate">
+      <UniqueIdentifier>{2DFAA665-BB67-A18B-9B2A-11D9BB985A80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\accessibility">
+      <UniqueIdentifier>{27533E70-40C4-42F1-80AA-A0FDB6F377B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views">
+      <UniqueIdentifier>{483726F9-C93B-8F3E-9401-0B412CBE13D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\web_apps\frame_toolbar">
+      <UniqueIdentifier>{07468573-6389-9716-98C2-F21030A5831B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\web_apps">
+      <UniqueIdentifier>{E23EE0FB-6BE2-9B92-DC55-6F7F8D793A87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\ui\base\clipboard">
+      <UniqueIdentifier>{AFA4CE42-0C3B-532C-80DA-23533E15DE70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\ui\base">
+      <UniqueIdentifier>{63904E13-EE77-9C86-9CEC-CFEA17B983CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\ui">
+      <UniqueIdentifier>{030057FE-E258-3B6E-6F6A-C63F8B7714AF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{530671C4-A49E-2227-1185-B142528140EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ppapi">
+      <UniqueIdentifier>{CD54E9FE-ED99-2DEC-5397-A1E963FC39F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\aura\accessibility">
+      <UniqueIdentifier>{064E2831-DD09-E24C-FFEF-E78211833B96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\aura">
+      <UniqueIdentifier>{D2F890FC-5484-D69A-1666-9BAE991FF538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\read_later">
+      <UniqueIdentifier>{1C1ADDD0-BD59-2E3A-7D1F-37610B3E763F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\autofill\payments">
+      <UniqueIdentifier>{EC71B934-3372-976B-2CD7-2D69FE0A6DC4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\autofill">
+      <UniqueIdentifier>{C1BD45F6-FB0D-E36D-D910-B5EAD3F6A7F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\bookmarks">
+      <UniqueIdentifier>{477C563F-3655-7D75-08BB-0DF56AE47092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\extensions">
+      <UniqueIdentifier>{C7BB9C26-9FA3-A295-4EC5-A2F7A12B28C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\frame">
+      <UniqueIdentifier>{E0362DC5-5F8F-5CD9-D6EB-73DFB342EB4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\fullscreen_control">
+      <UniqueIdentifier>{1F6F5AA5-23E8-C481-1AFC-FF239333AB78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\location_bar">
+      <UniqueIdentifier>{6CA23EB0-8A84-071D-D74D-E9FE2A6590D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\omnibox">
+      <UniqueIdentifier>{EBA2D6EA-CDC6-7B39-5549-08887A773CC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\passwords">
+      <UniqueIdentifier>{1ABC0F90-D4D7-F187-FC74-0D516261C724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\permission_bubble">
+      <UniqueIdentifier>{32D64EFB-C73F-783E-7130-1A453052FF59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\tabs">
+      <UniqueIdentifier>{712E04E4-D462-CCE5-7C81-E1ECEF0349D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\test">
+      <UniqueIdentifier>{086E8EDF-A701-8C1F-82B3-427F3C784EA5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\toolbar">
+      <UniqueIdentifier>{14677D6A-2DFE-717A-2778-26E84D4A6644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\translate">
+      <UniqueIdentifier>{0102B090-B0B7-AD05-AE7F-7110A19F81DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\user_education">
+      <UniqueIdentifier>{E9047702-1123-243E-6470-FB9F2371BDCF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\global_media_controls">
+      <UniqueIdentifier>{CF4E620F-A91A-D74D-4BBC-09464AD71024}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\web_applications\test">
+      <UniqueIdentifier>{0E944793-7C66-F6D0-8A96-DC069AE70853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\web_applications">
+      <UniqueIdentifier>{7A9B0440-BE11-6345-7F2C-C89001640A27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\tooltip">
+      <UniqueIdentifier>{804F5A64-3DFD-590E-2B83-53B83A04C5D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\status_icons">
+      <UniqueIdentifier>{9625C66B-C9B1-5C6C-2239-0B729D4E25AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\downgrade">
+      <UniqueIdentifier>{84D4657D-31BB-C647-EA78-86C909361FE9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\notifications\win">
+      <UniqueIdentifier>{3105D39C-D571-0FBC-71E5-FEE8108B3331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\webui\extensions">
+      <UniqueIdentifier>{D8A22C12-46F8-9E12-3CF5-97598A4129AB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\webui">
+      <UniqueIdentifier>{9E732DEB-36EA-7326-FDAE-656A348F9F42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\webui\management">
+      <UniqueIdentifier>{DAF5ED74-16DA-01EA-D29D-DD1A8A478184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\metrics\desktop_session_duration">
+      <UniqueIdentifier>{B76E9652-2502-1BCA-EDA8-91EDE0F3B7A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\metrics">
+      <UniqueIdentifier>{6571E751-E8DC-5A5C-35FA-FD84EF9D0E06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\chrome\browser\ui\views\profiles">
+      <UniqueIdentifier>{41F3DA25-4D7A-8A5B-012C-B38B7B3FF431}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/browser/about_flags_browsertest.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/apps/guest_view/web_view_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\apps\guest_view</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/apps/platform_apps/app_browsertest_util.cc">
+      <Filter>..\..\chrome\browser\apps\platform_apps</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/apps/platform_apps/app_browsertest_util.h">
+      <Filter>..\..\chrome\browser\apps\platform_apps</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/apps/platform_apps/app_pointer_lock_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\apps\platform_apps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/apps/platform_apps/app_window_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\apps\platform_apps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/apps/platform_apps/app_window_interactive_uitest_base.cc">
+      <Filter>..\..\chrome\browser\apps\platform_apps</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/apps/platform_apps/app_window_interactive_uitest_base.h">
+      <Filter>..\..\chrome\browser\apps\platform_apps</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/autofill/autofill_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/autofill/autofill_uitest.cc">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/autofill/autofill_uitest.h">
+      <Filter>..\..\chrome\browser\autofill</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/browser_keyevents_browsertest.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/chrome_render_widget_host_browsertests.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/devtools/devtools_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\devtools</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/extension_action/browser_action_interactive_test.cc">
+      <Filter>..\..\chrome\browser\extensions\api\extension_action</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/extension_action/page_action_interactive_test.cc">
+      <Filter>..\..\chrome\browser\extensions\api\extension_action</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/notifications/notifications_apitest.cc">
+      <Filter>..\..\chrome\browser\extensions\api\notifications</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/omnibox/omnibox_api_interactive_test.cc">
+      <Filter>..\..\chrome\browser\extensions\api\omnibox</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/api/tabs/tabs_interactive_test.cc">
+      <Filter>..\..\chrome\browser\extensions\api\tabs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/chrome_extension_test_notification_observer.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/chrome_extension_test_notification_observer.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_apitest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_browsertest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_commands_global_registry_apitest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_crash_recovery_browsertest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_fullscreen_apitest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_function_test_utils.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/extensions/extension_function_test_utils.h">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/extension_keybinding_apitest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/omnibox_focus_interactive_test.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/extensions/window_open_interactive_apitest.cc">
+      <Filter>..\..\chrome\browser\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/focus_ring_browsertest.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/mouse_events_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/platform_notification_service_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_generation_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_interactive_test_base.cc">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/password_manager/password_manager_interactive_test_base.h">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/password_manager/password_manager_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\password_manager</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/portal/portal_interactive_uittest.cc">
+      <Filter>..\..\chrome\browser\portal</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/renderer_context_menu/link_to_text_menu_observer_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\renderer_context_menu</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/renderer_context_menu/mock_render_view_context_menu.cc">
+      <Filter>..\..\chrome\browser\renderer_context_menu</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/renderer_context_menu/mock_render_view_context_menu.h">
+      <Filter>..\..\chrome\browser\renderer_context_menu</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/renderer_context_menu/render_view_context_menu_browsertest_util.cc">
+      <Filter>..\..\chrome\browser\renderer_context_menu</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/renderer_context_menu/render_view_context_menu_browsertest_util.h">
+      <Filter>..\..\chrome\browser\renderer_context_menu</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/renderer_context_menu/render_view_context_menu_test_util.cc">
+      <Filter>..\..\chrome\browser\renderer_context_menu</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/renderer_context_menu/render_view_context_menu_test_util.h">
+      <Filter>..\..\chrome\browser\renderer_context_menu</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/resource_coordinator/tab_metrics_logger_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\resource_coordinator</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/sessions/session_restore_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\sessions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/site_isolation/site_per_process_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\site_isolation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/site_isolation/site_per_process_text_input_browsertest.cc">
+      <Filter>..\..\chrome\browser\site_isolation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ssl/typed_navigation_upgrade_throttle_browsertest.cc">
+      <Filter>..\..\chrome\browser\ssl</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/autofill/autofill_popup_controller_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\autofill</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/blocked_content/popup_blocker_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\blocked_content</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/browser_command_controller_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/browser_focus_uitest.cc">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/exclusive_access/fullscreen_controller_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\exclusive_access</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/exclusive_access/fullscreen_controller_state_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\exclusive_access</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/exclusive_access/fullscreen_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\exclusive_access</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/find_bar/find_bar_host_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\find_bar</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/fullscreen_keyboard_browsertest_base.cc">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/fullscreen_keyboard_browsertest_base.h">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/hung_renderer/hung_renderer_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\hung_renderer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/keyboard_lock_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/omnibox/omnibox_view_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\omnibox</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/passwords/manage_passwords_test.cc">
+      <Filter>..\..\chrome\browser\ui\passwords</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/passwords/manage_passwords_test.h">
+      <Filter>..\..\chrome\browser\ui\passwords</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/search/instant_extended_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\search</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/search/instant_test_base.cc">
+      <Filter>..\..\chrome\browser\ui\search</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/search/instant_test_base.h">
+      <Filter>..\..\chrome\browser\ui\search</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/search/third_party_ntp_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\search</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/signin_view_controller_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/startup/invalid_user_data_dir_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\startup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/startup/startup_browser_creator_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\startup</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/translate/translate_bubble_test_utils.h">
+      <Filter>..\..\chrome\browser\ui\translate</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/accessibility/caption_bubble_controller_views_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views\accessibility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/content_test_utils.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/content_test_utils.h">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/web_apps/frame_toolbar/web_app_frame_toolbar_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\web_apps\frame_toolbar</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/web_dialog_view_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/webauth_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../ui/base/clipboard/clipboard_unittest.cc">
+      <Filter>..\..\ui\base\clipboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/interactive_test_utils.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_aura.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/interactive_test_utils_aura.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_views.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_ui_tests_main.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/ppapi/ppapi_interactive_browsertest.cc">
+      <Filter>ppapi</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/aura/accessibility/automation_manager_aura_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\aura\accessibility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/drag_and_drop_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/read_later/read_later_test_utils.cc">
+      <Filter>..\..\chrome\browser\ui\read_later</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/read_later/read_later_test_utils.h">
+      <Filter>..\..\chrome\browser\ui\read_later</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/payments/offer_notification_bubble_views_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\autofill\payments</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/payments/virtual_card_manual_fallback_bubble_views_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\autofill\payments</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/bookmarks/bookmark_bar_view_test.cc">
+      <Filter>..\..\chrome\browser\ui\views\bookmarks</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/bookmarks/bookmark_bar_view_test_helper.h">
+      <Filter>..\..\chrome\browser\ui\views\bookmarks</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/certificate_selector_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/commander_frontend_views_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/constrained_window_views_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/exclusive_access_bubble_views_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/extensions/extension_dialog_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/extensions/extensions_toolbar_interactive_ui_test.cc">
+      <Filter>..\..\chrome\browser\ui\views\extensions</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/find_bar_views_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/browser_view_focus_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\frame</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/browser_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\frame</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/tab_strip_region_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\frame</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/fullscreen_control/fullscreen_control_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\fullscreen_control</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/keyboard_access_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/location_bar/location_icon_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\location_bar</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/location_bar/selected_keyword_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\location_bar</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/location_bar/star_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\location_bar</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_controller_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_item_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_model_adapter_test.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_test_base.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/menu_test_base.h">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/menu_view_drag_and_drop_test.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/omnibox/omnibox_view_views_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views\omnibox</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/passwords/manage_passwords_icon_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\passwords</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/passwords/password_bubble_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\passwords</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/permission_bubble/permission_bubble_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\permission_bubble</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/sad_tab_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/ssl_client_certificate_selector_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/tabs/tab_drag_controller_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\tabs</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/tabs/tab_drag_controller_interactive_uitest.h">
+      <Filter>..\..\chrome\browser\ui\views\tabs</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/tabs/tab_hover_card_bubble_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\tabs</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/test/view_event_test_base.cc">
+      <Filter>..\..\chrome\browser\ui\views\test</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/test/view_event_test_base.h">
+      <Filter>..\..\chrome\browser\ui\views\test</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/toolbar/toolbar_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\toolbar</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/translate/translate_bubble_test_utils_views.cc">
+      <Filter>..\..\chrome\browser\ui\views\translate</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/user_education/feature_promo_bubble_view_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\user_education</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/user_education/feature_promo_snooze_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\user_education</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/global_media_controls/media_dialog_view_interactive_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views\global_media_controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/web_applications/test/system_web_app_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\web_applications\test</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/tooltip/tooltip_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views\tooltip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/accessibility/post_install_announcement_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views\accessibility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/browser_window_property_manager_browsertest_win.cc">
+      <Filter>..\..\chrome\browser\ui\views\frame</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/status_icons/status_tray_state_changer_interactive_uitest_win.cc">
+      <Filter>..\..\chrome\browser\ui\views\status_icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/tooltip/tooltip_aura_interactive_uitest_win.cc">
+      <Filter>..\..\chrome\browser\ui\views\tooltip</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_interactive_uitest_support.cc">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/notifications/notification_interactive_uitest_support.h">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_ui_manager_browsertest.cc">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/downgrade/user_data_downgrade_browsertest.cc">
+      <Filter>..\..\chrome\browser\downgrade</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/notification_platform_bridge_win_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\notifications</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/notifications/win/fake_itoastnotifier.cc">
+      <Filter>..\..\chrome\browser\notifications\win</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/notifications/win/fake_itoastnotifier.h">
+      <Filter>..\..\chrome\browser\notifications\win</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/send_mouse_move_uitest_win.cc">
+      <Filter>..\..\chrome\browser\ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/accessibility/navigation_accessibility_uitest_win.cc">
+      <Filter>..\..\chrome\browser\ui\views\accessibility</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/accessibility/uia_accessibility_event_waiter.cc">
+      <Filter>..\..\chrome\browser\ui\views\accessibility</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/views/accessibility/uia_accessibility_event_waiter.h">
+      <Filter>..\..\chrome\browser\ui\views\accessibility</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/touch_events_interactive_uitest_win.cc">
+      <Filter>..\..\chrome\browser\ui\views</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/always_on_top_window_killer_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/always_on_top_window_killer_win.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/interactive_test_utils_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/test/base/save_desktop_snapshot_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/save_desktop_snapshot_win.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/test/base/window_contents_as_string_win.cc">
+      <Filter>base</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/test/base/window_contents_as_string_win.h">
+      <Filter>base</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/autofill/autofill_accessibility_win_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\views\autofill</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/downgrade/user_data_snapshot_browsertest.cc">
+      <Filter>..\..\chrome\browser\downgrade</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/webui/extensions/extension_settings_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\webui\extensions</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/webui/extensions/extension_settings_browsertest.h">
+      <Filter>..\..\chrome\browser\ui\webui\extensions</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/ui/webui/management/management_a11y_browsertest.cc">
+      <Filter>..\..\chrome\browser\ui\webui\management</Filter>
+    </CustomBuild>
+    <None Include="../../../../../chrome/browser/ui/webui/management/management_a11y_browsertest.h">
+      <Filter>..\..\chrome\browser\ui\webui\management</Filter>
+    </None>
+    <CustomBuild Include="../../../../../chrome/browser/metrics/desktop_session_duration/chrome_visibility_observer_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\metrics\desktop_session_duration</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/frame/webui_tab_strip_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\frame</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/profiles/profile_bubble_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\profiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../chrome/browser/ui/views/profiles/profile_picker_interactive_uitest.cc">
+      <Filter>..\..\chrome\browser\ui\views\profiles</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

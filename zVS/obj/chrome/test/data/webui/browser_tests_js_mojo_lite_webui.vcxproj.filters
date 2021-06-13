@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\bluetooth_internals">
+      <UniqueIdentifier>{9868E9D6-45CF-97E1-C555-D77F0897601C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui">
+      <UniqueIdentifier>{61B2DD11-C91D-B9B4-009F-C11F035B4515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data">
+      <UniqueIdentifier>{62A5768D-34A9-41FA-A806-D6B2598B5F31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test">
+      <UniqueIdentifier>{D8783CE9-1F6B-DCAD-F003-69574543E277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{6020ED40-B7B9-6AC5-7C58-D39617BE58E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\media">
+      <UniqueIdentifier>{3167EC4A-24FA-B9DC-CD37-631E4DFBC0F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\new_tab_page">
+      <UniqueIdentifier>{03241EFC-78B8-8CD7-86B9-2F956BCBEA63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\read_later">
+      <UniqueIdentifier>{FA3FEAAF-7BA8-9716-CEC6-2DED8E5ECA08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\read_later\side_panel">
+      <UniqueIdentifier>{39B58CD5-37BC-FB18-BC73-DB3F9F348E74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/bluetooth_internals/bluetooth_internals_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\bluetooth_internals</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/media/media_engagement_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\media</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/media/media_history_webui_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\media</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/new_tab_page/new_tab_page_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\new_tab_page</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/read_later/read_later_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\read_later</Filter>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/test/data/webui/read_later/side_panel/side_panel_browsertest-gen.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\test\data\webui\read_later\side_panel</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\out\x64-debug\gen\chrome\common">
+      <UniqueIdentifier>{3AA9BBC5-1028-8FD6-B80E-ED589E0D0744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{D09C053B-090A-B6F7-98E5-002B72C3F07C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{05248137-5583-68B3-70E0-37CF515907DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\out\x64-debug">
+      <UniqueIdentifier>{9E66AA5A-9505-804C-EA1F-97063557D538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\out">
+      <UniqueIdentifier>{F26FF866-925A-C788-6265-891138C06337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../out/x64-debug/gen/chrome/common/chrome_version.h">
+      <Filter>..\..\out\x64-debug\gen\chrome\common</Filter>
+    </None>
+  </ItemGroup>
+</Project>

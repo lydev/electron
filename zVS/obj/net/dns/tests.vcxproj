@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{65F04858-CA9C-4BB9-0CD8-33C92D2F503F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>tests</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/net/dns/tests.stamp</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../../..;../../../../../out/x64-debug/gen;../../../../../third_party/perfetto/include;../../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../../out/x64-debug/gen/third_party/perfetto;../../../../../third_party/abseil-cpp;../../../../../third_party/boringssl/src/include;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/protoc_out;../../../../../third_party/protobuf/src;../../../../../out/x64-debug/gen/net/third_party/quiche/src;../../../../../net/third_party/quiche/overrides;../../../../../net/third_party/quiche/src/common/platform/default;../../../../../net/third_party/quiche/src;../../../../../third_party/ced/src;../../../../../third_party/icu/source/common;../../../../../third_party/icu/source/i18n;../../../../../third_party/googletest/custom;../../../../../third_party/googletest/src/googlemock/include;../../../../../third_party/googletest/custom;../../../../../third_party/googletest/src/googletest/include;../../../../../third_party/abseil-cpp;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough /Ob2 /Oy- /Zc:inline /Gw /Oi -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -DPROTOBUF_ALLOW_DEPRECATED=1 -Wno-shorten-64-to-32 -Wno-inconsistent-missing-override %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;GOOGLE_PROTOBUF_NO_RTTI;GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER;U_USING_ICU_NAMESPACE=0;U_ENABLE_DYLOAD=0;USE_CHROMIUM_ICU=1;U_ENABLE_TRACING=1;U_ENABLE_RESOURCE_TRACING=0;U_STATIC_IMPLEMENTATION;ICU_UTIL_DATA_IMPL=ICU_UTIL_DATA_FILE;GTEST_API_=;GTEST_HAS_POSIX_RE=0;GTEST_LANG_CXX11=1;GTEST_HAS_TR1_TUPLE=0;GTEST_HAS_ABSL=1;UNIT_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../net/dns/address_info_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/address_info_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/address_info_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/context_host_resolver_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/context_host_resolver_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/context_host_resolver_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_alias_utility_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_alias_utility_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_alias_utility_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_config_service_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_config_service_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_config_service_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_hosts_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_hosts_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_hosts_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_query_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_query_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_query_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_response_result_extractor_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_response_result_extractor_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_response_result_extractor_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_response_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_response_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_response_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_socket_allocator_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_socket_allocator_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_socket_allocator_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_transaction_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_transaction_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_transaction_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_udp_tracker_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_udp_tracker_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_udp_tracker_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_util_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_util_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_util_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/host_cache_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/host_cache_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/host_cache_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/host_resolver_manager_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/host_resolver_manager_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/host_resolver_manager_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/https_record_rdata_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/https_record_rdata_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/https_record_rdata_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/httpssvc_metrics_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/httpssvc_metrics_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/httpssvc_metrics_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/mapped_host_resolver_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/mapped_host_resolver_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/mapped_host_resolver_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/nsswitch_reader_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/nsswitch_reader_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/nsswitch_reader_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/record_parsed_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/record_parsed_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/record_parsed_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/record_rdata_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/record_rdata_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/record_rdata_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/resolve_context_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/resolve_context_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/resolve_context_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/serial_worker_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/serial_worker_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/serial_worker_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/system_dns_config_change_notifier_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/system_dns_config_change_notifier_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/system_dns_config_change_notifier_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_config_service_win_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_config_service_win_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_config_service_win_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/address_sorter_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/address_sorter_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/address_sorter_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/dns_client_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/dns_client_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/dns_client_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/mdns_cache_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/mdns_cache_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/mdns_cache_unittest.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../../net/dns/mdns_client_unittest.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/net/dns/tests/mdns_client_unittest.obj</Command>
+      <Outputs>$(OutDir)obj/net/dns/tests/mdns_client_unittest.obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/net/dns/tests.stamp" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/net/dns/tests.stamp" />
+  </Target>
+</Project>

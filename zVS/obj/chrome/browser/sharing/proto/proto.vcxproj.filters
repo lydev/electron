@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto">
+      <UniqueIdentifier>{1D415D58-28FA-6EE3-FD47-A935D962A06D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser\sharing">
+      <UniqueIdentifier>{1DDC0003-DDBC-4814-9C14-F8C05E4AD956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome\browser">
+      <UniqueIdentifier>{4EC8206D-441C-CA85-3222-62AAC4FA6AFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen\chrome">
+      <UniqueIdentifier>{6020ED40-B7B9-6AC5-7C58-D39617BE58E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug\gen">
+      <UniqueIdentifier>{4BDB00C1-D5F2-7BB5-5EE5-D4311313E2F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out\x64-debug">
+      <UniqueIdentifier>{6140001D-C715-4112-0316-9A59C106A7A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..\out">
+      <UniqueIdentifier>{7878106B-612D-B2DA-F872-7905717EA629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\..">
+      <UniqueIdentifier>{36E3B87A-920E-1155-B061-16E13847C0A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/click_to_call_message.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/click_to_call_message.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/peer_connection_messages.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/peer_connection_messages.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/remote_copy_message.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/remote_copy_message.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/shared_clipboard_message.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/shared_clipboard_message.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/sharing_message.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/sharing_message.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/sms_fetch_message_test_proto3_optional.pb.h">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../../out/x64-debug/gen/chrome/browser/sharing/proto/sms_fetch_message_test_proto3_optional.pb.cc">
+      <Filter>..\..\..\..\out\x64-debug\gen\chrome\browser\sharing\proto</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

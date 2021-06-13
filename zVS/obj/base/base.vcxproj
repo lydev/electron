@@ -1,0 +1,2379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="GN|x64">
+      <Configuration>GN</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{61FE0417-0385-5218-FCD8-43BB43CE7AFC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>base</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\obj/base/base.lib</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../..;../../../../out/x64-debug/gen;../../../../third_party/perfetto/include;../../../../out/x64-debug/gen/third_party/perfetto/build_config;../../../../out/x64-debug/gen/third_party/perfetto;../../../../third_party/abseil-cpp;../../../../third_party/boringssl/src/include;../../../../third_party/protobuf/src;../../../../out/x64-debug/gen/protoc_out;../../../../out/x64-debug/gen/third_party/perfetto;C:\Program Files (x86)\Windows Kits\10\Include\10\shared;C:\Program Files (x86)\Windows Kits\10\Include\10\um;C:\Program Files (x86)\Windows Kits\10\Include\10\winrt;$(VSInstallDir)\VC\atlmfc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-fno-delete-null-pointer-checks -fno-ident -fcolor-diagnostics -fmerge-all-constants -fcrash-diagnostics-dir=../../tools/clang/crashreports -mllvm -instcombine-lower-dbg-declare=0 -fcomplete-member-pointers /Gy /FS /bigobj /utf-8 /Zc:twoPhase /Zc:sizedDealloc- /D__WRL_ENABLE_FUNCTION_STATICS__ -fmsc-version=1916 -m64 -msse3 /Brepro -Wno-builtin-macro-redefined -D__DATE__= -D__TIME__= -D__TIMESTAMP__= -Xclang -fdebug-compilation-dir -Xclang . -no-canonical-prefixes -Wno-trigraphs -Wimplicit-fallthrough -Wunreachable-code -Wthread-safety -Wextra-semi -Wno-missing-field-initializers -Wno-unused-parameter -Wno-c++11-narrowing -Wno-unneeded-internal-declaration -Wno-undefined-var-template -Wno-nonportable-include-path -Wno-psabi -Wno-ignored-pragma-optimize -Wno-implicit-int-float-conversion -Wno-final-dtor-non-final-class -Wno-builtin-assume-aligned-alignment -Wno-deprecated-copy -Wno-non-c-typedef-for-linkage -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wmax-tokens -Wno-implicit-fallthrough -gcodeview-ghash -gline-tables-only /GR- -I../../buildtools/third_party/libc++/trunk/include -ftrivial-auto-var-init=pattern /guard:cf,nochecks -Xclang -add-plugin -Xclang find-bad-constructs -Xclang -plugin-arg-find-bad-constructs -Xclang checked-ptr-as-trivial-member -Wheader-hygiene -Wstring-conversion -Wtautological-overlap-compare -Wexit-time-destructors -Wshadow -Wglobal-constructors -Wno-shorten-64-to-32 -Wexit-time-destructors /Ob2 /Oy- /Zc:inline /Gw -DPROTOBUF_ALLOW_DEPRECATED=1 %(AdditionalOptions)</AdditionalOptions>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4091;4127;4251;4275;4312;4324;4351;4355;4503;4589;4611;4100;4121;4244;4505;4510;4512;4610;4838;4995;4996;4456;4457;4458;4459;4200;4201;4204;4221;4245;4267;4305;4389;4702;4701;4703;4661;4706;4715;4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>false</ExceptionHandling>
+      <ForcedIncludeFiles>build/precompile.h;</ForcedIncludeFiles>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>PA_PCSCAN_STACK_SUPPORTED;DCHECK_ALWAYS_ON=1;USE_AURA=1;CR_CLANG_REVISION=&quot;llvmorg-13-init-11999-g50c0aaed-1&quot;;_HAS_NODISCARD;_LIBCPP_DISABLE_VISIBILITY_ANNOTATIONS;_LIBCPP_ENABLE_NODISCARD;_LIBCPP_HAS_NO_VENDOR_AVAILABILITY_ANNOTATIONS;_LIBCPP_DEBUG=0;_LIBCPP_NO_AUTO_LINK;__STD_C;_CRT_RAND_S;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;_ATL_NO_OPENGL;_WINDOWS;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;PSAPI_VERSION=2;WIN32;_SECURE_ATL;WINAPI_FAMILY=WINAPI_FAMILY_DESKTOP_APP;WIN32_LEAN_AND_MEAN;NOMINMAX;_UNICODE;UNICODE;NTDDI_VERSION=NTDDI_WIN10_VB;_WIN32_WINNT=0x0A00;WINVER=0x0A00;NDEBUG;NVALGRIND;DYNAMIC_ANNOTATIONS_ENABLED=0;BASE_IMPLEMENTATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../base/allocator/allocator_check.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/allocator_check.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/allocator_check.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/allocator_check.h" />
+    <CustomBuild Include="../../../../base/allocator/allocator_extension.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/allocator_extension.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/allocator_extension.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/allocator_extension.h" />
+    <None Include="../../../../base/as_const.h" />
+    <CustomBuild Include="../../../../base/at_exit.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/at_exit.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/at_exit.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/at_exit.h" />
+    <None Include="../../../../base/atomic_ref_count.h" />
+    <None Include="../../../../base/atomic_sequence_num.h" />
+    <None Include="../../../../base/atomicops.h" />
+    <None Include="../../../../base/atomicops_internals_atomicword_compat.h" />
+    <None Include="../../../../base/atomicops_internals_portable.h" />
+    <None Include="../../../../base/auto_reset.h" />
+    <CustomBuild Include="../../../../base/barrier_closure.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/barrier_closure.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/barrier_closure.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/barrier_closure.h" />
+    <CustomBuild Include="../../../../base/base64.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/base64.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/base64.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/base64.h" />
+    <CustomBuild Include="../../../../base/base64url.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/base64url.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/base64url.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/base64url.h" />
+    <None Include="../../../../base/base_export.h" />
+    <None Include="../../../../base/base_switches.h" />
+    <CustomBuild Include="../../../../base/big_endian.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/big_endian.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/big_endian.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/big_endian.h" />
+    <None Include="../../../../base/bind.h" />
+    <None Include="../../../../base/bind_internal.h" />
+    <None Include="../../../../base/bind_post_task.h" />
+    <None Include="../../../../base/bind_post_task_internal.h" />
+    <None Include="../../../../base/bit_cast.h" />
+    <None Include="../../../../base/bits.h" />
+    <CustomBuild Include="../../../../base/build_time.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/build_time.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/build_time.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/build_time.h" />
+    <None Include="../../../../base/callback.h" />
+    <None Include="../../../../base/callback_forward.h" />
+    <CustomBuild Include="../../../../base/callback_helpers.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/callback_helpers.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/callback_helpers.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/callback_helpers.h" />
+    <CustomBuild Include="../../../../base/callback_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/callback_internal.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/callback_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/callback_internal.h" />
+    <CustomBuild Include="../../../../base/callback_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/callback_list.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/callback_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/callback_list.h" />
+    <None Include="../../../../base/cancelable_callback.h" />
+    <CustomBuild Include="../../../../base/check.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/check.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/check.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/check.h" />
+    <CustomBuild Include="../../../../base/check_op.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/check_op.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/check_op.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/check_op.h" />
+    <CustomBuild Include="../../../../base/command_line.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/command_line.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/command_line.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/command_line.h" />
+    <None Include="../../../../base/compiler_specific.h" />
+    <None Include="../../../../base/component_export.h" />
+    <None Include="../../../../base/containers/adapters.h" />
+    <None Include="../../../../base/containers/buffer_iterator.h" />
+    <None Include="../../../../base/containers/checked_iterators.h" />
+    <None Include="../../../../base/containers/checked_range.h" />
+    <None Include="../../../../base/containers/circular_deque.h" />
+    <None Include="../../../../base/containers/contains.h" />
+    <None Include="../../../../base/containers/contiguous_iterator.h" />
+    <None Include="../../../../base/containers/fixed_flat_map.h" />
+    <None Include="../../../../base/containers/fixed_flat_set.h" />
+    <None Include="../../../../base/containers/flat_map.h" />
+    <None Include="../../../../base/containers/flat_set.h" />
+    <CustomBuild Include="../../../../base/containers/flat_tree.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/flat_tree.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/flat_tree.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/containers/flat_tree.h" />
+    <None Include="../../../../base/containers/id_map.h" />
+    <CustomBuild Include="../../../../base/containers/intrusive_heap.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/intrusive_heap.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/intrusive_heap.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/containers/intrusive_heap.h" />
+    <CustomBuild Include="../../../../base/containers/linked_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/linked_list.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/linked_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/containers/linked_list.h" />
+    <None Include="../../../../base/containers/mru_cache.h" />
+    <None Include="../../../../base/containers/small_map.h" />
+    <None Include="../../../../base/containers/span.h" />
+    <None Include="../../../../base/containers/stack.h" />
+    <None Include="../../../../base/containers/stack_container.h" />
+    <None Include="../../../../base/containers/unique_ptr_adapters.h" />
+    <None Include="../../../../base/containers/util.h" />
+    <None Include="../../../../base/containers/vector_buffer.h" />
+    <CustomBuild Include="../../../../base/cpu.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/cpu.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/cpu.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/cpu.h" />
+    <None Include="../../../../base/critical_closure.h" />
+    <None Include="../../../../base/cxx17_backports.h" />
+    <None Include="../../../../base/dcheck_is_on.h" />
+    <CustomBuild Include="../../../../base/debug/activity_analyzer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/activity_analyzer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/activity_analyzer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/activity_analyzer.h" />
+    <CustomBuild Include="../../../../base/debug/activity_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/activity_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/activity_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/activity_tracker.h" />
+    <CustomBuild Include="../../../../base/debug/alias.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/alias.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/alias.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/alias.h" />
+    <CustomBuild Include="../../../../base/debug/asan_invalid_access.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/asan_invalid_access.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/asan_invalid_access.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/asan_invalid_access.h" />
+    <CustomBuild Include="../../../../base/debug/crash_logging.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/crash_logging.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/crash_logging.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/crash_logging.h" />
+    <CustomBuild Include="../../../../base/debug/debugger.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/debugger.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/debugger.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/debugger.h" />
+    <CustomBuild Include="../../../../base/debug/dump_without_crashing.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/dump_without_crashing.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/dump_without_crashing.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/dump_without_crashing.h" />
+    <None Include="../../../../base/debug/leak_annotations.h" />
+    <CustomBuild Include="../../../../base/debug/profiler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/profiler.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/profiler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/profiler.h" />
+    <CustomBuild Include="../../../../base/debug/stack_trace.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_trace.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_trace.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/stack_trace.h" />
+    <CustomBuild Include="../../../../base/debug/task_trace.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_trace.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_trace.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/task_trace.h" />
+    <CustomBuild Include="../../../../base/deferred_sequenced_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/deferred_sequenced_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/deferred_sequenced_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/deferred_sequenced_task_runner.h" />
+    <None Include="../../../../base/enterprise_util.h" />
+    <CustomBuild Include="../../../../base/environment.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/environment.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/environment.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/environment.h" />
+    <None Include="../../../../base/export_template.h" />
+    <CustomBuild Include="../../../../base/feature_list.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/feature_list.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/feature_list.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/feature_list.h" />
+    <None Include="../../../../base/file_version_info.h" />
+    <None Include="../../../../base/files/dir_reader_fallback.h" />
+    <CustomBuild Include="../../../../base/files/file.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/file.h" />
+    <CustomBuild Include="../../../../base/files/file_enumerator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_enumerator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_enumerator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_enumerator.h" />
+    <CustomBuild Include="../../../../base/files/file_path.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_path.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_path.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_path.h" />
+    <CustomBuild Include="../../../../base/files/file_path_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_path_constants.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_path_constants.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/file_path_watcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_path_watcher.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_path_watcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_path_watcher.h" />
+    <CustomBuild Include="../../../../base/files/file_proxy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_proxy.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_proxy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_proxy.h" />
+    <CustomBuild Include="../../../../base/files/file_tracing.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_tracing.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_tracing.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_tracing.h" />
+    <CustomBuild Include="../../../../base/files/file_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/file_util.h" />
+    <CustomBuild Include="../../../../base/files/important_file_writer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/important_file_writer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/important_file_writer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/important_file_writer.h" />
+    <CustomBuild Include="../../../../base/files/important_file_writer_cleaner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/important_file_writer_cleaner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/important_file_writer_cleaner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/important_file_writer_cleaner.h" />
+    <CustomBuild Include="../../../../base/files/memory_mapped_file.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_mapped_file.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_mapped_file.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/memory_mapped_file.h" />
+    <None Include="../../../../base/files/platform_file.h" />
+    <CustomBuild Include="../../../../base/files/scoped_file.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_file.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_file.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/scoped_file.h" />
+    <CustomBuild Include="../../../../base/files/scoped_temp_dir.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_temp_dir.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_temp_dir.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/files/scoped_temp_dir.h" />
+    <None Include="../../../../base/format_macros.h" />
+    <None Include="../../../../base/functional/identity.h" />
+    <None Include="../../../../base/functional/invoke.h" />
+    <None Include="../../../../base/functional/not_fn.h" />
+    <None Include="../../../../base/gtest_prod_util.h" />
+    <CustomBuild Include="../../../../base/guid.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/guid.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/guid.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/guid.h" />
+    <CustomBuild Include="../../../../base/hash/hash.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/hash.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/hash.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/hash/hash.h" />
+    <CustomBuild Include="../../../../base/hash/legacy_hash.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/legacy_hash.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/legacy_hash.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/hash/legacy_hash.h" />
+    <None Include="../../../../base/immediate_crash.h" />
+    <None Include="../../../../base/json/json_common.h" />
+    <CustomBuild Include="../../../../base/json/json_file_value_serializer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/json_file_value_serializer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/json_file_value_serializer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_file_value_serializer.h" />
+    <CustomBuild Include="../../../../base/json/json_parser.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/json_parser.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/json_parser.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_parser.h" />
+    <CustomBuild Include="../../../../base/json/json_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/json_reader.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/json_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_reader.h" />
+    <CustomBuild Include="../../../../base/json/json_string_value_serializer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/json_string_value_serializer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/json_string_value_serializer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_string_value_serializer.h" />
+    <CustomBuild Include="../../../../base/json/json_value_converter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/json_value_converter.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/json_value_converter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_value_converter.h" />
+    <CustomBuild Include="../../../../base/json/json_writer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/json_writer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/json_writer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/json/json_writer.h" />
+    <CustomBuild Include="../../../../base/json/string_escape.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_escape.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_escape.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/json/string_escape.h" />
+    <None Include="../../../../base/lazy_instance.h" />
+    <CustomBuild Include="../../../../base/lazy_instance_helpers.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/lazy_instance_helpers.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/lazy_instance_helpers.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/lazy_instance_helpers.h" />
+    <CustomBuild Include="../../../../base/location.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/location.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/location.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/location.h" />
+    <CustomBuild Include="../../../../base/logging.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/logging.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/logging.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/logging.h" />
+    <None Include="../../../../base/macros.h" />
+    <CustomBuild Include="../../../../base/memory/aligned_memory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/aligned_memory.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/aligned_memory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/aligned_memory.h" />
+    <CustomBuild Include="../../../../base/memory/checked_ptr.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/checked_ptr.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/checked_ptr.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/checked_ptr.h" />
+    <CustomBuild Include="../../../../base/memory/discardable_memory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/discardable_memory.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/discardable_memory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/discardable_memory.h" />
+    <CustomBuild Include="../../../../base/memory/discardable_memory_allocator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/discardable_memory_allocator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/discardable_memory_allocator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/discardable_memory_allocator.h" />
+    <None Include="../../../../base/memory/discardable_memory_internal.h" />
+    <CustomBuild Include="../../../../base/memory/discardable_shared_memory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/discardable_shared_memory.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/discardable_shared_memory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/discardable_shared_memory.h" />
+    <None Include="../../../../base/memory/free_deleter.h" />
+    <CustomBuild Include="../../../../base/memory/memory_pressure_listener.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_pressure_listener.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_pressure_listener.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/memory_pressure_listener.h" />
+    <CustomBuild Include="../../../../base/memory/memory_pressure_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_pressure_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_pressure_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/memory_pressure_monitor.h" />
+    <CustomBuild Include="../../../../base/memory/nonscannable_memory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/nonscannable_memory.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/nonscannable_memory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/nonscannable_memory.h" />
+    <None Include="../../../../base/memory/page_size.h" />
+    <CustomBuild Include="../../../../base/memory/platform_shared_memory_region.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/platform_shared_memory_region.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/platform_shared_memory_region.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/platform_shared_memory_region.h" />
+    <None Include="../../../../base/memory/ptr_util.h" />
+    <None Include="../../../../base/memory/raw_scoped_refptr_mismatch_checker.h" />
+    <CustomBuild Include="../../../../base/memory/read_only_shared_memory_region.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/read_only_shared_memory_region.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/read_only_shared_memory_region.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/read_only_shared_memory_region.h" />
+    <CustomBuild Include="../../../../base/memory/ref_counted.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/ref_counted.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/ref_counted.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/ref_counted.h" />
+    <None Include="../../../../base/memory/ref_counted_delete_on_sequence.h" />
+    <CustomBuild Include="../../../../base/memory/ref_counted_memory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/ref_counted_memory.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/ref_counted_memory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/ref_counted_memory.h" />
+    <None Include="../../../../base/memory/scoped_policy.h" />
+    <None Include="../../../../base/memory/scoped_refptr.h" />
+    <None Include="../../../../base/memory/shared_memory_hooks.h" />
+    <CustomBuild Include="../../../../base/memory/shared_memory_mapping.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/shared_memory_mapping.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/shared_memory_mapping.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/shared_memory_mapping.h" />
+    <CustomBuild Include="../../../../base/memory/shared_memory_security_policy.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/shared_memory_security_policy.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/shared_memory_security_policy.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/shared_memory_security_policy.h" />
+    <CustomBuild Include="../../../../base/memory/shared_memory_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/shared_memory_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/shared_memory_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/shared_memory_tracker.h" />
+    <None Include="../../../../base/memory/singleton.h" />
+    <CustomBuild Include="../../../../base/memory/tagging.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/tagging.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/tagging.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/tagging.h" />
+    <CustomBuild Include="../../../../base/memory/unsafe_shared_memory_pool.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/unsafe_shared_memory_pool.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/unsafe_shared_memory_pool.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/unsafe_shared_memory_pool.h" />
+    <CustomBuild Include="../../../../base/memory/unsafe_shared_memory_region.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/unsafe_shared_memory_region.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/unsafe_shared_memory_region.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/unsafe_shared_memory_region.h" />
+    <CustomBuild Include="../../../../base/memory/weak_ptr.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/weak_ptr.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/weak_ptr.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/weak_ptr.h" />
+    <CustomBuild Include="../../../../base/memory/writable_shared_memory_region.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/writable_shared_memory_region.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/writable_shared_memory_region.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/memory/writable_shared_memory_region.h" />
+    <CustomBuild Include="../../../../base/message_loop/message_pump.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/message_pump.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/message_pump.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/message_pump.h" />
+    <CustomBuild Include="../../../../base/message_loop/message_pump_default.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/message_pump_default.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/message_pump_default.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/message_pump_default.h" />
+    <None Include="../../../../base/message_loop/message_pump_for_io.h" />
+    <None Include="../../../../base/message_loop/message_pump_for_ui.h" />
+    <None Include="../../../../base/message_loop/message_pump_type.h" />
+    <CustomBuild Include="../../../../base/message_loop/timer_slack.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/timer_slack.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/timer_slack.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/timer_slack.h" />
+    <CustomBuild Include="../../../../base/message_loop/work_id_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/work_id_provider.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/work_id_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/work_id_provider.h" />
+    <CustomBuild Include="../../../../base/metrics/bucket_ranges.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/bucket_ranges.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/bucket_ranges.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/bucket_ranges.h" />
+    <CustomBuild Include="../../../../base/metrics/crc32.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/crc32.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/crc32.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/crc32.h" />
+    <CustomBuild Include="../../../../base/metrics/dummy_histogram.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/dummy_histogram.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/dummy_histogram.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/dummy_histogram.h" />
+    <CustomBuild Include="../../../../base/metrics/field_trial.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/field_trial.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/field_trial.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/field_trial.h" />
+    <CustomBuild Include="../../../../base/metrics/field_trial_param_associator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/field_trial_param_associator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/field_trial_param_associator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/field_trial_param_associator.h" />
+    <CustomBuild Include="../../../../base/metrics/field_trial_params.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/field_trial_params.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/field_trial_params.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/field_trial_params.h" />
+    <CustomBuild Include="../../../../base/metrics/histogram.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/histogram.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/histogram.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram.h" />
+    <CustomBuild Include="../../../../base/metrics/histogram_base.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/histogram_base.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/histogram_base.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_base.h" />
+    <CustomBuild Include="../../../../base/metrics/histogram_delta_serialization.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/histogram_delta_serialization.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/histogram_delta_serialization.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_delta_serialization.h" />
+    <None Include="../../../../base/metrics/histogram_flattener.h" />
+    <CustomBuild Include="../../../../base/metrics/histogram_functions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/histogram_functions.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/histogram_functions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_functions.h" />
+    <None Include="../../../../base/metrics/histogram_macros.h" />
+    <None Include="../../../../base/metrics/histogram_macros_internal.h" />
+    <None Include="../../../../base/metrics/histogram_macros_local.h" />
+    <CustomBuild Include="../../../../base/metrics/histogram_samples.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/histogram_samples.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/histogram_samples.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_samples.h" />
+    <CustomBuild Include="../../../../base/metrics/histogram_snapshot_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/histogram_snapshot_manager.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/histogram_snapshot_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/histogram_snapshot_manager.h" />
+    <CustomBuild Include="../../../../base/metrics/metrics_hashes.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/metrics_hashes.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/metrics_hashes.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/metrics_hashes.h" />
+    <CustomBuild Include="../../../../base/metrics/persistent_histogram_allocator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/persistent_histogram_allocator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/persistent_histogram_allocator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/persistent_histogram_allocator.h" />
+    <CustomBuild Include="../../../../base/metrics/persistent_memory_allocator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/persistent_memory_allocator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/persistent_memory_allocator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/persistent_memory_allocator.h" />
+    <CustomBuild Include="../../../../base/metrics/persistent_sample_map.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/persistent_sample_map.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/persistent_sample_map.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/persistent_sample_map.h" />
+    <None Include="../../../../base/metrics/record_histogram_checker.h" />
+    <CustomBuild Include="../../../../base/metrics/sample_map.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sample_map.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sample_map.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/sample_map.h" />
+    <CustomBuild Include="../../../../base/metrics/sample_vector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sample_vector.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sample_vector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/sample_vector.h" />
+    <CustomBuild Include="../../../../base/metrics/single_sample_metrics.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/single_sample_metrics.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/single_sample_metrics.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/single_sample_metrics.h" />
+    <CustomBuild Include="../../../../base/metrics/sparse_histogram.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sparse_histogram.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sparse_histogram.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/sparse_histogram.h" />
+    <CustomBuild Include="../../../../base/metrics/statistics_recorder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/statistics_recorder.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/statistics_recorder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/statistics_recorder.h" />
+    <CustomBuild Include="../../../../base/metrics/user_metrics.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/user_metrics.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/user_metrics.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/user_metrics.h" />
+    <None Include="../../../../base/metrics/user_metrics_action.h" />
+    <CustomBuild Include="../../../../base/native_library.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/native_library.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/native_library.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/native_library.h" />
+    <None Include="../../../../base/no_destructor.h" />
+    <CustomBuild Include="../../../../base/notreached.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/notreached.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/notreached.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/notreached.h" />
+    <None Include="../../../../base/observer_list.h" />
+    <CustomBuild Include="../../../../base/observer_list_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/observer_list_internal.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/observer_list_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/observer_list_internal.h" />
+    <CustomBuild Include="../../../../base/observer_list_threadsafe.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/observer_list_threadsafe.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/observer_list_threadsafe.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/observer_list_threadsafe.h" />
+    <CustomBuild Include="../../../../base/observer_list_types.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/observer_list_types.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/observer_list_types.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/observer_list_types.h" />
+    <CustomBuild Include="../../../../base/one_shot_event.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/one_shot_event.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/one_shot_event.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/one_shot_event.h" />
+    <None Include="../../../../base/parameter_pack.h" />
+    <CustomBuild Include="../../../../base/path_service.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/path_service.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/path_service.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/path_service.h" />
+    <CustomBuild Include="../../../../base/pending_task.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pending_task.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pending_task.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/pending_task.h" />
+    <CustomBuild Include="../../../../base/pickle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pickle.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pickle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/pickle.h" />
+    <None Include="../../../../base/post_task_and_reply_with_result_internal.h" />
+    <CustomBuild Include="../../../../base/power_monitor/power_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/power_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/power_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/power_monitor/power_monitor.h" />
+    <CustomBuild Include="../../../../base/power_monitor/power_monitor_device_source.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/power_monitor_device_source.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/power_monitor_device_source.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/power_monitor/power_monitor_device_source.h" />
+    <CustomBuild Include="../../../../base/power_monitor/power_monitor_source.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/power_monitor_source.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/power_monitor_source.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/power_monitor/power_monitor_source.h" />
+    <None Include="../../../../base/power_monitor/power_observer.h" />
+    <CustomBuild Include="../../../../base/process/environment_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/environment_internal.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/environment_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/process/environment_internal.h" />
+    <CustomBuild Include="../../../../base/process/kill.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/kill.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/kill.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/process/kill.h" />
+    <CustomBuild Include="../../../../base/process/launch.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/launch.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/launch.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/process/launch.h" />
+    <CustomBuild Include="../../../../base/process/memory.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/process/memory.h" />
+    <None Include="../../../../base/process/process.h" />
+    <CustomBuild Include="../../../../base/process/process_handle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_handle.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_handle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/process/process_handle.h" />
+    <None Include="../../../../base/process/process_info.h" />
+    <CustomBuild Include="../../../../base/process/process_iterator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_iterator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_iterator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/process/process_iterator.h" />
+    <CustomBuild Include="../../../../base/process/process_metrics.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_metrics.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_metrics.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/process/process_metrics.h" />
+    <CustomBuild Include="../../../../base/profiler/arm_cfi_table.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/arm_cfi_table.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/arm_cfi_table.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/arm_cfi_table.h" />
+    <CustomBuild Include="../../../../base/profiler/frame.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/frame.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/frame.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/frame.h" />
+    <CustomBuild Include="../../../../base/profiler/metadata_recorder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/metadata_recorder.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/metadata_recorder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/metadata_recorder.h" />
+    <CustomBuild Include="../../../../base/profiler/module_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/module_cache.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/module_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/module_cache.h" />
+    <None Include="../../../../base/profiler/native_unwinder.h" />
+    <None Include="../../../../base/profiler/profile_builder.h" />
+    <None Include="../../../../base/profiler/register_context.h" />
+    <CustomBuild Include="../../../../base/profiler/sample_metadata.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sample_metadata.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sample_metadata.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/sample_metadata.h" />
+    <CustomBuild Include="../../../../base/profiler/sampling_profiler_thread_token.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sampling_profiler_thread_token.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sampling_profiler_thread_token.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/sampling_profiler_thread_token.h" />
+    <CustomBuild Include="../../../../base/profiler/stack_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_buffer.h" />
+    <CustomBuild Include="../../../../base/profiler/stack_copier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_copier.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_copier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_copier.h" />
+    <CustomBuild Include="../../../../base/profiler/stack_copier_suspend.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_copier_suspend.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_copier_suspend.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_copier_suspend.h" />
+    <CustomBuild Include="../../../../base/profiler/stack_sampler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_sampler.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_sampler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_sampler.h" />
+    <CustomBuild Include="../../../../base/profiler/stack_sampler_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_sampler_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_sampler_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_sampler_impl.h" />
+    <CustomBuild Include="../../../../base/profiler/stack_sampling_profiler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_sampling_profiler.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_sampling_profiler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/stack_sampling_profiler.h" />
+    <None Include="../../../../base/profiler/suspendable_thread_delegate.h" />
+    <None Include="../../../../base/profiler/thread_delegate.h" />
+    <CustomBuild Include="../../../../base/profiler/unwinder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/unwinder.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/unwinder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/unwinder.h" />
+    <CustomBuild Include="../../../../base/rand_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/rand_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/rand_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/rand_util.h" />
+    <None Include="../../../../base/ranges/algorithm.h" />
+    <None Include="../../../../base/ranges/functional.h" />
+    <None Include="../../../../base/ranges/ranges.h" />
+    <CustomBuild Include="../../../../base/run_loop.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/run_loop.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/run_loop.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/run_loop.h" />
+    <CustomBuild Include="../../../../base/sampling_heap_profiler/lock_free_address_hash_set.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/lock_free_address_hash_set.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/lock_free_address_hash_set.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/sampling_heap_profiler/lock_free_address_hash_set.h" />
+    <CustomBuild Include="../../../../base/sampling_heap_profiler/poisson_allocation_sampler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/poisson_allocation_sampler.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/poisson_allocation_sampler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/sampling_heap_profiler/poisson_allocation_sampler.h" />
+    <CustomBuild Include="../../../../base/sampling_heap_profiler/sampling_heap_profiler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sampling_heap_profiler.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sampling_heap_profiler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/sampling_heap_profiler/sampling_heap_profiler.h" />
+    <None Include="../../../../base/scoped_clear_last_error.h" />
+    <None Include="../../../../base/scoped_generic.h" />
+    <None Include="../../../../base/scoped_multi_source_observation.h" />
+    <CustomBuild Include="../../../../base/scoped_native_library.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_native_library.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_native_library.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/scoped_native_library.h" />
+    <None Include="../../../../base/scoped_observation.h" />
+    <None Include="../../../../base/scoped_observer.h" />
+    <None Include="../../../../base/sequence_checker.h" />
+    <CustomBuild Include="../../../../base/sequence_checker_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequence_checker_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequence_checker_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/sequence_checker_impl.h" />
+    <CustomBuild Include="../../../../base/sequence_token.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequence_token.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequence_token.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/sequence_token.h" />
+    <CustomBuild Include="../../../../base/sequenced_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequenced_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequenced_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/sequenced_task_runner.h" />
+    <None Include="../../../../base/sequenced_task_runner_helpers.h" />
+    <None Include="../../../../base/single_thread_task_runner.h" />
+    <None Include="../../../../base/stl_util.h" />
+    <CustomBuild Include="../../../../base/strings/abseil_string_conversions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/abseil_string_conversions.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/abseil_string_conversions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/abseil_string_conversions.h" />
+    <None Include="../../../../base/strings/char_traits.h" />
+    <CustomBuild Include="../../../../base/strings/escape.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/escape.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/escape.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/escape.h" />
+    <CustomBuild Include="../../../../base/strings/latin1_string_conversions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/latin1_string_conversions.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/latin1_string_conversions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/latin1_string_conversions.h" />
+    <CustomBuild Include="../../../../base/strings/pattern.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pattern.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pattern.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/pattern.h" />
+    <CustomBuild Include="../../../../base/strings/safe_sprintf.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/safe_sprintf.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/safe_sprintf.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/safe_sprintf.h" />
+    <CustomBuild Include="../../../../base/strings/strcat.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/strcat.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/strcat.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/strcat.h" />
+    <None Include="../../../../base/strings/strcat_internal.h" />
+    <CustomBuild Include="../../../../base/strings/string_number_conversions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_number_conversions.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_number_conversions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_number_conversions.h" />
+    <None Include="../../../../base/strings/string_number_conversions_internal.h" />
+    <CustomBuild Include="../../../../base/strings/string_piece.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_piece.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_piece.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_piece.h" />
+    <None Include="../../../../base/strings/string_piece_forward.h" />
+    <CustomBuild Include="../../../../base/strings/string_split.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_split.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_split.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_split.h" />
+    <None Include="../../../../base/strings/string_split_internal.h" />
+    <None Include="../../../../base/strings/string_tokenizer.h" />
+    <CustomBuild Include="../../../../base/strings/string_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_util.h" />
+    <CustomBuild Include="../../../../base/strings/string_util_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_util_constants.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_util_constants.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_util_internal.h" />
+    <None Include="../../../../base/strings/stringize_macros.h" />
+    <CustomBuild Include="../../../../base/strings/stringprintf.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stringprintf.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stringprintf.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/stringprintf.h" />
+    <None Include="../../../../base/strings/sys_string_conversions.h" />
+    <CustomBuild Include="../../../../base/strings/utf_offset_string_conversions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/utf_offset_string_conversions.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/utf_offset_string_conversions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/utf_offset_string_conversions.h" />
+    <CustomBuild Include="../../../../base/strings/utf_string_conversion_utils.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/utf_string_conversion_utils.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/utf_string_conversion_utils.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/utf_string_conversion_utils.h" />
+    <CustomBuild Include="../../../../base/strings/utf_string_conversions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/utf_string_conversions.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/utf_string_conversions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/utf_string_conversions.h" />
+    <CustomBuild Include="../../../../base/supports_user_data.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/supports_user_data.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/supports_user_data.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/supports_user_data.h" />
+    <CustomBuild Include="../../../../base/sync_socket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sync_socket.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sync_socket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/sync_socket.h" />
+    <CustomBuild Include="../../../../base/synchronization/atomic_flag.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/atomic_flag.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/atomic_flag.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/synchronization/atomic_flag.h" />
+    <None Include="../../../../base/synchronization/condition_variable.h" />
+    <CustomBuild Include="../../../../base/synchronization/lock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/lock.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/lock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/synchronization/lock.h" />
+    <None Include="../../../../base/synchronization/lock_impl.h" />
+    <None Include="../../../../base/synchronization/waitable_event.h" />
+    <None Include="../../../../base/synchronization/waitable_event_watcher.h" />
+    <None Include="../../../../base/sys_byteorder.h" />
+    <CustomBuild Include="../../../../base/syslog_logging.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/syslog_logging.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/syslog_logging.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/syslog_logging.h" />
+    <CustomBuild Include="../../../../base/system/sys_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sys_info.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sys_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/system/sys_info.h" />
+    <None Include="../../../../base/system/sys_info_internal.h" />
+    <CustomBuild Include="../../../../base/system/system_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/system_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/system_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/system/system_monitor.h" />
+    <CustomBuild Include="../../../../base/task/cancelable_task_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/cancelable_task_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/cancelable_task_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/cancelable_task_tracker.h" />
+    <None Include="../../../../base/task/common/checked_lock.h" />
+    <CustomBuild Include="../../../../base/task/common/checked_lock_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/checked_lock_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/checked_lock_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/common/checked_lock_impl.h" />
+    <None Include="../../../../base/task/common/intrusive_heap.h" />
+    <CustomBuild Include="../../../../base/task/common/operations_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/operations_controller.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/operations_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/common/operations_controller.h" />
+    <CustomBuild Include="../../../../base/task/common/scoped_defer_task_posting.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_defer_task_posting.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_defer_task_posting.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/common/scoped_defer_task_posting.h" />
+    <CustomBuild Include="../../../../base/task/common/task_annotator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_annotator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_annotator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/common/task_annotator.h" />
+    <CustomBuild Include="../../../../base/task/current_thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/current_thread.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/current_thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/current_thread.h" />
+    <CustomBuild Include="../../../../base/task/lazy_thread_pool_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/lazy_thread_pool_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/lazy_thread_pool_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/lazy_thread_pool_task_runner.h" />
+    <CustomBuild Include="../../../../base/task/post_job.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/post_job.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/post_job.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/post_job.h" />
+    <CustomBuild Include="../../../../base/task/post_task.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/post_task.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/post_task.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/post_task.h" />
+    <CustomBuild Include="../../../../base/task/scoped_set_task_priority_for_current_thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_set_task_priority_for_current_thread.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_set_task_priority_for_current_thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/scoped_set_task_priority_for_current_thread.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/associated_thread_id.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/associated_thread_id.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/associated_thread_id.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/associated_thread_id.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/atomic_flag_set.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/atomic_flag_set.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/atomic_flag_set.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/atomic_flag_set.h" />
+    <None Include="../../../../base/task/sequence_manager/enqueue_order.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/enqueue_order_generator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/enqueue_order_generator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/enqueue_order_generator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/enqueue_order_generator.h" />
+    <None Include="../../../../base/task/sequence_manager/lazily_deallocated_deque.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/lazy_now.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/lazy_now.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/lazy_now.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/lazy_now.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/real_time_domain.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/real_time_domain.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/real_time_domain.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/real_time_domain.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/sequence_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequence_manager.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequence_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/sequence_manager.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/sequence_manager_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequence_manager_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequence_manager_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/sequence_manager_impl.h" />
+    <None Include="../../../../base/task/sequence_manager/sequenced_task_source.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/task_queue.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_queue.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_queue.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/task_queue.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/task_queue_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_queue_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_queue_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/task_queue_impl.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/task_queue_selector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_queue_selector.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_queue_selector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/task_queue_selector.h" />
+    <None Include="../../../../base/task/sequence_manager/task_queue_selector_logic.h" />
+    <None Include="../../../../base/task/sequence_manager/task_time_observer.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/tasks.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/tasks.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/tasks.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/tasks.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/thread_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_controller.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/thread_controller.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/thread_controller_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_controller_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_controller_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/thread_controller_impl.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/thread_controller_power_monitor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_controller_power_monitor.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_controller_power_monitor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/thread_controller_power_monitor.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/thread_controller_with_message_pump_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_controller_with_message_pump_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_controller_with_message_pump_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/thread_controller_with_message_pump_impl.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/time_domain.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/time_domain.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/time_domain.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/time_domain.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/work_deduplicator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/work_deduplicator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/work_deduplicator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/work_deduplicator.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/work_queue.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/work_queue.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/work_queue.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/work_queue.h" />
+    <CustomBuild Include="../../../../base/task/sequence_manager/work_queue_sets.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/work_queue_sets.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/work_queue_sets.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/sequence_manager/work_queue_sets.h" />
+    <CustomBuild Include="../../../../base/task/simple_task_executor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/simple_task_executor.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/simple_task_executor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/simple_task_executor.h" />
+    <CustomBuild Include="../../../../base/task/single_thread_task_executor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/single_thread_task_executor.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/single_thread_task_executor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/single_thread_task_executor.h" />
+    <None Include="../../../../base/task/single_thread_task_runner_thread_mode.h" />
+    <CustomBuild Include="../../../../base/task/task_executor.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_executor.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_executor.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/task_executor.h" />
+    <CustomBuild Include="../../../../base/task/task_features.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_features.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_features.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/task_features.h" />
+    <None Include="../../../../base/task/task_observer.h" />
+    <CustomBuild Include="../../../../base/task/task_traits.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_traits.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_traits.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/task_traits.h" />
+    <None Include="../../../../base/task/task_traits_extension.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_pool.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_pool.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/delayed_task_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/delayed_task_manager.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/delayed_task_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/delayed_task_manager.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/environment_config.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/environment_config.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/environment_config.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/environment_config.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/initialization_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/initialization_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/initialization_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/initialization_util.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/job_task_source.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/job_task_source.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/job_task_source.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/job_task_source.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/pooled_parallel_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pooled_parallel_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pooled_parallel_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/pooled_parallel_task_runner.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/pooled_sequenced_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pooled_sequenced_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pooled_sequenced_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/pooled_sequenced_task_runner.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/pooled_single_thread_task_runner_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pooled_single_thread_task_runner_manager.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pooled_single_thread_task_runner_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/pooled_single_thread_task_runner_manager.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/pooled_task_runner_delegate.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pooled_task_runner_delegate.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pooled_task_runner_delegate.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/pooled_task_runner_delegate.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/priority_queue.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/priority_queue.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/priority_queue.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/priority_queue.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/sequence.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequence.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequence.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/sequence.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/service_thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/service_thread.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/service_thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/service_thread.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/task.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/task.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/task_source.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_source.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_source.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/task_source.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/task_source_sort_key.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_source_sort_key.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_source_sort_key.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/task_source_sort_key.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/task_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/task_tracker.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_group.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_group.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_group.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_group.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_group_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_group_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_group_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_group_impl.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_group_native.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_group_native.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_group_native.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_group_native.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_pool_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_pool_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_pool_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_pool_impl.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_pool_instance.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_pool_instance.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_pool_instance.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_pool_instance.h" />
+    <None Include="../../../../base/task/thread_pool/tracked_ref.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/worker_thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/worker_thread.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/worker_thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/worker_thread.h" />
+    <None Include="../../../../base/task/thread_pool/worker_thread_observer.h" />
+    <CustomBuild Include="../../../../base/task/thread_pool/worker_thread_stack.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/worker_thread_stack.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/worker_thread_stack.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/worker_thread_stack.h" />
+    <CustomBuild Include="../../../../base/task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task_runner.h" />
+    <None Include="../../../../base/task_runner_util.h" />
+    <None Include="../../../../base/template_util.h" />
+    <None Include="../../../../base/test/malloc_wrapper.h" />
+    <None Include="../../../../base/test/scoped_logging_settings.h" />
+    <None Include="../../../../base/test/spin_wait.h" />
+    <CustomBuild Include="../../../../base/third_party/cityhash/city.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/city.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/city.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/third_party/cityhash/city.h" />
+    <CustomBuild Include="../../../../base/third_party/cityhash_v103/src/city_v103.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/city_v103.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/city_v103.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/third_party/cityhash_v103/src/city_v103.h" />
+    <None Include="../../../../base/third_party/icu/icu_utf.h" />
+    <CustomBuild Include="../../../../base/third_party/nspr/prtime.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/prtime.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/prtime.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/third_party/nspr/prtime.h" />
+    <CustomBuild Include="../../../../base/third_party/superfasthash/superfasthash.c">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/superfasthash.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/superfasthash.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/thread_annotations.h" />
+    <CustomBuild Include="../../../../base/threading/hang_watcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/hang_watcher.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/hang_watcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/hang_watcher.h" />
+    <CustomBuild Include="../../../../base/threading/platform_thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/platform_thread.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/platform_thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/platform_thread.h" />
+    <CustomBuild Include="../../../../base/threading/post_task_and_reply_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/post_task_and_reply_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/post_task_and_reply_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/post_task_and_reply_impl.h" />
+    <CustomBuild Include="../../../../base/threading/scoped_blocking_call.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_blocking_call.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_blocking_call.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/scoped_blocking_call.h" />
+    <CustomBuild Include="../../../../base/threading/scoped_blocking_call_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_blocking_call_internal.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_blocking_call_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/scoped_blocking_call_internal.h" />
+    <CustomBuild Include="../../../../base/threading/scoped_thread_priority.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_thread_priority.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_thread_priority.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/scoped_thread_priority.h" />
+    <None Include="../../../../base/threading/sequence_bound.h" />
+    <CustomBuild Include="../../../../base/threading/sequence_local_storage_map.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequence_local_storage_map.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequence_local_storage_map.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/sequence_local_storage_map.h" />
+    <CustomBuild Include="../../../../base/threading/sequence_local_storage_slot.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequence_local_storage_slot.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequence_local_storage_slot.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/sequence_local_storage_slot.h" />
+    <CustomBuild Include="../../../../base/threading/sequenced_task_runner_handle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sequenced_task_runner_handle.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sequenced_task_runner_handle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/sequenced_task_runner_handle.h" />
+    <CustomBuild Include="../../../../base/threading/simple_thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/simple_thread.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/simple_thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/simple_thread.h" />
+    <CustomBuild Include="../../../../base/threading/thread.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread.h" />
+    <None Include="../../../../base/threading/thread_checker.h" />
+    <CustomBuild Include="../../../../base/threading/thread_checker_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_checker_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_checker_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_checker_impl.h" />
+    <CustomBuild Include="../../../../base/threading/thread_collision_warner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_collision_warner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_collision_warner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_collision_warner.h" />
+    <CustomBuild Include="../../../../base/threading/thread_id_name_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_id_name_manager.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_id_name_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_id_name_manager.h" />
+    <None Include="../../../../base/threading/thread_local.h" />
+    <None Include="../../../../base/threading/thread_local_internal.h" />
+    <CustomBuild Include="../../../../base/threading/thread_local_storage.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_local_storage.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_local_storage.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_local_storage.h" />
+    <CustomBuild Include="../../../../base/threading/thread_restrictions.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_restrictions.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_restrictions.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_restrictions.h" />
+    <CustomBuild Include="../../../../base/threading/thread_task_runner_handle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_task_runner_handle.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_task_runner_handle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/thread_task_runner_handle.h" />
+    <None Include="../../../../base/threading/threading_features.h" />
+    <CustomBuild Include="../../../../base/threading/watchdog.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/watchdog.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/watchdog.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/watchdog.h" />
+    <CustomBuild Include="../../../../base/time/clock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/clock.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/clock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/time/clock.h" />
+    <CustomBuild Include="../../../../base/time/default_clock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/default_clock.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/default_clock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/time/default_clock.h" />
+    <CustomBuild Include="../../../../base/time/default_tick_clock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/default_tick_clock.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/default_tick_clock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/time/default_tick_clock.h" />
+    <CustomBuild Include="../../../../base/time/tick_clock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/tick_clock.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/tick_clock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/time/tick_clock.h" />
+    <CustomBuild Include="../../../../base/time/time.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/time.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/time.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/time/time.h" />
+    <CustomBuild Include="../../../../base/time/time_delta_from_string.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/time_delta_from_string.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/time_delta_from_string.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/time/time_delta_from_string.h" />
+    <CustomBuild Include="../../../../base/time/time_override.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/time_override.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/time_override.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/time/time_override.h" />
+    <CustomBuild Include="../../../../base/time/time_to_iso8601.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/time_to_iso8601.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/time_to_iso8601.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/time/time_to_iso8601.h" />
+    <CustomBuild Include="../../../../base/timer/elapsed_timer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/elapsed_timer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/elapsed_timer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/timer/elapsed_timer.h" />
+    <None Include="../../../../base/timer/hi_res_timer_manager.h" />
+    <CustomBuild Include="../../../../base/timer/lap_timer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/lap_timer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/lap_timer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/timer/lap_timer.h" />
+    <CustomBuild Include="../../../../base/timer/timer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/timer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/timer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/timer/timer.h" />
+    <CustomBuild Include="../../../../base/token.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/token.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/token.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/token.h" />
+    <None Include="../../../../base/trace_event/base_tracing.h" />
+    <None Include="../../../../base/trace_event/base_tracing_forward.h" />
+    <None Include="../../../../base/trace_event/common/trace_event_common.h" />
+    <CustomBuild Include="../../../../base/trace_event/heap_profiler_allocation_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/heap_profiler_allocation_context.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/heap_profiler_allocation_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/heap_profiler_allocation_context.h" />
+    <CustomBuild Include="../../../../base/trace_event/heap_profiler_allocation_context_tracker.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/heap_profiler_allocation_context_tracker.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/heap_profiler_allocation_context_tracker.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/heap_profiler_allocation_context_tracker.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_allocator_dump_guid.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_allocator_dump_guid.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_allocator_dump_guid.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_allocator_dump_guid.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_id_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_id_helper.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_id_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_id_helper.h" />
+    <None Include="../../../../base/traits_bag.h" />
+    <None Include="../../../../base/tuple.h" />
+    <None Include="../../../../base/types/pass_key.h" />
+    <None Include="../../../../base/types/strong_alias.h" />
+    <CustomBuild Include="../../../../base/unguessable_token.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/unguessable_token.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/unguessable_token.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/unguessable_token.h" />
+    <None Include="../../../../base/updateable_sequenced_task_runner.h" />
+    <CustomBuild Include="../../../../base/value_iterators.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/value_iterators.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/value_iterators.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/value_iterators.h" />
+    <CustomBuild Include="../../../../base/values.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/values.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/values.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/values.h" />
+    <CustomBuild Include="../../../../base/version.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/version.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/version.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/version.h" />
+    <CustomBuild Include="../../../../base/vlog.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/vlog.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/vlog.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/vlog.h" />
+    <CustomBuild Include="../../../../base/debug/close_handle_hook_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/close_handle_hook_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/close_handle_hook_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/close_handle_hook_win.h" />
+    <CustomBuild Include="../../../../base/debug/debugger_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/debugger_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/debugger_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/debug/gdi_debug_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/gdi_debug_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/gdi_debug_util_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/gdi_debug_util_win.h" />
+    <CustomBuild Include="../../../../base/debug/invalid_access_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/invalid_access_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/invalid_access_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/debug/invalid_access_win.h" />
+    <CustomBuild Include="../../../../base/debug/stack_trace_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_trace_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_trace_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/enterprise_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/enterprise_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/enterprise_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/file_version_info_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_version_info_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_version_info_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/file_version_info_win.h" />
+    <CustomBuild Include="../../../../base/files/file_path_watcher_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_path_watcher_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_path_watcher_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/file_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/file_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/memory_mapped_file_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_mapped_file_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_mapped_file_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/logging_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/logging_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/logging_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/logging_win.h" />
+    <CustomBuild Include="../../../../base/memory/page_size_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/page_size_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/page_size_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/message_loop/message_pump_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/message_pump_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/message_pump_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/message_loop/message_pump_win.h" />
+    <CustomBuild Include="../../../../base/native_library_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/native_library_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/native_library_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/kill_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/kill_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/kill_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/launch_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/launch_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/launch_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/memory_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_handle_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_handle_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_handle_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_info_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_info_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_info_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_iterator_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_iterator_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_iterator_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_metrics_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_metrics_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_metrics_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/process/process_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/profiler/module_cache_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/module_cache_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/module_cache_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/profiler/native_unwinder_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/native_unwinder_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/native_unwinder_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/native_unwinder_win.h" />
+    <CustomBuild Include="../../../../base/profiler/stack_sampler_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack_sampler_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack_sampler_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/profiler/suspendable_thread_delegate_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/suspendable_thread_delegate_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/suspendable_thread_delegate_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/suspendable_thread_delegate_win.h" />
+    <CustomBuild Include="../../../../base/scoped_clear_last_error_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_clear_last_error_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_clear_last_error_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/strings/strcat_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/strcat_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/strcat_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/strcat_win.h" />
+    <CustomBuild Include="../../../../base/strings/string_number_conversions_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_number_conversions_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_number_conversions_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_number_conversions_win.h" />
+    <CustomBuild Include="../../../../base/strings/string_split_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_split_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_split_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_split_win.h" />
+    <CustomBuild Include="../../../../base/strings/string_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/string_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/string_util_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/strings/string_util_win.h" />
+    <CustomBuild Include="../../../../base/strings/sys_string_conversions_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sys_string_conversions_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sys_string_conversions_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/sync_socket_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sync_socket_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sync_socket_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/synchronization/condition_variable_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/condition_variable_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/condition_variable_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/synchronization/lock_impl_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/lock_impl_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/lock_impl_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/synchronization/waitable_event_watcher_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/waitable_event_watcher_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/waitable_event_watcher_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/synchronization/waitable_event_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/waitable_event_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/waitable_event_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/task/thread_pool/thread_group_native_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_group_native_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_group_native_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/task/thread_pool/thread_group_native_win.h" />
+    <CustomBuild Include="../../../../base/threading/platform_thread_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/platform_thread_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/platform_thread_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/threading/platform_thread_win.h" />
+    <CustomBuild Include="../../../../base/threading/thread_local_storage_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_local_storage_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_local_storage_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/timer/hi_res_timer_manager_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/hi_res_timer_manager_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/hi_res_timer_manager_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/async_operation.h" />
+    <None Include="../../../../base/win/atl.h" />
+    <CustomBuild Include="../../../../base/win/atl_throw.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/atl_throw.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/atl_throw.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/atl_throw.h" />
+    <CustomBuild Include="../../../../base/win/com_init_balancer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/com_init_balancer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/com_init_balancer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/com_init_balancer.h" />
+    <CustomBuild Include="../../../../base/win/com_init_check_hook.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/com_init_check_hook.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/com_init_check_hook.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/com_init_check_hook.h" />
+    <CustomBuild Include="../../../../base/win/com_init_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/com_init_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/com_init_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/com_init_util.h" />
+    <CustomBuild Include="../../../../base/win/core_winrt_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/core_winrt_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/core_winrt_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/core_winrt_util.h" />
+    <None Include="../../../../base/win/current_module.h" />
+    <CustomBuild Include="../../../../base/win/embedded_i18n/language_selector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/language_selector.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/language_selector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/embedded_i18n/language_selector.h" />
+    <CustomBuild Include="../../../../base/win/enum_variant.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/enum_variant.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/enum_variant.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/enum_variant.h" />
+    <None Include="../../../../base/win/event_trace_consumer.h" />
+    <CustomBuild Include="../../../../base/win/event_trace_controller.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/event_trace_controller.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/event_trace_controller.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/event_trace_controller.h" />
+    <CustomBuild Include="../../../../base/win/event_trace_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/event_trace_provider.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/event_trace_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/event_trace_provider.h" />
+    <CustomBuild Include="../../../../base/win/hstring_compare.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/hstring_compare.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/hstring_compare.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/hstring_compare.h" />
+    <CustomBuild Include="../../../../base/win/hstring_reference.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/hstring_reference.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/hstring_reference.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/hstring_reference.h" />
+    <CustomBuild Include="../../../../base/win/i18n.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/i18n.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/i18n.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/i18n.h" />
+    <CustomBuild Include="../../../../base/win/iat_patch_function.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/iat_patch_function.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/iat_patch_function.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/iat_patch_function.h" />
+    <None Include="../../../../base/win/map.h" />
+    <CustomBuild Include="../../../../base/win/message_window.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/message_window.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/message_window.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/message_window.h" />
+    <CustomBuild Include="../../../../base/win/object_watcher.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/object_watcher.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/object_watcher.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/object_watcher.h" />
+    <CustomBuild Include="../../../../base/win/patch_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/patch_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/patch_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/patch_util.h" />
+    <CustomBuild Include="../../../../base/win/pe_image_reader.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pe_image_reader.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pe_image_reader.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/pe_image_reader.h" />
+    <None Include="../../../../base/win/post_async_results.h" />
+    <CustomBuild Include="../../../../base/win/process_startup_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_startup_helper.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_startup_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/process_startup_helper.h" />
+    <None Include="../../../../base/win/propvarutil.h" />
+    <None Include="../../../../base/win/reference.h" />
+    <CustomBuild Include="../../../../base/win/registry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/registry.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/registry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/registry.h" />
+    <CustomBuild Include="../../../../base/win/resource_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/resource_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/resource_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/resource_util.h" />
+    <CustomBuild Include="../../../../base/win/scoped_bstr.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_bstr.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_bstr.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_bstr.h" />
+    <None Include="../../../../base/win/scoped_co_mem.h" />
+    <CustomBuild Include="../../../../base/win/scoped_com_initializer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_com_initializer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_com_initializer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_com_initializer.h" />
+    <None Include="../../../../base/win/scoped_gdi_object.h" />
+    <CustomBuild Include="../../../../base/win/scoped_handle.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_handle.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_handle.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_handle.h" />
+    <CustomBuild Include="../../../../base/win/scoped_handle_verifier.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_handle_verifier.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_handle_verifier.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_handle_verifier.h" />
+    <None Include="../../../../base/win/scoped_hdc.h" />
+    <None Include="../../../../base/win/scoped_hglobal.h" />
+    <CustomBuild Include="../../../../base/win/scoped_hstring.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_hstring.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_hstring.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_hstring.h" />
+    <None Include="../../../../base/win/scoped_localalloc.h" />
+    <CustomBuild Include="../../../../base/win/scoped_process_information.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_process_information.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_process_information.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_process_information.h" />
+    <None Include="../../../../base/win/scoped_propvariant.h" />
+    <None Include="../../../../base/win/scoped_safearray.h" />
+    <None Include="../../../../base/win/scoped_select_object.h" />
+    <CustomBuild Include="../../../../base/win/scoped_variant.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_variant.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_variant.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_variant.h" />
+    <None Include="../../../../base/win/scoped_windows_thread_environment.h" />
+    <CustomBuild Include="../../../../base/win/scoped_winrt_initializer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/scoped_winrt_initializer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/scoped_winrt_initializer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/scoped_winrt_initializer.h" />
+    <CustomBuild Include="../../../../base/win/security_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/security_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/security_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/security_util.h" />
+    <None Include="../../../../base/win/shlwapi.h" />
+    <CustomBuild Include="../../../../base/win/shortcut.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/shortcut.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/shortcut.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/shortcut.h" />
+    <CustomBuild Include="../../../../base/win/sid.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sid.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sid.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/sid.h" />
+    <None Include="../../../../base/win/sphelper.h" />
+    <CustomBuild Include="../../../../base/win/startup_information.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/startup_information.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/startup_information.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/startup_information.h" />
+    <None Include="../../../../base/win/variant_util.h" />
+    <CustomBuild Include="../../../../base/win/variant_vector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/variant_vector.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/variant_vector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/variant_vector.h" />
+    <CustomBuild Include="../../../../base/win/vector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/vector.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/vector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/vector.h" />
+    <CustomBuild Include="../../../../base/win/win_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/win_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/win_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/win_util.h" />
+    <None Include="../../../../base/win/wincrypt_shim.h" />
+    <None Include="../../../../base/win/windows_defines.inc" />
+    <None Include="../../../../base/win/windows_types.h" />
+    <None Include="../../../../base/win/windows_undefines.inc" />
+    <CustomBuild Include="../../../../base/win/windows_version.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/windows_version.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/windows_version.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/windows_version.h" />
+    <None Include="../../../../base/win/windowsx_shim.h" />
+    <None Include="../../../../base/win/winrt_foundation_helpers.h" />
+    <CustomBuild Include="../../../../base/win/winrt_storage_util.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/winrt_storage_util.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/winrt_storage_util.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/winrt_storage_util.h" />
+    <CustomBuild Include="../../../../base/win/wmi.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/wmi.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/wmi.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/wmi.h" />
+    <CustomBuild Include="../../../../base/win/wrapped_window_proc.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/wrapped_window_proc.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/wrapped_window_proc.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/win/wrapped_window_proc.h" />
+    <CustomBuild Include="../../../../base/base_paths.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/base_paths.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/base_paths.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/base_paths.h" />
+    <CustomBuild Include="../../../../base/metrics/persistent_histogram_storage.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/persistent_histogram_storage.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/persistent_histogram_storage.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/metrics/persistent_histogram_storage.h" />
+    <CustomBuild Include="../../../../base/base_paths_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/base_paths_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/base_paths_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/base_paths_win.h" />
+    <CustomBuild Include="../../../../base/allocator/allocator_shim.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/allocator_shim.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/allocator_shim.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/allocator_shim.h" />
+    <CustomBuild Include="../../../../base/allocator/allocator_shim_default_dispatch_to_partition_alloc.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/allocator_shim_default_dispatch_to_partition_alloc.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/allocator_shim_default_dispatch_to_partition_alloc.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/allocator_shim_default_dispatch_to_partition_alloc.h" />
+    <None Include="../../../../base/allocator/allocator_shim_internals.h" />
+    <None Include="../../../../base/allocator/allocator_shim_override_ucrt_symbols_win.h" />
+    <CustomBuild Include="../../../../base/allocator/winheap_stubs_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/winheap_stubs_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/winheap_stubs_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/winheap_stubs_win.h" />
+    <None Include="../../../../base/hash/md5.h" />
+    <None Include="../../../../base/hash/md5_constexpr.h" />
+    <None Include="../../../../base/hash/md5_constexpr_internal.h" />
+    <None Include="../../../../base/hash/sha1.h" />
+    <CustomBuild Include="../../../../base/hash/md5_boringssl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/md5_boringssl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/md5_boringssl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/hash/md5_boringssl.h" />
+    <CustomBuild Include="../../../../base/hash/sha1_boringssl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sha1_boringssl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sha1_boringssl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/hash/sha1_boringssl.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/address_pool_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/address_pool_manager.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/address_pool_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/address_pool_manager.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/address_pool_manager_bitmap.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/address_pool_manager_bitmap.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/address_pool_manager_bitmap.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/address_pool_manager_bitmap.h" />
+    <None Include="../../../../base/allocator/partition_allocator/address_pool_manager_types.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/address_space_randomization.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/address_space_randomization.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/address_space_randomization.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/address_space_randomization.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/extended_api.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/extended_api.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/extended_api.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/extended_api.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/memory_reclaimer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_reclaimer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_reclaimer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/memory_reclaimer.h" />
+    <None Include="../../../../base/allocator/partition_allocator/oom.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/oom_callback.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/oom_callback.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/oom_callback.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/oom_callback.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/page_allocator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/page_allocator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/page_allocator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/page_allocator.h" />
+    <None Include="../../../../base/allocator/partition_allocator/page_allocator_internal.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_address_space.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_address_space.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_address_space.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_address_space.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc-inl.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_alloc.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_alloc.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_alloc.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_check.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_config.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_constants.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_alloc_features.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_alloc_features.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_alloc_features.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_features.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_forward.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_alloc_hooks.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_alloc_hooks.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_alloc_hooks.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_alloc_hooks.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_bucket.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_bucket.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_bucket.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_bucket.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_cookie.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_direct_map_extent.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_freelist_entry.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_lock.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_lock.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_lock.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_lock.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_oom.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_oom.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_oom.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_oom.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_page.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_page.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_page.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_page.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_ref_count.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_root.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_root.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_root.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_root.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_stats.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_stats.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_stats.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/partition_stats.h" />
+    <None Include="../../../../base/allocator/partition_allocator/partition_tls.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/random.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/random.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/random.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/random.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/spinning_mutex.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/spinning_mutex.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/spinning_mutex.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/spinning_mutex.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/metadata_allocator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/metadata_allocator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/metadata_allocator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/metadata_allocator.h" />
+    <None Include="../../../../base/allocator/partition_allocator/starscan/object_bitmap.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/pcscan.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pcscan.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pcscan.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/pcscan.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/pcscan_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pcscan_internal.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pcscan_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/pcscan_internal.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/pcscan_scheduling.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/pcscan_scheduling.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/pcscan_scheduling.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/pcscan_scheduling.h" />
+    <None Include="../../../../base/allocator/partition_allocator/starscan/raceful_worklist.h" />
+    <None Include="../../../../base/allocator/partition_allocator/starscan/scan_loop.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/stack/stack.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stack.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stack.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/stack/stack.h" />
+    <None Include="../../../../base/allocator/partition_allocator/starscan/starscan_fwd.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/stats_collector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/stats_collector.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/stats_collector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/stats_collector.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/write_protector.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/write_protector.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/write_protector.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/starscan/write_protector.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/thread_cache.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_cache.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_cache.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/allocator/partition_allocator/thread_cache.h" />
+    <None Include="../../../../base/allocator/partition_allocator/yield_processor.h" />
+    <None Include="../../../../base/allocator/partition_allocator/page_allocator_internals_win.h" />
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/partition_tls_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/partition_tls_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/partition_tls_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/allocator/partition_allocator/starscan/stack/asm/x64/push_registers_asm.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/push_registers_asm.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/push_registers_asm.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/files/file_enumerator_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/file_enumerator_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/file_enumerator_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/memory/platform_shared_memory_region_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/platform_shared_memory_region_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/platform_shared_memory_region_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/power_monitor/power_monitor_device_source_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/power_monitor_device_source_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/power_monitor_device_source_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/profiler/win32_stack_frame_unwinder.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/win32_stack_frame_unwinder.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/win32_stack_frame_unwinder.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/profiler/win32_stack_frame_unwinder.h" />
+    <CustomBuild Include="../../../../base/rand_util_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/rand_util_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/rand_util_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/system/sys_info_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/sys_info_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/sys_info_win.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/time/time_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/time_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/time_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/auto_open_close_event.h" />
+    <CustomBuild Include="../../../../base/trace_event/blame_context.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/blame_context.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/blame_context.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/blame_context.h" />
+    <CustomBuild Include="../../../../base/trace_event/builtin_categories.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/builtin_categories.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/builtin_categories.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/builtin_categories.h" />
+    <CustomBuild Include="../../../../base/trace_event/category_registry.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/category_registry.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/category_registry.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/category_registry.h" />
+    <CustomBuild Include="../../../../base/trace_event/event_name_filter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/event_name_filter.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/event_name_filter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/event_name_filter.h" />
+    <None Include="../../../../base/trace_event/heap_profiler.h" />
+    <CustomBuild Include="../../../../base/trace_event/heap_profiler_event_filter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/heap_profiler_event_filter.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/heap_profiler_event_filter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/heap_profiler_event_filter.h" />
+    <CustomBuild Include="../../../../base/trace_event/interned_args_helper.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/interned_args_helper.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/interned_args_helper.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/interned_args_helper.h" />
+    <CustomBuild Include="../../../../base/trace_event/log_message.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/log_message.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/log_message.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/log_message.h" />
+    <CustomBuild Include="../../../../base/trace_event/malloc_dump_provider.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/malloc_dump_provider.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/malloc_dump_provider.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/malloc_dump_provider.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_allocator_dump.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_allocator_dump.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_allocator_dump.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_allocator_dump.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_dump_manager.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_dump_manager.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_dump_manager.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_dump_manager.h" />
+    <None Include="../../../../base/trace_event/memory_dump_manager_test_utils.h" />
+    <None Include="../../../../base/trace_event/memory_dump_provider.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_dump_provider_info.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_dump_provider_info.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_dump_provider_info.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_dump_provider_info.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_dump_request_args.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_dump_request_args.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_dump_request_args.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_dump_request_args.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_dump_scheduler.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_dump_scheduler.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_dump_scheduler.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_dump_scheduler.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_infra_background_allowlist.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_infra_background_allowlist.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_infra_background_allowlist.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_infra_background_allowlist.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_pressure_level_proto.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_pressure_level_proto.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_pressure_level_proto.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_pressure_level_proto.h" />
+    <CustomBuild Include="../../../../base/trace_event/memory_usage_estimator.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/memory_usage_estimator.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/memory_usage_estimator.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/memory_usage_estimator.h" />
+    <None Include="../../../../base/trace_event/optional_trace_event.h" />
+    <CustomBuild Include="../../../../base/trace_event/process_memory_dump.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/process_memory_dump.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/process_memory_dump.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/process_memory_dump.h" />
+    <None Include="../../../../base/trace_event/task_execution_macros.h" />
+    <CustomBuild Include="../../../../base/trace_event/thread_instruction_count.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/thread_instruction_count.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/thread_instruction_count.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/thread_instruction_count.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_arguments.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_arguments.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_arguments.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_arguments.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_buffer.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_buffer.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_buffer.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_buffer.h" />
+    <None Include="../../../../base/trace_event/trace_category.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_config.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_config.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_config.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_config.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_config_category_filter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_config_category_filter.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_config_category_filter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_config_category_filter.h" />
+    <None Include="../../../../base/trace_event/trace_conversion_helper.h" />
+    <None Include="../../../../base/trace_event/trace_event.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_event_filter.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_event_filter.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_event_filter.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_event_filter.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_event_impl.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_event_impl.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_event_impl.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_event_impl.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_event_memory_overhead.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_event_memory_overhead.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_event_memory_overhead.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_event_memory_overhead.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_log.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_log.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_log.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_log.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_log_constants.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_log_constants.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_log_constants.obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="../../../../base/trace_event/traced_value.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/traced_value.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/traced_value.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/traced_value.h" />
+    <None Include="../../../../base/trace_event/traced_value_support.h" />
+    <CustomBuild Include="../../../../base/trace_event/tracing_agent.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/tracing_agent.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/tracing_agent.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/tracing_agent.h" />
+    <None Include="../../../../base/trace_event/typed_macros.h" />
+    <None Include="../../../../base/trace_event/typed_macros_embedder_support.h" />
+    <CustomBuild Include="../../../../base/trace_event/typed_macros_internal.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/typed_macros_internal.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/typed_macros_internal.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/typed_macros_internal.h" />
+    <CustomBuild Include="../../../../base/tracing/perfetto_platform.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/perfetto_platform.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/perfetto_platform.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/tracing/perfetto_platform.h" />
+    <CustomBuild Include="../../../../base/tracing/perfetto_task_runner.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/perfetto_task_runner.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/perfetto_task_runner.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/tracing/perfetto_task_runner.h" />
+    <CustomBuild Include="../../../../base/tracing/trace_time.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_time.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_time.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/tracing/trace_time.h" />
+    <CustomBuild Include="../../../../base/tracing/tracing_tls.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/tracing_tls.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/tracing_tls.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/tracing/tracing_tls.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_event_etw_export_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_event_etw_export_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_event_etw_export_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_event_etw_export_win.h" />
+    <CustomBuild Include="../../../../base/trace_event/trace_logging_minimal_win.cc">
+      <Command>call ninja.exe -C $(OutDir)  obj/base/base/trace_logging_minimal_win.obj</Command>
+      <Outputs>$(OutDir)obj/base/base/trace_logging_minimal_win.obj</Outputs>
+    </CustomBuild>
+    <None Include="../../../../base/trace_event/trace_logging_minimal_win.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <Target Name="Build">
+    <Exec Command="call ninja.exe -C $(OutDir)  obj/base/base.lib" />
+  </Target>
+  <Target Name="Clean">
+    <Exec Command="call ninja.exe -C $(OutDir) -tclean obj/base/base.lib" />
+  </Target>
+</Project>

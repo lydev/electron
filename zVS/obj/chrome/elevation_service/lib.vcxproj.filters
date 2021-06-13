@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup />
+  <ItemGroup>
+    <CustomBuild Include="../../../../../chrome/elevation_service/elevated_recovery_impl.cc" />
+    <None Include="../../../../../chrome/elevation_service/elevated_recovery_impl.h" />
+    <CustomBuild Include="../../../../../chrome/elevation_service/elevator.cc" />
+    <None Include="../../../../../chrome/elevation_service/elevator.h" />
+    <CustomBuild Include="../../../../../chrome/elevation_service/service_main.cc" />
+    <None Include="../../../../../chrome/elevation_service/service_main.h" />
+  </ItemGroup>
+</Project>

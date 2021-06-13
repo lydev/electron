@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="double-conversion">
+      <UniqueIdentifier>{DB397845-9353-F555-B0A5-3DAE6D7AF2BF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="../../../../../../base/third_party/double_conversion/double-conversion/bignum-dtoa.cc">
+      <Filter>double-conversion</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/bignum-dtoa.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../base/third_party/double_conversion/double-conversion/bignum.cc">
+      <Filter>double-conversion</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/bignum.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../base/third_party/double_conversion/double-conversion/cached-powers.cc">
+      <Filter>double-conversion</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/cached-powers.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/diy-fp.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/double-conversion.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../base/third_party/double_conversion/double-conversion/double-to-string.cc">
+      <Filter>double-conversion</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/double-to-string.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../base/third_party/double_conversion/double-conversion/fast-dtoa.cc">
+      <Filter>double-conversion</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/fast-dtoa.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../base/third_party/double_conversion/double-conversion/fixed-dtoa.cc">
+      <Filter>double-conversion</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/fixed-dtoa.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/ieee.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../base/third_party/double_conversion/double-conversion/string-to-double.cc">
+      <Filter>double-conversion</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/string-to-double.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../base/third_party/double_conversion/double-conversion/strtod.cc">
+      <Filter>double-conversion</Filter>
+    </CustomBuild>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/strtod.h">
+      <Filter>double-conversion</Filter>
+    </None>
+    <None Include="../../../../../../base/third_party/double_conversion/double-conversion/utils.h">
+      <Filter>double-conversion</Filter>
+    </None>
+  </ItemGroup>
+</Project>

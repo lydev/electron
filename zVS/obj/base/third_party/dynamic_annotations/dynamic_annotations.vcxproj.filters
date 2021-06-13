@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..\..\..\base\third_party\valgrind">
+      <UniqueIdentifier>{AE8D11A2-248E-14C2-D5F8-042BA24DEF4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\base\third_party">
+      <UniqueIdentifier>{BE3E1000-6CCC-1014-F949-1C27EDA69D07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..\base">
+      <UniqueIdentifier>{C5C473CC-3C2C-B92C-7574-98CAC922593C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..\..">
+      <UniqueIdentifier>{BC2D405D-5A7E-241B-15FC-441581082017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\..">
+      <UniqueIdentifier>{A8A4AA46-5437-4AB8-6540-F14ED994B38E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{78245A82-158D-7D20-54A6-7C428D0A7B36}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../../../../../base/third_party/valgrind/valgrind.h">
+      <Filter>..\..\..\base\third_party\valgrind</Filter>
+    </None>
+    <CustomBuild Include="../../../../../../base/third_party/dynamic_annotations/dynamic_annotations.c" />
+    <None Include="../../../../../../base/third_party/dynamic_annotations/dynamic_annotations.h" />
+  </ItemGroup>
+</Project>
